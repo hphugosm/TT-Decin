@@ -2,7 +2,11 @@
 
 Interaktivní mapa migrace v obcích Ústeckého kraje, bodové grafy a import CSV. Rozhraní je česky.
 
-**Živá aplikace:** https://hphugosm.github.io/TT-Decin/
+**Mapa:** https://hphugosm.github.io/TT-Decin/mapa/
+
+**Prezentace – Stěhování obcí Ústeckého kraje:** https://hphugosm.github.io/TT-Decin/prezentace/
+
+Původní adresa https://hphugosm.github.io/TT-Decin/ přesměruje na mapu se zachováním parametrů a fragmentu URL. Prezentace má vlastní rozcestník a tři snímky. Ovládání: ← →, Esc zpět na rozcestník, F celá obrazovka, N poznámky k animaci. Vedená prohlídka je zatím připravený úvod.
 
 **Vizuální styl pro prezentace:** [Brand Bible – barvy, písmo a pravidla použití](BRAND_BIBLE.md)
 
@@ -14,7 +18,7 @@ Repozitář obsahuje samostatnou statickou aplikaci; není potřeba instalovat b
 python3 -m http.server 8778 --bind 127.0.0.1
 ```
 
-Otevřete http://127.0.0.1:8778/. Úpravy se provádějí přímo v `index.html`, `radar.css` a modulech `radar*.mjs`.
+Otevřete mapu http://127.0.0.1:8778/mapa/ nebo prezentaci http://127.0.0.1:8778/prezentace/. Mapové rozhraní je v `mapa/index.html`; jeho `<base href="../">` načítá společné soubory `radar.css`, moduly `radar*.mjs` a `data/` z kořene repozitáře. Prezentace je samostatná v `prezentace/index.html`, `prezentace/styles.css` a `prezentace/app.js`. Kořenový `index.html` zajišťuje přesměrování na mapu.
 
 ## Ovládání
 

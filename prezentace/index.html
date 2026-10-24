@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f9fc">
+  <meta name="description" content="Příběh dat obcí Ústeckého kraje. Živá prezentace a vedená prohlídka daty.">
+  <title>Stěhování obcí Ústeckého kraje</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23173da5'/%3E%3Ccircle cx='10' cy='21' r='3' fill='white'/%3E%3Ccircle cx='22' cy='11' r='3' fill='white'/%3E%3Cpath d='M12 19L20 13' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-view="home" data-step="0">
+  <main id="main">
+    <section id="home" class="view home-view" aria-labelledby="home-title">
+      <div class="home-topline"><span class="eyebrow"><span class="status-dot"></span>Děčín · datový hackathon</span><span class="edition">Stěhování obcí Ústeckého kraje</span></div>
+      <div class="home-hero">
+        <div class="home-copy"><h1 id="home-title" tabindex="-1">Stěhování obcí<br><em>Ústeckého kraje.</em></h1><p>Co nám data dovolí zjistit?</p></div>
+        
+      </div>
+      <div class="route-heading"><span class="eyebrow">Vyberte si svůj pohled</span><span></span></div>
+      <nav class="routes" aria-label="Způsob prohlížení">
+        <a href="#prezentace/1" class="route-card route-live"><span class="route-top"><span class="route-number">01 / společně</span><span class="route-icon" aria-hidden="true">↗</span></span><span class="route-title">Živá prezentace</span><span class="route-bottom"><span>Příběh krok za krokem</span><span class="key-hint"><kbd>←</kbd><kbd>→</kbd></span></span></a>
+        <a href="#prohlidka" class="route-card route-guide"><span class="route-top"><span class="route-number">02 / vlastním tempem</span><span class="route-icon" aria-hidden="true">↗</span></span><span class="route-title">Vedená prohlídka daty</span><span class="route-bottom"><span>Prostor pro další objevování</span><span class="pill">Připravujeme</span></span></a>
+      </nav>
+      <footer class="home-footer"><span>TT · Děčín</span><span></span></footer>
+    </section>
+
+    <section id="presentation" class="view presentation-view" aria-label="Živá prezentace" hidden>
+      <div id="slide-one" class="slide intro-slide" aria-labelledby="intro-title">
+        <div class="slide-eyebrow"><span class="eyebrow">01 / Výchozí bod</span><span class="section-description">Stěhování obcí Ústeckého kraje</span></div>
+        <div class="intro-layout">
+          <div class="intro-copy"><h1 id="intro-title" tabindex="-1">Data o obcích<br><em>Ústeckého kraje.</em></h1><div class="frequency"><span class="frequency-number">1</span><span>hodnota<br>za <strong>jeden rok</strong></span></div></div>
+          <div class="topics"><div class="topics-heading"><span class="eyebrow">Co data pokrývala</span><span>7 přehledných témat</span></div><ol class="topic-list"><li title="Sociální vyloučení">Sociální situace</li><li title="Migrace podle věku">Stěhování lidí</li><li title="Ekonomické subjekty">Firmy a podnikatelé</li><li title="REGUAP">Území a rozvoj</li><li title="Nezaměstnanost">Lidé bez práce</li><li title="Věkové ukazatele a věková struktura">Věk obyvatel</li><li title="Základní demografie">Obyvatelstvo</li></ol></div>
+        </div>
+        <div class="objective"><span class="eyebrow">Náš cíl</span><p>Najít <strong>lukrativní využití</strong> těchto dat.</p><span aria-hidden="true">↗</span></div>
+      </div>
+
+      <div id="timeline-slide" class="slide timeline-slide" aria-labelledby="timeline-title" hidden>
+        <div class="slide-eyebrow"><span id="timeline-eyebrow" class="eyebrow">02 / Společné období</span><span class="section-description">Stěhování obcí Ústeckého kraje</span></div>
+        <h1 id="timeline-title" tabindex="-1">Hodně dat. <em>Krátký průnik.</em></h1>
+        <div class="timeline-layout">
+          <figure class="coverage-chart" aria-labelledby="chart-title" aria-describedby="chart-caption">
+            <div class="chart-topline"><h2 id="chart-title">Za které roky máme data?</h2><span class="chart-unit">2000–2025</span></div>
+            <div class="coverage-labels" aria-hidden="true"><span>Všechna témata současně</span><strong>2018–2024</strong></div>
+            <div class="coverage-body">
+              <div class="plot-background" aria-hidden="true"><div class="plot-grid"><i style="--position:1.923077%"></i><i style="--position:21.153846%"></i><i style="--position:40.384615%"></i><i style="--position:59.615385%"></i><i style="--position:78.846154%"></i><i style="--position:98.076923%"></i></div><div class="common-band"></div><div class="event-band"><span>Od roku 2022</span></div></div>
+              <div id="coverage-rows" class="coverage-rows" role="list" aria-label="Časové pokrytí sedmi témat"></div>
+              <div class="coverage-axis" aria-hidden="true"><span style="--position:1.923%">2000</span><span style="--position:21.154%">2005</span><span style="--position:40.385%">2010</span><span style="--position:59.615%">2015</span><span style="--position:78.846%">2020</span><span style="--position:98.077%">2025</span></div>
+            </div>
+            <div class="overlap-detail"><span>Společný<br>průnik</span><div id="overlap-years" class="overlap-years" aria-label="Společné roky 2018 až 2024"></div></div>
+            <figcaption id="chart-caption"><span class="legend"><i class="common-swatch"></i>Společné období všech témat</span><span class="legend event-legend"><i class="event-swatch"></i>Zlom od roku 2022</span></figcaption>
+          </figure>
+          <aside class="timeline-copy"><div class="big-stat"><span id="year-count">7</span><div id="year-label">společných let<span>2018–2024</span></div></div><p id="timeline-description">Každá datová sada sahá jinam.<br>Všechny se potkají jen tady.</p><div class="context-note"><span id="context-period">1 hodnota ročně</span><p id="context-description">Pro společnou analýzu máme jen sedm časových bodů.</p></div></aside>
+        </div>
+        <div class="slide-takeaway"><span class="takeaway-line"></span><p id="timeline-takeaway">Dlouhé řady jednotlivě. Jen sedm let dohromady.</p></div>
+      </div>
+
+      <footer class="presentation-footer"><div class="presenter-tools"><button id="home-button" class="text-button" title="Zpět na rozcestník (Esc)">↖ Rozcestník</button><span class="tool-divider"></span><button id="notes-button" class="text-button" aria-haspopup="dialog">Nápady k animaci</button></div><div class="slide-navigation"><div id="slide-dots" class="slide-dots" aria-label="Vybrat snímek"><button aria-label="Snímek 1" data-slide="0"></button><button aria-label="Snímek 2" data-slide="1"></button><button aria-label="Snímek 3" data-slide="2"></button></div><span id="slide-counter">01 <span>/ 03</span></span><button id="previous" class="nav-button" aria-label="Předchozí snímek">←</button><button id="next" class="nav-button primary" aria-label="Další snímek">→</button><button id="fullscreen" class="fullscreen-button" aria-label="Celá obrazovka" title="Celá obrazovka (F)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></div></footer>
+    </section>
+
+    <section id="guide" class="view guide-view" aria-labelledby="guide-title" hidden><span class="eyebrow">02 / Vedená prohlídka daty</span><div class="guide-content"><span class="pill">Připravujeme</span><h1 id="guide-title" tabindex="-1">Příběh dat.<br><em>Vaším tempem.</em></h1><p>Tady vznikne vedená prohlídka.<br>Její obsah doplníme v dalším kroku.</p><a href="#prezentace/1" class="button-link">Zatím si projít prezentaci <span aria-hidden="true">→</span></a></div><a href="#" class="text-button guide-back">↖ Zpět na rozcestník</a></section>
+  </main>
+
+  <dialog id="notes-dialog" aria-labelledby="notes-title"><div class="dialog-header"><span class="eyebrow">Poznámka pro nás</span><button id="close-notes" class="nav-button" aria-label="Zavřít poznámky">×</button></div><h2 id="notes-title">Jak tenhle snímek rozhýbat</h2><p id="animation-note"></p><div class="dialog-caption">Jemný pohyb. Jedna myšlenka v jednom kroku.</div></dialog>
+  <div id="slide-announcement" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
