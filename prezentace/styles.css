@@ -126,7 +126,7 @@ body[data-step="2"] .event-band{opacity:1;transform:scaleX(1)}body[data-step="2"
 @media(max-width:950px){.reality-layout{padding:28px 0 24px;flex:none}.reality-grid{grid-template-rows:repeat(3,210px);flex:none}.reality-toolbar{flex-wrap:wrap}.reality-chart figcaption{grid-template-columns:1fr;gap:3px}.reality-jobs{grid-row:3}.reality-chart h2{font-size:14px}.reality-finding{font-size:23px}}
 @media(max-width:600px){.reality-layout{padding-top:24px;gap:20px}.reality-grid{grid-template-columns:1fr;grid-template-rows:repeat(6,230px)}.reality-chart{padding:16px 14px 6px}.reality-chart h2{font-size:17px}.reality-jobs,.reality-chart figcaption p{font-size:12px}.reality-reading{font-size:11px}.reality-reading>strong{font-size:13px}.reality-toolbar{gap:15px}.reality-controls{width:100%;justify-content:space-between}.reality-finding{font-size:22px}.reality-tooltip{font-size:11px}.reality-method{padding:25px}}
 
-@media(min-width:951px){body[data-view="presentation"][data-step="6"] .presentation-view{min-height:730px}}
+@media(min-width:951px){body[data-view="presentation"][data-step="7"] .presentation-view{min-height:730px}}
 
 /* Hypothesis breaks into falling tiles; reality rises in underneath it. */
 .hypothesis-breakup-layer{position:fixed;inset:0;z-index:10;overflow:hidden;pointer-events:none}

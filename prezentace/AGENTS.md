@@ -13,3 +13,5 @@
 - Na slajdech nezobrazuj tlačítka „Rozcestník“ a „Nápady k animaci“ ani jejich společný panel. Poznámkový dialog a klávesová zkratka N byly odstraněny.
 
 - Pátý snímek je živá mapa z `../mapa/` přes zachovaný iframe. Prostor mapy vyplňuje snímek bez dalšího nadpisu a wordmarku; pod mapou zůstává navigace a časovač. Klávesové šipky přepínají snímky i při zaměření mapy, ale neruší formulářová pole a dialogy.
+
+- Pořadí závěru: 5 původní mapa, 6 web `../klastry/`, 7 hypotéza, 8 realita, 9 znovu původní mapa. Snímky 5 a 9 sdílejí tentýž zachovaný mapový iframe; klastry mají vlastní. Všechny vložené weby vyplňují snímek nad navigací a časovačem a přebírají klávesové přepínání snímků mimo formuláře a otevřené dialogy.

@@ -8,10 +8,14 @@ const slideTitles = [
   'Krize na Ukrajině.',
   'Jak číst migraci: přistěhovalí, vystěhovalí a migrační saldo.',
   'Interaktivní mapa migrace obcí Ústeckého kraje.',
+  'Interaktivní mapa migračních klastrů obcí Ústeckého kraje.',
   'Hypotéza: poptávka firem po zaměstnancích, přistěhování lidí a poptávka po bytech.',
-  'Realita: šest záměrů firem a skutečná migrace v jejich okolí.'
+  'Realita: šest záměrů firem a skutečná migrace v jejich okolí.',
+  'Interaktivní mapa migrace obcí Ústeckého kraje – závěr.'
 ];
 const slideCount = slideTitles.length;
+const HYPOTHESIS_SLIDE = 6;
+const REALITY_SLIDE = 7;
 const migrationExample = { incoming: 10, outgoing: 7 };
 migrationExample.balance = migrationExample.incoming - migrationExample.outgoing;
 let migrationAnimationFrame = null;
@@ -110,30 +114,39 @@ for (const [kind, count] of Object.entries(migrationExample)) {
   }
 }
 
-// Keep one live copy of the repository map so its selection survives slide changes.
-const mapFrame = $('#map-frame');
-function pauseMapPlayback() {
-  const frameDocument = mapFrame.contentDocument;
-  if (frameDocument) frameDocument.dispatchEvent(new Event('tt-decin:presentation-hidden'));
+// Keep both embedded apps mounted; the opening and closing map share one frame.
+const embeddedSlides = new Map([
+  [4, { section: $('#map-slide'), frame: $('#map-frame') }],
+  [5, { section: $('#clusters-slide'), frame: $('#clusters-frame') }],
+  [8, { section: $('#map-slide'), frame: $('#map-frame') }]
+]);
+const isEmbeddedSlide = index => embeddedSlides.has(index);
+function pauseEmbeddedPlayback(index) {
+  embeddedSlides.get(index)?.frame.contentDocument?.dispatchEvent(new Event('tt-decin:presentation-hidden'));
 }
-function prepareMap() {
-  if (!mapFrame.hasAttribute('src')) mapFrame.src = mapFrame.dataset.src;
+function prepareEmbedded(index) {
+  const frame = embeddedSlides.get(index)?.frame;
+  if (frame && !frame.hasAttribute('src')) frame.src = frame.dataset.src;
 }
-function showMap() {
-  prepareMap();
-  mapFrame.contentWindow.dispatchEvent(new Event('resize'));
+function showEmbedded(index) {
+  prepareEmbedded(index);
+  embeddedSlides.get(index)?.frame.contentWindow?.dispatchEvent(new Event('resize'));
 }
-mapFrame.addEventListener('load', () => {
-  const frameDocument = mapFrame.contentDocument;
-  if (!frameDocument) return;
-  // Keys inside an iframe do not bubble to the presentation document.
-  frameDocument.addEventListener('keydown', event => {
-    if (!['ArrowLeft', 'ArrowRight', 'PageUp', 'PageDown', 'Home', 'End', 'f', 'F'].includes(event.key)) return;
-    handlePresentationKeydown(event);
-    if (event.defaultPrevented) event.stopImmediatePropagation();
-  }, true);
-  if (currentView !== 'presentation' || currentSlide !== 4) pauseMapPlayback();
-});
+for (const frame of new Set([...embeddedSlides.values()].map(slide => slide.frame))) {
+  frame.addEventListener('load', () => {
+    const frameDocument = frame.contentDocument;
+    if (!frameDocument) return;
+    // Capture keys before the embedded app handles its own year navigation.
+    frameDocument.addEventListener('keydown', event => {
+      if (!['ArrowLeft', 'ArrowRight', 'PageUp', 'PageDown', 'Home', 'End', 'f', 'F'].includes(event.key)) return;
+      handlePresentationKeydown(event);
+      if (event.defaultPrevented) event.stopImmediatePropagation();
+    }, true);
+    if (currentView !== 'presentation' || embeddedSlides.get(currentSlide)?.frame !== frame) {
+      frameDocument.dispatchEvent(new Event('tt-decin:presentation-hidden'));
+    } else frame.contentWindow.dispatchEvent(new Event('resize'));
+  });
+}
 
 // This is an expected trend, not a series of measured investment outcomes.
 let hypothesisAnimationFrame = null;
@@ -197,7 +210,7 @@ function prepareReality() {
 }
 function showReality() {
   prepareReality().then(controller => {
-    if (controller && currentView === 'presentation' && currentSlide === 6) controller.show();
+    if (controller && currentView === 'presentation' && currentSlide === REALITY_SLIDE) controller.show();
   });
 }
 
@@ -274,7 +287,7 @@ window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',
 // Animate the existing iframe in place: moving or cloning it would reload the
 // embedded app and lose the selected municipality, year and camera position.
 let mapTransition = null;
-const mapNeighborSlides = { 3: '#terms-slide', 4: '#map-slide', 5: '#hypothesis-slide' };
+const mapNeighborSlides = { 3: '#terms-slide', 4: '#map-slide', 5: '#clusters-slide', 6: '#hypothesis-slide', 7: '#reality-slide', 8: '#map-slide' };
 function finishMapTransition(startContent = false) {
   if (!mapTransition) return;
   const transition = mapTransition;
@@ -290,10 +303,10 @@ function finishMapTransition(startContent = false) {
   incoming.classList.remove('map-transition-incoming', 'map-transition-pending');
   incoming.inert = transition.incomingInert;
   document.body.classList.remove('map-transition-running');
-  $('#deck-brand').hidden = currentView === 'presentation' && currentSlide === 4;
+  $('#deck-brand').hidden = currentView === 'presentation' && isEmbeddedSlide(currentSlide);
   if (currentView === 'presentation' && currentSlide === transition.to) {
-    if (transition.to === 4) mapFrame.contentWindow.dispatchEvent(new Event('resize'));
-    if (transition.to === 5 && startContent) playHypothesisAnimation();
+    if (isEmbeddedSlide(transition.to)) showEmbedded(transition.to);
+    if (transition.to === HYPOTHESIS_SLIDE && startContent) playHypothesisAnimation();
   }
 }
 function captureMapTransition(from, to) {
@@ -323,20 +336,20 @@ function playMapTransition(transition) {
   mapTransition = transition;
   const { outgoing, incoming, from, to } = transition;
   const direction = to > from ? 1 : -1;
-  const enteringMap = to === 4;
+  const enteringMap = isEmbeddedSlide(to);
   const ease = 'cubic-bezier(.22,1,.36,1)';
   document.body.classList.add('map-transition-running');
   outgoing.hidden = false;
   incoming.classList.remove('entering');
   incoming.classList.add('map-transition-incoming');
   // Keep keyboard focus on the destination while pointer interactions wait.
-  if (to === 5) {
+  if (to === HYPOTHESIS_SLIDE) {
     // Start the hypothesis drawing after it is fully revealed, not behind the map.
     incoming.classList.remove('is-playing');
     incoming.classList.add('map-transition-pending');
   }
   const brand = $('#deck-brand');
-  brand.hidden = false;
+  brand.hidden = isEmbeddedSlide(from) && isEmbeddedSlide(to);
   transition.animations.push(outgoing.animate(enteringMap ? [
     { opacity: 1, transform: 'translateX(0) scale(1)' },
     { opacity: 0, transform: `translateX(${-direction * 64}px) scale(.97)` }
@@ -374,28 +387,32 @@ function renderRoute({ focus = false } = {}) {
   cancelHypothesisBreakup();
   finishMapTransition();
   const destination = validPresentation ? Number(presentationMatch[1]) - 1 : null;
-  const mapScene = previousView === 'presentation' && destination !== null && Math.abs(destination - previousSlide) === 1 && (previousSlide === 4 || destination === 4) && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  const mapScene = previousView === 'presentation' && destination !== null && Math.abs(destination - previousSlide) === 1 && (isEmbeddedSlide(previousSlide) || isEmbeddedSlide(destination)) && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
     ? captureMapTransition(previousSlide, destination) : null;
-  const breakup = previousView === 'presentation' && previousSlide === 5 && validPresentation && Number(presentationMatch[1]) === 7 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  const breakup = previousView === 'presentation' && previousSlide === HYPOTHESIS_SLIDE && validPresentation && destination === REALITY_SLIDE && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
     ? captureHypothesisBreakup() : null;
   currentView = validPresentation ? 'presentation' : hash === '#prohlidka' ? 'guide' : 'home';
   currentSlide = validPresentation ? Number(presentationMatch[1]) - 1 : 0;
   Object.entries(views).forEach(([key, element]) => { element.hidden = key !== currentView; });
   document.body.dataset.view = currentView;
-  const mapActive = currentView === 'presentation' && currentSlide === 4;
+  const mapActive = currentView === 'presentation' && isEmbeddedSlide(currentSlide);
   document.body.classList.toggle('map-slide-active', mapActive);
   $('#deck-brand').hidden = mapActive;
-  $('#map-slide').hidden = !mapActive;
-  $('#hypothesis-slide').hidden = currentView !== 'presentation' || currentSlide !== 5;
-  const realityActive = currentView === 'presentation' && currentSlide === 6;
+  $('#map-slide').hidden = !mapActive || currentSlide === 5;
+  $('#clusters-slide').hidden = !mapActive || currentSlide !== 5;
+  $('#hypothesis-slide').hidden = currentView !== 'presentation' || currentSlide !== HYPOTHESIS_SLIDE;
+  const realityActive = currentView === 'presentation' && currentSlide === REALITY_SLIDE;
   $('#reality-slide').hidden = !realityActive;
   if (realityActive) showReality();
   else realityController?.hide();
-  if (currentView === 'presentation' && currentSlide === 5) prepareReality();
-  if (currentView !== 'presentation' || currentSlide !== 5) stopHypothesisAnimation();
-  if (currentView === 'presentation' && currentSlide === 3) prepareMap();
-  if (mapActive) showMap();
-  else if (previousView === 'presentation' && previousSlide === 4) pauseMapPlayback();
+  if (currentView === 'presentation' && currentSlide === HYPOTHESIS_SLIDE) prepareReality();
+  if (currentView !== 'presentation' || currentSlide !== HYPOTHESIS_SLIDE) stopHypothesisAnimation();
+  if (currentView === 'presentation') {
+    if (currentSlide === 3 || currentSlide === REALITY_SLIDE) prepareEmbedded(4);
+    if (currentSlide === 4) prepareEmbedded(5);
+  }
+  if (mapActive) showEmbedded(currentSlide);
+  if (previousView === 'presentation' && isEmbeddedSlide(previousSlide) && (currentView !== 'presentation' || embeddedSlides.get(previousSlide)?.frame !== embeddedSlides.get(currentSlide)?.frame)) pauseEmbeddedPlayback(previousSlide);
 
   if (currentView === 'presentation') {
     $('#slide-one').hidden = currentSlide !== 0;
@@ -418,7 +435,7 @@ function renderRoute({ focus = false } = {}) {
     });
     // Keep the shared graph mounted between slides 2 and 3.
     if (previousView !== currentView || currentSlide === 0 || previousSlide === 0 || currentSlide >= 3 || previousSlide >= 3) {
-      animate(currentSlide === 0 ? $('#slide-one') : currentSlide === 3 ? $('#terms-slide') : currentSlide === 4 ? $('#map-slide') : currentSlide === 5 ? $('#hypothesis-slide') : currentSlide === 6 ? $('#reality-slide') : $('#timeline-slide'), 'entering');
+      animate(currentSlide === 0 ? $('#slide-one') : currentSlide === 3 ? $('#terms-slide') : isEmbeddedSlide(currentSlide) ? embeddedSlides.get(currentSlide).section : currentSlide === HYPOTHESIS_SLIDE ? $('#hypothesis-slide') : currentSlide === REALITY_SLIDE ? $('#reality-slide') : $('#timeline-slide'), 'entering');
       if (currentSlide === 0) {
         document.querySelectorAll('.unit-row').forEach(item => animate(item, 'unit-enter'));
       }
@@ -426,7 +443,7 @@ function renderRoute({ focus = false } = {}) {
       animate($('.timeline-copy'));
     }
     if (currentSlide === 3 && (previousView !== 'presentation' || previousSlide !== 3)) playMigrationExample();
-    if (currentSlide === 5 && !mapScene && (previousView !== 'presentation' || previousSlide !== 5)) playHypothesisAnimation();
+    if (currentSlide === HYPOTHESIS_SLIDE && !mapScene && (previousView !== 'presentation' || previousSlide !== HYPOTHESIS_SLIDE)) playHypothesisAnimation();
     // Commit initial geometry before revealing the event strip on direct entry.
     void $('#timeline-slide').offsetWidth;
     document.body.dataset.step = String(currentSlide);
@@ -443,7 +460,7 @@ function renderRoute({ focus = false } = {}) {
     if (previousView !== currentView) animate(views[currentView], 'entering');
   }
   if (focus) {
-    const heading = currentView === 'home' ? $('#home-title') : currentView === 'guide' ? $('#guide-title') : currentSlide === 0 ? $('#deck-brand') : currentSlide === 3 ? $('#terms-title') : currentSlide === 4 ? $('#map-slide') : currentSlide === 5 ? $('#hypothesis-title') : currentSlide === 6 ? $('#reality-title') : $('#timeline-title');
+    const heading = currentView === 'home' ? $('#home-title') : currentView === 'guide' ? $('#guide-title') : currentSlide === 0 ? $('#deck-brand') : currentSlide === 3 ? $('#terms-title') : isEmbeddedSlide(currentSlide) ? embeddedSlides.get(currentSlide).section : currentSlide === HYPOTHESIS_SLIDE ? $('#hypothesis-title') : currentSlide === REALITY_SLIDE ? $('#reality-title') : $('#timeline-title');
     heading.focus({ preventScroll: true });
     if (previousView !== currentView || window.innerWidth <= 600) window.scrollTo({ top: 0, behavior: 'instant' });
   }
