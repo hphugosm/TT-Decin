@@ -53,3 +53,7 @@ Uživatel sjednotil příchody na modrou a odchody na oranžovou v mapě a grafe
 ## Hledání nad mapou — 24. 10. 2026
 
 Vyhledávání je přes celou šířku pod třemi kartami a nad mapou. Návrhy odpovídají začátku názvu bez ohledu na diakritiku, nemají limit 12 výsledků a delší seznam se posouvá. Přesná shoda je první; Enter vybere obec a spustí existující plynulé přiblížení i propojení detailů.
+
+## Odstranění druhého grafu — 24. 10. 2026
+
+Na výslovné přání uživatele byl graf Přistěhování × vystěhování včetně přepínací záložky a vykreslování odstraněn. Aktuální rozhraní obsahuje pouze časový bodový graf; při saldu nadále zobrazuje příchody, odchody a saldo ve třech barvách. Toto rozhodnutí nahrazuje předchozí schválení funkce G.

@@ -1,4 +1,4 @@
-import {derivedValue, scatterPoint, colorDomain, colorFor, metricLabel, unitLabel} from './radar-engine.mjs';
+import {derivedValue, metricLabel, unitLabel} from './radar-engine.mjs';
 const metricColors={incoming:'#173da5',outgoing:'#de7524',balance:'#7c3aad'};
 const NS='http://www.w3.org/2000/svg', finite=Number.isFinite;
 const fmt=n=>finite(n)?new Intl.NumberFormat('cs-CZ',{maximumFractionDigits:n&&Math.abs(n)<1?Math.min(6,2-Math.floor(Math.log10(Math.abs(n)))):2}).format(n):'nedostupné';
@@ -31,28 +31,4 @@ export function renderTimeChart(svg,{dataset:ds,settings,selectedCode=null,year,
  let note=showReference?'Slabší body zobrazují krajskou referenci se stejným časovým oknem a režimem.':selectedCode&&settings.unit==='absolute'?'Přímé porovnání obce s krajskou referencí je dostupné v procentech obyvatel obce.':settings.unit==='share'&&!selectedCode?'Celý kraj odpovídá 100 %; změna tohoto celku je 0 procentních bodů.':settings.unit==='deviation'&&!selectedCode?'Odchylka kraje od vlastní reference je 0.':'Chybějící roky zůstávají bez bodu.';
  if(flows.length)note='Modře přistěhovalí, oranžově vystěhovalí, fialově saldo. '+(showReference?'Šedé body jsou krajská reference salda. ':'')+'Všechny řady používají stejnou jednotku, shrinkage a časový režim. Chybějící hodnoty zůstávají bez bodů.';
  return {note,count:local.filter(p=>finite(p.result.value)).length,referenceCount:reference.filter(p=>finite(p.result.value)).length,domain:[lo,hi]};
-}
-const scatterCache=new WeakMap();
-function scatterLimits(ds,s){let cache=scatterCache.get(ds);if(!cache){cache=new Map();scatterCache.set(ds,cache);}const key=JSON.stringify({unit:s.unit==='deviation'?'deviation':'rate',mode:s.mode,window:s.window,shrinkage:s.shrinkage,baseYear:s.baseYear});if(cache.has(key))return cache.get(key);let min=0,max=0,maxPopulation=0;for(const r of ds.records)if(finite(r.population))maxPopulation=Math.max(maxPopulation,r.population);for(const yr of ds.calendarYears)for(const code of ds.codes){const p=scatterPoint(ds,code,yr,s);if(p.available){min=Math.min(min,p.x,p.y);max=Math.max(max,p.x,p.y);}}const range=extent([min,max],{nonnegative:s.mode==='value'&&s.unit!=='deviation'}),result={range,maxPopulation};cache.set(key,result);return result;}
-export function renderScatterChart(svg,{dataset:ds,settings,selectedCode,hoverCode,year,domain,neutral=0,contrast=1,onSelect,onHover}){
- const mobile=svg.clientWidth>0&&svg.clientWidth<600;
- setup(svg,mobile?500:420,'Přistěhování × vystěhování · bodový graf obecních měr');if(mobile)svg.setAttribute('viewBox','0 0 440 500');if(!ds?.codes?.length)return {note:'Nahrajte data pro zobrazení obcí.',count:0};
- const {range:[lo,hi],maxPopulation}=scatterLimits(ds,settings),left=mobile?85:280,top=35,size=mobile?290:300,bottom=top+size,x=v=>left+(v-lo)/(hi-lo)*size,y=v=>bottom-(v-lo)/(hi-lo)*size,colors=domain||colorDomain(ds,settings),radius=p=>finite(p)&&p>0&&maxPopulation>0?18*Math.sqrt(p/maxPopulation):3;
- for(let i=0;i<=4;i++){const v=lo+(hi-lo)*i/4;line(svg,x(v),top,x(v),bottom);line(svg,left,y(v),left+size,y(v));label(svg,x(v),bottom+21,fmt(v),{'text-anchor':'middle'});label(svg,left-10,y(v)+4,fmt(v),{'text-anchor':'end'});}line(svg,x(0),top,x(0),bottom,{stroke:'#a4afc0'});line(svg,left,y(0),left+size,y(0),{stroke:'#a4afc0'});line(svg,x(lo),y(lo),x(hi),y(hi),{stroke:'#8392ab','stroke-dasharray':'5 4','data-guide':'diagonal'});
- const axis=unitLabel({...settings,unit:settings.unit==='deviation'?'deviation':'rate'}),prefix=settings.mode==='yoy'?'Změna ':settings.mode==='difference'?'Rozdíl B − A: ':'';
- label(svg,left+size/2,mobile?367:391,mobile?`Přistěhovalí · ${settings.unit==='deviation'||settings.mode!=='value'?'p. b.':'%'}`:`${prefix}Přistěhovalí · ${axis}`,{'text-anchor':'middle',fill:metricColors.incoming});label(svg,20,190,mobile?`Vystěhovalí · ${settings.unit==='deviation'||settings.mode!=='value'?'p. b.':'%'}`:`${prefix}Vystěhovalí · ${axis}`,{transform:'rotate(-90 20 190)','text-anchor':'middle',fill:metricColors.outgoing});
- if(mobile)label(svg,left,17,`${prefix}${settings.unit==='deviation'?'Odchylky od kraje':'Místní míry'}`);
- const points=ds.codes.map(c=>scatterPoint(ds,c,year,settings)).filter(p=>p.available).sort((a,b)=>Number(a.code===selectedCode||a.code===hoverCode)-Number(b.code===selectedCode||b.code===hoverCode)||(b.population||0)-(a.population||0));
- for(const p of points){point(svg,{x:x(p.x),y:y(p.y),r:radius(p.population),color:colorFor(p.colorValue,colors,neutral,contrast,settings.metric),selected:p.code===selectedCode||p.code===hoverCode,title:`${name(ds,p.code)} (${p.code}) · ${year}\nPřistěhovalí: ${fmt(p.x)}; vystěhovalí: ${fmt(p.y)} ${axis}\n${ranges(p.incoming)}\nPopulace koncového roku: ${fmt(p.population)}\nBarva: ${metricLabel(settings.metric)} ${fmt(p.colorValue)} ${unitLabel(settings)}`,attrs:{'data-code':p.code,'data-year':year,'data-series':'local','data-x':p.x,'data-y':p.y,'data-population':p.population},onClick:()=>onSelect?.(p.code),onHover});}
- if(mobile){
- label(svg,35,394,`Rok ${year} · ${points.length} / ${ds.codes.length} obcí`);
- label(svg,35,415,'Plocha = populace koncového roku');
- if(maxPopulation>0)for(const [i,f] of [.1,.5,1].entries()){const p=maxPopulation*f,cx=85+i*130;add(svg,'circle',{cx,cy:444,r:radius(p),fill:'#e5ebf8',stroke:'#173DA5'});label(svg,cx,480,fmt(Math.round(p)),{'text-anchor':'middle'});}
- }else{
- label(svg,650,65,`Rok ${year} · ${points.length} / ${ds.codes.length} obcí`);label(svg,650,95,'Plocha bubliny = populace v koncovém roce');
- if(maxPopulation>0)for(const [i,f] of [.1,.5,1].entries()){const p=maxPopulation*f;add(svg,'circle',{cx:680,cy:138+i*49,r:radius(p),fill:'#e5ebf8',stroke:'#173DA5'});label(svg,710,142+i*49,`${fmt(Math.round(p))} obyvatel`);}
- label(svg,650,310,'Barva odpovídá aktuální metrice mapy.');label(svg,650,330,'Rozsah os i velikostní škála jsou pevné v čase.');
- }
- const meaning=settings.mode==='value'?(settings.unit==='deviation'?'stejná odchylka obou kanálů od kraje; pod diagonálou je vyšší odchylka příchodů':'stejná míra příchodů a odchodů; pod diagonálou převažují příchody'):'stejná změna obou kanálů; pod diagonálou je změna příchodů vyšší než změna odchodů';
- return {note:`Osy vždy zobrazují ${axis} se shodným časovým oknem. Diagonála X = Y znamená: ${meaning}. ${settings.mode==='difference'?`Směr porovnání: ${year} minus ${settings.baseYear}.`:''}`,count:points.length,domain:[lo,hi],maxPopulation};
 }
