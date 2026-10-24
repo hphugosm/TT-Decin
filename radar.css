@@ -37,3 +37,32 @@
 @media(max-width:999px){.radar-layout{display:flex;flex-direction:column}.map-column,.side-column{display:contents}.side-column .cards{order:1;margin-top:0}.side-column .map-search{order:2}.map-panel{order:3}.timeline{order:4}.comparison-bar{order:5}.side-column .map-detail{order:6}.side-column .chart-panel{order:7}}
 
 .map-search .search-icon{position:absolute;left:12px;top:22px;transform:translateY(-50%);width:20px;height:20px;fill:none;stroke:#111;stroke-width:2;stroke-linecap:round;pointer-events:none}.side-column .map-search input,.map-search input{padding-left:41px}@media(max-width:999px){.side-column .map-search{order:0}}
+
+/* Individual presentation panels: keep the existing nodes and selection. */
+.panel-fullscreen-toggle{display:inline-flex;align-items:center;justify-content:center;flex:none;width:32px!important;height:32px;padding:6px!important;pointer-events:auto}
+.panel-fullscreen-toggle svg{display:block;width:18px;height:18px}
+.side-column #map-detail{position:relative;padding-right:52px}
+#map-detail>.panel-fullscreen-toggle{position:absolute;right:10px;top:9px}
+.chart-heading .panel-fullscreen-toggle{margin-left:8px}
+body.panel-fullscreen-open{overflow:hidden}
+.panel-expanded.panel-expanded{position:fixed!important;inset:0!important;z-index:1000;width:100vw!important;height:100dvh!important;max-width:none!important;max-height:none!important;margin:0!important;border:0;border-radius:0;background:#fff;display:flex!important;flex-direction:column;min-height:0;overflow:auto;pointer-events:auto}
+.panel-expanded .panel-heading,.panel-expanded .chart-heading{flex-shrink:0;padding:16px 20px;gap:12px}
+.panel-expanded .map-stage{flex:1;min-height:0;height:auto}
+.panel-expanded .map-stage svg{height:100%}
+.panel-expanded #time-panel{flex:1;min-height:180px}
+.panel-expanded #time-chart{height:100%;width:100%}
+.panel-expanded .chart-note{padding:12px 20px;font-size:12px}
+#map-detail.panel-expanded{justify-content:center;padding:clamp(24px,6vw,100px)!important;gap:24px}
+#map-detail.panel-expanded #map-town{font-size:clamp(32px,5vw,72px)}
+#map-detail.panel-expanded #map-value{font-size:clamp(24px,3vw,44px);text-align:left}
+#map-detail.panel-expanded #map-population dl{display:flex;flex-wrap:wrap;gap:32px}
+#map-detail.panel-expanded #map-population dt{font-size:16px}
+#map-detail.panel-expanded #map-population dd{font-size:clamp(24px,3vw,44px)}
+#map-detail.panel-expanded small{font-size:16px;max-width:850px}
+#map-detail.panel-expanded #explain-open{align-self:flex-start;width:auto;font-size:14px}
+@media(max-width:600px){.panel-expanded .panel-heading{flex-wrap:wrap}.panel-expanded .map-actions{margin-left:auto}}
+
+.map-column.panel-expanded{padding:12px;gap:0}
+.map-column.panel-expanded>.map-panel{display:flex;flex-direction:column;flex:1;min-height:0;margin:0}
+.map-column.panel-expanded>.timeline{display:flex;flex-shrink:0;padding:12px 4px 0}
+.map-column.panel-expanded>.comparison-bar{flex-shrink:0}

@@ -81,3 +81,5 @@ Přistěhování používá modrou a vystěhování oranžovou v mapě, legendě
 Na notebooku a velkém displeji je mapa vlevo a ovládání, informace a graf v pravém sloupci. Časová osa je pod mapou. Mapa vyplňuje dostupnou výšku a informace ji nezakrývají. Na úzké obrazovce se obsah skládá pod sebe, metriky a hledání jsou před mapou.
 
 Samostatné vyhledávání s černou lupou je nad třemi kartami v pravém sloupci. Název území zůstává statickým nadpisem.
+
+Ikona v rohu mapy, přehledu kraje/obce a grafu zvětší příslušný blok na celé okno stránky. Prohlížeč zůstává v běžném režimu. Mapa zahrnuje časovou osu a ovládání roků. Escape nebo stejná ikona obnoví původní rozložení se zachovaným výběrem a rokem.
