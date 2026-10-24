@@ -7,7 +7,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const expandIcon='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3H3v6M15 3h6v6M3 15v6h6M21 15v6h-6"/></svg>';
 const DEFAULT_PROFILE='extended';
 const PROFILE_ORDER=['balanced','relaxed','loose','extended'];
-let profiles,seriesData,towns,townIndex,map,provenance,timer=null,chartFrame=0,expanded=null,inertNodes=[],lastExpandButton=null;
+let profiles,seriesData,towns,townIndex,map,provenance,chartFrame=0,expanded=null,inertNodes=[],lastExpandButton=null;
 const state={profile:DEFAULT_PROFILE,mode:'immigration',minSize:2,stableOnly:false,metric:'rate',year:2025,group:null,code:null};
 const modeData=()=>profiles[state.profile].modes[state.mode];
 const groups=()=>visibleGroups(modeData(),state);
@@ -15,31 +15,34 @@ const selectedGroup=()=>modeData().groups.find(g=>g.id===state.group)||null;
 const selectedTowns=()=>selectedGroup()?.member_ids.map(id=>townIndex.get(id))||(state.code?[townIndex.get(state.code)]:towns);
 const swatch=color=>`<i class="swatch" style="--swatch:${color}" aria-hidden="true"></i>`;
 const stat=(value,label)=>`<div class="stat"><strong>${esc(value)}</strong><span>${esc(label)}</span></div>`;
-function openDialog(id){pause();$(id).showModal();}
-function initProfileOptions(){
- $('profile-options').innerHTML=PROFILE_ORDER.map(key=>{const p=profiles[key].modes[state.mode].parameters;return `<label class="profile-option"><input type="radio" name="profile" value="${key}" aria-describedby="profile-help"><span><span class="profile-title"><strong>${percent(p.min_agreement)}</strong><span>${PROFILE_LABELS[key]}${key===DEFAULT_PROFILE?' · výchozí':''}</span></span><small>Obě korelace alespoň ${format(p.min_pearson,2)}</small><small data-profile-count="${key}"></small></span></label>`;}).join('');
+function openDialog(id){$(id).showModal();}
+function initProfileControl(){
+ $('profile-stops').innerHTML=PROFILE_ORDER.map((key,index)=>{const p=profiles[key].modes[state.mode].parameters;return `<button data-profile-step="${index}" style="--step:${index}" aria-pressed="false"><strong>${percent(p.min_agreement)}</strong><span>${PROFILE_LABELS[key]}</span></button>`;}).join('');
 }
-function syncSettings(){for(const [id,value] of [['min-size',state.minSize],['chart-metric',state.metric]])$(id).value=value;document.querySelectorAll('[name="profile"]').forEach(input=>input.checked=input.value===state.profile);$('stable-only').checked=state.stableOnly;}
-function updateProfileCounts(){
- document.querySelectorAll('[data-profile-count]').forEach(el=>{const list=profiles[el.dataset.profileCount].modes[state.mode].groups,maxSize=Math.max(0,...list.map(g=>g.member_ids.length));el.textContent=`${list.length} skupin · až ${maxSize} ${maxSize>=5?'obcí':'obce'}`;});
+function syncSettings(){for(const [id,value] of [['min-size',state.minSize],['chart-metric',state.metric]])$(id).value=value;$('stable-only').checked=state.stableOnly;}
+function renderProfileControl(){
+ const p=modeData().parameters,list=modeData().groups,maxSize=Math.max(0,...list.map(g=>g.member_ids.length)),value=percent(p.min_agreement),description=`${PROFILE_LABELS[state.profile]} · korelace ≥ ${format(p.min_pearson,2)} · až ${maxSize} ${maxSize>=5?'obcí':'obce'}`;
+ $('profile-slider').value=PROFILE_ORDER.indexOf(state.profile);
+ $('profile-slider').setAttribute('aria-valuetext',`${value}, ${description}`);
+ $('profile-value').textContent=value;$('profile-description').textContent=description;
+ document.querySelectorAll('[data-profile-step]').forEach(button=>{const key=PROFILE_ORDER[Number(button.dataset.profileStep)],data=profiles[key].modes[state.mode];button.setAttribute('aria-pressed',String(key===state.profile));button.title=`${PROFILE_LABELS[key]}: shoda alespoň ${percent(data.parameters.min_agreement)}, obě korelace alespoň ${format(data.parameters.min_pearson,2)} · ${data.groups.length} skupin`;});
 }
-function pause(){clearInterval(timer);timer=null;$('play').textContent='▶ Přehrát';$('play').setAttribute('aria-label','Přehrát časovou osu');}
-function play(){pause();$('play').textContent='Ⅱ Pozastavit';$('play').setAttribute('aria-label','Pozastavit časovou osu');timer=setInterval(()=>stepYear(1,false),1000/Number($('speed').value));}
-function setYear(year,stop=true){if(stop)pause();state.year=Math.min(seriesData.years.at(-1),Math.max(seriesData.years[0],Number(year)));render();}
-function stepYear(step,stop=true){let i=seriesData.years.indexOf(state.year);setYear(seriesData.years[(i+step+seriesData.years.length)%seriesData.years.length],stop);}
-function resetSelection(){pause();state.group=null;state.code=null;$('town-search').value='';closeSearch();render();map.reset();}
-function pickGroup(id){const g=modeData().groups.find(g=>g.id===id);if(!g)return;pause();state.group=id;state.code=null;render();map.fit(g.member_ids);}
+function selectProfile(index){const profile=PROFILE_ORDER[Number(index)];if(profile&&profile!==state.profile){state.profile=profile;changeAnalysis();}}
+function setYear(year){state.year=Math.min(seriesData.years.at(-1),Math.max(seriesData.years[0],Number(year)));render();}
+function stepYear(step){const i=seriesData.years.indexOf(state.year);setYear(seriesData.years[(i+step+seriesData.years.length)%seriesData.years.length]);}
+function resetSelection(){state.group=null;state.code=null;$('town-search').value='';closeSearch();render();map.reset();}
+function pickGroup(id){const g=modeData().groups.find(g=>g.id===id);if(!g)return;state.group=id;state.code=null;render();map.fit(g.member_ids);}
 function pickTown(code){
  if(!townIndex.has(code))return;
  if(state.code===code){resetSelection();return;}
- pause();const gid=modeData().memberships[code],g=modeData().groups.find(g=>g.id===gid);
+ const gid=modeData().memberships[code],g=modeData().groups.find(g=>g.id===gid);
  if(g&&!groups().some(x=>x.id===gid)){state.minSize=2;state.stableOnly=false;syncSettings();}
  state.group=g?.id||null;state.code=code;render();map.fit(g?.member_ids||[code]);
 }
 function pickMember(code){state.code=state.code===code?null:code;render();}
-function changeAnalysis(){pause();state.group=null;state.code=null;$('town-search').value='';closeSearch();syncSettings();render();map.reset();}
+function changeAnalysis(){state.group=null;state.code=null;$('town-search').value='';closeSearch();syncSettings();render();map.reset();}
 function render(){
- updateProfileCounts();
+ renderProfileControl();
  const visible=groups(),g=selectedGroup(),chosen=selectedTowns(),hasSelection=Boolean(g||state.code),i=seriesData.years.indexOf(state.year),totals=aggregate(chosen,state.mode,i);
  const title=g?g.name:state.code?townIndex.get(state.code).name:'Ústecký kraj';
  $('territory-title').textContent=title;$('territory-title').classList.toggle('long-title',title.length>35);
@@ -47,7 +50,7 @@ function render(){
  if(g&&g.member_ids.length>=5)$('map-territory').textContent=`${g.member_ids.length} obcí · skupina`;
  $('overview-label').textContent=g?(g.stable?'STABILNĚJŠÍ PRŮZKUMNÁ SKUPINA':'PRŮZKUMNÁ SKUPINA'):state.code?'OBEC BEZ SKUPINY':'MIGRAČNÍ KLASTRY · '+PROFILE_LABELS[state.profile].toLocaleUpperCase('cs');
  $('population').textContent=`${format(totals.population,0)} obyvatel`;$('population').title='Počet obyvatel k 1. červenci vybraného roku';
- for(const id of ['map-year','year-label','detail-year'])$(id).textContent=state.year;$('year').value=state.year;
+ for(const id of ['map-year','detail-year'])$(id).textContent=state.year;
  document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===state.mode)));
  if(g){
   $('stats').innerHTML=stat(String(g.member_ids.length),'obcí ve skupině')+stat(percent(g.quality.agreement),'průměrná shoda směrů')+stat(format(g.quality.min_pearson,2),'nejnižší korelace r');
@@ -112,12 +115,12 @@ function bind(){
  document.querySelectorAll('[data-expand]').forEach(b=>{b.innerHTML=expandIcon;b.dataset.originalLabel=b.getAttribute('aria-label');b.setAttribute('aria-pressed','false');b.onclick=()=>toggleExpanded(b.dataset.expand);});
  document.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>b.closest('dialog').close());
  $('back-region').onclick=resetSelection;$('zoom-in').onclick=()=>map.zoomBy(1.35);$('zoom-out').onclick=()=>map.zoomBy(1/1.35);
- $('previous').onclick=()=>stepYear(-1);$('next').onclick=()=>stepYear(1);$('play').onclick=()=>timer?pause():play();$('speed').onchange=()=>{if(timer)play();};$('year').oninput=e=>setYear(e.target.value);
+ $('profile-slider').oninput=e=>selectProfile(e.target.value);$('profile-stops').onclick=e=>{const button=e.target.closest('[data-profile-step]');if(button)selectProfile(button.dataset.profileStep);};
  document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{if(state.mode!==b.dataset.mode){state.mode=b.dataset.mode;changeAnalysis();}});
  $('settings-open').onclick=()=>openDialog('settings-dialog');$('method-open').onclick=()=>openDialog('method-dialog');
  $('groups-open').onclick=()=>{$('group-search').value='';renderGroupList();openDialog('groups-dialog');};$('group-search').oninput=renderGroupList;
  $('detail-open').onclick=()=>{renderDetail();openDialog('detail-dialog');};
- $('profile-options').onchange=e=>{if(e.target.name==='profile'){state.profile=e.target.value;changeAnalysis();}};$('min-size').onchange=e=>{state.minSize=Number(e.target.value);changeAnalysis();};$('stable-only').onchange=e=>{state.stableOnly=e.target.checked;changeAnalysis();};
+ $('min-size').onchange=e=>{state.minSize=Number(e.target.value);changeAnalysis();};$('stable-only').onchange=e=>{state.stableOnly=e.target.checked;changeAnalysis();};
  $('chart-metric').onchange=e=>{state.metric=e.target.value;render();};$('settings-reset').onclick=()=>{Object.assign(state,{profile:DEFAULT_PROFILE,minSize:2,stableOnly:false,metric:'rate'});changeAnalysis();};
  $('clear-filters').onclick=()=>{state.minSize=2;state.stableOnly=false;changeAnalysis();};
  $('town-search').oninput=showSearch;$('town-search').onfocus=()=>{if($('town-search').value)showSearch();};
@@ -130,8 +133,8 @@ function bind(){
   const member=e.target.closest('[data-member]');if(member)pickMember(member.dataset.member);
   if(e.target.closest('#export-group'))exportGroup();
  });
- document.addEventListener('keydown',e=>{if(e.defaultPrevented)return;if(e.key==='Escape'&&expanded&&!document.querySelector('dialog[open]')){e.preventDefault();toggleExpanded(expanded);return;}if(document.querySelector('dialog[open]')||['INPUT','SELECT','TEXTAREA','BUTTON'].includes(e.target.tagName))return;if(e.key===' '){e.preventDefault();timer?pause():play();}else if(e.key==='ArrowLeft'){e.preventDefault();stepYear(-1);}else if(e.key==='ArrowRight'){e.preventDefault();stepYear(1);}});
- document.addEventListener('visibilitychange',()=>{if(document.hidden)pause();});
+ document.addEventListener('keydown',e=>{if(e.defaultPrevented)return;if(e.key==='Escape'&&expanded&&!document.querySelector('dialog[open]')){e.preventDefault();toggleExpanded(expanded);return;}if(document.querySelector('dialog[open]')||['INPUT','SELECT','TEXTAREA','BUTTON'].includes(e.target.tagName))return;if(e.key==='ArrowLeft'){e.preventDefault();stepYear(-1);}else if(e.key==='ArrowRight'){e.preventDefault();stepYear(1);}});
+
  new ResizeObserver(drawChart).observe($('chart-wrap'));
 }
 async function init(){try{
@@ -141,10 +144,10 @@ async function init(){try{
  if(Object.values(profiles).some(p=>p.meta.base_analysis_id!==annual.meta.analysis_id))throw Error('Neshodná verze ročních dat a skupin.');
  const query=new URLSearchParams(location.search);if(PROFILE_LABELS[query.get('profile')])state.profile=query.get('profile');if(MODES[query.get('mode')])state.mode=query.get('mode');if([2,3,4,5].includes(Number(query.get('min_size'))))state.minSize=Number(query.get('min_size'));
  state.year=annual.years.includes(Number(query.get('year')))?Number(query.get('year')):annual.years.at(-1);
- $('year').min=annual.years[0];$('year').max=annual.years.at(-1);$('year-ticks').innerHTML=annual.years.filter((_,i)=>i%5===0||i===annual.years.length-1).map(y=>`<span>${y}</span>`).join('');
+
  $('provenance-note').textContent=`Podkladem je dodaný balíček z 24. 10. 2026: ${towns.length} obcí, ${annual.years.length} let. Populace je stav k 1. červenci. Výsledky modelů zůstaly beze změny.`;
  $('workspace').hidden=false;$('loading').hidden=true;
- map=createClusterMap($('map'),geo,{onSelect:pickTown});initProfileOptions();syncSettings();bind();render();
+ map=createClusterMap($('map'),geo,{onSelect:pickTown});initProfileControl();syncSettings();bind();render();
  const target=query.get('group');if(target&&groups().some(g=>g.id===target))pickGroup(target);
  }catch(error){$('loading').hidden=false;$('loading').textContent='Mapu se nepodařilo načíst. Obnovte stránku nebo spusťte místní server. '+error.message;$('workspace').hidden=true;console.error(error);}}
 init();
