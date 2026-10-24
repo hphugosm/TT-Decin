@@ -34,7 +34,7 @@ export function parseCSV(text, { delimiter, header } = {}) {
   if(rows.some(r=>r.length!==width)) throw new Error('Řádky mají různý počet sloupců. Ověřte oddělovač.');
   return {headers: header ? rows.shift() : Array.from({length:width},(_,i)=>`Sloupec ${i+1}`), rows, delimiter, header};
 }
-const aliases = {code:['kodobce','kod','obec','code','vuzemi'],name:['nazevobce','nazevobcecurrent','nazevobcehistoricky','nazev','name'],year:['rok','year'],incoming:['pristehovali','pristehovani','incoming','i'],outgoing:['vystehovali','vystehovani','outgoing','e'],population:['pocetobyvatel','populace11','obyvatele','populace','population','p'],balance:['saldo','migracnisaldo','prirustekmigracni','balance']};
+const aliases = {code:['kodobce','kod','obec','code','vuzemi'],name:['nazevobce','nazevobcecurrent','nazevobcehistoricky','nazev','name'],year:['rok','year'],incoming:['pristehovali','pristehovani','incoming','i'],outgoing:['vystehovali','vystehovani','outgoing','e'],population:['pocetobyvatel','populace11','obyvatele','populace','population','p'],populationStart:['populace11','populationstart','pocetobyvatel11'],populationEnd:['populace3112','populationend','pocetobyvatel3112'],balance:['saldo','migracnisaldo','prirustekmigracni','balance']};
 export function suggestMapping(headers) { return Object.fromEntries(Object.entries(aliases).map(([key, names])=>[key,headers.findIndex(h=>names.includes(norm(h)))])); }
 export function suggestPopulationBasis(headers,mapping) { return norm(headers[mapping.population]) === 'populace11' ? 'start' : 'unknown'; }
 export function inspectCategories(table,mapping) {
@@ -59,6 +59,7 @@ export function validateImport(table,{mapping,filters={},expectedCodes=[],names=
     const key=`${code}:${year}`; if(seen.has(key)) errors.push(`Řádek ${line}: duplicitní obec × rok ${key}; vyberte jednu kategorii.`); seen.add(key);
     const record={code,name:String(row[mapping?.name]||names.get(code)||code),year};
     for(const channel of ['incoming','outgoing','population']) {const value=number(row[mapping?.[channel]],channel,line); record[channel]=value; if(value===null) missing[channel]++; else if(value<0) errors.push(`Řádek ${line}: záporná hodnota ${channel}.`); if(channel==='population'&&value===0) warnings.push(`Řádek ${line}: nulová populace; míry budou nedostupné.`);}
+    for(const channel of ['populationStart','populationEnd']){const value=number(row[mapping?.[channel]],channel,line);record[channel]=value;if(value!==null&&value<0)errors.push(`Řádek ${line}: záporná hodnota ${channel}.`);}
     const balance=number(row[mapping?.balance],'saldo',line); if(balance!==null&&record.incoming!==null&&record.outgoing!==null&&Math.abs(balance-(record.incoming-record.outgoing))>1e-8) errors.push(`Řádek ${line}: dodané saldo neodpovídá přistěhovalí minus vystěhovalí.`);
     records.push(record);
   }

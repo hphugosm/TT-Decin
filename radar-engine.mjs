@@ -11,6 +11,18 @@ export function createDataset(records, expectedCodes, meta={}) {
   const minYear=years[0]??null,maxYear=years.at(-1)??null;
   return {records:normalized,codes,years,calendarYears:minYear===null?[]:Array.from({length:maxYear-minYear+1},(_,i)=>minYear+i),minYear,maxYear,meta,index,names:new Map([...normalized].sort((a,b)=>a.year-b.year).filter(r=>r.name).map(r=>[r.code,r.name])),cache:new Map()};
 }
+export function populationSummary(d,code,year){
+  const codes=code==null?d.codes:[String(code)];
+  const basis=d.meta.populationBasis;
+  const startBasis=basis==='start'||d.meta.populationDate==='01-01';
+  const endBasis=basis==='end'||d.meta.populationDate==='12-31';
+  const sum=(key,fallback)=>{
+    const values=codes.map(c=>{const r=d.index.get(`${c}|${year}`);return count(r?.[key])?r[key]:fallback&&count(r?.population)?r.population:null;});
+    return values.length&&values.every(valid)?values.reduce((a,b)=>a+b,0):null;
+  };
+  const start=sum('populationStart',startBasis),end=sum('populationEnd',endBasis);
+  return {start,end,change:valid(start)&&valid(end)?end-start:null};
+}
 export function rawAnnual(d,code,year){
   const cacheKey=`raw:${code??'REGION'}:${year}`;if(d.cache.has(cacheKey))return d.cache.get(cacheKey);
   const expected=code==null?d.codes.length:1;

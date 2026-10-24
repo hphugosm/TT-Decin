@@ -67,3 +67,7 @@ python3 ustek_analytics/build_radar.py
 Numerické testy používají výslovně syntetické obce A/B, nikoli demonstrační výsledky skutečných obcí. Browserová kontrola ověřuje reálné ovladače a propojené stavy; vyžaduje dostupné browserové testovací prostředí. Při ověření 24. 10. 2026 prošlo 30 numerických/importních testů a 80 regresních browserových kontrol při K = 0 plus 19 cílených kontrol shrinkage. Produkční build uspěl nad 9 204 záznamy a 354 polygony. [Protokol ověření](reports/radar-verification.md) odkazuje na surový výstup a snímky; měření platí pro konkrétní testovací prostředí.
 
 Viz [rozhodnutí z 24. 10. 2026](docs/MIGRATION_RADAR_DECISIONS.md) a [backlog odložených B/E/F, D/H a případné stabilizace malých obcí](docs/MIGRATION_RADAR_BACKLOG.md). Produkční build upraví tyto odkazy na přibalenou složku `docs`. Archivní časový atlas je dostupný pouze v původním repozitáři; samostatný produkční balíček obsahuje radar.
+
+## Obyvatelé v detailu obce
+
+Detail mapy uvádí skutečný počet obyvatel k 1. 1. a 31. 12. zvoleného roku a jejich rozdíl. Ve výchozím panelu jde o sloupce `populace_1_1` a `populace_31_12` ČSÚ, exportované jako `populationStart` a `populationEnd`. Rozdíl není pouze migrační saldo: zahrnuje přirozenou měnu a případné územní úpravy. Shrinkage tyto počty nemění. U CSV jsou oba stavy volitelné samostatné sloupce; bez doloženého koncového stavu se zobrazí „Údaj chybí“. Konec roku se neodhaduje z migrace ani ze začátku následujícího roku.

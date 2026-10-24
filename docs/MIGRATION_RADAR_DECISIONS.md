@@ -41,3 +41,7 @@ Reprodukovatelné příkazy a rozlišení numerických testů, browserové kontr
 ## Nastavitelný shrinkage — potvrzení uživatele 24. 10. 2026
 
 Uživatel výslovně potvrdil původní vzorec `r* = w r + (1−w) R`, `w = P/(P+K)` a požádal o nastavitelnou konstantu. Tím nahrazuje původní odložení shrinkage v zadání. V nastavení je posuvník a číselný vstup K 0–5 000, výchozí 500; nula vypíná shrinkage. Referencí je původní vážená krajská míra stejného roku. Časové seskupení zůstává samostatně označené a volitelné. Pro okna se nejprve upraví jednotlivé roky a potom váží jejich populacemi. Stejná konstanta platí pro oba migrační kanály a saldo, pro mapu i oba grafy. Původní počty v kartách a krajská reference se nemění. Absolutní jednotka a podíl na počtu krajských pohybů zůstávají původní; podíl vůči krajské populaci používá upravený místní počet. Detail vypisuje roční váhy a míry. Nejde o automatický EB fit.
+
+## Detail populace — 24. 10. 2026
+
+Na přání uživatele detail nahrazuje kód obce a nápovědu opakovaného kliknutí skutečnými stavy k 1. 1. a 31. 12. vybraného roku a rozdílem. Zdrojový panel obsahuje oba stavy pro 9 204 řádků. Počty se neshrinkují a konečný stav se neodvozuje pouze z migrace. Import podporuje oba volitelné sloupce; chybějící stav se neodhaduje.

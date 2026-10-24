@@ -61,7 +61,9 @@ def main():
             record = dict(code=code, name=names[code], year=year,
                           incoming=number(row['pristehovali']),
                           outgoing=number(row['vystehovali']),
-                          population=number(row['populace_1_1']))
+                          population=number(row['populace_1_1']),
+                          populationStart=number(row['populace_1_1']),
+                          populationEnd=number(row['populace_31_12']))
             if record['incoming'] is not None and record['outgoing'] is not None and row['prirustek_migracni'] != '':
                 assert record['incoming'] - record['outgoing'] == float(row['prirustek_migracni'])
             records.append(record)
