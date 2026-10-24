@@ -49,7 +49,7 @@ function renderMapDetail(){
 }
 
 function render(){if(!dataset)return;const start=performance.now();const s=analytical();domain=colorDomain(dataset,s);values=new Map(expectedCodes.map(c=>[c,derivedValue(dataset,c,state.year,s).value]));$('territory-title').textContent=townName(state.selectedCode);
-renderCards();$('map-year').textContent=String(state.year);
+renderCards();$('map-territory').textContent=townName(state.selectedCode);$('map-year').textContent=String(state.year);
 mapUpdate();renderMapDetail();renderLegend();
 $('year').value=String(state.year);$('year-label').textContent=state.mode==='difference'?`B ${state.year}`:String(state.year);$('previous').disabled=state.year<=dataset.minYear;$('next').disabled=state.year>=dataset.maxYear;$('comparison-bar').hidden=state.mode!=='difference';$('base-year').value=String(state.baseYear);$('end-year').value=String(state.year);$('comparison-windows').textContent=`Okna: ${period(state.year)} minus ${period(state.baseYear)}`;
 $('chart-territory').textContent=townName(state.selectedCode);const result=renderTimeChart($('time-chart'),{dataset,settings:s,selectedCode:state.selectedCode,year:state.year,onYear:setYear});$('chart-note').innerHTML=(state.metric==='balance'?['incoming','outgoing','balance']:[state.metric]).map(metric=>`<span class="chart-key"><i style="background:${{incoming:'#173da5',outgoing:'#de7524',balance:'#d3a600'}[metric]}"></i>${{incoming:'Přistěhování',outgoing:'Vystěhování',balance:'Saldo'}[metric]}</span>`).join('')+(result.referenceCount?'<span class="chart-key"><i style="background:#98a3b2"></i>Průměr kraje</span>':'');$('population-note').textContent=`Populační základ: ${basis()}.`;syncPlay();renderDuration=performance.now()-start;
