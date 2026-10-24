@@ -1,7 +1,7 @@
 import {createDataset,rawAnnual,populationSummary,baseValue,derivedValue,colorDomain,colorFor,metricLabel,unitLabel} from './radar-engine.mjs';
-import {createMunicipalityMap} from './radar-map.mjs?v=event-scopes-1';
-import {eventsForYear,eventHighlights,eventsForTerritory,eventStyles} from './radar-events.mjs?v=event-scopes-1';
-import {renderTimeChart} from './radar-charts.mjs?v=event-scopes-1';
+import {createMunicipalityMap} from './radar-map.mjs?v=event-copy-1';
+import {eventsForYear,eventHighlights,eventsForTerritory,eventStyles} from './radar-events.mjs?v=event-copy-1';
+import {renderTimeChart} from './radar-charts.mjs?v=event-copy-1';
 import {mountImportDialog} from './radar-import-ui.mjs';
 const $=id=>document.getElementById(id), fmt=(v,n=(v&&Math.abs(v)<1?Math.min(6,2-Math.floor(Math.log10(Math.abs(v)))):2))=>Number.isFinite(v)?v.toLocaleString('cs-CZ',{maximumFractionDigits:n}):'—';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -29,10 +29,16 @@ function backToRegion(){setPlaying(false);state.selectedCode=null;state.hoverCod
 function mapUpdate(){const events=eventHighlights(state.year);map.update({values,names,metric:state.metric,selectedCode:state.selectedCode,hoverCode:state.hoverCode,domain,neutral:state.neutral,contrast:state.contrast,year:state.year,unitLabel:unitLabel(analytical()),eventRegion:events.region,eventCodes:events.codes});}
 
 function applyEventStyle(element,scope){const visual=eventStyles[scope]||eventStyles.region;element.style.setProperty('--event-color',visual.color);element.style.setProperty('--event-ink',visual.ink);}
+function eventDescription(description){
+ return description.split('\n\n').map(paragraph=>{
+  const labelled=paragraph.match(/^([^:\n]{1,50}:) (.+)$/);
+  return `<p>${labelled?`<strong>${esc(labelled[1])}</strong> ${esc(labelled[2])}`:esc(paragraph)}</p>`;
+ }).join('');
+}
 function renderEvents(){
  const active=eventsForYear(state.year),panel=$('map-events');
  panel.hidden=!active.length;applyEventStyle(panel,active[0]?.scope);
- panel.innerHTML=active.map(event=>`<article class="map-event" data-event="${esc(event.id)}"><div class="event-meta"><time datetime="${event.year}">${event.year}</time><span>${esc(event.place)}</span><small class="event-scope">${eventStyles[event.scope].shortLabel}</small></div><div class="event-description"><h3>${esc(event.title)}</h3><p>${esc(event.description)}</p></div></article>`).join('');
+ panel.innerHTML=active.map(event=>`<article class="map-event" data-event="${esc(event.id)}"><div class="event-meta"><time datetime="${event.year}">${event.year}</time><span>${esc(event.place)}</span><small class="event-scope">${eventStyles[event.scope].shortLabel}</small></div><div class="event-description"><h3>${esc(event.title)}</h3>${eventDescription(event.description)}</div></article>`).join('');
 }
 
 function resetSettings(){const year=state.year,selectedCode=state.selectedCode;setPlaying(false);state={...state,...defaults(),unit:hasPopulation()?'rate':'absolute',baseYear:dataset.years.findLast(y=>y<year)??year,year,selectedCode,neutral:0,contrast:2};syncSettings();render(true);notice('Výchozí analytické nastavení obnoveno; rok a výběr obce zůstaly zachovány.');}

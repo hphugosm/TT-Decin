@@ -153,6 +153,8 @@ body.panel-fullscreen-open{overflow:hidden}
 .event-meta time{font-size:20px;line-height:1.1;font-variant-numeric:tabular-nums}
 .event-description h3{font-size:13px;line-height:1.35;margin:0 0 3px}
 .event-description p{font-size:12px;line-height:1.4;margin:0;color:#6e3e40}
+.event-description p+p{margin-top:8px}
+.event-description p strong{font-weight:650}
 .map-event-outlines{pointer-events:none}
 @media(max-width:600px){.map-events{right:12px;bottom:108px;width:calc(100% - 24px);max-height:calc(100% - 200px);padding:10px 12px}.map-event{grid-template-columns:75px minmax(0,1fr);gap:10px}}
 

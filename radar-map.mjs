@@ -1,5 +1,5 @@
 import {colorFor} from './radar-engine.mjs';
-import {eventStyles} from './radar-events.mjs?v=event-scopes-1';
+import {eventStyles} from './radar-events.mjs?v=event-copy-1';
 const NS='http://www.w3.org/2000/svg';
 let sequence=0;
 const make=(tag,attrs={})=>{const el=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))el.setAttribute(k,v);return el;};

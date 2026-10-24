@@ -11,16 +11,16 @@
     "data/radar-provenance.md": "62f250ed31b9f1aa91aa4bd7b5b9ac6e3a800b7a12c97bde4fcaf06278ed0efb",
     "docs/MIGRATION_RADAR_BACKLOG.md": "0e8dc63ae6ee87ec92e5d5ce5fd96a2121af0f6d51536f8632ed0f91e1772f0c",
     "docs/MIGRATION_RADAR_DECISIONS.md": "81f5c29325701316e76c8c2513a6b031cdf694552117c81481c74ec83c9c9882",
-    "index.html": "41dc015dc60ed9c2cc5764c706490c21cb070c0c572eaa899b5389cdeb5202ad",
+    "index.html": "400f8ceaafd1a359244cb80c0950030f46ea8281630935ff95e82d0ea68c0d79",
     "prepare_radar.py": "2cbb9568fc3e547f4fcb6bba5eb5efd8114e2a8db13ef9b8be612d27d4599f73",
-    "radar-charts.mjs": "dfb2e7a4d17a0683089d9b937a77f92a94ae50db9f978dd41aa6ccb640558811",
+    "radar-charts.mjs": "3d7e1a758926b25b9d34659f78625934f2db95b542e430067f2e1188a46ea380",
     "radar-engine.mjs": "6a169435e972dfa5f0486b9140b7e01b253b16a030ade58f87a8c0f40dae3dab",
-    "radar-events.mjs": "076a8ed2b047f5202e431fc0f33f5ec37b4ca65f1f7d7dda0ba221b4282c7129",
+    "radar-events.mjs": "b9af8f976dc75f0dd63dfb36a3361aed1b63b58b63992d25ee16495910146806",
     "radar-import-ui.mjs": "555c8356cbe11ca330c45dfb9ff4b3c3d281a38bb2f378a3b68f00dacb228824",
     "radar-import.mjs": "b73327a3247cf4c47fe385d3006df6bc1969d2b4f5416886711bbd30559f266a",
-    "radar-map.mjs": "bd6cada27220af8e8559c36b0803f21f587a26c2cdcad59299a13df145f5c9ee",
-    "radar.css": "3384a2e118a749bb8760c3d8dfe0507123c779e954c2d43a397a85fb72dd996f",
-    "radar.mjs": "b898d10c660cea620dd080a1cc41b155a7cfd3428e15e797da84cbfc83054705",
+    "radar-map.mjs": "72919720aecb8fb354f749cc2b3c5e5d4cbc4eebd8495f29cd24119cb5305b3a",
+    "radar.css": "290700130025eb52d81d9db536ba5e13d7f8e13b831efc0baadc1602330b413f",
+    "radar.mjs": "db98f741b53851a984d767c36846ef620a3022a07d9dc736c9878db97dde1d52",
     "reports/radar-browser-validation.json": "bfedda91ecc726fb42bc86b392064774b4060cc1f1e514e0d4227fa05f6dfd02",
     "reports/radar-laptop.png": "3a6bc2a0a96a6947bae4bb0ced6e9b878c6c8e2d7493fe7fe94a3e5b8ecacc4a",
     "reports/radar-mobile-scatter.png": "47d4c532325709f45ea39c8ba25c1ea037e185f072ab2d99adcaf39d01855afc",
@@ -30,6 +30,7 @@
     "reports/radar-shrinkage-map.png": "2818555cd30f9d6601c3e48c0cda9fec5c7fa168e02d8ec15c263313803caf91",
     "reports/radar-shrinkage-settings.png": "294557cf4e11c9d1bd75f2cfe6177977b1beca2e4995471ae3afe5a5423aea4e",
     "reports/radar-shrinkage-validation.json": "25ba0ba03b08a8671b4f37e7900b969cf4b16d5ad0b003d13e1a9d319d2b44bf",
-    "reports/radar-verification.md": "4de5c676412813f9a58257902dee616fe0ba1aecb4d3809385514791bbc683ab"
+    "reports/radar-verification.md": "4de5c676412813f9a58257902dee616fe0ba1aecb4d3809385514791bbc683ab",
+    "mapa/index.html": "93e7c894935f0a4fef8715341275c9d5573123454973d3ec6cd274c4420a99bd"
   }
 }
