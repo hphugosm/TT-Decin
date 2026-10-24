@@ -7,7 +7,8 @@ const slideTitles = [
   'Společný průnik 2018–2024: sedm let.',
   'Krize na Ukrajině.',
   'Jak číst migraci: přistěhovalí, vystěhovalí a migrační saldo.',
-  'Interaktivní mapa migrace obcí Ústeckého kraje.',
+  'Interaktivní mapa migrace – absolutní počty lidí.',
+  'Interaktivní mapa migrace – podíl na obyvatelích obce.',
   'Interaktivní mapa migračních klastrů obcí Ústeckého kraje.',
   'Hypotéza: poptávka firem po zaměstnancích, přistěhování lidí a poptávka po bytech.',
   'Realita: šest záměrů firem a skutečná migrace v jejich okolí.',
@@ -15,9 +16,12 @@ const slideTitles = [
   'Závěr našeho výzkumu: budoucnost nelze předvídat dokonale, její odchylky ale můžeme měřit.'
 ];
 const slideCount = slideTitles.length;
-const HYPOTHESIS_SLIDE = 6;
-const REALITY_SLIDE = 7;
-const CONCLUSION_SLIDE = 9;
+const ABSOLUTE_MAP_SLIDE = 4;
+const RATE_MAP_SLIDE = 5;
+const CLUSTERS_SLIDE = 6;
+const HYPOTHESIS_SLIDE = 7;
+const REALITY_SLIDE = 8;
+const CONCLUSION_SLIDE = 10;
 const migrationExample = { incoming: 10, outgoing: 7 };
 migrationExample.balance = migrationExample.incoming - migrationExample.outgoing;
 let migrationAnimationFrame = null;
@@ -116,11 +120,12 @@ for (const [kind, count] of Object.entries(migrationExample)) {
   }
 }
 
-// Keep both embedded apps mounted; the opening and closing map share one frame.
+// Preserve independent absolute and population-relative maps; the closing map reuses the relative one.
 const embeddedSlides = new Map([
-  [4, { section: $('#map-slide'), frame: $('#map-frame') }],
-  [5, { section: $('#clusters-slide'), frame: $('#clusters-frame') }],
-  [8, { section: $('#map-slide'), frame: $('#map-frame') }]
+  [ABSOLUTE_MAP_SLIDE, { section: $('#absolute-map-slide'), frame: $('#absolute-map-frame') }],
+  [RATE_MAP_SLIDE, { section: $('#map-slide'), frame: $('#map-frame') }],
+  [CLUSTERS_SLIDE, { section: $('#clusters-slide'), frame: $('#clusters-frame') }],
+  [9, { section: $('#map-slide'), frame: $('#map-frame') }]
 ]);
 const isEmbeddedSlide = index => embeddedSlides.has(index);
 function pauseEmbeddedPlayback(index) {
@@ -289,7 +294,8 @@ window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',
 // Animate the existing iframe in place: moving or cloning it would reload the
 // embedded app and lose the selected municipality, year and camera position.
 let mapTransition = null;
-const mapNeighborSlides = { 3: '#terms-slide', 4: '#map-slide', 5: '#clusters-slide', 6: '#hypothesis-slide', 7: '#reality-slide', 8: '#map-slide', 9: '#conclusion-slide' };
+const mapNeighborSlides = { 3: '#terms-slide', 4: '#absolute-map-slide', 5: '#map-slide', 6: '#clusters-slide', 7: '#hypothesis-slide', 8: '#reality-slide', 9: '#map-slide', 10: '#conclusion-slide' };
+const isMapRecolor = (from, to) => Math.abs(from - to) === 1 && [ABSOLUTE_MAP_SLIDE, RATE_MAP_SLIDE, CLUSTERS_SLIDE].includes(from) && [ABSOLUTE_MAP_SLIDE, RATE_MAP_SLIDE, CLUSTERS_SLIDE].includes(to);
 // Paint the same municipality outlines while their colors and camera interpolate.
 // Only this temporary SVG is copied; both interactive iframes stay mounted.
 function mapPaintSnapshot(index) {
@@ -400,8 +406,8 @@ function captureMapTransition(from, to) {
   const computed = getComputedStyle(outgoing);
   const transition = {
     from, to, outgoing, incoming, animations: [],
-    recolor: (from === 4 && to === 5) || (from === 5 && to === 4),
-    mapPaint: ((from === 4 && to === 5) || (from === 5 && to === 4)) ? mapPaintSnapshot(from) : null,
+    recolor: isMapRecolor(from, to),
+    mapPaint: (isMapRecolor(from, to)) ? mapPaintSnapshot(from) : null,
     outgoingStyle: outgoing.style.cssText,
     outgoingInert: outgoing.inert,
     outgoingAria: outgoing.getAttribute('aria-hidden'),
@@ -488,8 +494,9 @@ function renderRoute({ focus = false } = {}) {
   const mapActive = currentView === 'presentation' && isEmbeddedSlide(currentSlide);
   document.body.classList.toggle('map-slide-active', mapActive);
   $('#deck-brand').hidden = mapActive;
-  $('#map-slide').hidden = !mapActive || currentSlide === 5;
-  $('#clusters-slide').hidden = !mapActive || currentSlide !== 5;
+  for (const section of new Set([...embeddedSlides.values()].map(slide => slide.section))) {
+    section.hidden = !mapActive || section !== embeddedSlides.get(currentSlide)?.section;
+  }
   $('#conclusion-slide').hidden = currentView !== 'presentation' || currentSlide !== CONCLUSION_SLIDE;
   $('#hypothesis-slide').hidden = currentView !== 'presentation' || currentSlide !== HYPOTHESIS_SLIDE;
   const realityActive = currentView === 'presentation' && currentSlide === REALITY_SLIDE;
@@ -499,8 +506,9 @@ function renderRoute({ focus = false } = {}) {
   if (currentView === 'presentation' && currentSlide === HYPOTHESIS_SLIDE) prepareReality();
   if (currentView !== 'presentation' || currentSlide !== HYPOTHESIS_SLIDE) stopHypothesisAnimation();
   if (currentView === 'presentation') {
-    if (currentSlide === 3 || currentSlide === REALITY_SLIDE) prepareEmbedded(4);
-    if (currentSlide === 4) prepareEmbedded(5);
+    if (currentSlide === 3) prepareEmbedded(ABSOLUTE_MAP_SLIDE);
+    if (currentSlide === ABSOLUTE_MAP_SLIDE || currentSlide === REALITY_SLIDE) prepareEmbedded(RATE_MAP_SLIDE);
+    if (currentSlide === RATE_MAP_SLIDE) prepareEmbedded(CLUSTERS_SLIDE);
   }
   if (mapActive) showEmbedded(currentSlide);
   if (previousView === 'presentation' && isEmbeddedSlide(previousSlide) && (currentView !== 'presentation' || embeddedSlides.get(previousSlide)?.frame !== embeddedSlides.get(currentSlide)?.frame)) pauseEmbeddedPlayback(previousSlide);
