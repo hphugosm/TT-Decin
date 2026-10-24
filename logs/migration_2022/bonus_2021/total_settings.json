@@ -1,0 +1,67 @@
+{
+  "run_id": "bonus-total-incoming-20261024T095913Z",
+  "frozen_at": "2026-10-24T09:59:15.873744+00:00",
+  "seed": 2026,
+  "model_configs": {
+    "B1": {},
+    "B2": {
+      "window": 3
+    },
+    "M1": {
+      "damping_trend": 0.8
+    },
+    "M2": {
+      "order": [
+        1,
+        1,
+        0
+      ]
+    },
+    "M3": {
+      "theta": 2.0
+    },
+    "M4": {
+      "lags": 2,
+      "alpha": 10.0
+    },
+    "M5": {
+      "lags": 2,
+      "alpha": 10.0
+    }
+  },
+  "config_rule": "Original incoming locked configurations unchanged; no tuning or selector",
+  "targets": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "horizons": [
+    1,
+    2,
+    3
+  ],
+  "training_rule": "Contiguous2000 through target minus horizon; original model implementation; original last population held fixed for multistep Poisson exposure",
+  "periods": {
+    "all": [
+      2017,
+      2021
+    ],
+    "pre_covid": [
+      2017,
+      2019
+    ],
+    "covid": [
+      2020,
+      2021
+    ]
+  },
+  "evaluation_2022_read": false,
+  "hashes": {
+    "training_input": "6aba316ab6ce8315ddd67de630f61c76fbe93ca75ff4a709b3047e25e698f79b",
+    "original_config": "9d8a3b132d67f8a8d8cc31d0bafc510a09054eb40188ee00c7b65db594e600ba",
+    "original_model_source": "ca9ce14df224c36c455553989402a099077ba8a8779e6a08b139609d40c05cf3",
+    "bonus_model_source": "8bf42124de15fc4d79048e5fc1f42af021d0a42ea62598797a7f47c1571f3f98"
+  }
+}
