@@ -11,3 +11,5 @@
 
 - Obsahové nadpisy od druhého slajdu zarovnávej doleva ke společnému levému okraji obsahu a grafu. Zachovej jejich svislou polohu ve volném prostoru nad grafem, vlevo od názvu projektu. Název projektu drž ve stejné vzdálenosti od horní hrany; kvůli posunu nadpisu jej neposouvej.
 - Na slajdech nezobrazuj tlačítka „Rozcestník“ a „Nápady k animaci“ ani jejich společný panel. Poznámkový dialog a klávesová zkratka N byly odstraněny.
+
+- Pátý snímek je živá mapa z `../mapa/` přes zachovaný iframe. Prostor mapy vyplňuje snímek bez dalšího nadpisu a wordmarku; pod mapou zůstává navigace a časovač. Klávesové šipky přepínají snímky i při zaměření mapy, ale neruší formulářová pole a dialogy.

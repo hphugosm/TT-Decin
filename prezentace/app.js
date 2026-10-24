@@ -6,7 +6,8 @@ const slideTitles = [
   '354 obcí: jedna hodnota jednoho ukazatele pro jednu obec za jeden rok',
   'Společný průnik 2018–2024: sedm let.',
   'Krize na Ukrajině.',
-  'Jak číst migraci: přistěhovalí, vystěhovalí a migrační saldo.'
+  'Jak číst migraci: přistěhovalí, vystěhovalí a migrační saldo.',
+  'Interaktivní mapa migrace obcí Ústeckého kraje.'
 ];
 const slideCount = slideTitles.length;
 const migrationExample = { incoming: 10, outgoing: 7 };
@@ -107,6 +108,28 @@ for (const [kind, count] of Object.entries(migrationExample)) {
   }
 }
 
+// Keep one live copy of the repository map so its selection survives slide changes.
+const mapFrame = $('#map-frame');
+function pauseMapPlayback() {
+  const frameDocument = mapFrame.contentDocument;
+  if (frameDocument) frameDocument.dispatchEvent(new Event('tt-decin:presentation-hidden'));
+}
+function showMap() {
+  if (!mapFrame.hasAttribute('src')) mapFrame.src = mapFrame.dataset.src;
+  else mapFrame.contentWindow.dispatchEvent(new Event('resize'));
+}
+mapFrame.addEventListener('load', () => {
+  const frameDocument = mapFrame.contentDocument;
+  if (!frameDocument) return;
+  // Keys inside an iframe do not bubble to the presentation document.
+  frameDocument.addEventListener('keydown', event => {
+    if (!['ArrowLeft', 'ArrowRight', 'PageUp', 'PageDown', 'Home', 'End', 'f', 'F'].includes(event.key)) return;
+    handlePresentationKeydown(event);
+    if (event.defaultPrevented) event.stopImmediatePropagation();
+  }, true);
+  if (currentView !== 'presentation' || currentSlide !== 4) pauseMapPlayback();
+});
+
 function renderRoute({ focus = false } = {}) {
   const hash = window.location.hash;
   const presentationMatch = /^#prezentace\/(\d+)$/.exec(hash);
@@ -117,6 +140,12 @@ function renderRoute({ focus = false } = {}) {
   currentSlide = validPresentation ? Number(presentationMatch[1]) - 1 : 0;
   Object.entries(views).forEach(([key, element]) => { element.hidden = key !== currentView; });
   document.body.dataset.view = currentView;
+  const mapActive = currentView === 'presentation' && currentSlide === 4;
+  document.body.classList.toggle('map-slide-active', mapActive);
+  $('#deck-brand').hidden = mapActive;
+  $('#map-slide').hidden = !mapActive;
+  if (mapActive) showMap();
+  else if (previousView === 'presentation' && previousSlide === 4) pauseMapPlayback();
 
   if (currentView === 'presentation') {
     $('#slide-one').hidden = currentSlide !== 0;
@@ -138,8 +167,8 @@ function renderRoute({ focus = false } = {}) {
       else button.removeAttribute('aria-current');
     });
     // Keep the shared graph mounted between slides 2 and 3.
-    if (previousView !== currentView || currentSlide === 0 || previousSlide === 0 || currentSlide === 3 || previousSlide === 3) {
-      animate(currentSlide === 0 ? $('#slide-one') : currentSlide === 3 ? $('#terms-slide') : $('#timeline-slide'), 'entering');
+    if (previousView !== currentView || currentSlide === 0 || previousSlide === 0 || currentSlide >= 3 || previousSlide >= 3) {
+      animate(currentSlide === 0 ? $('#slide-one') : currentSlide === 3 ? $('#terms-slide') : currentSlide === 4 ? $('#map-slide') : $('#timeline-slide'), 'entering');
       if (currentSlide === 0) {
         document.querySelectorAll('.unit-row').forEach(item => animate(item, 'unit-enter'));
       }
@@ -161,7 +190,7 @@ function renderRoute({ focus = false } = {}) {
     if (previousView !== currentView) animate(views[currentView], 'entering');
   }
   if (focus) {
-    const heading = currentView === 'home' ? $('#home-title') : currentView === 'guide' ? $('#guide-title') : currentSlide === 0 ? $('#deck-brand') : currentSlide === 3 ? $('#terms-title') : $('#timeline-title');
+    const heading = currentView === 'home' ? $('#home-title') : currentView === 'guide' ? $('#guide-title') : currentSlide === 0 ? $('#deck-brand') : currentSlide === 3 ? $('#terms-title') : currentSlide === 4 ? $('#map-slide') : $('#timeline-title');
     heading.focus({ preventScroll: true });
     if (previousView !== currentView || window.innerWidth <= 600) window.scrollTo({ top: 0, behavior: 'instant' });
   }
@@ -183,8 +212,9 @@ async function toggleFullscreen() {
 $('#fullscreen').addEventListener('click', toggleFullscreen);
 if (!document.documentElement.requestFullscreen) $('#fullscreen').hidden = true;
 document.addEventListener('fullscreenchange', () => { const active = Boolean(document.fullscreenElement); $('#fullscreen').setAttribute('aria-label', active ? 'Opustit celou obrazovku' : 'Celá obrazovka'); });
-document.addEventListener('keydown', event => {
-  if (event.altKey || event.ctrlKey || event.metaKey || event.repeat || event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
+function handlePresentationKeydown(event) {
+  const eventDocument = event.target.ownerDocument || document;
+  if (event.defaultPrevented || eventDocument.querySelector('dialog[open]') || event.altKey || event.ctrlKey || event.metaKey || event.repeat || event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
   if (currentView === 'presentation') {
     if (['ArrowRight', 'PageDown'].includes(event.key) || (event.key === ' ' && !event.target.closest('button, a'))) { event.preventDefault(); goToSlide(currentSlide + 1); }
     else if (['ArrowLeft', 'PageUp'].includes(event.key)) { event.preventDefault(); goToSlide(currentSlide - 1); }
@@ -193,7 +223,8 @@ document.addEventListener('keydown', event => {
     else if (event.key.toLowerCase() === 'f') { event.preventDefault(); toggleFullscreen(); }
     else if (event.key === 'Escape' && !document.fullscreenElement) window.location.hash = '';
   } else if (currentView === 'guide' && event.key === 'Escape') window.location.hash = '';
-});
+}
+document.addEventListener('keydown', handlePresentationKeydown);
 let touchStart = null;
 $('#presentation').addEventListener('touchstart', event => { const touch = event.changedTouches[0]; touchStart = { x: touch.clientX, y: touch.clientY }; }, { passive: true });
 $('#presentation').addEventListener('touchend', event => {
