@@ -5,3 +5,5 @@
 - Krajská historie a kontrolní tabulky se ověřují. Trénování zatím není dokončeno.
 - 2026-10-24T10:52:18.770893+02:00: **audit_dat** — Obecní panel i skutečná krajská řada 2000–2021 ověřeny. Krajské součty obecních toků odmítnuty jako nesrovnatelný vstup.
 - 2026-10-24T10:58:52.179642+02:00: **referencni_a_krajsky_benchmark** — Dokončeny dvě reference a pět trénovaných rodin. Krajské konfigurace zmrazeny po vývoji 2010–2014, historické hodnocení 2015–2021 a citlivosti dokončeny. Obecní testy navazují.
+- 2026-10-24T11:09:49.546118+02:00: **obecni_benchmark_a_selektor** — Všech 354 obcí, sedm trénovaných rodin a dvě reference. Výběr pro testy 2015–2021 vždy používá jen dřívější chyby.
+- 2026-10-24T11:09:49.546848+02:00: **zmrazene_predikce_2022** — Bodové predikce, společné roční scénáře a konfigurace opatřeny SHA-256 před výsledkovým porovnáním 2022.

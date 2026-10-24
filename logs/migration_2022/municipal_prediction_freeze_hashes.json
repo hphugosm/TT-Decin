@@ -1,0 +1,11 @@
+{
+  "run_id": "municipal-2022-20261024T085855Z",
+  "seed": 1729,
+  "frozen_at": "2026-10-24T09:04:51.275691+00:00",
+  "sha256": {
+    "config_freeze.json": "9205e3c1c5750f320e73d4925c1daa8ac5bd1b7ab0752aa04049475eb89e5a71",
+    "backtest_municipal.csv": "daf59ab16291086d6b23bcc9c6feaea59ec087bf1e8716f1e26b534fd8ff5881",
+    "candidate_forecasts_2022_municipal.csv": "0c4e58ba9a2f4cfee03027c9c68adf0a93c4a769ab6ee7c2b68ca7cf24d0e0d0",
+    "fits.jsonl": "bbc3f86f016a186670b48ccd949c545cd3cbfae0de1c29e7e676f4a08e543d48"
+  }
+}

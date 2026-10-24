@@ -1,0 +1,21 @@
+{
+  "frozen_at": "2026-10-24T09:08:19.642619+00:00",
+  "inputs": {
+    "/Users/hugo/Documents/ChatGPT/D\u011b\u010d\u00edn Heckathon/migration_2022_local/region_models/backtest_region.csv": "a4c44440c2259b192eb47dd5eafd8f29bfae5f0ccaa13b3eb4625430570924ee",
+    "/Users/hugo/Documents/ChatGPT/D\u011b\u010d\u00edn Heckathon/migration_2022_local/municipal_models/backtest_municipal.csv": "daf59ab16291086d6b23bcc9c6feaea59ec087bf1e8716f1e26b534fd8ff5881",
+    "/Users/hugo/Documents/ChatGPT/D\u011b\u010d\u00edn Heckathon/migration_2022_local/region_models/candidate_forecasts_2022_region.csv": "8fcc337797be8ae86125d14af53e118f8db03b3a0ac59982edfb32a09ee5aba8",
+    "/Users/hugo/Documents/ChatGPT/D\u011b\u010d\u00edn Heckathon/migration_2022_local/municipal_models/candidate_forecasts_2022_municipal.csv": "0c4e58ba9a2f4cfee03027c9c68adf0a93c4a769ab6ee7c2b68ca7cf24d0e0d0"
+  },
+  "outputs": {
+    "prospective_range_coverage_summary.csv": "4a7c77c680725057262a8404a8d852496c5b76a306d299dcaaef8289530d75c8",
+    "model_comparison.csv": "9eb7b7578b12d7e1f289fdfb89b8beee36c13fe46f6f92a8636b5b257af24f6e",
+    "selector_backtest_with_balance.csv": "5496139286c32bc54b2e428083fde200d68818872f25491c59030a7136d1841f",
+    "uncertainty_scenarios_2022.csv": "afbb8b7f384f59e57a193cf50a4ee3cc0453bfc285436068b411f81c5dfd09ca",
+    "selector_backtest.csv": "97db3d2b032b6fdf221b0d8c7dad0ca0e09bf649b2717dea5052c7b83024a386",
+    "selected_predictions_2022.csv": "e96c5ebea3541a5050b66a76fe7daec2dc8a8ee89969b631b6993f61d74be54c",
+    "prospective_range_coverage.csv": "1d9e70f6c0ad9a3de1119223b86c0c4d5e6a3462b5f532a11c628d5c5fac1236",
+    "selector_rules.json": "cc922ba1b4ca8d6ab83e0e2685cbba8ab79c6e6b9a4aa8dce884d8d1b7de2469",
+    "run_selector.py": "2e2bd64d8f4ce7fce0c5640e3a79f2fe60af2f2ccfacb96ae77d25cbb90d23a1"
+  },
+  "evaluation_2022_read": false
+}

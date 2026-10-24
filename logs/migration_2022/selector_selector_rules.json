@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "assessment_years": [
+    2015,
+    2021
+  ],
+  "selection_history": "all available candidate errors with year < target",
+  "municipal_shrinkage": 10,
+  "population_groups": [
+    1000,
+    5000
+  ],
+  "trained_required_relative_improvement": 0.1,
+  "ties": [
+    "B1",
+    "B2",
+    "M3",
+    "M1",
+    "M4",
+    "M2",
+    "M5",
+    "M6",
+    "M7"
+  ],
+  "uncertainty": "shared full annual residual vectors, 2015-2021; scaled actual minus prediction; clipped at zero; min/max not calibrated confidence interval",
+  "prospective_coverage_years": [
+    2018,
+    2021
+  ],
+  "minimum_prior_residual_years": 3
+}

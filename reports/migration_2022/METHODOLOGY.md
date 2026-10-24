@@ -74,6 +74,10 @@ Prospektivní kontrola rozpětí používá pro každý cíl pouze předchozí c
 
 Krajské citlivosti používají stejné zmrazené konfigurace: start 2001, novější historii od 2010 a predikci z konce 2019 až do 2022 ve třech kalendářních krocích. Vynechané covidové roky se neslepují jako sousední roky. Rekurzivní modely drží populaci na posledním známém stavu. Citlivosti se nevybírají podle skutečnosti 2022.
 
+Obecní citlivosti ponechávají původně vybranou rodinu každé obce a proudu. Přefitují ji na souvislých oknech 2001–2021, 2010–2021 a 2000–2019. Poslední varianta předpovídá tři kalendářní kroky; panelový model se fituje jen jednou a pro další kroky se použije vlastní párová historie předpovězených I/E dané rodiny. Škálovač, obecní efekty a model zůstávají zmrazeny, populace zůstává na posledním dostupném roce 2019. Nevzniká fit na syntetických cílech. Lokální časové modely použijí přímou tříkrokovou prognózu, B1/B2 konstantní víceletou referenci. Jde o citlivost na vynechání covidových hodnot při ponechání konfigurace a volby modelu z hlavního experimentu. Volba rodiny mohla využít chyby do 2021, proto tato varianta není simulací skutečně vybrané prognózy vydané v roce 2019.
+
+Bodové predikce představují očekávané počty a mohou být necelé. Saldo a odchylky se počítají z nezaokrouhlených hodnot; zaokrouhlení v textových tabulkách slouží pouze zobrazení.
+
 ## Tři oddělená srovnání 2022
 
 **Konečná skutečnost.** Kraj a obce se připojí až po zmrazení scénáře. Odchylky nejsou testem pozorovaného kontrafaktuálu bez šoku.
