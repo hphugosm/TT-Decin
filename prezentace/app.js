@@ -147,34 +147,55 @@ $('#presentation').addEventListener('touchend', event => {
 window.addEventListener('hashchange', () => renderRoute({ focus: true }));
 renderRoute();
 
-// Store the start instant, so slide changes, inactive tabs and reloads never pause it.
-const timerStorageKey = 'tt-decin-presentation-started-at';
+// Persist accumulated time and the current running segment across slide changes/reloads.
+const timerStorageKey = 'tt-decin-presentation-timer-v2';
 const timerButton = $('#presentation-timer');
-let timerStartedAt = null;
+let timerState = { elapsedMs: 0, runningSince: null, started: false };
 try {
-  const savedStart = Number(localStorage.getItem(timerStorageKey));
-  if (Number.isFinite(savedStart) && savedStart > 0) timerStartedAt = savedStart;
-} catch { /* The timer also works in memory when browser storage is unavailable. */ }
+  const saved = JSON.parse(localStorage.getItem(timerStorageKey));
+  if (saved && Number.isFinite(saved.elapsedMs) && saved.elapsedMs >= 0 &&
+      (saved.runningSince === null || (Number.isFinite(saved.runningSince) && saved.runningSince > 0)) &&
+      typeof saved.started === 'boolean') {
+    timerState = saved;
+  } else {
+    // Keep the elapsed time of the previous click-to-start timer when upgrading.
+    const previousStart = Number(localStorage.getItem('tt-decin-presentation-started-at'));
+    if (Number.isFinite(previousStart) && previousStart > 0) {
+      timerState = { elapsedMs: 0, runningSince: previousStart, started: true };
+      localStorage.setItem(timerStorageKey, JSON.stringify(timerState));
+    }
+  }
+} catch { /* The controls also work in memory if browser storage is unavailable. */ }
+
+function getPresentationElapsedMs() {
+  return timerState.elapsedMs + (timerState.runningSince === null ? 0 : Math.max(0, Date.now() - timerState.runningSince));
+}
 
 function updatePresentationTimer() {
-  if (timerStartedAt === null) return;
-  const seconds = Math.max(0, Math.floor((Date.now() - timerStartedAt) / 1000));
+  const seconds = Math.floor(getPresentationElapsedMs() / 1000);
   const hours = Math.floor(seconds / 3600);
   const minutes = Math.floor(seconds / 60) % 60;
   const pad = value => String(value).padStart(2, '0');
   $('#timer-value').textContent = (hours ? `${pad(hours)}:` : '') + `${pad(minutes)}:${pad(seconds % 60)}`;
-  timerButton.disabled = true;
-  timerButton.dataset.running = 'true';
-  timerButton.setAttribute('aria-label', 'Časovač prezentace běží');
-  timerButton.title = 'Čas od spuštění prezentace';
-  $('.timer-indicator').textContent = '●';
-  $('#timer-label').hidden = true;
+  const running = timerState.runningSince !== null;
+  const action = running ? 'Pozastavit časovač' : timerState.started ? 'Pokračovat v měření času' : 'Spustit časovač';
+  timerButton.dataset.state = running ? 'running' : timerState.started ? 'paused' : 'idle';
+  timerButton.setAttribute('aria-label', action);
+  timerButton.setAttribute('aria-pressed', String(running));
+  timerButton.title = action;
+  $('.timer-indicator').textContent = running ? 'Ⅱ' : '▶';
+  $('#timer-label').textContent = running ? 'Běží' : timerState.started ? 'Pozastaveno' : 'Připraveno';
 }
 
 timerButton.addEventListener('click', () => {
-  if (timerStartedAt !== null) return;
-  timerStartedAt = Date.now();
-  try { localStorage.setItem(timerStorageKey, String(timerStartedAt)); } catch { /* Keep running. */ }
+  if (timerState.runningSince !== null) {
+    timerState.elapsedMs = getPresentationElapsedMs();
+    timerState.runningSince = null;
+  } else {
+    timerState.runningSince = Date.now();
+    timerState.started = true;
+  }
+  try { localStorage.setItem(timerStorageKey, JSON.stringify(timerState)); } catch { /* Keep working in memory. */ }
   updatePresentationTimer();
 });
 setInterval(updatePresentationTimer, 250);
