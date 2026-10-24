@@ -1,5 +1,6 @@
 import {createDataset,rawAnnual,populationSummary,baseValue,derivedValue,colorDomain,colorFor,metricLabel,unitLabel} from './radar-engine.mjs';
-import {createMunicipalityMap} from './radar-map.mjs?v=map-focus-1';
+import {createMunicipalityMap} from './radar-map.mjs?v=events-1';
+import {eventsForYear,eventHighlights} from './radar-events.mjs';
 import {renderTimeChart} from './radar-charts.mjs?v=overview-3';
 import {mountImportDialog} from './radar-import-ui.mjs';
 const $=id=>document.getElementById(id), fmt=(v,n=(v&&Math.abs(v)<1?Math.min(6,2-Math.floor(Math.log10(Math.abs(v)))):2))=>Number.isFinite(v)?v.toLocaleString('cs-CZ',{maximumFractionDigits:n}):'—';
@@ -23,7 +24,13 @@ function schedule(){clearTimeout(timer);if(!state.playing)return;timer=setTimeou
 function setYear(year,{pause=true}={}){if(pause)setPlaying(false);state.year=Math.max(dataset.minYear,Math.min(dataset.maxYear,Number(year)));render();}
 function selectTown(code){if(!names.has(String(code)))return;setPlaying(false);state.selectedCode=String(code);state.hoverCode=null;$('town-search').value=townName(code);$('search-results').hidden=true;map.select(code);render();}
 function backToRegion(){setPlaying(false);state.selectedCode=null;state.hoverCode=null;$('town-search').value='';map.reset();render();}
-function mapUpdate(){map.update({values,names,metric:state.metric,selectedCode:state.selectedCode,hoverCode:state.hoverCode,domain,neutral:state.neutral,contrast:state.contrast,year:state.year,unitLabel:unitLabel(analytical())});}
+function mapUpdate(){const events=eventHighlights(state.year);map.update({values,names,metric:state.metric,selectedCode:state.selectedCode,hoverCode:state.hoverCode,domain,neutral:state.neutral,contrast:state.contrast,year:state.year,unitLabel:unitLabel(analytical()),eventRegion:events.region,eventCodes:events.codes});}
+
+function renderEvents(){
+ const active=eventsForYear(state.year),panel=$('map-events');
+ panel.hidden=!active.length;
+ panel.innerHTML=active.map(event=>`<article class="map-event" data-event="${esc(event.id)}"><div class="event-meta"><time datetime="${event.year}">${event.year}</time><span>${esc(event.place)}</span></div><div class="event-description"><h3>${esc(event.title)}</h3><p>${esc(event.description)}</p></div></article>`).join('');
+}
 
 function resetSettings(){const year=state.year,selectedCode=state.selectedCode;setPlaying(false);state={...state,...defaults(),unit:hasPopulation()?'rate':'absolute',baseYear:dataset.years.findLast(y=>y<year)??year,year,selectedCode,neutral:0,contrast:2};syncSettings();render(true);notice('Výchozí analytické nastavení obnoveno; rok a výběr obce zůstaly zachovány.');}
 function setMetric(metric){state.metric=metric;if(metric==='balance'&&state.unit==='share'){state.unit=hasPopulation()?'rate':'absolute';notice(`Podíl na saldu není definován. Jednotka změněna na ${state.unit==='rate'?'podíl migrace na populaci obce v procentech':'absolutní počet'}.`);}syncSettings();render(true);}
@@ -50,7 +57,7 @@ function renderMapDetail(){
 
 function render(){if(!dataset)return;const start=performance.now();const s=analytical();domain=colorDomain(dataset,s);values=new Map(expectedCodes.map(c=>[c,derivedValue(dataset,c,state.year,s).value]));$('territory-title').textContent=townName(state.selectedCode);
 renderCards();$('map-territory').textContent=townName(state.selectedCode);$('map-year').textContent=String(state.year);
-mapUpdate();renderMapDetail();renderLegend();
+mapUpdate();renderMapDetail();renderLegend();renderEvents();
 $('year').value=String(state.year);$('year-label').textContent=state.mode==='difference'?`B ${state.year}`:String(state.year);$('previous').disabled=state.year<=dataset.minYear;$('next').disabled=state.year>=dataset.maxYear;$('comparison-bar').hidden=state.mode!=='difference';$('base-year').value=String(state.baseYear);$('end-year').value=String(state.year);$('comparison-windows').textContent=`Okna: ${period(state.year)} minus ${period(state.baseYear)}`;
 $('chart-territory').textContent=townName(state.selectedCode);const result=renderTimeChart($('time-chart'),{dataset,settings:s,selectedCode:state.selectedCode,year:state.year,onYear:setYear});$('chart-note').innerHTML=(state.metric==='balance'?['incoming','outgoing','balance']:[state.metric]).map(metric=>`<span class="chart-key"><i style="background:${{incoming:'#173da5',outgoing:'#de7524',balance:'#d3a600'}[metric]}"></i>${{incoming:'Přistěhování',outgoing:'Vystěhování',balance:'Saldo'}[metric]}</span>`).join('')+(result.referenceCount?'<span class="chart-key"><i style="background:#98a3b2"></i>Průměr kraje</span>':'');$('population-note').textContent=`Populační základ: ${basis()}.`;syncPlay();renderDuration=performance.now()-start;
 }

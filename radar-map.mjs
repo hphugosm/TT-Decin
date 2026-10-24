@@ -3,6 +3,23 @@ const NS='http://www.w3.org/2000/svg';
 let sequence=0;
 const make=(tag,attrs={})=>{const el=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))el.setAttribute(k,v);return el;};
 
+/** Shared municipal edges cancel, leaving the actual outline of the whole region. */
+export function regionBoundarySegments(geometry){
+  const edges=new Map();
+  for(const feature of geometry.features||[]){
+    const shape=feature.geometry;
+    const polygons=shape?.type==='Polygon'?[shape.coordinates]:shape?.type==='MultiPolygon'?shape.coordinates:[];
+    for(const polygon of polygons)for(const ring of polygon)for(let i=1;i<ring.length;i++){
+      const a=ring[i-1],b=ring[i],ka=a.join(','),kb=b.join(',');
+      if(ka===kb)continue;
+      const key=ka<kb?`${ka}|${kb}`:`${kb}|${ka}`;
+      const edge=edges.get(key);
+      if(edge)edge.count++;else edges.set(key,{count:1,segment:[a,b]});
+    }
+  }
+  return [...edges.values()].filter(edge=>edge.count===1).map(edge=>edge.segment);
+}
+
 /** Persistent SVG choropleth. Values and camera state are independent of geometry. */
 export function createMunicipalityMap(svgElement,geometry,{onSelect=()=>{},onHover=()=>{},onExplain=()=>{}}={}){
   const width=1000,height=390,padding=16,paths=new Map(),bounds=new Map(),listeners=[];
@@ -14,7 +31,11 @@ export function createMunicipalityMap(svgElement,geometry,{onSelect=()=>{},onHov
   pattern.append(make('rect',{width:6,height:6,fill:'#e3e7ed'}),make('path',{d:'M-1,1L1,-1M0,6L6,0M5,7L7,5',stroke:'#a1aab7','stroke-width':1}));defs.append(pattern);
   const group=make('g',{'class':'municipality-shapes'});
   svgElement.setAttribute('viewBox',`0 0 ${width} ${height}`);svgElement.setAttribute('preserveAspectRatio','xMidYMid meet');
-  svgElement.append(defs,group);svgElement.style.touchAction='none';
+  const eventLayer=make('g',{class:'map-event-outlines','pointer-events':'none','aria-hidden':'true'});
+  const regionOutline=make('path',{class:'region-event-outline',fill:'none',stroke:'#d33438','stroke-width':3,'vector-effect':'non-scaling-stroke','stroke-linejoin':'round','stroke-linecap':'round'});
+  const localOutlines=make('g',{class:'local-event-outlines'});
+  eventLayer.append(regionOutline,localOutlines);
+  svgElement.append(defs,group,eventLayer);svgElement.style.touchAction='none';
   const features=(geometry.features||[]).filter(f=>['Polygon','MultiPolygon'].includes(f.geometry?.type));
   const coords=[];const collect=a=>{if(typeof a[0]==='number')coords.push(a);else a.forEach(collect);};
   features.forEach(f=>collect(f.geometry.coordinates));
@@ -24,10 +45,12 @@ export function createMunicipalityMap(svgElement,geometry,{onSelect=()=>{},onHov
   const offsetX=(width-(maxX-minX)*scale)/2,offsetY=(height-(maxY-minY)*scale)/2;
   contentWidth=(maxX-minX)*scale+2*padding;
   const point=([x,y])=>[offsetX+(x*cos-minX)*scale,offsetY+(maxY-y)*scale];
-  let state={values:new Map(),domain:{min:0,max:1,signed:false},neutral:0,contrast:1,year:'',unitLabel:'',selectedCode:null,hoverCode:null};
+  regionOutline.setAttribute('d',regionBoundarySegments(geometry).map(edge=>edge.map((coordinate,i)=>`${i?'L':'M'}${point(coordinate).map(n=>n.toFixed(2)).join(',')}`).join('')).join(''));
+  let eventKey='';
+  let state={values:new Map(),domain:{min:0,max:1,signed:false},neutral:0,contrast:1,year:'',unitLabel:'',selectedCode:null,hoverCode:null,eventRegion:false,eventCodes:[]};
   let camera={z:1,x:0,y:0},animation=0,drag=null,didDrag=false,destroyed=false;
   const listen=(el,type,fn)=>{el.addEventListener(type,fn);listeners.push(()=>el.removeEventListener(type,fn));};
-  const apply=()=>group.setAttribute('transform',`translate(${camera.x} ${camera.y}) scale(${camera.z})`);
+  const apply=()=>{const transform=`translate(${camera.x} ${camera.y}) scale(${camera.z})`;group.setAttribute('transform',transform);eventLayer.setAttribute('transform',transform);};
   const move=(next,smooth=false)=>{
     cancelAnimationFrame(animation);
     if(!smooth||globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches){camera=next;apply();return;}
@@ -53,6 +76,13 @@ export function createMunicipalityMap(svgElement,geometry,{onSelect=()=>{},onHov
     const previousSelected=state.selectedCode;state={...state,...next,selectedCode:previousSelected};
     if(state.hoverCode!=null)state.hoverCode=String(state.hoverCode);
     for(const [code,path] of paths){if(state.names?.has(code))path.dataset.name=state.names.get(code);const value=state.values?.get(code),valid=typeof value==='number'&&Number.isFinite(value);path.setAttribute('fill',valid?colorFor(value,state.domain,state.neutral,state.contrast,state.metric):`url(#${patternId})`);path.classList.toggle('missing',!valid);const label=`${path.dataset.name} (${code}) · ${state.year} · ${valid?new Intl.NumberFormat('cs-CZ',{maximumFractionDigits:Math.abs(value)<0.01?6:3}).format(value):'Data nejsou dostupná'}${valid&&state.unitLabel?' '+state.unitLabel:''}`;path.setAttribute('aria-label',label);}
+    regionOutline.style.display=state.eventRegion?'':'none';
+    const codes=[...new Set(state.eventCodes.map(String))].filter(code=>paths.has(code)).sort();
+    const key=codes.join(',');
+    if(key!==eventKey){
+      localOutlines.replaceChildren(...codes.map(code=>make('path',{d:paths.get(code).getAttribute('d'),'data-code':code,class:'municipality-event-outline',fill:'none',stroke:'#d33438','stroke-width':3,'vector-effect':'non-scaling-stroke','stroke-linejoin':'round','stroke-linecap':'round'})));
+      eventKey=key;
+    }
     select(selected);paintStrokes();
   };
   const position=e=>{const p=svgElement.createSVGPoint();p.x=e.clientX;p.y=e.clientY;const matrix=svgElement.getScreenCTM();return matrix?p.matrixTransform(matrix.inverse()):p;};
@@ -61,5 +91,5 @@ export function createMunicipalityMap(svgElement,geometry,{onSelect=()=>{},onHov
   const endDrag=()=>{drag=null;};listen(window,'pointerup',endDrag);listen(window,'pointercancel',endDrag);
   const resizeObserver=typeof ResizeObserver==='function'?new ResizeObserver(resize):null;resizeObserver?.observe(svgElement);
   update({});
-  return {update,select,zoomBy(factor){if(!Number.isFinite(factor)||factor<=0)return;const z=Math.max(1,Math.min(8,camera.z*factor)),ratio=z/camera.z;move({z,x:width/2-(width/2-camera.x)*ratio,y:height/2-(height/2-camera.y)*ratio},true);},reset(){move({z:1,x:0,y:0},true);},destroy(){destroyed=true;resizeObserver?.disconnect();cancelAnimationFrame(animation);listeners.forEach(fn=>fn());defs.remove();group.remove();}};
+  return {update,select,zoomBy(factor){if(!Number.isFinite(factor)||factor<=0)return;const z=Math.max(1,Math.min(8,camera.z*factor)),ratio=z/camera.z;move({z,x:width/2-(width/2-camera.x)*ratio,y:height/2-(height/2-camera.y)*ratio},true);},reset(){move({z:1,x:0,y:0},true);},destroy(){destroyed=true;resizeObserver?.disconnect();cancelAnimationFrame(animation);listeners.forEach(fn=>fn());defs.remove();group.remove();eventLayer.remove();}};
 }

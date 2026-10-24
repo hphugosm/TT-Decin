@@ -89,3 +89,9 @@ Přehled vpravo sjednocuje území, rok, populaci k 1. lednu a tři volitelné m
 Přehrávání časové osy běží ve smyčce: po posledním roce pokračuje prvním rokem se stejnou rychlostí a vybraným územím. Poslední rok zůstává zobrazen po stejnou dobu jako ostatní. Tlačítko Pozastavit přehrávání ukončí.
 
 Mapa využívá celý panel pod průhlednými ovladači a legendou. Vybraný rok se zobrazuje velkým poloprůhledným číslem vlevo nahoře a aktualizuje se i během přehrávání. Horní značková lišta je odstraněna; import, nastavení a informace o datech jsou nad vyhledáváním v pravém sloupci.
+
+## Události v mapě
+
+Červené obrysy doplňují mapu pouze v příslušném kalendářním roce. Celokrajské události obtahují vnější hranici kraje, místní události jen konkrétní obec. Rámeček vpravo pod mapou uvádí rok, místo a popis; při souběhu vypíše obě události. Zůstává součástí mapy i při zvětšení na celé okno. Výběr obce, nastavení metrik ani časové vyhlazení nemění období událostí.
+
+Čtyři pracovní anotace podle zadání z 24. 10. 2026 jsou v `radar-events.mjs`: Schengen (2007, celý kraj), válka na Ukrajině a migrace (2022–2024, celý kraj), Litoměřice (2003–2007, odchod posádky 2003/2004 a roční poznámky k vývoji 2005–2007) a Bílina (2013, „obchod s chudobou“). Okolí Bíliny nemá určené konkrétní obce, proto se zvýrazňuje pouze Bílina. Jde o autorské poznámky dodané zadavatelem, nikoli o výsledek kauzální analýzy nebo nezávislého historického ověření. Anotace nemění podkladová data ani výpočty. Názvy a období lze upravit v uvedeném souboru.
