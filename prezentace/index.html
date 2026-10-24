@@ -7,8 +7,8 @@
   <meta name="description" content="Příběh dat obcí Ústeckého kraje. Živá prezentace a vedená prohlídka daty.">
   <title>Stěhování obcí Ústeckého kraje</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23173da5'/%3E%3Ccircle cx='10' cy='21' r='3' fill='white'/%3E%3Ccircle cx='22' cy='11' r='3' fill='white'/%3E%3Cpath d='M12 19L20 13' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=timer-pause-2">
-  <script src="app.js?v=timer-pause-2" defer></script>
+  <link rel="stylesheet" href="styles.css?v=slides-cleanup-3">
+  <script src="app.js?v=slides-cleanup-3" defer></script>
 </head>
 <body data-view="home" data-step="0">
   <main id="main">
@@ -28,32 +28,38 @@
 
     <section id="presentation" class="view presentation-view" aria-label="Živá prezentace" hidden>
       <div id="slide-one" class="slide intro-slide" aria-labelledby="intro-title">
-        <div class="slide-eyebrow"><span class="eyebrow">01 / Výchozí bod</span><span class="section-description">Stěhování obcí Ústeckého kraje</span></div>
+        <h1 id="intro-title" class="deck-title" tabindex="-1"><span class="title-underline">Stěhování obcí</span> <em>Ústeckého kraje.</em></h1>
         <div class="intro-layout">
-          <div class="intro-copy"><h1 id="intro-title" tabindex="-1">Data o obcích<br><em>Ústeckého kraje.</em></h1><div class="frequency"><span class="frequency-number">1</span><span>hodnota<br>za <strong>jeden rok</strong></span></div></div>
-          <div class="topics"><div class="topics-heading"><span class="eyebrow">Co data pokrývala</span><span>7 přehledných témat</span></div><ol class="topic-list"><li title="Sociální vyloučení">Sociální situace</li><li title="Migrace podle věku">Migrace</li><li title="Ekonomické subjekty">Firmy a podnikatelé</li><li title="REGUAP">Území a rozvoj</li><li title="Nezaměstnanost">Nezaměstnanost</li><li title="Věkové ukazatele a věková struktura">Věk obyvatel</li><li title="Základní demografie">Obyvatelstvo</li></ol></div>
+          <div class="intro-copy">
+            <div class="municipality-count"><strong>354</strong><span>obcí</span></div>
+            <div class="granularity" aria-label="Jedna hodnota jednoho ukazatele pro jednu obec za jeden rok">
+              <div class="unit-row" style="--i:0"><strong>1</strong><span>ukazatel</span></div>
+              <div class="unit-row" style="--i:1"><strong>1</strong><span>hodnota</span></div>
+              <div class="unit-row" style="--i:2"><strong>1</strong><span>obec</span></div>
+              <div class="unit-row" style="--i:3"><strong>1</strong><span>rok</span></div>
+            </div>
+          </div>
+          <div class="topics"><div class="topics-heading"><h2>Ukazatele:</h2></div><ul class="topic-list"><li title="Sociální vyloučení"><span class="topic-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6m3 10v-3a6 6 0 0 0-3-5"/></svg></span><span>Sociální situace</span></li><li title="Migrace podle věku"><span class="topic-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16m-4-4 4 4-4 4M20 17H4m4-4-4 4 4 4"/></svg></span><span>Migrace</span></li><li title="Ekonomické subjekty"><span class="topic-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5h10v16M14 11h6v10M2 21h20M8 9h2M8 13h2M8 17h2M17 15h1M17 18h1"/></svg></span><span>Firmy a podnikatelé</span></li><li title="REGUAP"><span class="topic-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3ZM9 3v15M15 6v15"/></svg></span><span>Území a rozvoj</span></li><li title="Nezaměstnanost"><span class="topic-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12a23 23 0 0 0 18 0M9 16h6"/></svg></span><span>Nezaměstnanost</span></li><li title="Věkové ukazatele a věková struktura"><span class="topic-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2M5 5l2 2M17 17l2 2"/></svg></span><span>Věk obyvatel</span></li><li title="Základní demografie"><span class="topic-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><circle cx="8" cy="10" r="2"/><path d="M5 16a3 3 0 0 1 6 0M15 9h4M15 13h4M15 17h2"/></svg></span><span>Osobní informace</span></li></ul></div>
         </div>
-        <div class="objective"><span class="eyebrow">Náš cíl</span><p>Najít <strong>lukrativní využití</strong> těchto dat.</p><span aria-hidden="true">↗</span></div>
+        <div class="objective"><span class="eyebrow">Náš cíl</span><p>Najít <strong>praktické využití</strong> těchto dat.</p><span aria-hidden="true">↗</span></div>
       </div>
 
       <div id="timeline-slide" class="slide timeline-slide" aria-labelledby="timeline-title" hidden>
-        <div class="slide-eyebrow"><span id="timeline-eyebrow" class="eyebrow">02 / Společné období</span><span class="section-description">Stěhování obcí Ústeckého kraje</span></div>
-        <h1 id="timeline-title" tabindex="-1">Hodně dat. <em>Krátký průnik.</em></h1>
+        <p class="deck-title"><span class="title-underline">Stěhování obcí</span> <em>Ústeckého kraje.</em></p>
+        <h1 id="timeline-title" class="timeline-title" tabindex="-1">Málo dat. <em>Krátký průnik.</em></h1>
         <div class="timeline-layout">
           <figure class="coverage-chart" aria-labelledby="chart-title" aria-describedby="chart-caption">
-            <div class="chart-topline"><h2 id="chart-title">Za které roky máme data?</h2><span class="chart-unit">2000–2025</span></div>
+            <div class="chart-topline"><h2 id="chart-title">Za které roky máme data?</h2></div>
             <div class="coverage-labels" aria-hidden="true"><span>Všechna témata současně</span><strong>2018–2024</strong></div>
             <div class="coverage-body">
-              <div class="plot-background" aria-hidden="true"><div class="plot-grid"><i style="--position:1.923077%"></i><i style="--position:21.153846%"></i><i style="--position:40.384615%"></i><i style="--position:59.615385%"></i><i style="--position:78.846154%"></i><i style="--position:98.076923%"></i></div><div class="common-band"></div><div class="event-band"><span>Od roku 2022</span></div></div>
+              <div class="plot-background" aria-hidden="true"><div class="plot-grid"><i style="--position:0%"></i><i style="--position:20%"></i><i style="--position:40%"></i><i style="--position:60%"></i><i style="--position:80%"></i><i style="--position:100%"></i></div><div class="common-band"></div><div class="event-band"><span>Od roku 2022</span></div></div>
               <div id="coverage-rows" class="coverage-rows" role="list" aria-label="Časové pokrytí sedmi témat"></div>
-              <div class="coverage-axis" aria-hidden="true"><span style="--position:1.923%">2000</span><span style="--position:21.154%">2005</span><span style="--position:40.385%">2010</span><span style="--position:59.615%">2015</span><span style="--position:78.846%">2020</span><span style="--position:98.077%">2025</span></div>
+              <div class="coverage-axis" aria-hidden="true"><span style="--position:0%">2000</span><span style="--position:20%">2005</span><span style="--position:40%">2010</span><span style="--position:60%">2015</span><span style="--position:80%">2020</span><span style="--position:100%">2025</span></div>
             </div>
-            <div class="overlap-detail"><span>Společný<br>průnik</span><div id="overlap-years" class="overlap-years" aria-label="Společné roky 2018 až 2024"></div></div>
             <figcaption id="chart-caption"><span class="legend"><i class="common-swatch"></i>Společné období všech témat</span><span class="legend event-legend"><i class="event-swatch"></i>Zlom od roku 2022</span></figcaption>
           </figure>
           <aside class="timeline-copy"><div class="big-stat"><span id="year-count">7</span><div id="year-label">společných let<span>2018–2024</span></div></div><p id="timeline-description">Každá datová sada sahá jinam.<br>Všechny se potkají jen tady.</p><div class="context-note"><span id="context-period">1 hodnota ročně</span><p id="context-description">Pro společnou analýzu máme jen sedm časových bodů.</p></div></aside>
         </div>
-        <div class="slide-takeaway"><span class="takeaway-line"></span><p id="timeline-takeaway">Dlouhé řady jednotlivě. Jen sedm let dohromady.</p></div>
       </div>
 
       <footer class="presentation-footer"><div class="presenter-tools"><button id="home-button" class="text-button" title="Zpět na rozcestník (Esc)">↖ Rozcestník</button><span class="tool-divider"></span><button id="notes-button" class="text-button" aria-haspopup="dialog">Nápady k animaci</button></div><div class="slide-navigation"><div id="slide-dots" class="slide-dots" aria-label="Vybrat snímek"><button aria-label="Snímek 1" data-slide="0"></button><button aria-label="Snímek 2" data-slide="1"></button><button aria-label="Snímek 3" data-slide="2"></button></div><span id="slide-counter">01 <span>/ 03</span></span><button id="previous" class="nav-button" aria-label="Předchozí snímek">←</button><button id="next" class="nav-button primary" aria-label="Další snímek">→</button><button id="fullscreen" class="fullscreen-button" aria-label="Celá obrazovka" title="Celá obrazovka (F)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></div></footer>

@@ -3,9 +3,9 @@ const $ = (selector) => document.querySelector(selector);
 const views = { home: $('#home'), presentation: $('#presentation'), guide: $('#guide') };
 const presentationTitle = 'Stěhování obcí Ústeckého kraje';
 const notes = [
-  'Sedm témat může jemně naběhnout po řádcích. Věkové ukazatele a věková struktura jsou sloučené do tématu Věk obyvatel. Jedna hodnota za rok je záměrně uvedena jen jednou.',
-  'Nejprve se objeví délky jednotlivých řad. Potom se přes všechny řádky zvýrazní červený průnik 2018–2024. Sedm políček pod grafem překládá průnik na sedm ročních pozorování.',
-  'Graf, jeho měřítko i červený průnik zůstávají na místě. Přes roky 2022–2024 přibude vínově šrafovaný pás. Poslední tři políčka změní barvu, sedmička se změní na čtyřku. Zůstávají roky 2018–2021 před tímto zlomem.'
+  'V datech je 354 jedinečných kódů obcí, shodných s 354 obcemi mapového podkladu. Počet je ověřený v datovém panelu. Po počtu obcí postupně nabíhají čtyři jedničky: jeden ukazatel, jedna hodnota, jedna obec, jeden rok. Ukazatele doprovázejí jednoduché obrysové ikony.',
+  'Nejprve se objeví délky jednotlivých řad. Potom se přes všechny řádky zvýrazní červený průnik 2018–2024. Průnik představuje sedm ročních pozorování; legenda zůstává pod grafem.',
+  'Graf, jeho měřítko i červený průnik zůstávají na místě. Přes roky 2022–2024 přibude vínově šrafovaný pás. Sedmička se změní na čtyřku. Zůstávají roky 2018–2021 před tímto zlomem.'
 ];
 let currentView = 'home';
 let currentSlide = 0;
@@ -18,7 +18,7 @@ const coverage = [
   { label: 'Území a rozvoj', original: 'REGUAP', start: 2018, end: 2025 },
   { label: 'Nezaměstnanost', original: 'Nezaměstnanost', start: 2015, end: 2024 },
   { label: 'Věk obyvatel', original: 'Věkové ukazatele + věková struktura', start: 2000, end: 2025 },
-  { label: 'Obyvatelstvo', original: 'Základní demografie', start: 2000, end: 2025 }
+  { label: 'Osobní informace', original: 'Základní demografie', start: 2000, end: 2025 }
 ];
 for (const [i, row] of coverage.entries()) {
   const element = document.createElement('div');
@@ -26,14 +26,8 @@ for (const [i, row] of coverage.entries()) {
   element.setAttribute('role', 'listitem');
   element.setAttribute('aria-label', `${row.label}: ${row.start} až ${row.end}`);
   element.title = `${row.original} · ${row.start}–${row.end}`;
-  element.innerHTML = `<span class="coverage-name">${row.label}</span><div class="coverage-track"><span class="coverage-bar" style="--start:${(row.start - 2000) / 26 * 100}%;--width:${(row.end - row.start + 1) / 26 * 100}%;--i:${i}"></span></div>`;
+  element.innerHTML = `<span class="coverage-name">${row.label}</span><div class="coverage-track"><span class="coverage-bar" style="--start:${(row.start - 2000) / 25 * 100}%;--width:${(row.end - row.start) / 25 * 100}%;--i:${i}"></span></div>`;
   $('#coverage-rows').append(element);
-}
-for (let year = 2018; year <= 2024; year++) {
-  const element = document.createElement('span');
-  element.className = 'year-chip' + (year >= 2022 ? ' affected' : '');
-  element.textContent = String(year);
-  $('#overlap-years').append(element);
 }
 const overlapStart = Math.max(...coverage.map(row => row.start));
 const overlapEnd = Math.min(...coverage.map(row => row.end));
@@ -60,14 +54,12 @@ function renderRoute({ focus = false } = {}) {
     $('#slide-one').hidden = currentSlide !== 0;
     $('#timeline-slide').hidden = currentSlide === 0;
     const event = currentSlide === 2;
-    $('#timeline-eyebrow').textContent = event ? '03 / Zlom v datech' : '02 / Společné období';
-    $('#timeline-title').innerHTML = event ? 'Pak přišel <em>rok 2022.</em>' : 'Hodně dat. <em>Krátký průnik.</em>';
+    $('#timeline-title').innerHTML = event ? 'Pak přišel <em>rok 2022.</em>' : 'Málo dat. <em>Krátký průnik.</em>';
     $('#timeline-description').innerHTML = event ? 'Příchod lidí z Ukrajiny<br>mění kontext posledních tří let.' : 'Každá datová sada sahá jinam.<br>Všechny se potkají jen tady.';
     $('#year-count').textContent = event ? '4' : '7';
     $('#year-label').innerHTML = event ? 'roky před zlomem<span>2018–2021</span>' : 'společných let<span>2018–2024</span>';
     $('#context-period').textContent = event ? '2022–2024 · 3 ze 7 let' : '1 hodnota ročně';
     $('#context-description').textContent = event ? 'Zásadní migrační vlna uvnitř už tak krátkého průniku.' : 'Pro společnou analýzu máme jen sedm časových bodů.';
-    $('#timeline-takeaway').textContent = event ? 'Ze sedmi společných let zůstávají čtyři před zlomem.' : 'Dlouhé řady jednotlivě. Jen sedm let dohromady.';
     $('#previous').disabled = currentSlide === 0;
     $('#next').disabled = currentSlide === 2;
     $('#slide-counter').innerHTML = `0${currentSlide + 1} <span>/ 03</span>`;
@@ -79,14 +71,16 @@ function renderRoute({ focus = false } = {}) {
     // Keep the shared graph mounted between slides 2 and 3.
     if (previousView !== currentView || currentSlide === 0 || previousSlide === 0) {
       animate(currentSlide === 0 ? $('#slide-one') : $('#timeline-slide'), 'entering');
+      if (currentSlide === 0) {
+        document.querySelectorAll('.unit-row').forEach(item => animate(item, 'unit-enter'));
+      }
     } else if (previousSlide !== currentSlide) {
       animate($('.timeline-copy'));
-      animate($('#timeline-takeaway'));
     }
     // Commit initial geometry before revealing the event strip on direct entry.
     void $('#timeline-slide').offsetWidth;
     document.body.dataset.step = String(currentSlide);
-    const titles = ['Data o obcích Ústeckého kraje', 'Společný průnik 2018–2024: sedm let.', 'Roky 2022–2024 mění kontext. Před zlomem zbývají čtyři roky.'];
+    const titles = ['354 obcí: jedna hodnota jednoho ukazatele pro jednu obec za jeden rok', 'Společný průnik 2018–2024: sedm let.', 'Roky 2022–2024 mění kontext. Před zlomem zbývají čtyři roky.'];
     document.title = `${currentSlide + 1} / 3 · ${titles[currentSlide]} · ${presentationTitle}`;
     $('#slide-announcement').textContent = `Snímek ${currentSlide + 1} ze 3. ${titles[currentSlide]}`;
   } else {
