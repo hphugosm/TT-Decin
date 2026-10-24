@@ -9,5 +9,5 @@
 - Název projektu je na prvním slajdu vlevo na jednom řádku; od druhého je vpravo ve dvou řádcích („Stěhování obcí“ / „Ústeckého kraje.“). Při přechodu mezi prvním a druhým se plynule přesune a přeskupí. Používej společný prvek `#deck-brand`, ne duplikované názvy na jednotlivých slajdech.
 - Čtyři popisky vedle společné velké jedničky začínají velkým písmenem: Ukazatel, Hodnota, Obec, Rok.
 
-- Obsahové nadpisy od druhého slajdu centruj ve volném prostoru nad grafem, vlevo od názvu projektu. Název projektu drž ve stejné vzdálenosti od horní hrany; kvůli posunu nadpisu jej neposouvej.
+- Obsahové nadpisy od druhého slajdu zarovnávej doleva ke společnému levému okraji obsahu a grafu. Zachovej jejich svislou polohu ve volném prostoru nad grafem, vlevo od názvu projektu. Název projektu drž ve stejné vzdálenosti od horní hrany; kvůli posunu nadpisu jej neposouvej.
 - Na slajdech nezobrazuj tlačítka „Rozcestník“ a „Nápady k animaci“ ani jejich společný panel. Poznámkový dialog a klávesová zkratka N byly odstraněny.
