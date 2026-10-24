@@ -1,0 +1,30 @@
+{
+  "evaluated_at": "2026-10-24T10:09:23.139337+00:00",
+  "frozen_candidates_verified": {
+    "total_models": "9321d0833e3466774655ceb56061c3effaad1298f456597e26c36c6b13c1d7a0",
+    "clean_models": "9431c82631d01c75471f9976ad4f9a14c364a599d1b7a9fdceeac20be4a40300"
+  },
+  "actual_total_2022": 22948.0,
+  "actual_UA_foreign_2022": 16257.0,
+  "actual_without_UA_foreign_2022": 6691.0,
+  "preliminary_without_DO_2022": 7405.0,
+  "all_models_kept_no_selection": true,
+  "evaluation_script_sha256": "6c70e9bb7fdf1d20d0bbc8036f4356d2501c5a22629e096b3d6aed2a1045b036",
+  "files": {
+    "results/migration_2022/bonus_2021/clean_frozen_predictions_2022.csv": "76dde78a725c81c5225aa0b562f548347f4a9c41b90b3f104f95728d916fcf7c",
+    "results/migration_2022/bonus_2021/total_original_forecast_agreement.csv": "33eb81b30f839d1ccbe5fcac695cedb24f3964c202d3b43f056d1d27ee9fb2a0",
+    "results/migration_2022/bonus_2021/total_backtest.csv": "4484b67d1714bde1d78d1201f22a31da5ec48189a86dc60dd6efa50f75394440",
+    "results/migration_2022/bonus_2021/verified_history.csv": "29b92737e169043ae769254e74d465802eedaffa67d5005e11c396fcb6978835",
+    "results/migration_2022/bonus_2021/source_coverage_2000_2021.csv": "41d0c41c4937af61bef8c5b418539465f96caa9a94b27942fdedc28aa11d77f3",
+    "results/migration_2022/bonus_2021/historical_clean_target_comparison.csv": "ff7cd4f1ad1b6b968b232a371f017317c5b5c54e66fb3c7b1a34167de5689299",
+    "results/migration_2022/bonus_2021/total_paired_horizon_comparison.csv": "2fe8f0330f358af618a89b821f0dc20fba18559cc7cdf174f954c68ba5d5b86b",
+    "results/migration_2022/bonus_2021/population_diagnostic.csv": "3b73f7b3eb261ec5217a723ecae50c00ee763f66f8dbc8e8fc4f4f26cd1a221c",
+    "results/migration_2022/bonus_2021/clean_backtest_predictions.csv": "fd5d1bea69a64f2b48720cbb40ab7f7ac474dc11a99938064e871c8d476cda49",
+    "results/migration_2022/bonus_2021/cross_definition_controls_2022.csv": "163164d7d27168e329d74d1caae6f5e0cefc40cf12dc627870520a19e89dce55",
+    "results/migration_2022/bonus_2021/total_historical_metrics.csv": "ab7af2d8da135a8f6931b1a3de8989bc307dd40e0c02e5b6aca5b9fbb9198b44",
+    "results/migration_2022/bonus_2021/clean_model_comparison.csv": "f5a52400e573140f14144d9ee857ee5b25f1137a863b2b32cda1f419a7f49a62",
+    "results/migration_2022/bonus_2021/total_final_predictions.csv": "75886fee923fd65683b990dde6636d5f6b9b14368f7a06562d1d521d72984f46",
+    "results/migration_2022/bonus_2021/source_search_2000_2009.csv": "6c0b7c64b93d8df9af1be6620fa12b63ae64311a91de8401da766d6a6df0f24e",
+    "results/migration_2022/bonus_2021/evaluation_2022.csv": "699df25b1d05660369151efa4eb594227538c84ed0efb54ad958e3cf5a7246f3"
+  }
+}

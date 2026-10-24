@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-10-24T10:06:24.368660+00:00",
+  "actual2022_read": false,
+  "input_modified_csv_sha256": "7e12aef1ccc37477d8f5dd0cd9e005a0b63297b50862e07fec120481530fa090",
+  "sha256": {
+    "protocol.json": "4b2e58055cc51ad3a242d0357880b23f2caa1b1c8ff602ede4c512c4b48df9d1",
+    "protocol_freeze.json": "6283a88a89da353594af5b9fc8b143695adf7501d0cf57869ee5f63436422534",
+    "run_diagnostic.py": "cdf7ca8052b6f27a7f38cf64b4f9bc31f82176b7ecd0c16aa568df93094cf62a",
+    "diagnostic_comparison.csv": "3b73f7b3eb261ec5217a723ecae50c00ee763f66f8dbc8e8fc4f4f26cd1a221c",
+    "fits.jsonl": "63fe8460c5a5b05738a6779e10620398ef67cabcda9f22628f9e6572bb26f826"
+  }
+}

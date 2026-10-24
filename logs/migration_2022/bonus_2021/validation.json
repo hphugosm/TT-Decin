@@ -1,0 +1,38 @@
+{
+  "validated_at": "2026-10-24T10:17:02.570379+00:00",
+  "total": {
+    "status": "passed",
+    "backtest_rows": 105,
+    "final_rows": 21,
+    "h2_B1": 7255,
+    "h2_B2": 8108,
+    "frozen_at": "2026-10-24T09:59:16.410014+00:00"
+  },
+  "preservation": {
+    "status": "passed",
+    "preexisting_files_checked": 103
+  },
+  "clean": {
+    "status": "passed",
+    "clean_start": 2006,
+    "historical_rows": 280,
+    "future_rows": 56
+  },
+  "sources_and_diagnostic": {
+    "status": "passed",
+    "verified_UA_years": 16,
+    "unverified_UA_years": 6,
+    "total_reconciliation_years": 16,
+    "diagnostic_parameter_equality": true
+  },
+  "evaluation": {
+    "status": "passed",
+    "evaluation_rows": 77,
+    "actual_total": 22948,
+    "actual_without_UA_foreign": 6691
+  },
+  "publication": {
+    "status": "passed",
+    "files_checked": 41
+  }
+}

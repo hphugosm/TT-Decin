@@ -1,0 +1,25 @@
+{
+  "run_id": "bonus_clean_20261024T100751Z",
+  "frozen_at": "2026-10-24T10:07:54.862751+00:00",
+  "input_sha256": "29b92737e169043ae769254e74d465802eedaffa67d5005e11c396fcb6978835",
+  "files": {
+    "protocol.json": "ebdad2518e492d144dc553d59cc1952ba2964fce141b42d474cf4273093d05d4",
+    "environment.json": "171149322191a185458b8c69cefd1042421d8e448e6c49128aea20f4b23db21a",
+    "backtest_predictions.csv": "fd5d1bea69a64f2b48720cbb40ab7f7ac474dc11a99938064e871c8d476cda49",
+    "matched_backtest_predictions.csv": "bca5aab43a97aa8f1a0448b04b69de552a469eb6bf0d7d8b4f89a3c6e446c559",
+    "model_comparison.csv": "f5a52400e573140f14144d9ee857ee5b25f1137a863b2b32cda1f419a7f49a62",
+    "candidate_forecasts_2022.csv": "76dde78a725c81c5225aa0b562f548347f4a9c41b90b3f104f95728d916fcf7c",
+    "fits.jsonl": "8e82807aa30898175f6f2f6aae2a40a2ae7e0a5ec9bdf907540c4d6b16f224f2",
+    "unavailable.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "historical_rows": 280,
+  "future_rows": 56,
+  "status_counts_historical": {
+    "success": 280
+  },
+  "status_counts_future": {
+    "success": 56
+  },
+  "no2022actuals_read": true,
+  "no_new_hyperparameter_selection": true
+}

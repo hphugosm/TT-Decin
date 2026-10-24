@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-10-24T10:07:25.271545+00:00",
+  "clean_start": 2006,
+  "clean_end": 2021,
+  "verified_years": 16,
+  "unverified_years": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005
+  ],
+  "all_16_source_total_arrivals_match_original_final_series": true,
+  "definition": "Regional total incoming minus foreign arrivals of Ukrainian citizens; domestic moves by Ukrainian citizens remain",
+  "vintage_limitation": "Citizenship components use early/preliminary annual publications; all total-arrival controls reconcile exactly to final series, but citizenship-specific revisions are not independently ruled out. No claim of complete homogeneous 2000–2021 series.",
+  "methodology_breaks": "2001 resident scope changes; 2012 foreign migration source change; census2021 population rebasing; 2022 temporary protection inclusion. See separate methodological notes.",
+  "no_imputation": true,
+  "original_region_input_sha256": "6aba316ab6ce8315ddd67de630f61c76fbe93ca75ff4a709b3047e25e698f79b",
+  "source_provenance_sha256": {
+    "sources_early/provenance.json": "4b172fd67bced5d217c29654c4a3658d5228826c54f4f8f83ce132c491c533c1",
+    "sources_recent/provenance_recent.json": "9179c3d79d69eb0ca93787f3e3a4c2de246d94a29a6371cedb6364b51ba939e2"
+  },
+  "files": {
+    "verified_history.csv": "29b92737e169043ae769254e74d465802eedaffa67d5005e11c396fcb6978835",
+    "source_coverage_2000_2021.csv": "41d0c41c4937af61bef8c5b418539465f96caa9a94b27942fdedc28aa11d77f3"
+  },
+  "script_sha256": "aa64240e0c34f7844b91eb2f2764a67c9153f5f51337b546cd249d25f5eb1944"
+}

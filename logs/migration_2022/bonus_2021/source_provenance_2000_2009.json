@@ -1,0 +1,121 @@
+{
+  "definition": "foreign immigrants with Ukrainian citizenship into Ústecký kraj; all ages and sexes; annual count of migration events",
+  "earliest_verified_contiguous_suffix": 2006,
+  "through": 2009,
+  "missing_years": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005
+  ],
+  "model_vintage_caution": "Preliminary yearend tables; final regional total reconciliation passed for2006–09, no proof citizenshipdataunchanged. Never silently label final or mix vintages without documenting.",
+  "sources": [
+    {
+      "file": "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/bonus_2021/sources_early/raw/sp2006_53.pdf",
+      "url": "https://csu.gov.cz/docs/107508/a8e279cb-f476-e218-077f-ba2957b93f2c/400106q453.pdf?version=1.0",
+      "sha256": "b29342cf68f60774d9ec09e14eccafdbc6120abb3715903dc7322739302ed9b7"
+    },
+    {
+      "file": "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/bonus_2021/sources_early/raw/sp2007_53.pdf",
+      "url": "https://csu.gov.cz/docs/107508/3dbb2de7-4728-7c67-6dec-6be8424d5e8e/400107q453.pdf?version=1.0",
+      "sha256": "b2b7c298ffc2068827bce41c062c754d8a153fc16a0524380969a245d747b5f5"
+    },
+    {
+      "file": "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/bonus_2021/sources_early/raw/sp2007_53.xls",
+      "url": "https://csu.gov.cz/docs/107508/a5891052-74cd-3ff9-d70e-a924cfb210df/400107q453.xls?version=1.0",
+      "sha256": "85c7bd4c46aef03331247d7c88be7ae1947d5f0229771f52de021b4ac623d41f"
+    },
+    {
+      "file": "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/bonus_2021/sources_early/raw/sp2007_11.xls",
+      "url": "https://csu.gov.cz/docs/107508/d398b71a-b521-a2cc-0735-306646c655b6/400107q411.xls?version=1.0",
+      "sha256": "b91209603aebad0ec6fdc03068c4c230f4f3b1695193e2628c5065fd78e5ac67"
+    },
+    {
+      "file": "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/bonus_2021/sources_early/raw/sp2008_53.pdf",
+      "url": "https://csu.gov.cz/docs/107508/652fd061-e7af-d0f0-7ef7-68dd97fdedca/400108q453.pdf?version=1.0",
+      "sha256": "0da087c459bcd001d752e68dcbe4202effdb03056722809228e434e4578f4903"
+    },
+    {
+      "file": "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/bonus_2021/sources_early/raw/sp2009_53.pdf",
+      "url": "https://csu.gov.cz/docs/107516/0886a81c-9314-64a6-cbe3-e5f5ab5695b2/13840553%20400109q453.pdf?version=1.0",
+      "sha256": "13774397b6b133cc2ac41421b0f04d2c5fde4abd7a3a070af9ca8637170293eb"
+    },
+    {
+      "file": "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/bonus_2021/sources_early/raw/sp2004.html",
+      "url": "https://csu.gov.cz/produkty/stav-a-pohyb-obyvatelstva-v-ceske-republice-4-ctvrtleti-64mxa1cglo",
+      "sha256": "8c519f5614bc8a729c415043f10370a51760b713252baff08440f6d273b88372"
+    },
+    {
+      "file": "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/bonus_2021/sources_early/raw/sp2005.html",
+      "url": "https://csu.gov.cz/produkty/stav-a-pohyb-obyvatelstva-v-cr-4-ctvrtleti-a38ac9z0xi",
+      "sha256": "605dd7436634b32a4cbb7f9f3e55b4596a271609e98ea1e849dd9e3d83dc6df5"
+    },
+    {
+      "file": "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/bonus_2021/sources_early/raw/yearbook_toc2000.pdf",
+      "url": "https://csu.gov.cz/docs/107516/c9446e99-a593-03d7-b12f-b0dde452ca64/401900o.pdf?version=1.0",
+      "sha256": "3e530482b0328f4e49c9b3a0c3c56d757e9a6c70b1ec43e27e3ae62d76be7a99"
+    },
+    {
+      "file": "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/bonus_2021/sources_early/raw/yearbook_toc2009.pdf",
+      "url": "https://csu.gov.cz/docs/107516/ed487d89-9316-a141-20f8-f006ff777ac8/401910o.pdf?version=1.0",
+      "sha256": "014732c1d37876d40712f0c752a5d30c7a362347ac843eba631b8a9c07b96279"
+    },
+    {
+      "file": "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/bonus_2021/sources_early/raw/sp2006_51.pdf",
+      "url": "https://csu.gov.cz/docs/107508/073b3c92-902a-b68c-72f5-9d89464664f5/400106q451.pdf?version=1.0",
+      "sha256": "04db373ab3230221f7c7b60b5af156d72d834095211340cde87d92d430aa6c25"
+    },
+    {
+      "file": "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/bonus_2021/sources_early/raw/sp2009_11.pdf",
+      "url": "https://csu.gov.cz/docs/107508/041b9dc0-b45e-3b80-a13f-dff14dbfed01/400109q411.pdf?version=1.0",
+      "sha256": "08d33d15977233354a763ecbeca63810e65158c1db19d3d7fa46e781000b8758"
+    },
+    {
+      "file": "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/bonus_2021/sources_early/raw/regional_2000_2004_analysis.pdf",
+      "url": "https://csu.gov.cz/docs/107508/a3b29fc0-45d7-8a47-5145-33df664c76a0/423305k03.pdf?version=1.0",
+      "sha256": "2d58111116222ba86ce5a2e4cea14ccbbc3f99a3d79eb1ea314cf104cb6fb6ca"
+    },
+    {
+      "file": "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/bonus_2021/sources_early/raw/sp2008_53.xls",
+      "url": "https://csu.gov.cz/docs/107508/d8583f6c-bfa3-41d2-40de-ecd021ca62f4/400108q453.xls?version=1.0",
+      "sha256": "91d08cf35d6974499805f3e244d6696bbae5a04f7b1789ccae213d386daadb22"
+    },
+    {
+      "file": "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/bonus_2021/sources_early/raw/sp2008_11.xls",
+      "url": "https://csu.gov.cz/docs/107508/9e06f4e8-95a4-071c-e502-5bab7f79968a/400108q411.xls?version=1.0",
+      "sha256": "c0479849292aa8f5205fe02ecd655796a5f0b9785334cd2a524419d7ec12af03"
+    }
+  ],
+  "rejected_sources": [
+    {
+      "url": "https://csu.gov.cz/docs/107508/a3b29fc0-45d7-8a47-5145-33df664c76a0/423305k03.pdf?version=1.0",
+      "reason": "Table3.4.3 is totalmigration citizenship SALDO, not foreignarrivals; cannot infer grossarrivals."
+    },
+    {
+      "url": "https://csu.gov.cz/docs/107516/c9446e99-a593-03d7-b12f-b0dde452ca64/401900o.pdf?version=1.0",
+      "reason": "Migrationtables country×citizenship and region×total appear separately; no targetthreewaytabulation verified."
+    },
+    {
+      "url": "https://csu.gov.cz/docs/107516/ed487d89-9316-a141-20f8-f006ff777ac8/401910o.pdf?version=1.0",
+      "reason": "H14national citizenship×age not destinationregion."
+    },
+    {
+      "url": "https://csu.gov.cz/produkty/stav-a-pohyb-obyvatelstva-v-ceske-republice-4-ctvrtleti-64mxa1cglo",
+      "reason": "Annual listingonly5.1/5.2, no citizenshiptable5.3."
+    },
+    {
+      "url": "https://csu.gov.cz/produkty/stav-a-pohyb-obyvatelstva-v-cr-4-ctvrtleti-a38ac9z0xi",
+      "reason": "Annual listingonly5.1/5.2, no citizenshiptable5.3."
+    }
+  ],
+  "output_sha256": "6c0b7c64b93d8df9af1be6620fa12b63ae64311a91de8401da766d6a6df0f24e",
+  "script_sha256": "308e7c65b7434e8df96e9a83086e14867c228a6bf9903fafe9c6568dd8d117c4",
+  "final_regional_control_source": {
+    "file": "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/region_data/region_train.csv",
+    "sha256": "6aba316ab6ce8315ddd67de630f61c76fbe93ca75ff4a709b3047e25e698f79b",
+    "definition": "DirectofficialregionalDEM0009total100/3069; sourcedinexistingregion_data/source_audit.json; onlyreadhere"
+  },
+  "methodology": "https://csu.gov.cz/pohyb-obyvatelstva-metodika"
+}

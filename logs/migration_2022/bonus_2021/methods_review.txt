@@ -1,0 +1,34 @@
+BONUS: nezávislá metodická poznámka, 24. 10. 2026
+Výzkum doplňku vzniká po znalosti výsledku 2022. Původní zmrazené výsledky se nemění.
+
+DOPORUČENÝ HLAVNÍ PROTOKOL
+1. Ponechat původní konfigurace vybrané na vývoji 2010–2014. Použít stejné cíle 2017–2021 pro všechny tři horizonty: h1 trénink <=t−1, h2 <=t−2, h3 <=t−3. Nejstarší původ h3 je 2014, kdy už je vývoj hotov. Expozice a všechny transformace se fitují pouze z dostupného tréninku. Žádné skutečné mezilehlé hodnoty při víceletém horizontu.
+2. Primárně porovnat B1, B2 a všechny pevné rodiny na stejných pěti cílech. Uvést jednotlivé chyby, MAE, RMSE a podepsanou chybu, rozdíly chyb mezi horizonty na shodných cílech. Vyhodnotit také předcovidové cíle 2017–2019 zvlášť, s upozorněním na pouhé tři roky. Pět cílů neopravňuje silné inferenční závěry.
+3. Pro rok 2022 zobrazit všechny pevné rodiny a obě reference pro počátky 2021/2020/2019. Označit h2/h3 jako odhad se starší informací a delším horizontem. Rozdíl h1−h2 současně mění poslední dostupný rok, stáří informace a horizont; neidentifikuje samostatný efekt roku 2021, covidu ani sčítání.
+4. Přidá-li se selektor, skóruje pouze již dokončené předpovědi: jejich cílový rok <= původ nynější předpovědi t−h. Nestačí cílový rok < t. U stejného horizontu musí být původ minulého testu navíc konzistentní s h. Pro počátek 2014 nejsou postvývojové nezávislé chyby; řešit předem danou referencí nebo výslovně vývojovými chybami, nikdy budoucími chybami 2015/2016. Nezaměňovat poctivost pevně zvoleného modelu s nezávislou validací selektoru.
+5. Volbu horizontu nebo další rodiny podle nejlepší shody s 2022 nevydávat za předšokový výběr. Bonus vzniká se znalostí šoku: historické testy měří předvídatelnost minulých celkových toků, ne chybu nepozorovaného světa bez války v2022.
+
+CO JE A NENÍ „OČIŠTĚNÍ“
+Celkový krajský příliv = zahraniční + mezikrajský příliv všech občanství. Odečíst zahraniční příliv osob ukrajinského občanství znamená vyloučit právě zahraniční UA složku, nikoli veškeré pohyby Ukrajinců (UA stěhování z jiných českých krajů zůstává). Občanství neurčuje zemi předchozího pobytu ani status DO.
+
+Varianta pouze poslední hodnoty 2021: I2021−1552, pokud je1552 doloženo přesnou oficiální buňkou a stejným územím/definicí, je ruční intervence v jediném koncovém pozorování. Není opravou chybné hodnoty, není kompletní řadou bez Ukrajinců a není řadou bez DO. Její vliv na předpověď lze transparentně zobrazit jako citlivost, bez tvrzení o vyšší přesnosti. Historické analogie vyžadují odečet stejné složky v posledním pozorování každého testu; nelze odečítat1552 v jiných letech.
+
+Pokud jsou dostupné souměřitelné zahraniční UA přílivy v celém historickém úseku, vytvořit samostatný target I_all−I_UA_foreign pro každý rok. Přepočítat historické cíle i modelové vstupy ve stejné definici; testovat na průniku dostupných let. Konfigurace ponechat pevné nebo nový vývoj oddělit před hodnocením. Tuto jinou veličinu lze přímo testovat jen proti stejně definované skutečnosti, nikoli označit odchylku proti celkovému přílivu za chybu. Pro saldo je nutné konzistentně odečíst i odpovídající UA zahraniční odchody. Přičtení nějaké budoucí UA složky vyžaduje samostatný model a další nejistotu.
+
+Předběžný benchmark bez DO vyřazuje dočasnou ochranu, ale nikoli jiné ukrajinské migranty a nepřímé dopady války. Historická celková migrace již Ukrajince obsahuje. Úprava2021 ani řada bez zahraničních UA neidentifikuje kauzální efekt války2022.
+
+OVĚŘENÉ PRIMÁRNÍ OPORY (parafráze, nikoli nové numerické ladění)
+A. ČSÚ, Počet obyvatel – metodika: bilance od2021 vychází ze sčítání2021; nový základ vytváří nespojitost populačního stavu. Nesoulad souvisí mj. s nehlášeným vystěhováním. Zlom stavu není přímo změřený roční migrační tok; z populačního rozdílu neodvozovat migraci. Tento zdroj sám nedokládá umělé navýšení přílivu2021.
+https://csu.gov.cz/pocet_obyvatel_m
+
+B. ČSÚ, Vývoj obyvatelstva v krajích ČR2021, kap.6 Migrace, tištěná s.73, pozn.52–53, a s.76 pozn.58:2020–2021 zahraniční vystěhování ovlivnily administrativní aktualizace CIS po legislativní změně. Zánik evidence může být vykázán jako vystěhování, i když reálný pohyb nastal dříve či nenastal. Načasování a intenzita se regionálně lišily. Pandemie omezila mobilitu2020. Nelze proto každý výkyv připsat pouze skutečnému pohybu nebo pouze covidu; zmíněná administrativní výhrada se týká zejména odchodů, ne důkazu chybného přílivu2021.
+https://csu.gov.cz/docs/107508/a7944e29-d7b2-19f9-df3a-9f3e99500e7a/1301572206.pdf
+
+C. ČSÚ, Pohyb obyvatelstva2021, vydáno21.3.2022: tehdejší předběžná populace již navazovala na sčítání2021; národní zahraniční přistěhování bylo69,2tisíce proti55,7tisíce2020. Největší kladné saldo mělo ukrajinské občanství. To dokládá přítomnost běžné ukrajinské migrace před rokem2022, nikoli její kauzální rozklad ani regionální hodnotu1552. Pro modelové vstupy uchovat původní konečnou datovou verzi a nezaměnit ji s tímto předběžným komentářem.
+https://csu.gov.cz/rychle-informace/pohyb-obyvatelstva-rok-2021
+
+D. ČSÚ, Pohyb obyvatelstva – metodika: migrace se řídí hlášením změny registrovaného pobytu; od2005 administrativní zdroje MV. Úplnost závisí i na hlášení odchodů. Občanství, zahraniční přesun a pobytové oprávnění jsou samostatné klasifikace. Zdroj nepodporuje odstranění2021 jako automatickou metodickou opravu.
+https://csu.gov.cz/pohyb-obyvatelstva-metodika
+
+NEOVĚŘENO V TOMTO POSUDKU
+Konkrétní hodnota1552 nebyla tímto rešeršním posudkem nezávisle doložena oficiální buňkou; musí ji doložit zdrojový audit bonusu. Nebyla zde ověřena úplná historie zahraničních UA přílivů. Bez ní neoznačovat jednorázovou úpravu2021 za konzistentní historickou řadu bezUA.
