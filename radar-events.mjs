@@ -14,14 +14,9 @@ export const migrationEvents = [
   },
   {
     id: 'litomerice-garrison', scope: 'municipality', code: '564567', place: 'Litoměřice',
-    startYear: 2003, endYear: 2007, date: '2003/2004',
+    startYear: 2005, endYear: 2006, date: '2003/2004',
     title: 'Zrušení vojenské posádky',
-    description: 'Na přelomu let 2003 a 2004 armáda opustila město.',
-    yearNotes: {
-      2005: 'Nárůst vystěhovalých; odchod vojenské posádky proběhl v letech 2003/2004.',
-      2006: 'Nárůst vystěhovalých; odchod vojenské posádky proběhl v letech 2003/2004.',
-      2007: 'Výrazný nárůst přistěhovalých oproti krajskému průměru; odchod posádky v letech 2003/2004.'
-    }
+    description: 'Nárůst vystěhovalých; odchod vojenské posádky proběhl v letech 2003/2004.'
   },
   {
     id: 'bilina-2013', scope: 'municipality', code: '567451', place: 'Bílina',

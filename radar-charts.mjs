@@ -1,5 +1,5 @@
 import {derivedValue, metricLabel, unitLabel} from './radar-engine.mjs';
-import {eventsForTerritory} from './radar-events.mjs?v=event-bands-1';
+import {eventsForTerritory} from './radar-events.mjs?v=garrison-2005-2006';
 const metricColors={incoming:'#173da5',outgoing:'#de7524',balance:'#d3a600'};
 const NS='http://www.w3.org/2000/svg', finite=Number.isFinite;
 let chartSequence=0;
