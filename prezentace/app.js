@@ -116,9 +116,12 @@ function pauseMapPlayback() {
   const frameDocument = mapFrame.contentDocument;
   if (frameDocument) frameDocument.dispatchEvent(new Event('tt-decin:presentation-hidden'));
 }
-function showMap() {
+function prepareMap() {
   if (!mapFrame.hasAttribute('src')) mapFrame.src = mapFrame.dataset.src;
-  else mapFrame.contentWindow.dispatchEvent(new Event('resize'));
+}
+function showMap() {
+  prepareMap();
+  mapFrame.contentWindow.dispatchEvent(new Event('resize'));
 }
 mapFrame.addEventListener('load', () => {
   const frameDocument = mapFrame.contentDocument;
@@ -268,6 +271,100 @@ window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',
   if (event.matches) cancelHypothesisBreakup();
 });
 
+// Animate the existing iframe in place: moving or cloning it would reload the
+// embedded app and lose the selected municipality, year and camera position.
+let mapTransition = null;
+const mapNeighborSlides = { 3: '#terms-slide', 4: '#map-slide', 5: '#hypothesis-slide' };
+function finishMapTransition(startContent = false) {
+  if (!mapTransition) return;
+  const transition = mapTransition;
+  mapTransition = null;
+  transition.animations.forEach(animation => animation.cancel());
+  const { outgoing, incoming } = transition;
+  outgoing.classList.remove('map-transition-outgoing');
+  outgoing.style.cssText = transition.outgoingStyle;
+  outgoing.inert = transition.outgoingInert;
+  if (transition.outgoingAria === null) outgoing.removeAttribute('aria-hidden');
+  else outgoing.setAttribute('aria-hidden', transition.outgoingAria);
+  outgoing.hidden = currentView !== 'presentation' || currentSlide !== transition.from;
+  incoming.classList.remove('map-transition-incoming', 'map-transition-pending');
+  incoming.inert = transition.incomingInert;
+  document.body.classList.remove('map-transition-running');
+  $('#deck-brand').hidden = currentView === 'presentation' && currentSlide === 4;
+  if (currentView === 'presentation' && currentSlide === transition.to) {
+    if (transition.to === 4) mapFrame.contentWindow.dispatchEvent(new Event('resize'));
+    if (transition.to === 5 && startContent) playHypothesisAnimation();
+  }
+}
+function captureMapTransition(from, to) {
+  const outgoing = $(mapNeighborSlides[from]);
+  const incoming = $(mapNeighborSlides[to]);
+  const rect = outgoing.getBoundingClientRect();
+  const computed = getComputedStyle(outgoing);
+  const transition = {
+    from, to, outgoing, incoming, animations: [],
+    outgoingStyle: outgoing.style.cssText,
+    outgoingInert: outgoing.inert,
+    outgoingAria: outgoing.getAttribute('aria-hidden'),
+    incomingInert: incoming.inert
+  };
+  // Freeze geometry before the map changes the presentation's outer gutters.
+  Object.assign(outgoing.style, {
+    left: `${rect.left}px`, top: `${rect.top}px`, width: `${rect.width}px`, height: `${rect.height}px`,
+    padding: `${computed.paddingTop} ${computed.paddingRight} ${computed.paddingBottom} ${computed.paddingLeft}`
+  });
+  outgoing.classList.remove('entering');
+  outgoing.classList.add('map-transition-outgoing');
+  outgoing.inert = true;
+  outgoing.setAttribute('aria-hidden', 'true');
+  return transition;
+}
+function playMapTransition(transition) {
+  mapTransition = transition;
+  const { outgoing, incoming, from, to } = transition;
+  const direction = to > from ? 1 : -1;
+  const enteringMap = to === 4;
+  const ease = 'cubic-bezier(.22,1,.36,1)';
+  document.body.classList.add('map-transition-running');
+  outgoing.hidden = false;
+  incoming.classList.remove('entering');
+  incoming.classList.add('map-transition-incoming');
+  // Keep keyboard focus on the destination while pointer interactions wait.
+  if (to === 5) {
+    // Start the hypothesis drawing after it is fully revealed, not behind the map.
+    incoming.classList.remove('is-playing');
+    incoming.classList.add('map-transition-pending');
+  }
+  const brand = $('#deck-brand');
+  brand.hidden = false;
+  transition.animations.push(outgoing.animate(enteringMap ? [
+    { opacity: 1, transform: 'translateX(0) scale(1)' },
+    { opacity: 0, transform: `translateX(${-direction * 64}px) scale(.97)` }
+  ] : [
+    { opacity: 1, transform: 'translateX(0) scale(1)', clipPath: 'inset(0% 0% 0% 0% round 0px)' },
+    { opacity: 0, transform: `translateX(${-direction * 90}px) scale(.95)`, clipPath: 'inset(5% 4% 5% 4% round 22px)' }
+  ], { duration: enteringMap ? 560 : 720, easing: ease, fill: 'both' }));
+  transition.animations.push(incoming.animate(enteringMap ? [
+    { opacity: 0, transform: `translateX(${direction * 60}px) scale(.96)`, clipPath: 'inset(8% 6% 8% 6% round 24px)' },
+    { opacity: 1, transform: 'translateX(0) scale(1)', clipPath: 'inset(0% 0% 0% 0% round 0px)' }
+  ] : [
+    { opacity: 0, transform: `translateX(${direction * 64}px)` },
+    { opacity: 1, transform: 'translateX(0)' }
+  ], { duration: enteringMap ? 900 : 760, delay: enteringMap ? 80 : 160, easing: ease, fill: 'both' }));
+  transition.animations.push(brand.animate(enteringMap ? [
+    { opacity: 1, transform: 'translateY(0)' }, { opacity: 0, transform: 'translateY(-8px)' }
+  ] : [
+    { opacity: 0, transform: 'translateY(8px)' }, { opacity: 1, transform: 'translateY(0)' }
+  ], { duration: enteringMap ? 320 : 600, delay: enteringMap ? 0 : 250, easing: ease, fill: 'both' }));
+  Promise.allSettled(transition.animations.map(animation => animation.finished)).then(() => {
+    if (mapTransition === transition) finishMapTransition(true);
+  });
+}
+window.addEventListener('resize', () => finishMapTransition(true));
+window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', event => {
+  if (event.matches) finishMapTransition(true);
+});
+
 function renderRoute({ focus = false } = {}) {
   const hash = window.location.hash;
   const presentationMatch = /^#prezentace\/(\d+)$/.exec(hash);
@@ -275,6 +372,10 @@ function renderRoute({ focus = false } = {}) {
   const previousView = currentView;
   const previousSlide = currentSlide;
   cancelHypothesisBreakup();
+  finishMapTransition();
+  const destination = validPresentation ? Number(presentationMatch[1]) - 1 : null;
+  const mapScene = previousView === 'presentation' && destination !== null && Math.abs(destination - previousSlide) === 1 && (previousSlide === 4 || destination === 4) && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    ? captureMapTransition(previousSlide, destination) : null;
   const breakup = previousView === 'presentation' && previousSlide === 5 && validPresentation && Number(presentationMatch[1]) === 7 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
     ? captureHypothesisBreakup() : null;
   currentView = validPresentation ? 'presentation' : hash === '#prohlidka' ? 'guide' : 'home';
@@ -292,6 +393,7 @@ function renderRoute({ focus = false } = {}) {
   else realityController?.hide();
   if (currentView === 'presentation' && currentSlide === 5) prepareReality();
   if (currentView !== 'presentation' || currentSlide !== 5) stopHypothesisAnimation();
+  if (currentView === 'presentation' && currentSlide === 3) prepareMap();
   if (mapActive) showMap();
   else if (previousView === 'presentation' && previousSlide === 4) pauseMapPlayback();
 
@@ -324,7 +426,7 @@ function renderRoute({ focus = false } = {}) {
       animate($('.timeline-copy'));
     }
     if (currentSlide === 3 && (previousView !== 'presentation' || previousSlide !== 3)) playMigrationExample();
-    if (currentSlide === 5 && (previousView !== 'presentation' || previousSlide !== 5)) playHypothesisAnimation();
+    if (currentSlide === 5 && !mapScene && (previousView !== 'presentation' || previousSlide !== 5)) playHypothesisAnimation();
     // Commit initial geometry before revealing the event strip on direct entry.
     void $('#timeline-slide').offsetWidth;
     document.body.dataset.step = String(currentSlide);
@@ -332,6 +434,7 @@ function renderRoute({ focus = false } = {}) {
     document.title = `${currentSlide + 1} / ${slideCount} · ${slideTitles[currentSlide]} · ${presentationTitle}`;
     $('#slide-announcement').textContent = `Snímek ${currentSlide + 1} ze ${slideCount}. ${slideTitles[currentSlide]}`;
     if (breakup) playHypothesisBreakup(breakup);
+    if (mapScene) playMapTransition(mapScene);
   } else {
     stopMigrationExample();
     document.body.dataset.step = '0';

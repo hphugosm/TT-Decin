@@ -134,3 +134,12 @@ body[data-step="2"] .event-band{opacity:1;transform:scaleX(1)}body[data-step="2"
 .hypothesis-fragment .slide,.hypothesis-fragment .slide *{animation:none!important;transition:none!important}
 .reality-arriving .reality-grid.is-revealing .reality-chart{animation-delay:calc(450ms + var(--chart-index)*55ms)}
 @media(prefers-reduced-motion:reduce){.hypothesis-breakup-layer{display:none}}
+
+/* Soft, reversible transitions around the live map; never recreate its iframe. */
+.map-transition-running{overflow-x:clip}
+.map-transition-running .presentation-view{isolation:isolate}
+.map-transition-outgoing{position:fixed!important;margin:0!important;z-index:4;pointer-events:none;overflow:hidden;will-change:transform,opacity,clip-path}
+.map-transition-incoming{position:relative;z-index:2;pointer-events:none;will-change:transform,opacity,clip-path}
+.map-transition-running .presentation-footer{position:relative;z-index:8;background:var(--paper)}
+.hypothesis-slide.map-transition-pending .hypothesis-line{stroke-dasharray:1;stroke-dashoffset:1}
+.hypothesis-slide.map-transition-pending .hypothesis-area,.hypothesis-slide.map-transition-pending .hypothesis-growth-label,.hypothesis-slide.map-transition-pending .hypothesis-event-halo,.hypothesis-slide.map-transition-pending .hypothesis-traveler,.hypothesis-slide.map-transition-pending .hypothesis-link{opacity:0}
