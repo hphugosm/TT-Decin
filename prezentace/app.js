@@ -40,6 +40,25 @@ function animate(element, className = 'changing') {
   element.classList.add(className);
 }
 
+// One persistent wordmark: move its two lines between the intro and later slides.
+function positionDeckBrand(animateMove = false) {
+  const brand = $('#deck-brand');
+  const lines = [...brand.querySelectorAll('.brand-line')];
+  const before = lines.map(line => line.getBoundingClientRect());
+  lines.forEach(line => line.getAnimations?.().forEach(animation => animation.cancel()));
+  brand.classList.toggle('is-compact', currentSlide > 0);
+  if (!animateMove || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  lines.forEach((line, index) => {
+    const after = line.getBoundingClientRect();
+    const from = before[index];
+    if (!from.width || !after.width || typeof line.animate !== 'function') return;
+    line.animate([
+      { transform: `translate(${from.left - after.left}px, ${from.top - after.top}px) scale(${from.width / after.width}, ${from.height / after.height})` },
+      { transform: 'none' }
+    ], { duration: 850, easing: 'cubic-bezier(.22,1,.36,1)' });
+  });
+}
+
 function renderRoute({ focus = false } = {}) {
   const hash = window.location.hash;
   const presentationMatch = /^#prezentace\/([1-3])$/.exec(hash);
@@ -80,6 +99,7 @@ function renderRoute({ focus = false } = {}) {
     // Commit initial geometry before revealing the event strip on direct entry.
     void $('#timeline-slide').offsetWidth;
     document.body.dataset.step = String(currentSlide);
+    positionDeckBrand(previousView === 'presentation' && (previousSlide === 0) !== (currentSlide === 0));
     const titles = ['354 obcí: jedna hodnota jednoho ukazatele pro jednu obec za jeden rok', 'Společný průnik 2018–2024: sedm let.', 'Krize na Ukrajině.'];
     document.title = `${currentSlide + 1} / 3 · ${titles[currentSlide]} · ${presentationTitle}`;
     $('#slide-announcement').textContent = `Snímek ${currentSlide + 1} ze 3. ${titles[currentSlide]}`;
@@ -90,7 +110,7 @@ function renderRoute({ focus = false } = {}) {
     if (previousView !== currentView) animate(views[currentView], 'entering');
   }
   if (focus) {
-    const heading = currentView === 'home' ? $('#home-title') : currentView === 'guide' ? $('#guide-title') : currentSlide === 0 ? $('#intro-title') : $('#timeline-title');
+    const heading = currentView === 'home' ? $('#home-title') : currentView === 'guide' ? $('#guide-title') : currentSlide === 0 ? $('#deck-brand') : $('#timeline-title');
     heading.focus({ preventScroll: true });
     if (previousView !== currentView || window.innerWidth <= 600) window.scrollTo({ top: 0, behavior: 'instant' });
   }
