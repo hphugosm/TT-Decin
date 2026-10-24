@@ -87,3 +87,5 @@ Ikona v rohu mapy, přehledu kraje/obce a grafu zvětší příslušný blok na 
 Přehled vpravo sjednocuje území, rok, populaci k 1. lednu a tři volitelné metriky. Každá uvádí původní roční počet a 100 × počet / populace k 1. lednu bez shrinkage. Přehled zdůrazňuje název, rok a počet obyvatel k 1. lednu; doplňující věta pod populací a funkce vysvětlení barvy byly odstraněny. Legenda grafu obsahuje pouze aktuální barevné řady: modré příchody, oranžové odchody, žluté saldo a při zobrazení krajské reference šedý populačně vážený průměr kraje.
 
 Přehrávání časové osy běží ve smyčce: po posledním roce pokračuje prvním rokem se stejnou rychlostí a vybraným územím. Poslední rok zůstává zobrazen po stejnou dobu jako ostatní. Tlačítko Pozastavit přehrávání ukončí.
+
+Mapa využívá celý panel pod průhlednými ovladači a legendou. Vybraný rok se zobrazuje velkým poloprůhledným číslem vlevo nahoře a aktualizuje se i během přehrávání. Horní značková lišta je odstraněna; import, nastavení a informace o datech jsou nad vyhledáváním v pravém sloupci.

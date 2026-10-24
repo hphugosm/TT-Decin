@@ -113,3 +113,21 @@ body.panel-fullscreen-open{overflow:hidden}
 #map-detail.panel-expanded .overview-facts{gap:48px}
 #map-detail.panel-expanded .overview-facts #detail-label,#map-detail.panel-expanded .overview-facts .population-primary{font-size:clamp(28px,4vw,56px)}
 @media(max-width:480px){.overview-facts{gap:12px}.side-column .overview-panel .overview-facts #detail-label{font-size:23px}.side-column .overview-panel .overview-facts .population-primary{font-size:21px}}
+
+/* Let the map occupy its whole panel, with transparent overlay controls. */
+.workspace-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;width:100%;flex-shrink:0}
+.workspace-actions button{width:100%;min-height:38px;padding:9px 6px}
+.map-panel{position:relative;background:transparent;isolation:isolate}
+.map-panel .map-stage{position:absolute;inset:0;width:100%;height:100%;min-height:0}
+.map-panel .map-stage svg{width:100%;height:100%}
+.map-panel .panel-heading,.panel-expanded .map-panel .panel-heading{position:absolute;inset:14px 16px auto;z-index:2;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:0;background:transparent;pointer-events:none}
+.map-year{font-size:clamp(64px,8vw,112px);font-weight:750;letter-spacing:-5px;line-height:.95;color:rgb(29 41 64 / 16%);pointer-events:none;user-select:none}
+.map-actions{pointer-events:auto}
+.map-panel .map-actions button{background:transparent;border-color:transparent;box-shadow:none;color:#35445d}
+.map-panel .map-actions button:hover{background:rgb(23 61 165 / 7%);border-color:rgb(23 61 165 / 15%)}
+.map-panel .legend-row{position:absolute;inset:auto 0 0;z-index:2;padding:12px 16px;border:0;background:transparent;pointer-events:none}
+.map-panel .map-caption{bottom:62px;left:16px}
+@media(min-width:1000px){main{padding-top:12px}.radar-layout{height:calc(100dvh - 44px)}}
+@media(max-width:999px){.workspace-actions{order:-1;margin-bottom:10px}.map-panel{height:480px;flex:none}.map-panel .map-stage{height:100%}}
+@media(max-width:600px){.map-panel{height:430px}.map-panel .panel-heading,.panel-expanded .map-panel .panel-heading{inset:12px 10px auto;gap:8px;flex-wrap:nowrap}.map-year{font-size:64px;letter-spacing:-3px}.map-panel .map-actions{gap:0;margin:0}.map-panel .map-actions button{padding:6px;font-size:10px}.map-panel .legend-row{padding:10px}.map-panel .color-legend{gap:7px;flex-wrap:wrap}.map-panel .legend-scale{min-width:140px}.workspace-actions button{font-size:12px}}
+.map-column.panel-expanded>.map-panel{height:auto}
