@@ -11,11 +11,13 @@ const slideTitles = [
   'Interaktivní mapa migračních klastrů obcí Ústeckého kraje.',
   'Hypotéza: poptávka firem po zaměstnancích, přistěhování lidí a poptávka po bytech.',
   'Realita: šest záměrů firem a skutečná migrace v jejich okolí.',
-  'Interaktivní mapa migrace obcí Ústeckého kraje – závěr.'
+  'Interaktivní mapa migrace obcí Ústeckého kraje – návrat k mapě.',
+  'Závěr našeho výzkumu: budoucnost nelze předvídat dokonale, její odchylky ale můžeme měřit.'
 ];
 const slideCount = slideTitles.length;
 const HYPOTHESIS_SLIDE = 6;
 const REALITY_SLIDE = 7;
+const CONCLUSION_SLIDE = 9;
 const migrationExample = { incoming: 10, outgoing: 7 };
 migrationExample.balance = migrationExample.incoming - migrationExample.outgoing;
 let migrationAnimationFrame = null;
@@ -287,7 +289,7 @@ window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',
 // Animate the existing iframe in place: moving or cloning it would reload the
 // embedded app and lose the selected municipality, year and camera position.
 let mapTransition = null;
-const mapNeighborSlides = { 3: '#terms-slide', 4: '#map-slide', 5: '#clusters-slide', 6: '#hypothesis-slide', 7: '#reality-slide', 8: '#map-slide' };
+const mapNeighborSlides = { 3: '#terms-slide', 4: '#map-slide', 5: '#clusters-slide', 6: '#hypothesis-slide', 7: '#reality-slide', 8: '#map-slide', 9: '#conclusion-slide' };
 // Paint the same municipality outlines while their colors and camera interpolate.
 // Only this temporary SVG is copied; both interactive iframes stay mounted.
 function mapPaintSnapshot(index) {
@@ -488,6 +490,7 @@ function renderRoute({ focus = false } = {}) {
   $('#deck-brand').hidden = mapActive;
   $('#map-slide').hidden = !mapActive || currentSlide === 5;
   $('#clusters-slide').hidden = !mapActive || currentSlide !== 5;
+  $('#conclusion-slide').hidden = currentView !== 'presentation' || currentSlide !== CONCLUSION_SLIDE;
   $('#hypothesis-slide').hidden = currentView !== 'presentation' || currentSlide !== HYPOTHESIS_SLIDE;
   const realityActive = currentView === 'presentation' && currentSlide === REALITY_SLIDE;
   $('#reality-slide').hidden = !realityActive;
@@ -523,7 +526,7 @@ function renderRoute({ focus = false } = {}) {
     });
     // Keep the shared graph mounted between slides 2 and 3.
     if (previousView !== currentView || currentSlide === 0 || previousSlide === 0 || currentSlide >= 3 || previousSlide >= 3) {
-      animate(currentSlide === 0 ? $('#slide-one') : currentSlide === 3 ? $('#terms-slide') : isEmbeddedSlide(currentSlide) ? embeddedSlides.get(currentSlide).section : currentSlide === HYPOTHESIS_SLIDE ? $('#hypothesis-slide') : currentSlide === REALITY_SLIDE ? $('#reality-slide') : $('#timeline-slide'), 'entering');
+      animate(currentSlide === 0 ? $('#slide-one') : currentSlide === 3 ? $('#terms-slide') : isEmbeddedSlide(currentSlide) ? embeddedSlides.get(currentSlide).section : currentSlide === HYPOTHESIS_SLIDE ? $('#hypothesis-slide') : currentSlide === REALITY_SLIDE ? $('#reality-slide') : currentSlide === CONCLUSION_SLIDE ? $('#conclusion-slide') : $('#timeline-slide'), 'entering');
       if (currentSlide === 0) {
         document.querySelectorAll('.unit-row').forEach(item => animate(item, 'unit-enter'));
       }
@@ -548,7 +551,7 @@ function renderRoute({ focus = false } = {}) {
     if (previousView !== currentView) animate(views[currentView], 'entering');
   }
   if (focus) {
-    const heading = currentView === 'home' ? $('#home-title') : currentView === 'guide' ? $('#guide-title') : currentSlide === 0 ? $('#deck-brand') : currentSlide === 3 ? $('#terms-title') : isEmbeddedSlide(currentSlide) ? embeddedSlides.get(currentSlide).section : currentSlide === HYPOTHESIS_SLIDE ? $('#hypothesis-title') : currentSlide === REALITY_SLIDE ? $('#reality-title') : $('#timeline-title');
+    const heading = currentView === 'home' ? $('#home-title') : currentView === 'guide' ? $('#guide-title') : currentSlide === 0 ? $('#deck-brand') : currentSlide === 3 ? $('#terms-title') : isEmbeddedSlide(currentSlide) ? embeddedSlides.get(currentSlide).section : currentSlide === HYPOTHESIS_SLIDE ? $('#hypothesis-title') : currentSlide === REALITY_SLIDE ? $('#reality-title') : currentSlide === CONCLUSION_SLIDE ? $('#conclusion-title') : $('#timeline-title');
     heading.focus({ preventScroll: true });
     if (previousView !== currentView || window.innerWidth <= 600) window.scrollTo({ top: 0, behavior: 'instant' });
   }
