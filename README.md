@@ -8,7 +8,7 @@ Interaktivní mapa migrace v obcích Ústeckého kraje, bodové grafy a import C
 
 **Prezentace – Stěhování obcí Ústeckého kraje:** https://hphugosm.github.io/TT-Decin/prezentace/
 
-Původní adresa https://hphugosm.github.io/TT-Decin/ přesměruje na mapu se zachováním parametrů a fragmentu URL. Prezentace má vlastní rozcestník a pět snímků. Ovládání: ← →, Esc zpět na rozcestník, F celá obrazovka. Vedená prohlídka je zatím připravený úvod.
+Původní adresa https://hphugosm.github.io/TT-Decin/ přesměruje na mapu se zachováním parametrů a fragmentu URL. Prezentace má vlastní rozcestník a šest snímků. Ovládání: ← →, Esc zpět na rozcestník, F celá obrazovka. Vedená prohlídka je zatím připravený úvod.
 
 **Vizuální styl pro prezentace:** [Brand Bible – barvy, písmo a pravidla použití](BRAND_BIBLE.md)
 
@@ -47,3 +47,5 @@ node --test tests/radar-*.test.mjs
 Čtvrtý snímek „Jak číst migraci“ vysvětluje přistěhovalé, vystěhovalé a migrační saldo. Ilustrační příklad 10 příchodů − 7 odchodů = +3 není skutečným měřením žádné obce. Narození a úmrtí nejsou součástí migračního salda. Animace respektuje systémové nastavení omezeného pohybu.
 
 Pátý snímek obsahuje živou mapu z `mapa/` v jednom zachovaném iframe. Šipky ← → přepínají snímky i po kliknutí do mapy; v textových polích, posuvnících a otevřených dialozích zůstává jejich běžné ovládání. Rok lze měnit časovou osou mapy. Výběr obce, rok i nastavení se při návratu zachovají; přehrávání mapy se při odchodu pozastaví. Časovač a navigace prezentace zůstávají viditelné.
+
+Šestý snímek „Více práce. Více lidí?“ představuje hypotézu pro šest průmyslových investic vybraných podle počtu nových pracovních míst. Červený bod značí vznik investice a animovaná křivka očekávaný růst migračního salda obce a okolí. Jde o ilustrační schéma bez naměřených hodnot, nikoli o výsledek analýzy. Animace se při návratu opakuje a respektuje omezený pohyb.

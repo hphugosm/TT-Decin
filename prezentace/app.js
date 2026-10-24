@@ -7,7 +7,8 @@ const slideTitles = [
   'Společný průnik 2018–2024: sedm let.',
   'Krize na Ukrajině.',
   'Jak číst migraci: přistěhovalí, vystěhovalí a migrační saldo.',
-  'Interaktivní mapa migrace obcí Ústeckého kraje.'
+  'Interaktivní mapa migrace obcí Ústeckého kraje.',
+  'Více práce. Více lidí? Hypotéza o průmyslových investicích a migraci.'
 ];
 const slideCount = slideTitles.length;
 const migrationExample = { incoming: 10, outgoing: 7 };
@@ -130,6 +131,41 @@ mapFrame.addEventListener('load', () => {
   if (currentView !== 'presentation' || currentSlide !== 4) pauseMapPlayback();
 });
 
+// This is an expected trend, not a series of measured investment outcomes.
+let hypothesisAnimationFrame = null;
+function stopHypothesisAnimation() {
+  if (hypothesisAnimationFrame !== null) cancelAnimationFrame(hypothesisAnimationFrame);
+  hypothesisAnimationFrame = null;
+}
+function playHypothesisAnimation() {
+  stopHypothesisAnimation();
+  const slide = $('#hypothesis-slide');
+  slide.classList.remove('is-playing');
+  void slide.offsetWidth;
+  slide.classList.add('is-playing');
+  const before = $('#hypothesis-before-path');
+  const after = $('#hypothesis-after-path');
+  const traveler = $('#hypothesis-traveler');
+  const place = (path, progress) => {
+    const point = path.getPointAtLength(path.getTotalLength() * progress);
+    traveler.setAttribute('cx', point.x);
+    traveler.setAttribute('cy', point.y);
+  };
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    place(after, 1);
+    return;
+  }
+  const start = performance.now();
+  function frame(now) {
+    const elapsed = now - start;
+    if (elapsed < 1100) place(before, Math.max(0, (elapsed - 200) / 900));
+    else place(after, Math.max(0, Math.min(1, (elapsed - 1400) / 1700)));
+    if (elapsed < 3100) hypothesisAnimationFrame = requestAnimationFrame(frame);
+    else hypothesisAnimationFrame = null;
+  }
+  frame(start);
+}
+
 function renderRoute({ focus = false } = {}) {
   const hash = window.location.hash;
   const presentationMatch = /^#prezentace\/(\d+)$/.exec(hash);
@@ -144,6 +180,8 @@ function renderRoute({ focus = false } = {}) {
   document.body.classList.toggle('map-slide-active', mapActive);
   $('#deck-brand').hidden = mapActive;
   $('#map-slide').hidden = !mapActive;
+  $('#hypothesis-slide').hidden = currentView !== 'presentation' || currentSlide !== 5;
+  if (currentView !== 'presentation' || currentSlide !== 5) stopHypothesisAnimation();
   if (mapActive) showMap();
   else if (previousView === 'presentation' && previousSlide === 4) pauseMapPlayback();
 
@@ -168,7 +206,7 @@ function renderRoute({ focus = false } = {}) {
     });
     // Keep the shared graph mounted between slides 2 and 3.
     if (previousView !== currentView || currentSlide === 0 || previousSlide === 0 || currentSlide >= 3 || previousSlide >= 3) {
-      animate(currentSlide === 0 ? $('#slide-one') : currentSlide === 3 ? $('#terms-slide') : currentSlide === 4 ? $('#map-slide') : $('#timeline-slide'), 'entering');
+      animate(currentSlide === 0 ? $('#slide-one') : currentSlide === 3 ? $('#terms-slide') : currentSlide === 4 ? $('#map-slide') : currentSlide === 5 ? $('#hypothesis-slide') : $('#timeline-slide'), 'entering');
       if (currentSlide === 0) {
         document.querySelectorAll('.unit-row').forEach(item => animate(item, 'unit-enter'));
       }
@@ -176,6 +214,7 @@ function renderRoute({ focus = false } = {}) {
       animate($('.timeline-copy'));
     }
     if (currentSlide === 3 && (previousView !== 'presentation' || previousSlide !== 3)) playMigrationExample();
+    if (currentSlide === 5 && (previousView !== 'presentation' || previousSlide !== 5)) playHypothesisAnimation();
     // Commit initial geometry before revealing the event strip on direct entry.
     void $('#timeline-slide').offsetWidth;
     document.body.dataset.step = String(currentSlide);
@@ -190,7 +229,7 @@ function renderRoute({ focus = false } = {}) {
     if (previousView !== currentView) animate(views[currentView], 'entering');
   }
   if (focus) {
-    const heading = currentView === 'home' ? $('#home-title') : currentView === 'guide' ? $('#guide-title') : currentSlide === 0 ? $('#deck-brand') : currentSlide === 3 ? $('#terms-title') : currentSlide === 4 ? $('#map-slide') : $('#timeline-title');
+    const heading = currentView === 'home' ? $('#home-title') : currentView === 'guide' ? $('#guide-title') : currentSlide === 0 ? $('#deck-brand') : currentSlide === 3 ? $('#terms-title') : currentSlide === 4 ? $('#map-slide') : currentSlide === 5 ? $('#hypothesis-title') : $('#timeline-title');
     heading.focus({ preventScroll: true });
     if (previousView !== currentView || window.innerWidth <= 600) window.scrollTo({ top: 0, behavior: 'instant' });
   }
