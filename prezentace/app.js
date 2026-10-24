@@ -13,10 +13,10 @@ let currentSlide = 0;
 // Oba původní věkové řádky mají stejný rozsah a jsou sloučeny do jednoho tématu.
 const coverage = [
   { label: 'Sociální situace', original: 'Sociální vyloučení', start: 2016, end: 2024 },
-  { label: 'Stěhování lidí', original: 'Migrace podle věku', start: 2000, end: 2025, migration: true },
+  { label: 'Migrace', original: 'Migrace podle věku', start: 2000, end: 2025, migration: true },
   { label: 'Firmy a podnikatelé', original: 'Ekonomické subjekty', start: 2013, end: 2025 },
   { label: 'Území a rozvoj', original: 'REGUAP', start: 2018, end: 2025 },
-  { label: 'Lidé bez práce', original: 'Nezaměstnanost', start: 2015, end: 2024 },
+  { label: 'Nezaměstnanost', original: 'Nezaměstnanost', start: 2015, end: 2024 },
   { label: 'Věk obyvatel', original: 'Věkové ukazatele + věková struktura', start: 2000, end: 2025 },
   { label: 'Obyvatelstvo', original: 'Základní demografie', start: 2000, end: 2025 }
 ];
