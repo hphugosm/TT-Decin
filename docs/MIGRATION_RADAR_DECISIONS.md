@@ -65,3 +65,5 @@ Na široké obrazovce je mapa dominantně vlevo (přibližně 62 % šířky), č
 ## Název jako hledání — 24. 10. 2026
 
 Velký název území je nyní přímo vyhledávací pole s černou lupou. Výchozí text Ústecký kraj lze přepsat; návrhy fungují podle začátku názvu bez diakritiky. Výběr nastaví název, detail, graf a plynulý zoom. Nápis Pohyb obyvatelstva a duplicitní hledání v pravém sloupci byly odstraněny. Escape obnoví aktuální název.
+
+Uživatel následně zrušil vyhledávání v názvu: vrací se původní statický nadpis a samostatné pole s černou lupou je umístěno nad třemi kartami v pravém sloupci.
