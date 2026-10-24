@@ -156,12 +156,12 @@ body.panel-fullscreen-open{overflow:hidden}
 @media(max-width:600px){.map-events{right:12px;bottom:108px;width:calc(100% - 24px);max-height:calc(100% - 200px);padding:10px 12px}.map-event{grid-template-columns:75px minmax(0,1fr);gap:10px}}
 
 .chart-event-marker,.chart-year-tick{cursor:pointer}
-.chart-event-marker:hover .chart-event-line,.chart-event-marker:focus-visible .chart-event-line{stroke-width:2.5;opacity:1}
-.chart-event-marker:focus-visible,.chart-year-tick:focus-visible{outline:none}
+.chart-event-marker:hover>rect,.chart-event-marker:focus-visible>rect{fill:rgb(211 52 56 / 6%)}
+.chart-event-marker:focus,.chart-year-tick:focus,.chart-event-marker:focus-visible,.chart-year-tick:focus-visible{outline:none}
 .chart-event-marker:focus-visible circle{stroke:#8e2529;stroke-width:2}
 .chart-year-tick:focus-visible text{text-decoration:underline}
 .chart-key.event-key{color:#a32930}
-.chart-key.event-key i{width:13px;height:0;border-top:2px solid #d33438;border-radius:0}
+.chart-key.event-key i{width:14px;height:10px;border:1px solid #d33438;border-radius:2px;background:repeating-linear-gradient(135deg,transparent,transparent 3px,rgb(211 52 56 / 40%) 3px,rgb(211 52 56 / 40%) 4px)}
 .chart-event-notice{margin:0 12px 9px;padding:7px 9px;border-left:3px solid #d33438;background:#fff8f7;color:#8e2529;font-size:11px;line-height:1.4;flex-shrink:0}
 .chart-event-notice strong{font-weight:650;margin-right:5px}
 .chart-panel.panel-expanded .chart-event-notice{margin:0 20px 14px;font-size:13px}

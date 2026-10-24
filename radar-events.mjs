@@ -46,5 +46,5 @@ export function eventHighlights(year) {
 }
 
 export function eventsForTerritory(year, code = null) {
-  return eventsForYear(year).filter(event => code == null || event.scope === 'region' || event.code === String(code));
+  return eventsForYear(year).filter(event => event.scope === 'region' || (code != null && event.code === String(code)));
 }

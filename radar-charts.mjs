@@ -1,7 +1,8 @@
 import {derivedValue, metricLabel, unitLabel} from './radar-engine.mjs';
-import {eventsForTerritory} from './radar-events.mjs?v=chart-events-1';
+import {eventsForTerritory} from './radar-events.mjs?v=event-bands-1';
 const metricColors={incoming:'#173da5',outgoing:'#de7524',balance:'#d3a600'};
 const NS='http://www.w3.org/2000/svg', finite=Number.isFinite;
+let chartSequence=0;
 const fmt=n=>finite(n)?new Intl.NumberFormat('cs-CZ',{maximumFractionDigits:n&&Math.abs(n)<1?Math.min(6,2-Math.floor(Math.log10(Math.abs(n)))):2}).format(n):'nedostupné';
 function node(tag,attrs={},text){const e=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,String(v));if(text!=null)e.textContent=text;return e;}
 function add(parent,tag,attrs,text){const e=node(tag,attrs,text);parent.append(e);return e;}
@@ -26,14 +27,27 @@ export function renderTimeChart(svg,{dataset:ds,settings,selectedCode=null,year,
  const vals=[...local,...reference,...flows.flatMap(flow=>flow.points)].map(p=>p.result.value).filter(finite),[lo,hi]=extent(vals);
  const x=y=>left+(y-ds.minYear)/(ds.maxYear-ds.minYear||1)*(right-left),y=v=>bottom-(v-lo)/(hi-lo)*(bottom-top);
  const eventTitle=(yr,events)=>`${yr} · ${events.map(event=>`${event.place}: ${event.title}. ${event.description}`).join('\n')}`;
+ if(eventYears.size){
+  const patternId=`radar-event-hatch-${++chartSequence}`,defs=add(svg,'defs');
+  const pattern=add(defs,'pattern',{id:patternId,width:8,height:8,patternUnits:'userSpaceOnUse'});
+  add(pattern,'rect',{width:8,height:8,fill:'#d33438','fill-opacity':.035});
+  add(pattern,'path',{d:'M-2 2L2 -2M0 8L8 0M6 10L10 6',fill:'none',stroke:'#d33438','stroke-opacity':.3,'stroke-width':1});
+  const bands=add(svg,'g',{class:'chart-event-bands','pointer-events':'none','aria-hidden':'true'});
+  const periods=new Map([...eventYears.values()].flat().map(event=>[event.id,event]));
+  for(const event of periods.values()){
+   const start=Math.max(ds.minYear,event.startYear),end=Math.min(ds.maxYear,event.endYear);
+   // Annual points sit at the centres of year-wide bins; clip edge bins to the plot.
+   const x1=Math.max(left,x(start-.5)),x2=Math.min(right,x(end+.5));
+   add(bands,'rect',{class:'chart-event-band','data-event':event.id,'data-start-year':start,'data-end-year':end,x:x1,y:top,width:x2-x1,height:Math.max(0,bottom-top),fill:`url(#${patternId})`,stroke:'#d33438','stroke-opacity':.55,'stroke-width':1});
+  }
+ }
  for(let i=0;i<=4;i++){const v=lo+(hi-lo)*i/4;line(svg,left,y(v),right,y(v));label(svg,left-10,y(v)+4,fmt(v),{'text-anchor':'end'});}line(svg,left,y(0),right,y(0),{stroke:'#a4afc0'});
  if(!eventYears.has(year))line(svg,x(year),top,x(year),bottom,{stroke:'#173DA5','stroke-dasharray':'4 4'});
  for(const [yr,events] of eventYears){
   const marker=add(svg,'g',{class:'chart-event-marker','data-event-year':yr,tabindex:0,role:'button','aria-label':`Událost ${eventTitle(yr,events)}`});
   add(marker,'title',{},eventTitle(yr,events));
   add(marker,'rect',{x:x(yr)-Math.min(7,yearGap/2),y:top-14,width:Math.min(14,yearGap),height:bottom-top+16,fill:'transparent'});
-  line(marker,x(yr),top,x(yr),bottom,{class:'chart-event-line',stroke:'#d33438','stroke-width':yr===year?2:1.2,opacity:yr===year?.85:.45});
-  add(marker,'circle',{cx:x(yr),cy:top-7,r:5.5,fill:'#d33438','aria-hidden':'true'});
+  add(marker,'circle',{cx:x(yr),cy:top-7,r:5.5,fill:'#d33438',stroke:yr===year?'#8e2529':'none','stroke-width':2,'aria-hidden':'true'});
   label(marker,x(yr),top-4,'!',{'text-anchor':'middle',fill:'#fff','font-size':9,'font-weight':750,'data-fixed-size':'true','aria-hidden':'true'});
   activate(marker,()=>{onYear?.(yr);svg.querySelector(`.chart-event-marker[data-event-year="${yr}"]`)?.focus();});
  }
