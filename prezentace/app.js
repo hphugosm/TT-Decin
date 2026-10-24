@@ -2,6 +2,17 @@
 const $ = (selector) => document.querySelector(selector);
 const views = { home: $('#home'), presentation: $('#presentation'), guide: $('#guide') };
 const presentationTitle = 'Stěhování obcí Ústeckého kraje';
+const slideTitles = [
+  '354 obcí: jedna hodnota jednoho ukazatele pro jednu obec za jeden rok',
+  'Společný průnik 2018–2024: sedm let.',
+  'Krize na Ukrajině.',
+  'Jak číst migraci: přistěhovalí, vystěhovalí a migrační saldo.'
+];
+const slideCount = slideTitles.length;
+const migrationExample = { incoming: 10, outgoing: 7 };
+migrationExample.balance = migrationExample.incoming - migrationExample.outgoing;
+let migrationAnimationFrame = null;
+
 let currentView = 'home';
 let currentSlide = 0;
 // Pokrytí přepsané z dodaného grafu. Jde o dostupnost, nikoli hodnoty ukazatelů.
@@ -54,19 +65,64 @@ function positionDeckBrand(animateMove = false) {
   });
 }
 
+// The example is illustrative, independent of the regional dataset.
+function stopMigrationExample() {
+  if (migrationAnimationFrame !== null) cancelAnimationFrame(migrationAnimationFrame);
+  migrationAnimationFrame = null;
+}
+function playMigrationExample() {
+  stopMigrationExample();
+  const section = $('#terms-slide');
+  section.classList.remove('is-playing');
+  void section.offsetWidth;
+  section.classList.add('is-playing');
+  const counters = [
+    { element: $('#example-incoming'), value: migrationExample.incoming, delay: 150, prefix: '' },
+    { element: $('#example-outgoing'), value: migrationExample.outgoing, delay: 600, prefix: '' },
+    { element: $('#example-balance'), value: migrationExample.balance, delay: 1150, prefix: '+' }
+  ];
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    counters.forEach(item => { item.element.textContent = item.prefix + item.value; });
+    return;
+  }
+  const start = performance.now();
+  function frame(now) {
+    const elapsed = now - start;
+    counters.forEach(item => {
+      const progress = Math.max(0, Math.min(1, (elapsed - item.delay) / 650));
+      item.element.textContent = item.prefix + Math.round(item.value * (1 - Math.pow(1 - progress, 3)));
+    });
+    if (elapsed < 1800) migrationAnimationFrame = requestAnimationFrame(frame);
+    else migrationAnimationFrame = null;
+  }
+  frame(start);
+}
+for (const [kind, count] of Object.entries(migrationExample)) {
+  const container = $(`#${kind}-people`);
+  for (let index = 0; index < count; index++) {
+    const person = document.createElement('span');
+    person.style.setProperty('--person-index', index);
+    person.innerHTML = '<svg viewBox="0 0 20 28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="5" r="3"/><path d="M5 16v-3a5 5 0 0 1 10 0v3M7 14v11M13 14v11M7 19h6"/></svg>';
+    container.append(person);
+  }
+}
+
 function renderRoute({ focus = false } = {}) {
   const hash = window.location.hash;
-  const presentationMatch = /^#prezentace\/([1-3])$/.exec(hash);
+  const presentationMatch = /^#prezentace\/(\d+)$/.exec(hash);
+  const validPresentation = presentationMatch && Number(presentationMatch[1]) >= 1 && Number(presentationMatch[1]) <= slideCount;
   const previousView = currentView;
   const previousSlide = currentSlide;
-  currentView = presentationMatch ? 'presentation' : hash === '#prohlidka' ? 'guide' : 'home';
-  currentSlide = presentationMatch ? Number(presentationMatch[1]) - 1 : 0;
+  currentView = validPresentation ? 'presentation' : hash === '#prohlidka' ? 'guide' : 'home';
+  currentSlide = validPresentation ? Number(presentationMatch[1]) - 1 : 0;
   Object.entries(views).forEach(([key, element]) => { element.hidden = key !== currentView; });
   document.body.dataset.view = currentView;
 
   if (currentView === 'presentation') {
     $('#slide-one').hidden = currentSlide !== 0;
-    $('#timeline-slide').hidden = currentSlide === 0;
+    $('#timeline-slide').hidden = currentSlide !== 1 && currentSlide !== 2;
+    $('#terms-slide').hidden = currentSlide !== 3;
+    if (currentSlide !== 3) stopMigrationExample();
     const event = currentSlide === 2;
     $('#timeline-title').innerHTML = event ? '<em>Krize na Ukrajině.</em>' : 'Málo dat. <em>Krátký průnik.</em>';
     $('#timeline-description').innerHTML = event ? 'Příchod lidí z Ukrajiny<br>mění kontext posledních tří let.' : 'Každá datová sada sahá jinam.<br>Všechny se potkají jen tady.';
@@ -75,43 +131,44 @@ function renderRoute({ focus = false } = {}) {
     $('#context-period').textContent = event ? '2022–2024 · 3 ze 7 let' : '1 hodnota ročně';
     $('#context-description').textContent = event ? 'Zásadní migrační vlna uvnitř už tak krátkého průniku.' : 'Pro společnou analýzu máme jen sedm časových bodů.';
     $('#previous').disabled = currentSlide === 0;
-    $('#next').disabled = currentSlide === 2;
-    $('#slide-counter').innerHTML = `0${currentSlide + 1} <span>/ 03</span>`;
+    $('#next').disabled = currentSlide === slideCount - 1;
+    $('#slide-counter').innerHTML = `${String(currentSlide + 1).padStart(2, '0')} <span>/ ${String(slideCount).padStart(2, '0')}</span>`;
     document.querySelectorAll('[data-slide]').forEach((button, i) => {
       if (i === currentSlide) button.setAttribute('aria-current', 'step');
       else button.removeAttribute('aria-current');
     });
     // Keep the shared graph mounted between slides 2 and 3.
-    if (previousView !== currentView || currentSlide === 0 || previousSlide === 0) {
-      animate(currentSlide === 0 ? $('#slide-one') : $('#timeline-slide'), 'entering');
+    if (previousView !== currentView || currentSlide === 0 || previousSlide === 0 || currentSlide === 3 || previousSlide === 3) {
+      animate(currentSlide === 0 ? $('#slide-one') : currentSlide === 3 ? $('#terms-slide') : $('#timeline-slide'), 'entering');
       if (currentSlide === 0) {
         document.querySelectorAll('.unit-row').forEach(item => animate(item, 'unit-enter'));
       }
     } else if (previousSlide !== currentSlide) {
       animate($('.timeline-copy'));
     }
+    if (currentSlide === 3 && (previousView !== 'presentation' || previousSlide !== 3)) playMigrationExample();
     // Commit initial geometry before revealing the event strip on direct entry.
     void $('#timeline-slide').offsetWidth;
     document.body.dataset.step = String(currentSlide);
     positionDeckBrand(previousView === 'presentation' && (previousSlide === 0) !== (currentSlide === 0));
-    const titles = ['354 obcí: jedna hodnota jednoho ukazatele pro jednu obec za jeden rok', 'Společný průnik 2018–2024: sedm let.', 'Krize na Ukrajině.'];
-    document.title = `${currentSlide + 1} / 3 · ${titles[currentSlide]} · ${presentationTitle}`;
-    $('#slide-announcement').textContent = `Snímek ${currentSlide + 1} ze 3. ${titles[currentSlide]}`;
+    document.title = `${currentSlide + 1} / ${slideCount} · ${slideTitles[currentSlide]} · ${presentationTitle}`;
+    $('#slide-announcement').textContent = `Snímek ${currentSlide + 1} ze ${slideCount}. ${slideTitles[currentSlide]}`;
   } else {
+    stopMigrationExample();
     document.body.dataset.step = '0';
     document.title = currentView === 'guide' ? `Vedená prohlídka · ${presentationTitle}` : presentationTitle;
     $('#slide-announcement').textContent = '';
     if (previousView !== currentView) animate(views[currentView], 'entering');
   }
   if (focus) {
-    const heading = currentView === 'home' ? $('#home-title') : currentView === 'guide' ? $('#guide-title') : currentSlide === 0 ? $('#deck-brand') : $('#timeline-title');
+    const heading = currentView === 'home' ? $('#home-title') : currentView === 'guide' ? $('#guide-title') : currentSlide === 0 ? $('#deck-brand') : currentSlide === 3 ? $('#terms-title') : $('#timeline-title');
     heading.focus({ preventScroll: true });
     if (previousView !== currentView || window.innerWidth <= 600) window.scrollTo({ top: 0, behavior: 'instant' });
   }
 }
 
 function goToSlide(index) {
-  if (index >= 0 && index < 3) window.location.hash = `prezentace/${index + 1}`;
+  if (index >= 0 && index < slideCount) window.location.hash = `prezentace/${index + 1}`;
 }
 $('#previous').addEventListener('click', () => goToSlide(currentSlide - 1));
 $('#next').addEventListener('click', () => goToSlide(currentSlide + 1));
@@ -132,7 +189,7 @@ document.addEventListener('keydown', event => {
     if (['ArrowRight', 'PageDown'].includes(event.key) || (event.key === ' ' && !event.target.closest('button, a'))) { event.preventDefault(); goToSlide(currentSlide + 1); }
     else if (['ArrowLeft', 'PageUp'].includes(event.key)) { event.preventDefault(); goToSlide(currentSlide - 1); }
     else if (event.key === 'Home') { event.preventDefault(); goToSlide(0); }
-    else if (event.key === 'End') { event.preventDefault(); goToSlide(2); }
+    else if (event.key === 'End') { event.preventDefault(); goToSlide(slideCount - 1); }
     else if (event.key.toLowerCase() === 'f') { event.preventDefault(); toggleFullscreen(); }
     else if (event.key === 'Escape' && !document.fullscreenElement) window.location.hash = '';
   } else if (currentView === 'guide' && event.key === 'Escape') window.location.hash = '';

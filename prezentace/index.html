@@ -7,8 +7,8 @@
   <meta name="description" content="Příběh dat obcí Ústeckého kraje. Živá prezentace a vedená prohlídka daty.">
   <title>Stěhování obcí Ústeckého kraje</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23173da5'/%3E%3Ccircle cx='10' cy='21' r='3' fill='white'/%3E%3Ccircle cx='22' cy='11' r='3' fill='white'/%3E%3Cpath d='M12 19L20 13' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=clean-footer-7">
-  <script src="app.js?v=clean-footer-7" defer></script>
+  <link rel="stylesheet" href="styles.css?v=migration-terms-8">
+  <script src="app.js?v=migration-terms-8" defer></script>
 </head>
 <body data-view="home" data-step="0">
   <main id="main">
@@ -64,7 +64,40 @@
         </div>
       </div>
 
-      <footer class="presentation-footer"><div class="slide-navigation"><div id="slide-dots" class="slide-dots" aria-label="Vybrat snímek"><button aria-label="Snímek 1" data-slide="0"></button><button aria-label="Snímek 2" data-slide="1"></button><button aria-label="Snímek 3" data-slide="2"></button></div><span id="slide-counter">01 <span>/ 03</span></span><button id="previous" class="nav-button" aria-label="Předchozí snímek">←</button><button id="next" class="nav-button primary" aria-label="Další snímek">→</button><button id="fullscreen" class="fullscreen-button" aria-label="Celá obrazovka" title="Celá obrazovka (F)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></div></footer>
+      <section id="terms-slide" class="slide timeline-slide terms-slide" aria-labelledby="terms-title" hidden>
+        <h1 id="terms-title" class="timeline-title" tabindex="-1">Jak číst <em>migraci.</em></h1>
+        <div class="terms-layout">
+          <div class="terms-scope"><p>Migrace = <strong>změna trvalého bydliště.</strong></p><p>Narození a úmrtí sem nepočítáme.</p></div>
+          <figure class="migration-example" aria-labelledby="terms-example-caption">
+            <figcaption id="terms-example-caption">Ilustrační příklad · jedna obec · jeden rok</figcaption>
+            <div class="migration-equation">
+              <article class="term-card term-incoming" style="--card-delay:100ms">
+                <svg class="term-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 3h8v18h-8M2 12h13M10 7l5 5-5 5"/></svg>
+                <h2>Přistěhovalí</h2><p>Přišli do obce</p>
+                <output id="example-incoming" class="term-count" aria-live="off" aria-label="Přistěhovalí: 10 osob">10</output>
+                <div id="incoming-people" class="term-people" aria-hidden="true"></div>
+              </article>
+              <span class="equation-sign sign-minus" aria-hidden="true">−</span>
+              <article class="term-card term-outgoing" style="--card-delay:500ms">
+                <svg class="term-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 3H3v18h8M9 12h13M17 7l5 5-5 5"/></svg>
+                <h2>Vystěhovalí</h2><p>Odešli z obce</p>
+                <output id="example-outgoing" class="term-count" aria-live="off" aria-label="Vystěhovalí: 7 osob">7</output>
+                <div id="outgoing-people" class="term-people" aria-hidden="true"></div>
+              </article>
+              <span class="equation-sign sign-equals" aria-hidden="true">=</span>
+              <article class="term-card term-balance" style="--card-delay:1000ms">
+                <svg class="term-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 9h8M8 15h8"/></svg>
+                <h2>Migrační saldo</h2><p>Příchody − odchody</p>
+                <output id="example-balance" class="term-count" aria-live="off" aria-label="Migrační saldo: plus 3 osoby">+3</output>
+                <div id="balance-people" class="term-people" aria-hidden="true"></div>
+                <p class="balance-explanation">O 3 obyvatele více<br>díky stěhování.</p>
+              </article>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <footer class="presentation-footer"><div class="slide-navigation"><div id="slide-dots" class="slide-dots" aria-label="Vybrat snímek"><button aria-label="Snímek 1" data-slide="0"></button><button aria-label="Snímek 2" data-slide="1"></button><button aria-label="Snímek 3" data-slide="2"></button><button aria-label="Snímek 4" data-slide="3"></button></div><span id="slide-counter">01 <span>/ 04</span></span><button id="previous" class="nav-button" aria-label="Předchozí snímek">←</button><button id="next" class="nav-button primary" aria-label="Další snímek">→</button><button id="fullscreen" class="fullscreen-button" aria-label="Celá obrazovka" title="Celá obrazovka (F)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></div></footer>
     </section>
 
     <section id="guide" class="view guide-view" aria-labelledby="guide-title" hidden><span class="eyebrow">02 / Vedená prohlídka daty</span><div class="guide-content"><span class="pill">Připravujeme</span><h1 id="guide-title" tabindex="-1">Příběh dat.<br><em>Vaším tempem.</em></h1><p>Tady vznikne vedená prohlídka.<br>Její obsah doplníme v dalším kroku.</p><a href="#prezentace/1" class="button-link">Zatím si projít prezentaci <span aria-hidden="true">→</span></a></div><a href="#" class="text-button guide-back">↖ Zpět na rozcestník</a></section>
