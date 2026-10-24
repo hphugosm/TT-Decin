@@ -41,7 +41,7 @@
 /* Individual presentation panels: keep the existing nodes and selection. */
 .panel-fullscreen-toggle{display:inline-flex;align-items:center;justify-content:center;flex:none;width:32px!important;height:32px;padding:6px!important;pointer-events:auto}
 .panel-fullscreen-toggle svg{display:block;width:18px;height:18px}
-.side-column #map-detail{position:relative;padding-right:52px}
+.side-column #map-detail{position:relative;inset:auto;padding-right:52px}
 #map-detail>.panel-fullscreen-toggle{position:absolute;right:10px;top:9px}
 .chart-heading .panel-fullscreen-toggle{margin-left:8px}
 body.panel-fullscreen-open{overflow:hidden}
