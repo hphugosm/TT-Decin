@@ -1,0 +1,17 @@
+# Local environments / caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+# Heavy generated intermediates; reproduce via run_analysis.py.
+results/temporal_dashboard.json
+results/spatial_sectors.json
+results/spatial_pairs.csv
+results/spatial_sector_membership.csv
+results/pairwise_*.npz
+results/municipality_year_trends.csv
+results/cluster_year_summary.csv
+results/validation_cache_*.json
+results/verification_*.json

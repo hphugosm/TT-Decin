@@ -1,0 +1,10 @@
+# Keep analytical source/input/export SHA-256 values identical on every OS.
+*.py text eol=lf
+audit_dcuk1_2026-10-23/sources/** -text
+ustek_analytics/** -text
+results/** -text
+grafy/podklady.json -text
+# CSV references intentionally retain their original CRLF endings.
+*.csv whitespace=cr-at-eol
+# Matplotlib's generated path commands intentionally include trailing spaces.
+grafy/*.svg -whitespace

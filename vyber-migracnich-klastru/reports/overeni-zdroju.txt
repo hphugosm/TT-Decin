@@ -1,0 +1,123 @@
+test_no_information_and_gaps_do_not_create_similarity (test_local_groups.FeatureCounterexamples.test_no_information_and_gaps_do_not_create_similarity) ... ok
+test_same_shapes_different_magnitudes_opposites_and_lags (test_local_groups.FeatureCounterexamples.test_same_shapes_different_magnitudes_opposites_and_lags) ... ok
+test_extended_six_members_need_every_pair_not_just_connecting_neighbors (test_local_groups.ProfileCounterexamples.test_extended_six_members_need_every_pair_not_just_connecting_neighbors) ... ok
+test_loose_still_checks_every_endpoint_and_calendar_coverage (test_local_groups.ProfileCounterexamples.test_loose_still_checks_every_endpoint_and_calendar_coverage) ... ok
+test_relaxed_thresholds_accept_only_explicitly_relaxed_pairs (test_local_groups.ProfileCounterexamples.test_relaxed_thresholds_accept_only_explicitly_relaxed_pairs) ... ok
+test_safe_edge_optimization_matches_unfiltered_oracle_on_random_graphs_and_ties (test_local_groups.ProfileCounterexamples.test_safe_edge_optimization_matches_unfiltered_oracle_on_random_graphs_and_ties) ... ok
+test_connected_three_way_requires_all_pairs_not_direct_all_neighbors (test_local_groups.SearchCounterexamples.test_connected_three_way_requires_all_pairs_not_direct_all_neighbors) ... ok
+test_disconnected_similar_towns_never_merge (test_local_groups.SearchCounterexamples.test_disconnected_similar_towns_never_merge) ... ok
+test_edge_order_and_tie_resolution_are_deterministic (test_local_groups.SearchCounterexamples.test_edge_order_and_tie_resolution_are_deterministic) ... ok
+test_independent_circular_null_preserves_joint_feature_masks (test_local_groups.SearchCounterexamples.test_independent_circular_null_preserves_joint_feature_masks) ... ok
+test_no_target_k_or_thirty_group_cap (test_local_groups.SearchCounterexamples.test_no_target_k_or_thirty_group_cap) ... ok
+test_pair_retention_and_unique_unassigned_labels (test_local_groups.SearchCounterexamples.test_pair_retention_and_unique_unassigned_labels) ... ok
+test_thresholds_each_have_effect_and_nan_cannot_pass (test_local_groups.SearchCounterexamples.test_thresholds_each_have_effect_and_nan_cannot_pass) ... ok
+test_weak_bridge_does_not_collapse_incompatible_endpoints (test_local_groups.SearchCounterexamples.test_weak_bridge_does_not_collapse_incompatible_endpoints) ... ok
+test_haversine_known_distance_and_duplicate_location (test_spatial.SpatialCounterexamples.test_haversine_known_distance_and_duplicate_location) ... ok
+test_induced_components_never_bridge_through_another_parent (test_spatial.SpatialCounterexamples.test_induced_components_never_bridge_through_another_parent) ... ok
+test_missing_calendar_years_are_not_compressed_or_interpolated (test_spatial.SpatialCounterexamples.test_missing_calendar_years_are_not_compressed_or_interpolated) ... ok
+test_pair_correlations_rerestrict_to_common_finite_years (test_spatial.SpatialCounterexamples.test_pair_correlations_rerestrict_to_common_finite_years) ... ok
+test_radius_components_allow_chaining_without_claiming_small_diameter (test_spatial.SpatialCounterexamples.test_radius_components_allow_chaining_without_claiming_small_diameter) ... ok
+test_rook_adjacency_excludes_corner_and_gap_but_accepts_segment_contact (test_spatial.SpatialCounterexamples.test_rook_adjacency_excludes_corner_and_gap_but_accepts_segment_contact) ... ok
+test_spearman_reranks_shared_calendar_intersection_with_ties (test_spatial.SpatialCounterexamples.test_spearman_reranks_shared_calendar_intersection_with_ties) ... ok
+test_cluster_year_states_and_cached_string_consistency_keys (test_temporal.TemporalCounterexamples.test_cluster_year_states_and_cached_string_consistency_keys) ... ok
+test_correlations_match_independent_pairwise_calendar_intersections (test_temporal.TemporalCounterexamples.test_correlations_match_independent_pairwise_calendar_intersections) ... ok
+test_deterministic_hierarchy_and_unassigned_stability (test_temporal.TemporalCounterexamples.test_deterministic_hierarchy_and_unassigned_stability) ... ok
+test_high_signal_positive_control_survives_full_validation (test_temporal.TemporalCounterexamples.test_high_signal_positive_control_survives_full_validation) ...   null max-search 10/19
+ok
+test_independent_poisson_noise_is_not_a_temporal_discovery (test_temporal.TemporalCounterexamples.test_independent_poisson_noise_is_not_a_temporal_discovery) ...   null max-search 10/19
+ok
+test_missing_observation_and_calendar_gap_are_never_bridged (test_temporal.TemporalCounterexamples.test_missing_observation_and_calendar_gap_are_never_bridged) ... ok
+test_no_fixed_k_and_more_than_twenty_distinct_groups (test_temporal.TemporalCounterexamples.test_no_fixed_k_and_more_than_twenty_distinct_groups) ... ok
+test_one_random_extreme_does_not_define_a_cluster (test_temporal.TemporalCounterexamples.test_one_random_extreme_does_not_define_a_cluster) ... ok
+test_opposites_are_distant (test_temporal.TemporalCounterexamples.test_opposites_are_distant) ... ok
+test_population_rates_have_correct_units (test_temporal.TemporalCounterexamples.test_population_rates_have_correct_units) ... ok
+test_reliability_suppresses_low_count_jitter_preserves_small_signal (test_temporal.TemporalCounterexamples.test_reliability_suppresses_low_count_jitter_preserves_small_signal) ... ok
+test_resampling_uses_existing_changes_without_new_boundary_differences (test_temporal.TemporalCounterexamples.test_resampling_uses_existing_changes_without_new_boundary_differences) ... ok
+test_same_calendar_pattern_despite_hundredfold_size (test_temporal.TemporalCounterexamples.test_same_calendar_pattern_despite_hundredfold_size) ... ok
+test_separate_measurements_can_have_opposite_assignments (test_temporal.TemporalCounterexamples.test_separate_measurements_can_have_opposite_assignments) ... ok
+test_stable_export_ids_have_no_year_input (test_temporal.TemporalCounterexamples.test_stable_export_ids_have_no_year_input) ... ok
+test_time_shift_is_not_realigned (test_temporal.TemporalCounterexamples.test_time_shift_is_not_realigned) ... ok
+test_zeros_and_unknowns_do_not_create_similarity (test_temporal.TemporalCounterexamples.test_zeros_and_unknowns_do_not_create_similarity) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 2.773s
+
+OK
+{
+  "rook_edges": 977,
+  "contexts": [
+    {
+      "profile": "balanced",
+      "mode": "immigration",
+      "variant": "shrinkage",
+      "groups": 21,
+      "max_group_size": 2,
+      "memberships_and_pair_metrics": "PASS",
+      "independent_merge_oracle": "PASS"
+    },
+    {
+      "profile": "relaxed",
+      "mode": "immigration",
+      "variant": "shrinkage",
+      "groups": 38,
+      "max_group_size": 3,
+      "memberships_and_pair_metrics": "PASS",
+      "independent_merge_oracle": "PASS"
+    },
+    {
+      "profile": "loose",
+      "mode": "immigration",
+      "variant": "shrinkage",
+      "groups": 83,
+      "max_group_size": 4,
+      "memberships_and_pair_metrics": "PASS",
+      "independent_merge_oracle": "PASS"
+    },
+    {
+      "profile": "extended",
+      "mode": "immigration",
+      "variant": "shrinkage",
+      "groups": 86,
+      "max_group_size": 6,
+      "memberships_and_pair_metrics": "PASS",
+      "independent_merge_oracle": "PASS"
+    },
+    {
+      "profile": "balanced",
+      "mode": "emigration",
+      "variant": "baseline",
+      "groups": 11,
+      "max_group_size": 2,
+      "memberships_and_pair_metrics": "PASS",
+      "independent_merge_oracle": "PASS"
+    },
+    {
+      "profile": "relaxed",
+      "mode": "emigration",
+      "variant": "baseline",
+      "groups": 35,
+      "max_group_size": 3,
+      "memberships_and_pair_metrics": "PASS",
+      "independent_merge_oracle": "PASS"
+    },
+    {
+      "profile": "loose",
+      "mode": "emigration",
+      "variant": "baseline",
+      "groups": 63,
+      "max_group_size": 4,
+      "memberships_and_pair_metrics": "PASS",
+      "independent_merge_oracle": "PASS"
+    },
+    {
+      "profile": "extended",
+      "mode": "emigration",
+      "variant": "baseline",
+      "groups": 71,
+      "max_group_size": 4,
+      "memberships_and_pair_metrics": "PASS",
+      "independent_merge_oracle": "PASS"
+    }
+  ],
+  "scope": "Point estimates and pair metrics recomputed from raw inputs. Stability/null repetitions require full run_analysis.py."
+}
