@@ -49,3 +49,7 @@ Na přání uživatele detail nahrazuje kód obce a nápovědu opakovaného klik
 ## Barvy migračních kanálů — 24. 10. 2026
 
 Uživatel sjednotil příchody na modrou a odchody na oranžovou v mapě a grafech. Saldo mapy zachovává divergující oranžovo-modrou stupnici. V časovém grafu salda požaduje souběžné řady příchodů a odchodů; saldo je fialové, krajská reference salda šedá. Nejde o samostatný rozkladový panel D: jde o tři bodové řady ve stávajícím grafu. Všechny používají shodný výpočet a zůstávají bez spojnic.
+
+## Hledání nad mapou — 24. 10. 2026
+
+Vyhledávání je přes celou šířku pod třemi kartami a nad mapou. Návrhy odpovídají začátku názvu bez ohledu na diakritiku, nemají limit 12 výsledků a delší seznam se posouvá. Přesná shoda je první; Enter vybere obec a spustí existující plynulé přiblížení i propojení detailů.

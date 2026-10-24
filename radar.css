@@ -16,3 +16,5 @@
 @media(min-width:721px){.map-stage{min-height:260px}}
 
 .metric-card[data-metric=incoming] strong,.metric-card[data-metric=incoming].active:after{color:#173da5}.metric-card[data-metric=outgoing] strong,.metric-card[data-metric=outgoing].active:after{color:#de7524}.metric-card[data-metric=balance] strong,.metric-card[data-metric=balance].active:after{color:#7c3aad}.metric-card[data-metric=outgoing].active{border-color:#de7524;background:#fff8f2}.metric-card[data-metric=balance].active{border-color:#7c3aad;background:#faf5ff}
+
+.topbar nav{margin-left:auto}.map-search{display:block;width:100%;max-width:none;margin:0 0 14px;flex:none}.map-search input{background:#fff;font-size:15px;padding:14px 16px;border-radius:10px}.map-search .search-results{top:calc(100% + 4px);box-sizing:border-box}@media(max-width:720px){.topbar nav{margin-left:0}.map-search{max-width:none;margin-bottom:12px}}
