@@ -25,3 +25,25 @@ municipality_panel,ALL,2022,unique_complete_counts_and_population,pass,354,354,O
 municipality_panel,ALL,2023,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
 municipality_panel,ALL,2024,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
 municipality_panel,ALL,2025,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+region_boundary_crossing,3069,2000,schema_units_totals_counts_identity,pass,1,1,
+region_boundary_crossing,3069,2001,schema_units_totals_counts_identity,pass,1,1,population_scope_change_2001|census_population_reset|jan1_differs_from_previous_dec31
+region_boundary_crossing,3069,2002,schema_units_totals_counts_identity,pass,1,1,
+region_boundary_crossing,3069,2003,schema_units_totals_counts_identity,pass,1,1,
+region_boundary_crossing,3069,2004,schema_units_totals_counts_identity,pass,1,1,
+region_boundary_crossing,3069,2005,schema_units_totals_counts_identity,pass,1,1,migration_administrative_source_change_2005
+region_boundary_crossing,3069,2006,schema_units_totals_counts_identity,pass,1,1,
+region_boundary_crossing,3069,2007,schema_units_totals_counts_identity,pass,1,1,
+region_boundary_crossing,3069,2008,schema_units_totals_counts_identity,pass,1,1,
+region_boundary_crossing,3069,2009,schema_units_totals_counts_identity,pass,1,1,
+region_boundary_crossing,3069,2010,schema_units_totals_counts_identity,pass,1,1,
+region_boundary_crossing,3069,2011,schema_units_totals_counts_identity,pass,1,1,census_population_reset|jan1_differs_from_previous_dec31
+region_boundary_crossing,3069,2012,schema_units_totals_counts_identity,pass,1,1,
+region_boundary_crossing,3069,2013,schema_units_totals_counts_identity,pass,1,1,
+region_boundary_crossing,3069,2014,schema_units_totals_counts_identity,pass,1,1,
+region_boundary_crossing,3069,2015,schema_units_totals_counts_identity,pass,1,1,
+region_boundary_crossing,3069,2016,schema_units_totals_counts_identity,pass,1,1,jan1_differs_from_previous_dec31
+region_boundary_crossing,3069,2017,schema_units_totals_counts_identity,pass,1,1,
+region_boundary_crossing,3069,2018,schema_units_totals_counts_identity,pass,1,1,
+region_boundary_crossing,3069,2019,schema_units_totals_counts_identity,pass,1,1,
+region_boundary_crossing,3069,2020,schema_units_totals_counts_identity,pass,1,1,
+region_boundary_crossing,3069,2021,schema_units_totals_counts_identity,pass,1,1,census_population_reset|jan1_differs_from_previous_dec31

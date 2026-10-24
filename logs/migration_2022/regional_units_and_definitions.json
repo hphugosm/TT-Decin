@@ -1,0 +1,26 @@
+{
+  "methodology_url": "https://csu.gov.cz/pohyb-obyvatelstva-metodika",
+  "landing_page": "https://csu.gov.cz/produkty/pohyb-obyvatel",
+  "verified_2026_10_24": {
+    "boundary_definition": "Registered residence change across the boundary of a territorial unit; direct region observations are required.",
+    "scope_break_2001": "Through 2000 only permanent residents. From 2001 foreigners with visas over 90 days and asylum included.",
+    "source_break_2005": "Administrative Ministry of Interior records replace migration statistical reports.",
+    "territory": "Yearly territorial classification follows January 1 of each year; series may be affected by changes.",
+    "census": "Population balance series reset on censuses; do not derive migration from differences of population stocks."
+  },
+  "indicator_population_definition": "DEM0026B is explicitly labeled Počet obyvatel k 31.12.; DEM0026A Počet obyvatel k 1.1.; DEM0004 Střední stav obyvatel. Training output population uses DEM0026B of row year; only lagged population may enter forecast.",
+  "documentation": {
+    "url": "https://csu.gov.cz/docs/107508/e205320e-3c05-205b-1cca-641519ef0c16/130141-23dds.docx?version=1.0",
+    "sha256": "2eed10df9ee22185675a598eac19b53c483a6ed763fd10077301e7d2c9a875c0",
+    "units": "osoba; specified in VUK definition",
+    "gross_flows_cannot_aggregate": "explicit official dataset documentation rule",
+    "population_midyear": "population at midnight June30/July1; unused as prediction target-year denominator"
+  },
+  "schema2021": {
+    "url": "https://csu.gov.cz/docs/107508/52e92cb5-dcb7-51a4-74ea-1532057916ed/130141-23schema2021.json?version=1.0",
+    "sha256": "d0fda62a4d366cd46639a89ad1f19384cb2de2828692a9072282439f4cbb0fda",
+    "metadata_discrepancy": "vuk_txt in schema, vuk_text in every actual CSV"
+  },
+  "actual_schema_invariant": true,
+  "all_years_total_validation_pass": true
+}
