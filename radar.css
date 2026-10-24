@@ -66,3 +66,33 @@ body.panel-fullscreen-open{overflow:hidden}
 .map-column.panel-expanded>.map-panel{display:flex;flex-direction:column;flex:1;min-height:0;margin:0}
 .map-column.panel-expanded>.timeline{display:flex;flex-shrink:0;padding:12px 4px 0}
 .map-column.panel-expanded>.comparison-bar{flex-shrink:0}
+
+/* Unified territory overview with three selectable migration metrics. */
+.side-column #map-detail.overview-panel{display:flex;flex-direction:column;align-items:stretch;gap:12px;padding:16px;pointer-events:auto}
+.overview-heading{padding-right:38px}.overview-heading h1{font-size:26px;margin:4px 0 0}
+.overview-panel .population-primary{font-size:21px;font-weight:650}
+.side-column .overview-panel #map-population small{font-size:11px;margin:4px 0 0;color:var(--muted)}
+.side-column .overview-panel .cards{gap:8px;margin:0;order:0}
+.side-column .overview-panel .metric-card,.side-column .overview-panel .metric-card.active{padding:12px 10px;min-width:0}
+.side-column .overview-panel .card-label{font-size:11px;padding-right:10px}
+.side-column .overview-panel .metric-card strong{font-size:23px;margin:8px 0 5px;white-space:nowrap}
+.count-unit{font-size:10px;font-weight:400;letter-spacing:0;color:var(--muted)}
+.card-percent{font-size:16px;font-weight:650}
+.metric-card[data-metric=balance] strong,.metric-card[data-metric=balance] .card-percent{color:#997900!important}
+.metric-card[data-metric=balance].active{border-color:#d3a600;background:#fffbea}
+.metric-card[data-metric=balance].active:after{color:#997900}
+.card-percent{color:inherit}.metric-card[data-metric=incoming] .card-percent{color:#173da5}.metric-card[data-metric=outgoing] .card-percent{color:#de7524}
+.side-column .overview-panel #explain-open{align-self:flex-start;font-size:10px}
+.chart-note{display:flex;flex-wrap:wrap;gap:8px 18px}.chart-key{display:inline-flex;align-items:center;gap:6px}.chart-key i{width:8px;height:8px;border-radius:50%;display:inline-block}
+.side-column .chart-note{font-size:11px;padding:10px 14px}
+#map-detail.overview-panel.panel-expanded{align-items:stretch;max-width:none}
+#map-detail.panel-expanded .overview-heading h1{font-size:clamp(32px,5vw,64px)}
+#map-detail.panel-expanded .population-primary{font-size:clamp(24px,3vw,40px)}
+#map-detail.panel-expanded .metric-card{padding:24px}
+#map-detail.panel-expanded .metric-card strong{font-size:clamp(24px,4vw,56px)}
+#map-detail.panel-expanded .card-percent{font-size:clamp(20px,3vw,36px)}
+#map-detail.panel-expanded .card-label{font-size:clamp(12px,2vw,20px)}
+@media(min-width:1000px){.radar-layout{height:calc(100dvh - 105px)}}
+@media(max-width:600px){.side-column .overview-panel .metric-card strong{font-size:18px}.side-column .overview-panel .count-unit{display:block}.side-column .overview-panel .card-label{font-size:10px}.overview-panel .cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+.side-column .overview-panel .metric-card{grid-column:auto;grid-row:auto}

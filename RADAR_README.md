@@ -83,3 +83,5 @@ Na notebooku a velkém displeji je mapa vlevo a ovládání, informace a graf v 
 Samostatné vyhledávání s černou lupou je nad třemi kartami v pravém sloupci. Název území zůstává statickým nadpisem.
 
 Ikona v rohu mapy, přehledu kraje/obce a grafu zvětší příslušný blok na celé okno stránky. Prohlížeč zůstává v běžném režimu. Mapa zahrnuje časovou osu a ovládání roků. Escape nebo stejná ikona obnoví původní rozložení se zachovaným výběrem a rokem.
+
+Přehled vpravo sjednocuje území, rok, populaci k 1. lednu a tři volitelné metriky. Každá uvádí původní roční počet a 100 × počet / populace k 1. lednu bez shrinkage. Populace na konci roku zůstává doplněna. Legenda grafu obsahuje pouze aktuální barevné řady: modré příchody, oranžové odchody, žluté saldo a při zobrazení krajské reference šedý populačně vážený průměr kraje.
