@@ -1,0 +1,24 @@
+{
+  "run_id": "bonus-total-incoming-20261024T095913Z",
+  "frozen_at": "2026-10-24T09:59:16.410014+00:00",
+  "actual_2022_used": false,
+  "backtest_rows": 105,
+  "final_rows": 21,
+  "fit_status_counts": {
+    "success": 126
+  },
+  "sha256": {
+    "settings.json": "6e15971855ac3661faf3d47df033ba81cda4bbb4814036082cd1af70847da0bb",
+    "settings_freeze.json": "3306ee31b1b3c3337f5b54935b487f5a500d856ce9a8d3071bd6589f302fde57",
+    "environment.json": "694d12073c54d90029bfd33cace450b77af62e4ab5e35f78ecabdc65390c84ca",
+    "backtest.csv": "4484b67d1714bde1d78d1201f22a31da5ec48189a86dc60dd6efa50f75394440",
+    "historical_metrics.csv": "ab7af2d8da135a8f6931b1a3de8989bc307dd40e0c02e5b6aca5b9fbb9198b44",
+    "paired_horizon_comparison.csv": "2fe8f0330f358af618a89b821f0dc20fba18559cc7cdf174f954c68ba5d5b86b",
+    "final_predictions.csv": "75886fee923fd65683b990dde6636d5f6b9b14368f7a06562d1d521d72984f46",
+    "original_forecast_agreement.csv": "33eb81b30f839d1ccbe5fcac695cedb24f3964c202d3b43f056d1d27ee9fb2a0",
+    "fits.jsonl": "3725dbf00bb5e70ce579ea52324e7f8160586b8debfcfe06b08626c171e3e5c0",
+    "run_bonus_total.py": "8bf42124de15fc4d79048e5fc1f42af021d0a42ea62598797a7f47c1571f3f98"
+  },
+  "original_forecast_agreement": "All seven families reproduce original2022h1 and cutoff2019h3 within1e-8absolute/1e-10relative; status identical",
+  "note": "Total regional incoming, true cross-boundary series. Fixed original family configurations; no new selector or tuning. Same five target years for every model and horizon. Positive improvement means smaller MAE; paired win means longer horizon has lower absolute error for the same target. Last-known population held fixed across multistep forecasts. Seven model families include two untrained references; five trained families. No2022actual/evaluation file read."
+}

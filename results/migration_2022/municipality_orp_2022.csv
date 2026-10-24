@@ -1,0 +1,355 @@
+kod_obce,nazev_obce,kod_orp,nazev_orp,year,status,source_sheet,source_row
+505528,Jenčice,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,1824
+530395,Janská,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,1786
+530417,Doubice,4212,Rumburk,2022,verified_2022_and_2023_boundary,1.1.2022,979
+530506,Miřejovice,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,3087
+530557,Kozly,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,2260
+530565,Želkovice,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,6208
+530581,Čeradice,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,627
+530590,Libočany,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,2657
+530603,Zálužice,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,6024
+530620,Přestanov,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,4093
+542407,Trnovany,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,5240
+542423,Černouček,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,657
+542440,Oleško,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,3559
+542482,Záluží,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,6023
+542491,Malíč,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,2921
+542521,Michalovice,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,3028
+542539,Píšťany,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,3835
+542547,Blšany u Loun,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,203
+542555,Opočno,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,3607
+542571,Cítoliby,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,561
+542580,Obora,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,3493
+542628,Černčice,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,640
+542636,Nová Ves,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,3406
+543012,Žerotín,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,6223
+543128,Staňkovice,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,4749
+544647,Bynovec,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,515
+544680,Janov,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,1776
+544701,Labská Stráň,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,2499
+545538,Starý Šachov,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,4801
+545678,Markvartice,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,2942
+545708,Lobendava,4212,Rumburk,2022,verified_2022_and_2023_boundary,1.1.2022,2756
+545783,Dobrná,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,837
+545791,Merboltice,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,2993
+545856,Dolní Habartice,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,904
+545899,Františkov nad Ploučnicí,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,1108
+545929,Horní Habartice,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,1326
+546011,Jimlín,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,1885
+546062,Pesvice,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,3783
+546071,Račetice,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,4170
+546160,Nezabylice,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,3359
+546178,Úherce,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,5371
+546186,Ryjice,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,4417
+546330,Kunratice,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,2455
+546348,Srbská Kamenice,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,4732
+546429,Chraberce,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,1681
+546437,Volevčice,4209,Most,2022,verified_2022_and_2023_boundary,1.1.2022,5799
+546453,Kámen,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,1951
+546496,Ludvíkovice,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,2837
+546518,Loučná pod Klínovcem,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,2793
+546691,Lkáň,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,2753
+546721,Sedlec,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,4496
+546755,Brzánky,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,394
+546763,Horní Řepčice,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,1372
+546771,Kamýk,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,1975
+546780,Býčkovice,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,508
+546810,Chudoslavice,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,1717
+546828,Staňkovice,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,4750
+546852,Černěves,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,643
+546861,Dobroměřice,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,842
+546879,Líšťany,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,2731
+546887,Vršovice,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,5870
+546895,Brodec,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,374
+546909,Lukov,4201,Bílina,2022,verified_2022_and_2023_boundary,1.1.2022,2849
+546925,Stebno,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,4812
+553646,Dolánky nad Ohří,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,875
+553697,Trmice,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,5232
+554804,Ústí nad Labem,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,5453
+555193,Těchlovice,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,5157
+555223,Velké Chvojno,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,5578
+562335,Děčín,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,768
+562343,Arnoltice,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,21
+562351,Benešov nad Ploučnicí,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,104
+562394,Česká Kamenice,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,687
+562408,Dobkovice,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,825
+562432,Dolní Podluží,4215,Varnsdorf,2022,verified_2022_and_2023_boundary,1.1.2022,935
+562441,Dolní Poustevna,4212,Rumburk,2022,verified_2022_and_2023_boundary,1.1.2022,937
+562483,Heřmanov,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,1195
+562505,Horní Podluží,4215,Varnsdorf,2022,verified_2022_and_2023_boundary,1.1.2022,1361
+562513,Hřensko,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,1535
+562521,Huntířov,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,1551
+562530,Chřibská,4215,Varnsdorf,2022,verified_2022_and_2023_boundary,1.1.2022,1709
+562556,Jetřichovice,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,1854
+562564,Jílové,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,1879
+562572,Jiřetín pod Jedlovou,4215,Varnsdorf,2022,verified_2022_and_2023_boundary,1.1.2022,1904
+562581,Jiříkov,4212,Rumburk,2022,verified_2022_and_2023_boundary,1.1.2022,1909
+562611,Krásná Lípa,4212,Rumburk,2022,verified_2022_and_2023_boundary,1.1.2022,2310
+562645,Kytlice,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,2498
+562661,Lipová,4212,Rumburk,2022,verified_2022_and_2023_boundary,1.1.2022,2704
+562700,Malá Veleň,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,2900
+562718,Malšovice,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,2933
+562751,Mikulášovice,4212,Rumburk,2022,verified_2022_and_2023_boundary,1.1.2022,3032
+562777,Rumburk,4212,Rumburk,2022,verified_2022_and_2023_boundary,1.1.2022,4392
+562793,Rybniště,4215,Varnsdorf,2022,verified_2022_and_2023_boundary,1.1.2022,4411
+562823,Staré Křečany,4212,Rumburk,2022,verified_2022_and_2023_boundary,1.1.2022,4774
+562858,Šluknov,4212,Rumburk,2022,verified_2022_and_2023_boundary,1.1.2022,5086
+562874,Valkeřice,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,5494
+562882,Varnsdorf,4215,Varnsdorf,2022,verified_2022_and_2023_boundary,1.1.2022,5509
+562891,Velká Bukovina,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,5554
+562912,Velký Šenov,4212,Rumburk,2022,verified_2022_and_2023_boundary,1.1.2022,5607
+562921,Verneřice,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,5624
+562939,Veselé,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,5636
+562947,Vilémov,4212,Rumburk,2022,verified_2022_and_2023_boundary,1.1.2022,5688
+562971,Chomutov,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,1645
+562980,Bílence,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,147
+562998,Blatno,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,186
+563005,Boleboř,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,255
+563013,Březno,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,425
+563021,Černovice,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,661
+563048,Domašín,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,968
+563056,Droužkovice,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,1034
+563064,Hora Svatého Šebestiána,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,1293
+563072,Hrušovany,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,1527
+563081,Chbany,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,1590
+563099,Jirkov,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,1901
+563102,Kadaň,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,1934
+563111,Kalek,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,1942
+563129,Klášterec nad Ohří,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,2047
+563137,Kovářská,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,2248
+563161,Křimov,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,2400
+563188,Libědice,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,2625
+563200,Málkov,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,2927
+563218,Mašťov,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,2964
+563226,Měděnec,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,2973
+563242,Místo,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,3092
+563269,Okounov,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,3531
+563277,Otvice,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,3701
+563285,Perštejn,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,3777
+563293,Pětipsy,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,3786
+563315,Kryštofovy Hamry,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,2370
+563323,Radonice,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,4216
+563331,Rokle,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,4307
+563340,Spořice,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,4726
+563358,Strupčice,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,4877
+563382,Údlice,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,5367
+563404,Vejprty,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,5526
+563412,Veliká Ves,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,5547
+563439,Vilémov,4204,Kadaň,2022,verified_2022_and_2023_boundary,1.1.2022,5689
+563463,Vrskmaň,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,5867
+563471,Všehrdy,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,5882
+563480,Všestudy,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,5904
+563498,Výsluní,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,5921
+563501,Vysoká Pec,4203,Chomutov,2022,verified_2022_and_2023_boundary,1.1.2022,5932
+564567,Litoměřice,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,2744
+564575,Bechlín,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,75
+564591,Bohušovice nad Ohří,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,241
+564613,Brňany,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,365
+564621,Brozany nad Ohří,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,382
+564648,Bříza,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,447
+564656,Budyně nad Ohří,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,470
+564672,Ctiněves,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,573
+564699,Černiv,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,652
+564711,Čížkovice,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,739
+564729,Děčany,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,767
+564737,Dlažkovice,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,803
+564745,Dobříň,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,863
+564753,Doksany,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,872
+564770,Drahobuz,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,1001
+564818,Dušníky,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,1083
+564834,Evaň,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,1104
+564842,Hlinná,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,1217
+564851,Horní Beřkovice,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,1308
+564877,Hoštka,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,1449
+564893,Hrobce,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,1505
+564923,Chodouny,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,1632
+564931,Chodovlice,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,1637
+564940,Chotěšov,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,1662
+564958,Chotiměř,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,1667
+564966,Chotiněves,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,1668
+565016,Keblice,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,2021
+565024,Klapý,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,2044
+565032,Kleneč,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,2056
+565059,Kostomlaty pod Řípem,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,2215
+565067,Krabčice,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,2277
+565075,Křesín,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,2392
+565083,Křešice,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,2393
+565091,Kyškovice,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,2496
+565105,Levín,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,2586
+565113,Lhotka nad Labem,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,2610
+565121,Liběšice,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,2634
+565148,Libkovice pod Řípem,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,2651
+565156,Libochovany,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,2659
+565164,Libochovice,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,2660
+565172,Libotenice,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,2667
+565211,Lovečkovice,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,2811
+565229,Lovosice,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,2812
+565237,Lukavec,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,2843
+565245,Malé Žernoseky,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,2911
+565253,Martiněves,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,2951
+565296,Mlékojedy,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,3115
+565300,Mnetěš,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,3119
+565318,Mšené-lázně,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,3208
+565342,Nové Dvory,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,3432
+565393,Ploskovice,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,3862
+565415,Podsedice,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,3918
+565431,Polepy,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,3941
+565458,Prackovice nad Labem,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,4004
+565474,Přestavlky,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,4096
+565482,Račice,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,4171
+565491,Račiněves,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,4178
+565521,Radovesice,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,4230
+565547,Rochov,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,4305
+565555,Roudnice nad Labem,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,4336
+565598,Siřejovice,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,4548
+565601,Slatina,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,4608
+565610,Snědovice,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,4678
+565679,Straškov-Vodochody,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,4847
+565695,Sulejovice,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,4961
+565709,Štětí,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,5109
+565717,Terezín,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,5177
+565741,Travčice,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,5225
+565768,Třebenice,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,5273
+565776,Třebívlice,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,5285
+565792,Třebušín,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,5299
+565806,Úpohlavy,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,5440
+565814,Úštěk,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,5460
+565831,Vědomice,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,5522
+565849,Velemín,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,5532
+565857,Velké Žernoseky,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,5595
+565865,Vchynice,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,5666
+565873,Vlastislav,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,5742
+565881,Vražkov,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,5836
+565890,Vrbice,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,5844
+565903,Vrbičany,4208,Lovosice,2022,verified_2022_and_2023_boundary,1.1.2022,5849
+565911,Vrutice,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,5872
+565938,Žabovřesky nad Ohří,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,6146
+565946,Žalhostice,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,6153
+565954,Židovice,4211,Roudnice nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,6228
+565962,Žitenice,4205,Litoměřice,2022,verified_2022_and_2023_boundary,1.1.2022,6242
+565971,Louny,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,2805
+565997,Bitozeves,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,176
+566004,Blatno,4210,Podbořany,2022,verified_2022_and_2023_boundary,1.1.2022,187
+566012,Blažim,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,191
+566021,Blšany,4210,Podbořany,2022,verified_2022_and_2023_boundary,1.1.2022,202
+566063,Břvany,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,448
+566128,Deštnice,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,785
+566152,Domoušice,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,976
+566187,Holedeč,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,1271
+566195,Hříškov,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,1540
+566217,Hřivice,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,1541
+566233,Chlumčany,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,1613
+566241,Chožov,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,1680
+566284,Koštice,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,2226
+566306,Krásný Dvůr,4210,Podbořany,2022,verified_2022_and_2023_boundary,1.1.2022,2317
+566314,Kryry,4210,Podbořany,2022,verified_2022_and_2023_boundary,1.1.2022,2368
+566322,Lenešice,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,2554
+566349,Libčeves,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,2622
+566357,Liběšice,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,2635
+566381,Libořice,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,2664
+566403,Lipno,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,2698
+566411,Lišany,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,2719
+566438,Lubenec,4210,Podbořany,2022,verified_2022_and_2023_boundary,1.1.2022,2817
+566454,Měcholupy,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,2983
+566501,Nepomyšl,4210,Podbořany,2022,verified_2022_and_2023_boundary,1.1.2022,3324
+566519,Nové Sedlo,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,3449
+566527,Očihov,4210,Podbořany,2022,verified_2022_and_2023_boundary,1.1.2022,3508
+566535,Panenský Týnec,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,3724
+566551,Peruc,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,3781
+566560,Petrohrad,4210,Podbořany,2022,verified_2022_and_2023_boundary,1.1.2022,3789
+566578,Pnětluky,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,3867
+566586,Počedělice,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,3877
+566608,Podbořanský Rohozec,4210,Podbořany,2022,verified_2022_and_2023_boundary,1.1.2022,3881
+566616,Podbořany,4210,Podbořany,2022,verified_2022_and_2023_boundary,1.1.2022,3882
+566624,Postoloprty,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,3980
+566659,Raná,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,4254
+566667,Ročov,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,4286
+566713,Slavětín,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,4625
+566721,Smolnice,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,4669
+566829,Toužetín,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,5220
+566853,Tuchořice,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,5326
+566870,Velemyšleves,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,5533
+566896,Veltěže,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,5614
+566900,Růžová,4202,Děčín,2022,verified_2022_and_2023_boundary,1.1.2022,4399
+566918,Vinařice,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,5702
+566926,Vrbno nad Lesy,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,5852
+566934,Vroutek,4210,Podbořany,2022,verified_2022_and_2023_boundary,1.1.2022,5866
+566951,Výškov,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,5955
+566977,Zbrašín,4207,Louny,2022,verified_2022_and_2023_boundary,1.1.2022,6063
+566985,Žatec,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,6163
+567019,Žiželice,4216,Žatec,2022,verified_2022_and_2023_boundary,1.1.2022,6249
+567027,Most,4209,Most,2022,verified_2022_and_2023_boundary,1.1.2022,3187
+567043,Bečov,4209,Most,2022,verified_2022_and_2023_boundary,1.1.2022,64
+567051,Bělušice,4209,Most,2022,verified_2022_and_2023_boundary,1.1.2022,96
+567060,Braňany,4209,Most,2022,verified_2022_and_2023_boundary,1.1.2022,332
+567078,Brandov,4206,Litvínov,2022,verified_2022_and_2023_boundary,1.1.2022,333
+567108,Český Jiřetín,4206,Litvínov,2022,verified_2022_and_2023_boundary,1.1.2022,704
+567141,Havraň,4209,Most,2022,verified_2022_and_2023_boundary,1.1.2022,1171
+567167,Hora Svaté Kateřiny,4206,Litvínov,2022,verified_2022_and_2023_boundary,1.1.2022,1292
+567175,Horní Jiřetín,4206,Litvínov,2022,verified_2022_and_2023_boundary,1.1.2022,1330
+567191,Klíny,4206,Litvínov,2022,verified_2022_and_2023_boundary,1.1.2022,2065
+567221,Korozluky,4209,Most,2022,verified_2022_and_2023_boundary,1.1.2022,2172
+567248,Lišnice,4209,Most,2022,verified_2022_and_2023_boundary,1.1.2022,2725
+567256,Litvínov,4206,Litvínov,2022,verified_2022_and_2023_boundary,1.1.2022,2751
+567264,Lom,4206,Litvínov,2022,verified_2022_and_2023_boundary,1.1.2022,2770
+567272,Louka u Litvínova,4206,Litvínov,2022,verified_2022_and_2023_boundary,1.1.2022,2797
+567281,Lužice,4209,Most,2022,verified_2022_and_2023_boundary,1.1.2022,2871
+567299,Malé Březno,4209,Most,2022,verified_2022_and_2023_boundary,1.1.2022,2904
+567302,Mariánské Radčice,4206,Litvínov,2022,verified_2022_and_2023_boundary,1.1.2022,2941
+567311,Meziboří,4206,Litvínov,2022,verified_2022_and_2023_boundary,1.1.2022,3012
+567329,Nová Ves v Horách,4206,Litvínov,2022,verified_2022_and_2023_boundary,1.1.2022,3428
+567337,Obrnice,4209,Most,2022,verified_2022_and_2023_boundary,1.1.2022,3500
+567345,Patokryje,4209,Most,2022,verified_2022_and_2023_boundary,1.1.2022,3743
+567353,Polerady,4209,Most,2022,verified_2022_and_2023_boundary,1.1.2022,3943
+567361,Skršín,4209,Most,2022,verified_2022_and_2023_boundary,1.1.2022,4583
+567426,Želenice,4209,Most,2022,verified_2022_and_2023_boundary,1.1.2022,6194
+567442,Teplice,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,5171
+567451,Bílina,4201,Bílina,2022,verified_2022_and_2023_boundary,1.1.2022,149
+567469,Bořislav,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,307
+567477,Bystřany,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,522
+567485,Bžany,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,538
+567507,Dubí,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,1067
+567515,Duchcov,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,1077
+567523,Háj u Duchcova,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,1137
+567531,Hostomice,4201,Bílina,2022,verified_2022_and_2023_boundary,1.1.2022,1437
+567558,Hrob,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,1504
+567566,Hrobčice,4201,Bílina,2022,verified_2022_and_2023_boundary,1.1.2022,1506
+567582,Jeníkov,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,1827
+567604,Kladruby,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,2041
+567612,Kostomlaty pod Milešovkou,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,2214
+567621,Košťany,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,2225
+567639,Krupka,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,2364
+567647,Lahošť,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,2504
+567655,Ledvice,4201,Bílina,2022,verified_2022_and_2023_boundary,1.1.2022,2549
+567698,Měrunice,4201,Bílina,2022,verified_2022_and_2023_boundary,1.1.2022,2998
+567701,Mikulov,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,3035
+567710,Modlany,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,3131
+567728,Moldava,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,3156
+567752,Novosedlice,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,3454
+567761,Ohníč,4201,Bílina,2022,verified_2022_and_2023_boundary,1.1.2022,3518
+567779,Osek,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,3632
+567787,Proboštov,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,4024
+567809,Rtyně nad Bílinou,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,4374
+567833,Srbice,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,4731
+567841,Světec,4201,Bílina,2022,verified_2022_and_2023_boundary,1.1.2022,4993
+567850,Újezdeček,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,5420
+567868,Zabrušany,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,5974
+567876,Žalany,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,6152
+567884,Žim,4213,Teplice,2022,verified_2022_and_2023_boundary,1.1.2022,6236
+567931,Dolní Zálezly,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,957
+567957,Habrovany,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,1129
+567973,Homole u Panny,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,1288
+568007,Chabařovice,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,1583
+568015,Chlumec,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,1615
+568023,Chuderov,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,1714
+568058,Libouchec,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,2669
+568091,Malé Březno,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,2905
+568104,Malečov,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,2913
+568147,Petrovice,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,3798
+568155,Povrly,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,3996
+568201,Řehlovice,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,4429
+568287,Tašov,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,5145
+568295,Telnice,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,5163
+568309,Tisá,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,5197
+568350,Velké Březno,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,5572
+568384,Zubrnice,4214,Ústí nad Labem,2022,verified_2022_and_2023_boundary,1.1.2022,6123

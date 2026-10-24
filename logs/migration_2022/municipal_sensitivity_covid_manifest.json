@@ -1,0 +1,28 @@
+{
+  "run_id": "municipal-covid-sensitivity-20261024T090848Z",
+  "frozen_at": "2026-10-24T09:09:07.301891+00:00",
+  "seed": 1729,
+  "source_sha256": "9cc9ccdcb9144bb9b116ce87d09dc0f14d1ae8445854d7484eff319b670549c1",
+  "input_sha256": "ec67b2d9343ba3c5512c8028e9915c6bd7a643963437e3ccc590eab9c64c4638",
+  "training_subset_sha256": "d135c60973db5dffdf844770be4398b45ed1a383010debfd5207b20bd9e456ef",
+  "selected_metadata_sha256": "e96c5ebea3541a5050b66a76fe7daec2dc8a8ee89969b631b6993f61d74be54c",
+  "config_sha256": "9205e3c1c5750f320e73d4925c1daa8ac5bd1b7ab0752aa04049475eb89e5a71",
+  "output_sha256": "951795e6a212eac6c6b20aecc11d5f3502007e8a1c291dc245a9f6eb169e2e50",
+  "log_sha256": "beb8f8f6c39eeb5d089330f2f617115c815011cda8d5f42894f968213f9e809d",
+  "row_count": 708,
+  "fit_status_counts": {
+    "success": 708
+  },
+  "panel_real_fits": 8,
+  "local_real_fits": 39,
+  "training_years": [
+    2000,
+    2019
+  ],
+  "forecast_years": [
+    2020,
+    2021,
+    2022
+  ],
+  "note": "Locked selected families. Direct3step local forecasts; panel fit once per family/flow, retained scaler/encoder/model, family-specific paired-flow recursive forecasts, population fixed2019, simultaneous I/E updates. Family/config selection remains the original development/selector through2021; this is a training-window sensitivity, not a forecast selected in2019. No synthetic-target refitting; no observed2022/evaluation reads. B1/B2 constant3step forecasts; failed family uses last observed2019 B1."
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "milestone": "municipal_input_audit",
+    "commit": "6d2324c",
+    "push": "success"
+  },
+  {
+    "milestone": "complete_data_audit",
+    "commit": "b4e8b48",
+    "push": "success"
+  },
+  {
+    "milestone": "regional_benchmark",
+    "commit": "95c7b44",
+    "push": "success"
+  },
+  {
+    "milestone": "frozen_municipal_selector_and_2022_predictions",
+    "commit": "6d0f714",
+    "push": "success"
+  },
+  {
+    "milestone": "external_2022_comparison",
+    "commit": "85bd845",
+    "push": "success"
+  }
+]

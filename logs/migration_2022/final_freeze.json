@@ -1,0 +1,50 @@
+{
+  "frozen_at": "2026-10-24T11:09:49.419368+02:00",
+  "base_commit": "fe39743f00f11284d4625c4837d400c1ff0ad226",
+  "evaluation_not_yet_run": true,
+  "files": {
+    "results/migration_2022/selected_sensitivity_2022_municipal.csv": "652b36c4227fff69ed747d0aa863eb3c925e673c05581e4611d9a97e9103e65a",
+    "results/migration_2022/prospective_range_coverage_summary.csv": "4a7c77c680725057262a8404a8d852496c5b76a306d299dcaaef8289530d75c8",
+    "results/migration_2022/model_comparison.csv": "9eb7b7578b12d7e1f289fdfb89b8beee36c13fe46f6f92a8636b5b257af24f6e",
+    "results/migration_2022/region_history_2000_2021.csv": "6aba316ab6ce8315ddd67de630f61c76fbe93ca75ff4a709b3047e25e698f79b",
+    "results/migration_2022/selector_backtest_with_balance.csv": "5496139286c32bc54b2e428083fde200d68818872f25491c59030a7136d1841f",
+    "results/migration_2022/uncertainty_scenarios_2022.csv": "afbb8b7f384f59e57a193cf50a4ee3cc0453bfc285436068b411f81c5dfd09ca",
+    "results/migration_2022/candidate_predictions_2022_municipalities.csv": "0c4e58ba9a2f4cfee03027c9c68adf0a93c4a769ab6ee7c2b68ca7cf24d0e0d0",
+    "results/migration_2022/regional_fit_status.csv": "2324637f8af8084dd363e9f5ab5d1e653cb36651bac60e50ab136ea47f0aa914",
+    "results/migration_2022/selected_sensitivity_covid_2022_municipal.csv": "951795e6a212eac6c6b20aecc11d5f3502007e8a1c291dc245a9f6eb169e2e50",
+    "results/migration_2022/regional_data_quality.csv": "d69ebf17e625cc5cab50c287f120660feed606c9b65b1c0fd3b2ecf670e57877",
+    "results/migration_2022/selector_backtest.csv": "97db3d2b032b6fdf221b0d8c7dad0ca0e09bf649b2717dea5052c7b83024a386",
+    "results/migration_2022/frozen_predictions_2022.csv": "e96c5ebea3541a5050b66a76fe7daec2dc8a8ee89969b631b6993f61d74be54c",
+    "results/migration_2022/backtest_predictions.csv": "029d63c18aa6af1a1a5e428bcd4f688e2ad622b0d71467a0fc67c032f11a1fba",
+    "results/migration_2022/sensitivity_forecasts_region.csv": "986545701a68e2e34187e80396de7696880ce616c13c6d1416e3770847b08bf0",
+    "results/migration_2022/regional_development_scores.csv": "6e78d227d352ccb96f3ecf870b58b2f176d781caca78fabe99e84248f1f4f05d",
+    "results/migration_2022/prospective_range_coverage.csv": "1d9e70f6c0ad9a3de1119223b86c0c4d5e6a3462b5f532a11c628d5c5fac1236",
+    "results/migration_2022/data_quality.csv": "c9b5823befd637ae75cf27391829676bd41e9c3141f3d7cac3bb8c61dbe7cb5a",
+    "results/migration_2022/candidate_predictions_2022_region.csv": "8fcc337797be8ae86125d14af53e118f8db03b3a0ac59982edfb32a09ee5aba8"
+  },
+  "local_scripts_sha256": {
+    "verify_results.py": "d8c28c54e8ca56280a773a73509eb5bea35e0dce94a5e2c3f95754e1d9e47bcd",
+    "audit_inputs.py": "17918067cec4388d168224ea10583511fb1c2883ca4d82af17d95bf82ad901e6",
+    "publication.py": "a25ff96e565b7e63118561f5d6a77325eefd2b68c50f49c4727a59499def06cb",
+    "selector/run_selector.py": "2e2bd64d8f4ce7fce0c5640e3a79f2fe60af2f2ccfacb96ae77d25cbb90d23a1",
+    "municipal_models/run.py": "ff3928dd460ce079452abd95a97dbdc0684f7f07bcfaab922ecff15ee5992f44",
+    "municipal_models/sensitivity_covid.py": "9cc9ccdcb9144bb9b116ce87d09dc0f14d1ae8445854d7484eff319b670549c1",
+    "municipal_models/sensitivity.py": "945282bde889ec24afb37c02af81b36cfadb20e442fac3d7b6ea9809c496467b",
+    "municipal_models/validate.py": "f904ddb95a54a994e32413d5bb42398253ea84fea8e791ff7bbc5d884297343a",
+    "evaluation/prepare_inputs.py": "4455da8c28bc7745d33aac14376cf4edf6b4f1df62db84aa5d2595d110953508",
+    "evaluation/integrate_evaluation.py": "01dc64872826de19cb22f4398ea64373db30627e96913335f17bfc00163f6975",
+    "report/build_report.py": "c21e61ce764262b4c6eafdbf85d94eeeefdb44d7f1762948b47947b46095c74e",
+    "region_models/run_region.py": "ca9ce14df224c36c455553989402a099077ba8a8779e6a08b139609d40c05cf3",
+    "region_data/acquire_region.py": "f004284aaba7dbd8344f4ff3378cf7fc119ba1cefca9045b9e81a1d47c475b76"
+  },
+  "environment": {
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "statsmodels": "0.15.0",
+    "matplotlib": "3.11.2",
+    "openpyxl": "3.1.5",
+    "pypdf": "6.10.0"
+  }
+}

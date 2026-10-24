@@ -1,0 +1,116 @@
+{
+  "created_at": "2026-10-24T08:42:30.810385+00:00",
+  "evaluation_only": true,
+  "files": {
+    "/Users/hugo/Downloads/TT_Decin_predikce_2022/sources/mv_temporary_protection_snapshot_2022-12-31.xlsx": {
+      "sha256": "3bd3cfa1e4940bd39218d38e2395c16652b38a094b125365724da63044ed45db",
+      "bytes": 500009
+    },
+    "/Users/hugo/Downloads/TT_Decin_predikce_2022/sources/csu_2022_final_regional_migration_tables.xlsx": {
+      "sha256": "89c9c84208c8cc473ed09c14938df4020c6a47cc1e2d52c4ace486863d326f38",
+      "bytes": 44652
+    },
+    "/Users/hugo/Downloads/TT_Decin_predikce_2022/sources/csu_2022_preliminary_ORP.xlsx": {
+      "sha256": "ff3bf60740e9003a9dbc79b144836ccb099a07482582cf2eee98df048d30e5b3",
+      "bytes": 27575
+    },
+    "/Users/hugo/Downloads/TT_Decin_predikce_2022/sources/csu_2022_preliminary_D6.xlsx": {
+      "sha256": "4c8180c1bc3dd1de5ab42a3b018d87866ea555f1e9a76fb65b078e6310831757",
+      "bytes": 12599
+    },
+    "/Users/hugo/Downloads/TT_Decin_predikce_2022/sources/csu_2022_migration_methodology.pdf": {
+      "sha256": "f80cf086e00e981f5f875c48eed45351db6793f29dfe0dac033fd3df9b408389",
+      "bytes": 1179236
+    },
+    "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/outputs/ustecky_kraj_ml_data/sources/geography/raw/struktura_uzemi_cr.xlsx": {
+      "sha256": "a91d794eb3d23de2cf9eab28d7356200fc11b65bba971ecfbc9aa3e6ca27dabf",
+      "bytes": 5731395
+    },
+    "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/outputs/ustecky_kraj_ml_data/sources/geography/raw/prehled_zmen_souboru_struktura_uzemi_cr.xlsx": {
+      "sha256": "b10d951f5d2a6f61fc1aed0762376dbfe52a4b50854dcff95ed4bba58c304678",
+      "bytes": 37044
+    },
+    "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/publish/TT-Decin/data/radar-data.json": {
+      "sha256": "c7c5e16e53dabc0fda865f3df1f512baf5562007b8c4db73540f8619f6c2c6db",
+      "bytes": 1273812
+    },
+    "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/evaluation/preliminary_orp_2022.csv": {
+      "sha256": "218059cdc36e0933c0ff965edc6387c951acefc5ca9354b09fb5ffe4d416d508",
+      "bytes": 1832
+    },
+    "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/evaluation/region_2022.csv": {
+      "sha256": "51278c80540082c4a785bfced65ce1b830bd34eac68ec9573d8bde6a06cd13bf",
+      "bytes": 457
+    },
+    "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/evaluation/municipality_orp_2022.csv": {
+      "sha256": "2b5d5dc6015ec1da23c76bd1e503a02b9a74189e6585d88176375cbf07828b16",
+      "bytes": 30114
+    },
+    "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/evaluation/mv_stock_2022.csv": {
+      "sha256": "fe9dc4c4bed92f762216a0bef652922d7f8d5fe97cc3c361079ab01a421f2165",
+      "bytes": 31484
+    }
+  },
+  "checks": {
+    "expected_municipalities": 354,
+    "orp_count": 16,
+    "mapping_2022_2023_identical_for_all_expected": true,
+    "mv_rows": 276,
+    "mv_distinct_codes": 273,
+    "mv_missing_codes_count": 81,
+    "mv_city_part_aggregation": "sum all rows sharing kod_obce; no first-duplicate reduction",
+    "mv_created_property": "2022-12-31 05:37:20",
+    "mv_modified_property": "2022-12-31 05:37:20"
+  },
+  "region_locators": [
+    {
+      "kod_kraj": "3069",
+      "year": 2022,
+      "kind": "final_all",
+      "incoming": 22948,
+      "outgoing": 6887,
+      "net": 16061,
+      "source_locator": "Tab 6.4!B9,I9; Tab 6.2!H4:H17 excluding H9,B9"
+    },
+    {
+      "kod_kraj": "3069",
+      "year": 2022,
+      "kind": "final_foreign",
+      "incoming": 17735,
+      "outgoing": 976,
+      "net": 16759,
+      "source_locator": "Tab 6.4!B9,I9"
+    },
+    {
+      "kod_kraj": "3069",
+      "year": 2022,
+      "kind": "final_interregional",
+      "incoming": 5213,
+      "outgoing": 5911,
+      "net": -698,
+      "source_locator": "Tab 6.2!H4:H17 excluding H9,B9"
+    },
+    {
+      "kod_kraj": "3069",
+      "year": 2022,
+      "kind": "final_foreign_ukrainian_citizenship",
+      "incoming": 16257,
+      "outgoing": 314,
+      "net": 15943,
+      "source_locator": "Tab 6.4!C9,J9"
+    },
+    {
+      "kod_kraj": "3069",
+      "year": 2022,
+      "kind": "preliminary_excludes_temporary_protection",
+      "incoming": 7405,
+      "outgoing": 6887,
+      "net": 518,
+      "source_locator": "D.6!H6,F20,H20; exclusion A30"
+    }
+  ],
+  "orp_note": "A228 excludes temporary protection; data rows 79:94",
+  "mapping_source_url": "https://csu.gov.cz/docs/107516/3f36d27f-7eb1-b14c-0029-af89997bf192/struktura_uzemi_cr.xlsx?version=1.2",
+  "mapping_index_url": "https://csu.gov.cz/i_zakladni_uzemni_ciselniky_na_uzemi_cr_a_klasifikace_cz_nuts",
+  "mapping_temporal_validation": "Explicit 1.1.2022 sheet checked against 1.1.2023; all 354 municipality-to-ORP pairs identical. Changes worksheet 2022 only lists municipal status changes, no territory changes."
+}

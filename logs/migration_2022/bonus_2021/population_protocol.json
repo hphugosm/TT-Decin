@@ -1,0 +1,34 @@
+{
+  "written_before_fits": "2026-10-24T10:06:22.211355+00:00",
+  "models": [
+    "M4",
+    "M5"
+  ],
+  "metric": "incoming",
+  "target_year": 2022,
+  "training_years": [
+    2000,
+    2021
+  ],
+  "intervention": "Replace only population in year2021 with observed population2020; all flow counts and other population years remain unchanged",
+  "original_population2021": 798898.0,
+  "replacement_observed_population2020": 817004.0,
+  "configs": {
+    "M4": {
+      "lags": 2,
+      "alpha": 10.0
+    },
+    "M5": {
+      "lags": 2,
+      "alpha": 10.0
+    }
+  },
+  "interpretation": "Supplementary input-mechanism stress test of census stock discontinuity vs unchanged flow counts. Not corrected population, not preferred model, not causal estimate, no historical accuracy claim. No observed2022/evaluation data read. Original training targets end2021 and use population through2020; only final forecast population feature/exposure changes.",
+  "source_hashes": {
+    "input": "6aba316ab6ce8315ddd67de630f61c76fbe93ca75ff4a709b3047e25e698f79b",
+    "original_model_source": "ca9ce14df224c36c455553989402a099077ba8a8779e6a08b139609d40c05cf3",
+    "original_config": "9d8a3b132d67f8a8d8cc31d0bafc510a09054eb40188ee00c7b65db594e600ba",
+    "original_frozen_forecasts": "8fcc337797be8ae86125d14af53e118f8db03b3a0ac59982edfb32a09ee5aba8",
+    "diagnostic_source": "cdf7ca8052b6f27a7f38cf64b4f9bc31f82176b7ecd0c16aa568df93094cf62a"
+  }
+}

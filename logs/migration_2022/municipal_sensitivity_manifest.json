@@ -1,0 +1,11 @@
+{
+  "source_sha256": "945282bde889ec24afb37c02af81b36cfadb20e442fac3d7b6ea9809c496467b",
+  "input_sha256": "ec67b2d9343ba3c5512c8028e9915c6bd7a643963437e3ccc590eab9c64c4638",
+  "frozen_at": "2026-10-24T09:09:13.225938+00:00",
+  "run_id": "municipal-2022-20261024T090839Z",
+  "seed": 1729,
+  "selected_metadata_sha256": "e96c5ebea3541a5050b66a76fe7daec2dc8a8ee89969b631b6993f61d74be54c",
+  "config_sha256": "9205e3c1c5750f320e73d4925c1daa8ac5bd1b7ab0752aa04049475eb89e5a71",
+  "output_sha256": "652b36c4227fff69ed747d0aa863eb3c925e673c05581e4611d9a97e9103e65a",
+  "note": "Same locked selected model refit on contiguous windows2001\u20132021 and2010\u20132021. No observed2022 data used. Municipal covid-excluded multistep sensitivity not run; regional sensitivity covers this question."
+}

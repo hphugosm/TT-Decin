@@ -1,0 +1,44 @@
+{
+  "created_at": "2026-10-24T09:58:42.819077+00:00",
+  "primary_metric": "incoming",
+  "primary_geography": "true boundary flows into Ústecký kraj",
+  "original_config_file": "../region_models/locked_configs.json",
+  "original_config_sha256": "9d8a3b132d67f8a8d8cc31d0bafc510a09054eb40188ee00c7b65db594e600ba",
+  "primary_assessment_targets": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "horizons": [
+    1,
+    2,
+    3
+  ],
+  "cutoff_rule": "target_year minus horizon; configs selected using targets2010–2014, hence minimum primary cutoff2014",
+  "models": [
+    "B1",
+    "B2",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5"
+  ],
+  "no_new_selector": true,
+  "no_configuration_or_variant_selected_by_2022": true,
+  "final_target": 2022,
+  "transformations": [
+    "total unchanged",
+    "terminal-only subtraction of Ukrainian-citizenship foreign arrivals, h1 sensitivity",
+    "consistent subtraction throughout verified contiguous history; no imputation"
+  ],
+  "clean_history_minimum_training_observations": 8,
+  "clean_common_support_rule": "compare transformed and untransformed series from identical earliest contiguous verifiedyear; skip targets with fewer than8 trainyears; no guessed zeros for absentcitizenshipcategories",
+  "clean_historical_target": "total minus Ukrainian-citizenship foreign immigration, not citizenshiptotal and not noDO",
+  "clean_total_configuration_policy": "fixed original configs for comparability; clean series not retuned; both matching B1/B2 reported",
+  "relative_error_2022": "(prediction - actual)/actual; absolute percentage error also reported, descriptive only",
+  "paired_horizon_analysis": "familyfixed, equal targetyears; count improvements and changes in MAE; no causal effect of informationremoval",
+  "coverage_limits": "Do not invent missing history. Report sourced points, contiguous usable period and methodologybreaks."
+}

@@ -1,0 +1,79 @@
+{
+  "run_id": "bonus_clean_20261024T100751Z",
+  "frozen_at": "2026-10-24T10:07:51.687779+00:00",
+  "seed": 2026,
+  "scope": "region",
+  "metric": "incoming",
+  "target_test_years": [
+    2017,
+    2021
+  ],
+  "minimum_training_observations": 8,
+  "clean_start": 2006,
+  "horizons": [
+    1,
+    2,
+    3
+  ],
+  "variants": {
+    "terminal_clean_full_h1": [
+      1
+    ],
+    "consistent_clean": [
+      1,
+      2,
+      3
+    ],
+    "matched_total": [
+      1,
+      2,
+      3
+    ],
+    "terminal_clean_matched_h1": [
+      1
+    ]
+  },
+  "origin_rule": "target_year-horizon; no intervening realized outcomes or population used",
+  "transform": "ua_foreign_incoming subtracted from incoming; all other historical total incoming retained only for terminal variants",
+  "target_definitions": {
+    "actual_total": "regional incoming through boundary of region",
+    "actual_clean": "regional total incoming minus foreign incoming of Ukrainian citizens; includes other classifications and war effects; no causal interpretation"
+  },
+  "metrics": "MAE/RMSE/bias by all2017–2021,precovid2017–2019,covid2020–2021; equal matched target years across all models/variants; relative_improvement_vs_B1/B2=1-model_MAE/reference_MAE, undefined for zero denominator",
+  "config_selection": "original incoming locked configurations reused without new tuning or winner selection",
+  "configs": {
+    "B1": {},
+    "B2": {
+      "window": 3
+    },
+    "M1": {
+      "damping_trend": 0.8
+    },
+    "M2": {
+      "order": [
+        1,
+        1,
+        0
+      ]
+    },
+    "M3": {
+      "theta": 2.0
+    },
+    "M4": {
+      "lags": 2,
+      "alpha": 10.0
+    },
+    "M5": {
+      "lags": 2,
+      "alpha": 10.0
+    }
+  },
+  "input_sha256": "29b92737e169043ae769254e74d465802eedaffa67d5005e11c396fcb6978835",
+  "source_manifest_path": "/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/bonus_2021/source_manifest.json",
+  "source_manifest_sha256": "7cbbdd6d90627e50fb7e9efdabd2b9f377a8205f98a63e3a5f04f5a23327262d",
+  "original_predictor_sha256": "ca9ce14df224c36c455553989402a099077ba8a8779e6a08b139609d40c05cf3",
+  "original_locked_configs_sha256": "9d8a3b132d67f8a8d8cc31d0bafc510a09054eb40188ee00c7b65db594e600ba",
+  "script_sha256": "440e9b61c07ff957618f26a1bd4414da0859c358984ae5a93d89a7f2393f61a1",
+  "futures": "For2022 only verified history through2021; no observed2022 file read",
+  "exposure": "Original implementation: last observed population held fixed for recursive horizons; all exposure predates target"
+}

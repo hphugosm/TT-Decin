@@ -1,0 +1,23 @@
+{
+  "backtest_municipal.csv": {
+    "rows": 76464,
+    "full_coverage": true,
+    "status_counts": {
+      "success": 76462,
+      "fallback_B1": 2
+    },
+    "fallback_by_model": {
+      "M1_Holt": 2
+    },
+    "warning_rows": 12
+  },
+  "candidate_forecasts_2022_municipal.csv": {
+    "rows": 6372,
+    "full_coverage": true,
+    "status_counts": {
+      "success": 6372
+    },
+    "fallback_by_model": {},
+    "warning_rows": 0
+  }
+}

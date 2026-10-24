@@ -1,0 +1,74 @@
+{
+  "run_id": "region_20261024T085831Z",
+  "frozen_at": "2026-10-24T08:58:31.875428+00:00",
+  "development_years": [
+    2010,
+    2014
+  ],
+  "assessment_years": [
+    2015,
+    2021
+  ],
+  "input_sha256": "6aba316ab6ce8315ddd67de630f61c76fbe93ca75ff4a709b3047e25e698f79b",
+  "configs": {
+    "incoming": {
+      "B1": {},
+      "B2": {
+        "window": 3
+      },
+      "M1": {
+        "damping_trend": 0.8
+      },
+      "M2": {
+        "order": [
+          1,
+          1,
+          0
+        ]
+      },
+      "M3": {
+        "theta": 2.0
+      },
+      "M4": {
+        "lags": 2,
+        "alpha": 10.0
+      },
+      "M5": {
+        "lags": 2,
+        "alpha": 10.0
+      }
+    },
+    "outgoing": {
+      "B1": {},
+      "B2": {
+        "window": 3
+      },
+      "M1": {
+        "damping_trend": 0.8
+      },
+      "M2": {
+        "order": [
+          1,
+          0,
+          0
+        ]
+      },
+      "M3": {
+        "theta": 2.0
+      },
+      "M4": {
+        "lags": 1,
+        "alpha": 1.0
+      },
+      "M5": {
+        "lags": 2,
+        "alpha": 10.0
+      }
+    }
+  },
+  "selector_rule": "prior-year-only MAE; complex family requires >=10% improvement over best B1/B2; root implements selector",
+  "zero_clipping": true,
+  "exposure": "Poisson target flow per 1000 previous-year population, weighted by previous-year population; final exposure fixed latest observed population; multistep recursive population held constant",
+  "feature_scaling": "StandardScaler fitted in each training window; each lag vector uses prior mean only",
+  "seed": 2026
+}
