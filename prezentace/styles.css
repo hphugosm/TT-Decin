@@ -31,3 +31,9 @@ body[data-step="2"] .event-band{opacity:1;transform:scaleX(1)}body[data-step="2"
 @media(max-height:760px) and (min-width:951px){:root{--slide-heading-size:42px}}
 @media(max-width:950px){:root{--slide-heading-size:38px}}
 @media(max-width:600px){:root{--slide-heading-size:34px}}
+
+/* One shared numeral for the four progressively revealed labels. */
+.granularity{display:flex;align-items:center;gap:24px}.granularity-one{display:block;flex-shrink:0;min-width:100px;font-size:clamp(170px,18vw,224px);font-weight:600;line-height:.95;letter-spacing:-10px;color:var(--blue)}.granularity-words{display:grid;gap:7px}.granularity .unit-row{gap:0}
+@media(max-height:760px) and (min-width:951px){.granularity-one{font-size:180px;min-width:84px}.granularity-words{gap:4px}}
+@media(max-width:950px){.granularity-one{font-size:208px;min-width:92px}.granularity{gap:18px}}
+@media(max-width:600px){.granularity-one{font-size:148px;min-width:55px;letter-spacing:-7px}.granularity{gap:10px}.granularity-words{gap:8px}}
