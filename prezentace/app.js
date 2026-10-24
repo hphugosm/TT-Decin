@@ -146,3 +146,37 @@ $('#presentation').addEventListener('touchend', event => {
 }, { passive: true });
 window.addEventListener('hashchange', () => renderRoute({ focus: true }));
 renderRoute();
+
+// Store the start instant, so slide changes, inactive tabs and reloads never pause it.
+const timerStorageKey = 'tt-decin-presentation-started-at';
+const timerButton = $('#presentation-timer');
+let timerStartedAt = null;
+try {
+  const savedStart = Number(localStorage.getItem(timerStorageKey));
+  if (Number.isFinite(savedStart) && savedStart > 0) timerStartedAt = savedStart;
+} catch { /* The timer also works in memory when browser storage is unavailable. */ }
+
+function updatePresentationTimer() {
+  if (timerStartedAt === null) return;
+  const seconds = Math.max(0, Math.floor((Date.now() - timerStartedAt) / 1000));
+  const hours = Math.floor(seconds / 3600);
+  const minutes = Math.floor(seconds / 60) % 60;
+  const pad = value => String(value).padStart(2, '0');
+  $('#timer-value').textContent = (hours ? `${pad(hours)}:` : '') + `${pad(minutes)}:${pad(seconds % 60)}`;
+  timerButton.disabled = true;
+  timerButton.dataset.running = 'true';
+  timerButton.setAttribute('aria-label', 'Časovač prezentace běží');
+  timerButton.title = 'Čas od spuštění prezentace';
+  $('.timer-indicator').textContent = '●';
+  $('#timer-label').hidden = true;
+}
+
+timerButton.addEventListener('click', () => {
+  if (timerStartedAt !== null) return;
+  timerStartedAt = Date.now();
+  try { localStorage.setItem(timerStorageKey, String(timerStartedAt)); } catch { /* Keep running. */ }
+  updatePresentationTimer();
+});
+setInterval(updatePresentationTimer, 250);
+document.addEventListener('visibilitychange', updatePresentationTimer);
+updatePresentationTimer();
