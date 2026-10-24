@@ -1,4 +1,5 @@
 import {colorFor} from './radar-engine.mjs';
+import {eventStyles} from './radar-events.mjs?v=event-scopes-1';
 const NS='http://www.w3.org/2000/svg';
 let sequence=0;
 const make=(tag,attrs={})=>{const el=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))el.setAttribute(k,v);return el;};
@@ -32,7 +33,7 @@ export function createMunicipalityMap(svgElement,geometry,{onSelect=()=>{},onHov
   const group=make('g',{'class':'municipality-shapes'});
   svgElement.setAttribute('viewBox',`0 0 ${width} ${height}`);svgElement.setAttribute('preserveAspectRatio','xMidYMid meet');
   const eventLayer=make('g',{class:'map-event-outlines','pointer-events':'none','aria-hidden':'true'});
-  const regionOutline=make('path',{class:'region-event-outline',fill:'none',stroke:'#d33438','stroke-width':3,'vector-effect':'non-scaling-stroke','stroke-linejoin':'round','stroke-linecap':'round'});
+  const regionOutline=make('path',{class:'region-event-outline',fill:'none',stroke:eventStyles.region.color,'stroke-width':3,'vector-effect':'non-scaling-stroke','stroke-linejoin':'round','stroke-linecap':'round'});
   const localOutlines=make('g',{class:'local-event-outlines'});
   eventLayer.append(regionOutline,localOutlines);
   svgElement.append(defs,group,eventLayer);svgElement.style.touchAction='none';
@@ -80,7 +81,7 @@ export function createMunicipalityMap(svgElement,geometry,{onSelect=()=>{},onHov
     const codes=[...new Set(state.eventCodes.map(String))].filter(code=>paths.has(code)).sort();
     const key=codes.join(',');
     if(key!==eventKey){
-      localOutlines.replaceChildren(...codes.map(code=>make('path',{d:paths.get(code).getAttribute('d'),'data-code':code,class:'municipality-event-outline',fill:'none',stroke:'#d33438','stroke-width':3,'vector-effect':'non-scaling-stroke','stroke-linejoin':'round','stroke-linecap':'round'})));
+      localOutlines.replaceChildren(...codes.map(code=>make('path',{d:paths.get(code).getAttribute('d'),'data-code':code,class:'municipality-event-outline',fill:'none',stroke:eventStyles.municipality.color,'stroke-width':3,'vector-effect':'non-scaling-stroke','stroke-linejoin':'round','stroke-linecap':'round'})));
       eventKey=key;
     }
     select(selected);paintStrokes();

@@ -1,7 +1,7 @@
 import {createDataset,rawAnnual,populationSummary,baseValue,derivedValue,colorDomain,colorFor,metricLabel,unitLabel} from './radar-engine.mjs';
-import {createMunicipalityMap} from './radar-map.mjs?v=events-1';
-import {eventsForYear,eventHighlights,eventsForTerritory} from './radar-events.mjs?v=garrison-2005-2006';
-import {renderTimeChart} from './radar-charts.mjs?v=garrison-2005-2006';
+import {createMunicipalityMap} from './radar-map.mjs?v=event-scopes-1';
+import {eventsForYear,eventHighlights,eventsForTerritory,eventStyles} from './radar-events.mjs?v=event-scopes-1';
+import {renderTimeChart} from './radar-charts.mjs?v=event-scopes-1';
 import {mountImportDialog} from './radar-import-ui.mjs';
 const $=id=>document.getElementById(id), fmt=(v,n=(v&&Math.abs(v)<1?Math.min(6,2-Math.floor(Math.log10(Math.abs(v)))):2))=>Number.isFinite(v)?v.toLocaleString('cs-CZ',{maximumFractionDigits:n}):'—';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -26,10 +26,11 @@ function selectTown(code){if(!names.has(String(code)))return;setPlaying(false);s
 function backToRegion(){setPlaying(false);state.selectedCode=null;state.hoverCode=null;$('town-search').value='';map.reset();render();}
 function mapUpdate(){const events=eventHighlights(state.year);map.update({values,names,metric:state.metric,selectedCode:state.selectedCode,hoverCode:state.hoverCode,domain,neutral:state.neutral,contrast:state.contrast,year:state.year,unitLabel:unitLabel(analytical()),eventRegion:events.region,eventCodes:events.codes});}
 
+function applyEventStyle(element,scope){const visual=eventStyles[scope]||eventStyles.region;element.style.setProperty('--event-color',visual.color);element.style.setProperty('--event-ink',visual.ink);}
 function renderEvents(){
  const active=eventsForYear(state.year),panel=$('map-events');
- panel.hidden=!active.length;
- panel.innerHTML=active.map(event=>`<article class="map-event" data-event="${esc(event.id)}"><div class="event-meta"><time datetime="${event.year}">${event.year}</time><span>${esc(event.place)}</span></div><div class="event-description"><h3>${esc(event.title)}</h3><p>${esc(event.description)}</p></div></article>`).join('');
+ panel.hidden=!active.length;applyEventStyle(panel,active[0]?.scope);
+ panel.innerHTML=active.map(event=>`<article class="map-event" data-event="${esc(event.id)}"><div class="event-meta"><time datetime="${event.year}">${event.year}</time><span>${esc(event.place)}</span><small class="event-scope">${eventStyles[event.scope].shortLabel}</small></div><div class="event-description"><h3>${esc(event.title)}</h3><p>${esc(event.description)}</p></div></article>`).join('');
 }
 
 function resetSettings(){const year=state.year,selectedCode=state.selectedCode;setPlaying(false);state={...state,...defaults(),unit:hasPopulation()?'rate':'absolute',baseYear:dataset.years.findLast(y=>y<year)??year,year,selectedCode,neutral:0,contrast:2};syncSettings();render(true);notice('Výchozí analytické nastavení obnoveno; rok a výběr obce zůstaly zachovány.');}
@@ -64,13 +65,13 @@ renderChart(s);$('population-note').textContent=`Populační základ: ${basis()}
 
 function renderChart(settings){
  const activeEvents=eventsForTerritory(state.year,state.selectedCode),chartNotice=$('chart-event-notice');
- chartNotice.hidden=!activeEvents.length;
- chartNotice.innerHTML=activeEvents.length?`<strong>Událost · ${state.year}</strong> ${activeEvents.map(event=>`<span title="${esc(event.description)}">${esc(event.place)} · ${esc(event.title)}</span>`).join(' · ')}`:'';
+ chartNotice.hidden=!activeEvents.length;applyEventStyle(chartNotice,activeEvents[0]?.scope);
+ chartNotice.innerHTML=activeEvents.length?`<strong>${eventStyles[activeEvents[0].scope].label} · ${state.year}</strong> ${activeEvents.map(event=>`<span title="${esc(event.description)}">${esc(event.place)} · ${esc(event.title)}</span>`).join(' · ')}`:'';
  $('chart-territory').textContent=townName(state.selectedCode);
  const svg=$('time-chart'),size=[svg.clientWidth,svg.clientHeight];
  const draw=()=>renderTimeChart(svg,{dataset,settings,selectedCode:state.selectedCode,year:state.year,onYear:setYear});
  const result=draw();
- $('chart-note').innerHTML=(state.metric==='balance'?['incoming','outgoing','balance']:[state.metric]).map(metric=>`<span class="chart-key"><i style="background:${{incoming:'#173da5',outgoing:'#de7524',balance:'#d3a600'}[metric]}"></i>${{incoming:'Přistěhování',outgoing:'Vystěhování',balance:'Saldo'}[metric]}</span>`).join('')+(result.referenceCount?'<span class="chart-key"><i style="background:#98a3b2"></i>Průměr kraje</span>':'')+(result.eventCount?'<span class="chart-key event-key"><i></i>Událost</span>':'');
+ $('chart-note').innerHTML=(state.metric==='balance'?['incoming','outgoing','balance']:[state.metric]).map(metric=>`<span class="chart-key"><i style="background:${{incoming:'#173da5',outgoing:'#de7524',balance:'#d3a600'}[metric]}"></i>${{incoming:'Přistěhování',outgoing:'Vystěhování',balance:'Saldo'}[metric]}</span>`).join('')+(result.referenceCount?'<span class="chart-key"><i style="background:#98a3b2"></i>Průměr kraje</span>':'')+(result.eventScopes||[]).map(scope=>{const visual=eventStyles[scope];return `<span class="chart-key event-key" data-scope="${scope}" style="--event-color:${visual.color};--event-ink:${visual.ink};--hatch-angle:${visual.hatchAngle}deg"><i></i>${visual.label}</span>`;}).join('');
  // Legend wrapping can change the available plot height when the territory changes.
  if(svg.clientWidth!==size[0]||svg.clientHeight!==size[1])draw();
 }

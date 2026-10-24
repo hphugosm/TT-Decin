@@ -1,4 +1,9 @@
 // Presentation annotations supplied by the project owner. They do not alter migration data.
+export const eventStyles = {
+  region: {color:'#8f1838', ink:'#8f1838', label:'Globální událost', shortLabel:'Globální', hatchAngle:135},
+  municipality: {color:'#e2666b', ink:'#bd3c43', label:'Lokální událost', shortLabel:'Lokální', hatchAngle:45}
+};
+
 export const migrationEvents = [
   {
     id: 'schengen-2007', scope: 'region', place: 'Ústecký kraj',
