@@ -4,6 +4,8 @@ Interaktivní mapa migrace v obcích Ústeckého kraje, bodové grafy a import C
 
 **Mapa:** https://hphugosm.github.io/TT-Decin/mapa/
 
+**Samostatná mapa migračních klastrů:** https://hphugosm.github.io/TT-Decin/klastry/ — geograficky souvislé skupiny obcí s podobným vývojem, čtyři profily podobnosti a porovnání členů v čase. [Metodika, zdroje a ovládání](klastry/README.md).
+
 **Prezentace – Stěhování obcí Ústeckého kraje:** https://hphugosm.github.io/TT-Decin/prezentace/
 
 Původní adresa https://hphugosm.github.io/TT-Decin/ přesměruje na mapu se zachováním parametrů a fragmentu URL. Prezentace má vlastní rozcestník a pět snímků. Ovládání: ← →, Esc zpět na rozcestník, F celá obrazovka. Vedená prohlídka je zatím připravený úvod.
