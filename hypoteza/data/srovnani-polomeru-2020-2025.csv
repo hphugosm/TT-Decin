@@ -1,0 +1,19 @@
+firma_id,firma,polomer_km,pocet_obci,obdobi,prumer_rocni_odchylky_pb
+ips,IPS Alpha Technology Europe,50,265,2020-2025,0.043248132761742
+hitachi,Hitachi Home Electronics (Czech),50,269,2020-2025,0.0499328964332629
+nexen,Nexen Tire,50,282,2020-2025,0.0570965104222144
+nemak,Nemak Europe,50,281,2020-2025,0.0603030914421691
+blackdecker,Black & Decker (Czech),50,309,2020-2025,0.00247555737632881
+eaton,Eaton Industries,50,226,2020-2025,0.0561917722979307
+ips,IPS Alpha Technology Europe,20,80,2020-2025,-0.0190465260005697
+hitachi,Hitachi Home Electronics (Czech),20,79,2020-2025,-0.0388532240020535
+nexen,Nexen Tire,20,86,2020-2025,-0.052323959614797
+nemak,Nemak Europe,20,78,2020-2025,-0.0616138057274657
+blackdecker,Black & Decker (Czech),20,97,2020-2025,0.0720547389273995
+eaton,Eaton Industries,20,54,2020-2025,-0.0547878068376915
+ips,IPS Alpha Technology Europe,15,48,2020-2025,0.1750655741691
+hitachi,Hitachi Home Electronics (Czech),15,42,2020-2025,-0.0480706924810931
+nexen,Nexen Tire,15,49,2020-2025,0.192190610973599
+nemak,Nemak Europe,15,47,2020-2025,-0.0757718474240262
+blackdecker,Black & Decker (Czech),15,58,2020-2025,0.0476434390247201
+eaton,Eaton Industries,15,35,2020-2025,0.0781388125239373

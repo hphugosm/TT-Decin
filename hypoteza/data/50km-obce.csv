@@ -1,0 +1,1633 @@
+firma_id,firma,kod_obce,nazev_obce,okres,vzdalenost_km,hostitelska_obec
+ips,IPS Alpha Technology Europe,505528,Jenčice,Litoměřice,32.941357957,False
+ips,IPS Alpha Technology Europe,530506,Miřejovice,Litoměřice,42.715455762,False
+ips,IPS Alpha Technology Europe,530557,Kozly,Louny,18.164698400,False
+ips,IPS Alpha Technology Europe,530565,Želkovice,Louny,23.446379430,False
+ips,IPS Alpha Technology Europe,530581,Čeradice,Louny,9.523444807,False
+ips,IPS Alpha Technology Europe,530590,Libočany,Louny,6.721844659,False
+ips,IPS Alpha Technology Europe,530603,Zálužice,Louny,3.704426350,False
+ips,IPS Alpha Technology Europe,530620,Přestanov,Ústí nad Labem,43.754227068,False
+ips,IPS Alpha Technology Europe,542407,Trnovany,Litoměřice,46.646178771,False
+ips,IPS Alpha Technology Europe,542440,Oleško,Litoměřice,45.451952161,False
+ips,IPS Alpha Technology Europe,542491,Malíč,Litoměřice,40.790178946,False
+ips,IPS Alpha Technology Europe,542521,Michalovice,Litoměřice,40.553699848,False
+ips,IPS Alpha Technology Europe,542539,Píšťany,Litoměřice,38.630289733,False
+ips,IPS Alpha Technology Europe,542547,Blšany u Loun,Louny,18.855186851,False
+ips,IPS Alpha Technology Europe,542555,Opočno,Louny,10.977652147,False
+ips,IPS Alpha Technology Europe,542571,Cítoliby,Louny,15.491431214,False
+ips,IPS Alpha Technology Europe,542580,Obora,Louny,20.053045157,False
+ips,IPS Alpha Technology Europe,542628,Černčice,Louny,17.821116332,False
+ips,IPS Alpha Technology Europe,542636,Nová Ves,Louny,18.800337611,False
+ips,IPS Alpha Technology Europe,543012,Žerotín,Louny,23.376884727,False
+ips,IPS Alpha Technology Europe,543128,Staňkovice,Louny,0.000000000,True
+ips,IPS Alpha Technology Europe,546011,Jimlín,Louny,12.210943475,False
+ips,IPS Alpha Technology Europe,546062,Pesvice,Chomutov,14.759536677,False
+ips,IPS Alpha Technology Europe,546071,Račetice,Chomutov,16.983283993,False
+ips,IPS Alpha Technology Europe,546160,Nezabylice,Chomutov,10.039782522,False
+ips,IPS Alpha Technology Europe,546178,Úherce,Louny,25.780353415,False
+ips,IPS Alpha Technology Europe,546429,Chraberce,Louny,17.946923898,False
+ips,IPS Alpha Technology Europe,546437,Volevčice,Most,11.116492551,False
+ips,IPS Alpha Technology Europe,546518,Loučná pod Klínovcem,Chomutov,42.149448504,False
+ips,IPS Alpha Technology Europe,546691,Lkáň,Litoměřice,28.658904775,False
+ips,IPS Alpha Technology Europe,546721,Sedlec,Litoměřice,32.273708907,False
+ips,IPS Alpha Technology Europe,546771,Kamýk,Litoměřice,41.747622726,False
+ips,IPS Alpha Technology Europe,546780,Býčkovice,Litoměřice,49.608229664,False
+ips,IPS Alpha Technology Europe,546810,Chudoslavice,Litoměřice,49.118701371,False
+ips,IPS Alpha Technology Europe,546828,Staňkovice,Litoměřice,48.828014733,False
+ips,IPS Alpha Technology Europe,546852,Černěves,Litoměřice,48.151116421,False
+ips,IPS Alpha Technology Europe,546861,Dobroměřice,Louny,14.483525992,False
+ips,IPS Alpha Technology Europe,546879,Líšťany,Louny,15.100652642,False
+ips,IPS Alpha Technology Europe,546887,Vršovice,Louny,18.081711240,False
+ips,IPS Alpha Technology Europe,546895,Brodec,Louny,16.742981140,False
+ips,IPS Alpha Technology Europe,546909,Lukov,Teplice,27.716511962,False
+ips,IPS Alpha Technology Europe,546925,Stebno,Ústí nad Labem,42.759456541,False
+ips,IPS Alpha Technology Europe,553646,Dolánky nad Ohří,Litoměřice,43.109997460,False
+ips,IPS Alpha Technology Europe,553697,Trmice,Ústí nad Labem,42.738068288,False
+ips,IPS Alpha Technology Europe,554804,Ústí nad Labem,Ústí nad Labem,46.452388140,False
+ips,IPS Alpha Technology Europe,562971,Chomutov,Chomutov,17.878821327,False
+ips,IPS Alpha Technology Europe,562980,Bílence,Chomutov,8.957062359,False
+ips,IPS Alpha Technology Europe,562998,Blatno,Chomutov,25.394737452,False
+ips,IPS Alpha Technology Europe,563005,Boleboř,Chomutov,25.618083815,False
+ips,IPS Alpha Technology Europe,563013,Březno,Chomutov,12.974035550,False
+ips,IPS Alpha Technology Europe,563021,Černovice,Chomutov,19.472192541,False
+ips,IPS Alpha Technology Europe,563048,Domašín,Chomutov,30.719210850,False
+ips,IPS Alpha Technology Europe,563056,Droužkovice,Chomutov,13.644349505,False
+ips,IPS Alpha Technology Europe,563064,Hora Svatého Šebestiána,Chomutov,31.073593170,False
+ips,IPS Alpha Technology Europe,563072,Hrušovany,Chomutov,6.951979856,False
+ips,IPS Alpha Technology Europe,563081,Chbany,Chomutov,13.983074533,False
+ips,IPS Alpha Technology Europe,563099,Jirkov,Chomutov,20.276567941,False
+ips,IPS Alpha Technology Europe,563102,Kadaň,Chomutov,21.870981656,False
+ips,IPS Alpha Technology Europe,563111,Kalek,Chomutov,31.266443707,False
+ips,IPS Alpha Technology Europe,563129,Klášterec nad Ohří,Chomutov,28.528119930,False
+ips,IPS Alpha Technology Europe,563137,Kovářská,Chomutov,38.217896639,False
+ips,IPS Alpha Technology Europe,563161,Křimov,Chomutov,24.841446404,False
+ips,IPS Alpha Technology Europe,563188,Libědice,Chomutov,14.596328733,False
+ips,IPS Alpha Technology Europe,563200,Málkov,Chomutov,21.874198757,False
+ips,IPS Alpha Technology Europe,563218,Mašťov,Chomutov,25.171083649,False
+ips,IPS Alpha Technology Europe,563226,Měděnec,Chomutov,34.613151936,False
+ips,IPS Alpha Technology Europe,563242,Místo,Chomutov,24.650826791,False
+ips,IPS Alpha Technology Europe,563269,Okounov,Chomutov,31.993805425,False
+ips,IPS Alpha Technology Europe,563277,Otvice,Chomutov,16.784038890,False
+ips,IPS Alpha Technology Europe,563285,Perštejn,Chomutov,36.045505839,False
+ips,IPS Alpha Technology Europe,563293,Pětipsy,Chomutov,17.590089061,False
+ips,IPS Alpha Technology Europe,563315,Kryštofovy Hamry,Chomutov,36.264390117,False
+ips,IPS Alpha Technology Europe,563323,Radonice,Chomutov,24.414221405,False
+ips,IPS Alpha Technology Europe,563331,Rokle,Chomutov,20.003833481,False
+ips,IPS Alpha Technology Europe,563340,Spořice,Chomutov,17.759921460,False
+ips,IPS Alpha Technology Europe,563358,Strupčice,Chomutov,12.755571316,False
+ips,IPS Alpha Technology Europe,563382,Údlice,Chomutov,13.034301871,False
+ips,IPS Alpha Technology Europe,563404,Vejprty,Chomutov,41.902081367,False
+ips,IPS Alpha Technology Europe,563412,Veliká Ves,Chomutov,18.263644737,False
+ips,IPS Alpha Technology Europe,563439,Vilémov,Chomutov,20.235408521,False
+ips,IPS Alpha Technology Europe,563463,Vrskmaň,Chomutov,17.345729556,False
+ips,IPS Alpha Technology Europe,563471,Všehrdy,Chomutov,11.018830701,False
+ips,IPS Alpha Technology Europe,563480,Všestudy,Chomutov,12.540531264,False
+ips,IPS Alpha Technology Europe,563498,Výsluní,Chomutov,29.354425812,False
+ips,IPS Alpha Technology Europe,563501,Vysoká Pec,Chomutov,22.018067386,False
+ips,IPS Alpha Technology Europe,564567,Litoměřice,Litoměřice,43.454589579,False
+ips,IPS Alpha Technology Europe,564591,Bohušovice nad Ohří,Litoměřice,42.838411599,False
+ips,IPS Alpha Technology Europe,564613,Brňany,Litoměřice,41.112537714,False
+ips,IPS Alpha Technology Europe,564621,Brozany nad Ohří,Litoměřice,39.883718998,False
+ips,IPS Alpha Technology Europe,564648,Bříza,Litoměřice,43.535749315,False
+ips,IPS Alpha Technology Europe,564656,Budyně nad Ohří,Litoměřice,39.154417772,False
+ips,IPS Alpha Technology Europe,564699,Černiv,Litoměřice,34.704387223,False
+ips,IPS Alpha Technology Europe,564711,Čížkovice,Litoměřice,34.652328934,False
+ips,IPS Alpha Technology Europe,564729,Děčany,Litoměřice,25.315388140,False
+ips,IPS Alpha Technology Europe,564737,Dlažkovice,Litoměřice,29.442643134,False
+ips,IPS Alpha Technology Europe,564753,Doksany,Litoměřice,42.558991859,False
+ips,IPS Alpha Technology Europe,564818,Dušníky,Litoměřice,43.739041121,False
+ips,IPS Alpha Technology Europe,564834,Evaň,Litoměřice,30.090132004,False
+ips,IPS Alpha Technology Europe,564842,Hlinná,Litoměřice,44.984411157,False
+ips,IPS Alpha Technology Europe,564893,Hrobce,Litoměřice,45.216747332,False
+ips,IPS Alpha Technology Europe,564923,Chodouny,Litoměřice,49.053905673,False
+ips,IPS Alpha Technology Europe,564931,Chodovlice,Litoměřice,30.866480678,False
+ips,IPS Alpha Technology Europe,564940,Chotěšov,Litoměřice,36.253126953,False
+ips,IPS Alpha Technology Europe,564958,Chotiměř,Litoměřice,36.154018825,False
+ips,IPS Alpha Technology Europe,565016,Keblice,Litoměřice,39.030464279,False
+ips,IPS Alpha Technology Europe,565024,Klapý,Litoměřice,29.955123890,False
+ips,IPS Alpha Technology Europe,565032,Kleneč,Litoměřice,46.652612624,False
+ips,IPS Alpha Technology Europe,565075,Křesín,Litoměřice,28.321597422,False
+ips,IPS Alpha Technology Europe,565083,Křešice,Litoměřice,48.581734953,False
+ips,IPS Alpha Technology Europe,565113,Lhotka nad Labem,Litoměřice,37.061829611,False
+ips,IPS Alpha Technology Europe,565156,Libochovany,Litoměřice,40.448243219,False
+ips,IPS Alpha Technology Europe,565164,Libochovice,Litoměřice,32.056601475,False
+ips,IPS Alpha Technology Europe,565172,Libotenice,Litoměřice,46.849832453,False
+ips,IPS Alpha Technology Europe,565229,Lovosice,Litoměřice,38.096138808,False
+ips,IPS Alpha Technology Europe,565237,Lukavec,Litoměřice,38.588108838,False
+ips,IPS Alpha Technology Europe,565245,Malé Žernoseky,Litoměřice,38.226472494,False
+ips,IPS Alpha Technology Europe,565253,Martiněves,Litoměřice,40.331832629,False
+ips,IPS Alpha Technology Europe,565296,Mlékojedy,Litoměřice,41.430805851,False
+ips,IPS Alpha Technology Europe,565300,Mnetěš,Litoměřice,48.526668698,False
+ips,IPS Alpha Technology Europe,565318,Mšené-lázně,Litoměřice,35.244630951,False
+ips,IPS Alpha Technology Europe,565342,Nové Dvory,Litoměřice,43.107335443,False
+ips,IPS Alpha Technology Europe,565393,Ploskovice,Litoměřice,49.323025633,False
+ips,IPS Alpha Technology Europe,565415,Podsedice,Litoměřice,28.066077853,False
+ips,IPS Alpha Technology Europe,565458,Prackovice nad Labem,Litoměřice,38.815506898,False
+ips,IPS Alpha Technology Europe,565474,Přestavlky,Litoměřice,43.851814972,False
+ips,IPS Alpha Technology Europe,565491,Račiněves,Litoměřice,44.008766163,False
+ips,IPS Alpha Technology Europe,565521,Radovesice,Litoměřice,34.785240671,False
+ips,IPS Alpha Technology Europe,565547,Rochov,Litoměřice,38.818757272,False
+ips,IPS Alpha Technology Europe,565555,Roudnice nad Labem,Litoměřice,47.104373384,False
+ips,IPS Alpha Technology Europe,565598,Siřejovice,Litoměřice,36.677490877,False
+ips,IPS Alpha Technology Europe,565601,Slatina,Litoměřice,33.109623501,False
+ips,IPS Alpha Technology Europe,565679,Straškov-Vodochody,Litoměřice,46.133926806,False
+ips,IPS Alpha Technology Europe,565695,Sulejovice,Litoměřice,35.671422710,False
+ips,IPS Alpha Technology Europe,565717,Terezín,Litoměřice,44.301526880,False
+ips,IPS Alpha Technology Europe,565741,Travčice,Litoměřice,46.207684550,False
+ips,IPS Alpha Technology Europe,565768,Třebenice,Litoměřice,30.542438158,False
+ips,IPS Alpha Technology Europe,565776,Třebívlice,Litoměřice,25.434815906,False
+ips,IPS Alpha Technology Europe,565806,Úpohlavy,Litoměřice,33.796802750,False
+ips,IPS Alpha Technology Europe,565831,Vědomice,Litoměřice,48.765020355,False
+ips,IPS Alpha Technology Europe,565849,Velemín,Litoměřice,33.615038996,False
+ips,IPS Alpha Technology Europe,565857,Velké Žernoseky,Litoměřice,39.696980302,False
+ips,IPS Alpha Technology Europe,565865,Vchynice,Litoměřice,35.020978388,False
+ips,IPS Alpha Technology Europe,565873,Vlastislav,Litoměřice,30.523923002,False
+ips,IPS Alpha Technology Europe,565881,Vražkov,Litoměřice,47.792542628,False
+ips,IPS Alpha Technology Europe,565903,Vrbičany,Litoměřice,37.477218827,False
+ips,IPS Alpha Technology Europe,565938,Žabovřesky nad Ohří,Litoměřice,36.300813067,False
+ips,IPS Alpha Technology Europe,565946,Žalhostice,Litoměřice,40.164951890,False
+ips,IPS Alpha Technology Europe,565954,Židovice,Litoměřice,45.934644540,False
+ips,IPS Alpha Technology Europe,565962,Žitenice,Litoměřice,46.695436001,False
+ips,IPS Alpha Technology Europe,565971,Louny,Louny,14.992553671,False
+ips,IPS Alpha Technology Europe,565997,Bitozeves,Louny,3.713966627,False
+ips,IPS Alpha Technology Europe,566004,Blatno,Louny,31.805785442,False
+ips,IPS Alpha Technology Europe,566012,Blažim,Louny,6.463527921,False
+ips,IPS Alpha Technology Europe,566021,Blšany,Louny,15.892694812,False
+ips,IPS Alpha Technology Europe,566063,Břvany,Louny,10.948072747,False
+ips,IPS Alpha Technology Europe,566128,Deštnice,Louny,14.147650746,False
+ips,IPS Alpha Technology Europe,566152,Domoušice,Louny,15.827956850,False
+ips,IPS Alpha Technology Europe,566187,Holedeč,Louny,8.360615907,False
+ips,IPS Alpha Technology Europe,566195,Hříškov,Louny,20.991379373,False
+ips,IPS Alpha Technology Europe,566217,Hřivice,Louny,11.941310355,False
+ips,IPS Alpha Technology Europe,566233,Chlumčany,Louny,18.348436723,False
+ips,IPS Alpha Technology Europe,566241,Chožov,Louny,20.561366058,False
+ips,IPS Alpha Technology Europe,566284,Koštice,Louny,25.894271265,False
+ips,IPS Alpha Technology Europe,566306,Krásný Dvůr,Louny,20.192518296,False
+ips,IPS Alpha Technology Europe,566314,Kryry,Louny,23.528063299,False
+ips,IPS Alpha Technology Europe,566322,Lenešice,Louny,12.022943410,False
+ips,IPS Alpha Technology Europe,566349,Libčeves,Louny,20.567232305,False
+ips,IPS Alpha Technology Europe,566357,Liběšice,Louny,8.677345046,False
+ips,IPS Alpha Technology Europe,566381,Libořice,Louny,12.220914307,False
+ips,IPS Alpha Technology Europe,566403,Lipno,Louny,8.543021499,False
+ips,IPS Alpha Technology Europe,566411,Lišany,Louny,3.759486577,False
+ips,IPS Alpha Technology Europe,566438,Lubenec,Louny,31.271134280,False
+ips,IPS Alpha Technology Europe,566454,Měcholupy,Louny,13.630560177,False
+ips,IPS Alpha Technology Europe,566501,Nepomyšl,Louny,25.183245629,False
+ips,IPS Alpha Technology Europe,566519,Nové Sedlo,Louny,9.557524758,False
+ips,IPS Alpha Technology Europe,566527,Očihov,Louny,19.784650808,False
+ips,IPS Alpha Technology Europe,566535,Panenský Týnec,Louny,23.244745670,False
+ips,IPS Alpha Technology Europe,566551,Peruc,Louny,26.541063536,False
+ips,IPS Alpha Technology Europe,566560,Petrohrad,Louny,26.455850055,False
+ips,IPS Alpha Technology Europe,566578,Pnětluky,Louny,14.061370651,False
+ips,IPS Alpha Technology Europe,566586,Počedělice,Louny,22.495718515,False
+ips,IPS Alpha Technology Europe,566608,Podbořanský Rohozec,Louny,28.312692766,False
+ips,IPS Alpha Technology Europe,566616,Podbořany,Louny,16.614250593,False
+ips,IPS Alpha Technology Europe,566624,Postoloprty,Louny,7.446152094,False
+ips,IPS Alpha Technology Europe,566659,Raná,Louny,14.977850705,False
+ips,IPS Alpha Technology Europe,566667,Ročov,Louny,16.950749617,False
+ips,IPS Alpha Technology Europe,566713,Slavětín,Louny,22.583059539,False
+ips,IPS Alpha Technology Europe,566721,Smolnice,Louny,18.882657702,False
+ips,IPS Alpha Technology Europe,566829,Toužetín,Louny,21.563609904,False
+ips,IPS Alpha Technology Europe,566853,Tuchořice,Louny,11.236632074,False
+ips,IPS Alpha Technology Europe,566870,Velemyšleves,Louny,5.406649631,False
+ips,IPS Alpha Technology Europe,566896,Veltěže,Louny,20.757895780,False
+ips,IPS Alpha Technology Europe,566918,Vinařice,Louny,19.035774018,False
+ips,IPS Alpha Technology Europe,566926,Vrbno nad Lesy,Louny,23.223096583,False
+ips,IPS Alpha Technology Europe,566934,Vroutek,Louny,25.890556014,False
+ips,IPS Alpha Technology Europe,566951,Výškov,Louny,8.431902876,False
+ips,IPS Alpha Technology Europe,566977,Zbrašín,Louny,14.187401271,False
+ips,IPS Alpha Technology Europe,566985,Žatec,Louny,5.301658203,False
+ips,IPS Alpha Technology Europe,567019,Žiželice,Louny,5.413501332,False
+ips,IPS Alpha Technology Europe,567027,Most,Most,17.938746919,False
+ips,IPS Alpha Technology Europe,567043,Bečov,Most,13.435434512,False
+ips,IPS Alpha Technology Europe,567051,Bělušice,Most,15.923902127,False
+ips,IPS Alpha Technology Europe,567060,Braňany,Most,22.415598640,False
+ips,IPS Alpha Technology Europe,567078,Brandov,Most,33.071100120,False
+ips,IPS Alpha Technology Europe,567108,Český Jiřetín,Most,36.571385708,False
+ips,IPS Alpha Technology Europe,567141,Havraň,Most,9.137308835,False
+ips,IPS Alpha Technology Europe,567167,Hora Svaté Kateřiny,Most,29.433721760,False
+ips,IPS Alpha Technology Europe,567175,Horní Jiřetín,Most,23.599692154,False
+ips,IPS Alpha Technology Europe,567191,Klíny,Most,31.995393850,False
+ips,IPS Alpha Technology Europe,567221,Korozluky,Most,16.907215093,False
+ips,IPS Alpha Technology Europe,567248,Lišnice,Most,11.162033924,False
+ips,IPS Alpha Technology Europe,567256,Litvínov,Most,25.986772603,False
+ips,IPS Alpha Technology Europe,567264,Lom,Most,29.818575335,False
+ips,IPS Alpha Technology Europe,567272,Louka u Litvínova,Most,26.208452897,False
+ips,IPS Alpha Technology Europe,567281,Lužice,Most,19.318908311,False
+ips,IPS Alpha Technology Europe,567299,Malé Březno,Most,14.091095951,False
+ips,IPS Alpha Technology Europe,567302,Mariánské Radčice,Most,25.262959868,False
+ips,IPS Alpha Technology Europe,567311,Meziboří,Most,30.887375369,False
+ips,IPS Alpha Technology Europe,567329,Nová Ves v Horách,Most,27.990812281,False
+ips,IPS Alpha Technology Europe,567337,Obrnice,Most,19.105588219,False
+ips,IPS Alpha Technology Europe,567345,Patokryje,Most,18.493446822,False
+ips,IPS Alpha Technology Europe,567353,Polerady,Most,10.713212456,False
+ips,IPS Alpha Technology Europe,567361,Skršín,Most,17.666926513,False
+ips,IPS Alpha Technology Europe,567426,Želenice,Most,21.625916830,False
+ips,IPS Alpha Technology Europe,567442,Teplice,Teplice,36.117197171,False
+ips,IPS Alpha Technology Europe,567451,Bílina,Teplice,25.432547578,False
+ips,IPS Alpha Technology Europe,567469,Bořislav,Teplice,35.174784926,False
+ips,IPS Alpha Technology Europe,567477,Bystřany,Teplice,35.897650722,False
+ips,IPS Alpha Technology Europe,567485,Bžany,Teplice,32.891396529,False
+ips,IPS Alpha Technology Europe,567507,Dubí,Teplice,40.514145151,False
+ips,IPS Alpha Technology Europe,567515,Duchcov,Teplice,29.383436982,False
+ips,IPS Alpha Technology Europe,567523,Háj u Duchcova,Teplice,32.908704575,False
+ips,IPS Alpha Technology Europe,567531,Hostomice,Teplice,30.432461782,False
+ips,IPS Alpha Technology Europe,567558,Hrob,Teplice,35.307677418,False
+ips,IPS Alpha Technology Europe,567566,Hrobčice,Teplice,24.561685262,False
+ips,IPS Alpha Technology Europe,567582,Jeníkov,Teplice,33.217802959,False
+ips,IPS Alpha Technology Europe,567604,Kladruby,Teplice,33.380740411,False
+ips,IPS Alpha Technology Europe,567612,Kostomlaty pod Milešovkou,Teplice,30.264936454,False
+ips,IPS Alpha Technology Europe,567621,Košťany,Teplice,39.363860979,False
+ips,IPS Alpha Technology Europe,567639,Krupka,Teplice,43.444559285,False
+ips,IPS Alpha Technology Europe,567647,Lahošť,Teplice,32.282625710,False
+ips,IPS Alpha Technology Europe,567655,Ledvice,Teplice,28.759434720,False
+ips,IPS Alpha Technology Europe,567698,Měrunice,Teplice,21.207896844,False
+ips,IPS Alpha Technology Europe,567701,Mikulov,Teplice,39.490616294,False
+ips,IPS Alpha Technology Europe,567710,Modlany,Teplice,38.609567844,False
+ips,IPS Alpha Technology Europe,567728,Moldava,Teplice,38.921770291,False
+ips,IPS Alpha Technology Europe,567752,Novosedlice,Teplice,37.704546015,False
+ips,IPS Alpha Technology Europe,567761,Ohníč,Teplice,31.906437566,False
+ips,IPS Alpha Technology Europe,567779,Osek,Teplice,32.733999584,False
+ips,IPS Alpha Technology Europe,567787,Proboštov,Teplice,39.284654593,False
+ips,IPS Alpha Technology Europe,567809,Rtyně nad Bílinou,Teplice,36.148511534,False
+ips,IPS Alpha Technology Europe,567833,Srbice,Teplice,38.961089655,False
+ips,IPS Alpha Technology Europe,567841,Světec,Teplice,29.202725431,False
+ips,IPS Alpha Technology Europe,567850,Újezdeček,Teplice,35.501926417,False
+ips,IPS Alpha Technology Europe,567868,Zabrušany,Teplice,31.705916004,False
+ips,IPS Alpha Technology Europe,567876,Žalany,Teplice,33.581977793,False
+ips,IPS Alpha Technology Europe,567884,Žim,Teplice,36.893611426,False
+ips,IPS Alpha Technology Europe,567931,Dolní Zálezly,Ústí nad Labem,42.355429235,False
+ips,IPS Alpha Technology Europe,567957,Habrovany,Ústí nad Labem,39.059791782,False
+ips,IPS Alpha Technology Europe,568007,Chabařovice,Ústí nad Labem,42.396445707,False
+ips,IPS Alpha Technology Europe,568015,Chlumec,Ústí nad Labem,45.745472244,False
+ips,IPS Alpha Technology Europe,568104,Malečov,Ústí nad Labem,48.500248190,False
+ips,IPS Alpha Technology Europe,568201,Řehlovice,Ústí nad Labem,39.336936385,False
+ips,IPS Alpha Technology Europe,568287,Tašov,Ústí nad Labem,48.284164504,False
+ips,IPS Alpha Technology Europe,568295,Telnice,Ústí nad Labem,48.739280812,False
+hitachi,Hitachi Home Electronics (Czech),505528,Jenčice,Litoměřice,32.335137356,False
+hitachi,Hitachi Home Electronics (Czech),530506,Miřejovice,Litoměřice,41.528292276,False
+hitachi,Hitachi Home Electronics (Czech),530557,Kozly,Louny,16.684436265,False
+hitachi,Hitachi Home Electronics (Czech),530565,Želkovice,Louny,22.682081966,False
+hitachi,Hitachi Home Electronics (Czech),530581,Čeradice,Louny,12.425771160,False
+hitachi,Hitachi Home Electronics (Czech),530590,Libočany,Louny,8.897681626,False
+hitachi,Hitachi Home Electronics (Czech),530603,Zálužice,Louny,9.045239214,False
+hitachi,Hitachi Home Electronics (Czech),530620,Přestanov,Ústí nad Labem,40.269978223,False
+hitachi,Hitachi Home Electronics (Czech),542407,Trnovany,Litoměřice,45.901283206,False
+hitachi,Hitachi Home Electronics (Czech),542440,Oleško,Litoměřice,45.459745350,False
+hitachi,Hitachi Home Electronics (Czech),542491,Malíč,Litoměřice,39.678271433,False
+hitachi,Hitachi Home Electronics (Czech),542521,Michalovice,Litoměřice,39.541863210,False
+hitachi,Hitachi Home Electronics (Czech),542539,Píšťany,Litoměřice,37.725121619,False
+hitachi,Hitachi Home Electronics (Czech),542547,Blšany u Loun,Louny,21.147645080,False
+hitachi,Hitachi Home Electronics (Czech),542555,Opočno,Louny,15.091803086,False
+hitachi,Hitachi Home Electronics (Czech),542571,Cítoliby,Louny,18.337783175,False
+hitachi,Hitachi Home Electronics (Czech),542580,Obora,Louny,21.757858075,False
+hitachi,Hitachi Home Electronics (Czech),542628,Černčice,Louny,19.789840055,False
+hitachi,Hitachi Home Electronics (Czech),542636,Nová Ves,Louny,22.578614717,False
+hitachi,Hitachi Home Electronics (Czech),543012,Žerotín,Louny,27.053781128,False
+hitachi,Hitachi Home Electronics (Czech),543128,Staňkovice,Louny,5.406649631,False
+hitachi,Hitachi Home Electronics (Czech),546011,Jimlín,Louny,15.622180724,False
+hitachi,Hitachi Home Electronics (Czech),546062,Pesvice,Chomutov,9.664271593,False
+hitachi,Hitachi Home Electronics (Czech),546071,Račetice,Chomutov,18.150416726,False
+hitachi,Hitachi Home Electronics (Czech),546160,Nezabylice,Chomutov,6.046199507,False
+hitachi,Hitachi Home Electronics (Czech),546178,Úherce,Louny,28.798122122,False
+hitachi,Hitachi Home Electronics (Czech),546186,Ryjice,Ústí nad Labem,49.313421379,False
+hitachi,Hitachi Home Electronics (Czech),546429,Chraberce,Louny,18.425597870,False
+hitachi,Hitachi Home Electronics (Czech),546437,Volevčice,Most,9.361968194,False
+hitachi,Hitachi Home Electronics (Czech),546518,Loučná pod Klínovcem,Chomutov,40.195664969,False
+hitachi,Hitachi Home Electronics (Czech),546691,Lkáň,Litoměřice,28.726393997,False
+hitachi,Hitachi Home Electronics (Czech),546721,Sedlec,Litoměřice,32.381203449,False
+hitachi,Hitachi Home Electronics (Czech),546771,Kamýk,Litoměřice,40.378262570,False
+hitachi,Hitachi Home Electronics (Czech),546780,Býčkovice,Litoměřice,48.822415462,False
+hitachi,Hitachi Home Electronics (Czech),546810,Chudoslavice,Litoměřice,47.968853719,False
+hitachi,Hitachi Home Electronics (Czech),546828,Staňkovice,Litoměřice,47.512897896,False
+hitachi,Hitachi Home Electronics (Czech),546852,Černěves,Litoměřice,48.649456530,False
+hitachi,Hitachi Home Electronics (Czech),546861,Dobroměřice,Louny,15.794415963,False
+hitachi,Hitachi Home Electronics (Czech),546879,Líšťany,Louny,18.563706422,False
+hitachi,Hitachi Home Electronics (Czech),546887,Vršovice,Louny,19.534890717,False
+hitachi,Hitachi Home Electronics (Czech),546895,Brodec,Louny,20.447018055,False
+hitachi,Hitachi Home Electronics (Czech),546909,Lukov,Teplice,25.752274490,False
+hitachi,Hitachi Home Electronics (Czech),546925,Stebno,Ústí nad Labem,40.573477976,False
+hitachi,Hitachi Home Electronics (Czech),553646,Dolánky nad Ohří,Litoměřice,43.222407435,False
+hitachi,Hitachi Home Electronics (Czech),553697,Trmice,Ústí nad Labem,40.146912454,False
+hitachi,Hitachi Home Electronics (Czech),554804,Ústí nad Labem,Ústí nad Labem,43.896625999,False
+hitachi,Hitachi Home Electronics (Czech),555223,Velké Chvojno,Ústí nad Labem,49.573678451,False
+hitachi,Hitachi Home Electronics (Czech),562971,Chomutov,Chomutov,13.482064823,False
+hitachi,Hitachi Home Electronics (Czech),562980,Bílence,Chomutov,3.982143178,False
+hitachi,Hitachi Home Electronics (Czech),562998,Blatno,Chomutov,20.648149880,False
+hitachi,Hitachi Home Electronics (Czech),563005,Boleboř,Chomutov,20.422934325,False
+hitachi,Hitachi Home Electronics (Czech),563013,Březno,Chomutov,11.146715345,False
+hitachi,Hitachi Home Electronics (Czech),563021,Černovice,Chomutov,15.863214475,False
+hitachi,Hitachi Home Electronics (Czech),563048,Domašín,Chomutov,28.281568507,False
+hitachi,Hitachi Home Electronics (Czech),563056,Droužkovice,Chomutov,10.101169720,False
+hitachi,Hitachi Home Electronics (Czech),563064,Hora Svatého Šebestiána,Chomutov,26.921382253,False
+hitachi,Hitachi Home Electronics (Czech),563072,Hrušovany,Chomutov,4.079218928,False
+hitachi,Hitachi Home Electronics (Czech),563081,Chbany,Chomutov,14.136094369,False
+hitachi,Hitachi Home Electronics (Czech),563099,Jirkov,Chomutov,15.201857623,False
+hitachi,Hitachi Home Electronics (Czech),563102,Kadaň,Chomutov,20.228511193,False
+hitachi,Hitachi Home Electronics (Czech),563111,Kalek,Chomutov,26.344866221,False
+hitachi,Hitachi Home Electronics (Czech),563129,Klášterec nad Ohří,Chomutov,26.685432041,False
+hitachi,Hitachi Home Electronics (Czech),563137,Kovářská,Chomutov,35.834484907,False
+hitachi,Hitachi Home Electronics (Czech),563161,Křimov,Chomutov,20.726210202,False
+hitachi,Hitachi Home Electronics (Czech),563188,Libědice,Chomutov,15.812688857,False
+hitachi,Hitachi Home Electronics (Czech),563200,Málkov,Chomutov,18.648787592,False
+hitachi,Hitachi Home Electronics (Czech),563218,Mašťov,Chomutov,26.634527109,False
+hitachi,Hitachi Home Electronics (Czech),563226,Měděnec,Chomutov,32.400728343,False
+hitachi,Hitachi Home Electronics (Czech),563242,Místo,Chomutov,21.514942625,False
+hitachi,Hitachi Home Electronics (Czech),563269,Okounov,Chomutov,30.796629146,False
+hitachi,Hitachi Home Electronics (Czech),563277,Otvice,Chomutov,11.790628773,False
+hitachi,Hitachi Home Electronics (Czech),563285,Perštejn,Chomutov,34.335542287,False
+hitachi,Hitachi Home Electronics (Czech),563293,Pětipsy,Chomutov,18.080302507,False
+hitachi,Hitachi Home Electronics (Czech),563315,Kryštofovy Hamry,Chomutov,33.220057229,False
+hitachi,Hitachi Home Electronics (Czech),563323,Radonice,Chomutov,24.982894147,False
+hitachi,Hitachi Home Electronics (Czech),563331,Rokle,Chomutov,19.226040890,False
+hitachi,Hitachi Home Electronics (Czech),563340,Spořice,Chomutov,14.551345943,False
+hitachi,Hitachi Home Electronics (Czech),563358,Strupčice,Chomutov,7.358438970,False
+hitachi,Hitachi Home Electronics (Czech),563382,Údlice,Chomutov,8.460855123,False
+hitachi,Hitachi Home Electronics (Czech),563404,Vejprty,Chomutov,39.165215280,False
+hitachi,Hitachi Home Electronics (Czech),563412,Veliká Ves,Chomutov,19.931683394,False
+hitachi,Hitachi Home Electronics (Czech),563439,Vilémov,Chomutov,20.562683578,False
+hitachi,Hitachi Home Electronics (Czech),563463,Vrskmaň,Chomutov,11.991080681,False
+hitachi,Hitachi Home Electronics (Czech),563471,Všehrdy,Chomutov,7.568087481,False
+hitachi,Hitachi Home Electronics (Czech),563480,Všestudy,Chomutov,7.337895637,False
+hitachi,Hitachi Home Electronics (Czech),563498,Výsluní,Chomutov,26.017367577,False
+hitachi,Hitachi Home Electronics (Czech),563501,Vysoká Pec,Chomutov,16.674495805,False
+hitachi,Hitachi Home Electronics (Czech),564567,Litoměřice,Litoměřice,42.593751383,False
+hitachi,Hitachi Home Electronics (Czech),564591,Bohušovice nad Ohří,Litoměřice,42.683349246,False
+hitachi,Hitachi Home Electronics (Czech),564613,Brňany,Litoměřice,41.077285483,False
+hitachi,Hitachi Home Electronics (Czech),564621,Brozany nad Ohří,Litoměřice,40.299417476,False
+hitachi,Hitachi Home Electronics (Czech),564648,Bříza,Litoměřice,45.306315955,False
+hitachi,Hitachi Home Electronics (Czech),564656,Budyně nad Ohří,Litoměřice,40.182903138,False
+hitachi,Hitachi Home Electronics (Czech),564699,Černiv,Litoměřice,34.928237359,False
+hitachi,Hitachi Home Electronics (Czech),564711,Čížkovice,Litoměřice,34.302823236,False
+hitachi,Hitachi Home Electronics (Czech),564729,Děčany,Litoměřice,25.207131587,False
+hitachi,Hitachi Home Electronics (Czech),564737,Dlažkovice,Litoměřice,29.171046911,False
+hitachi,Hitachi Home Electronics (Czech),564753,Doksany,Litoměřice,42.863595603,False
+hitachi,Hitachi Home Electronics (Czech),564818,Dušníky,Litoměřice,44.603331046,False
+hitachi,Hitachi Home Electronics (Czech),564834,Evaň,Litoměřice,31.467171205,False
+hitachi,Hitachi Home Electronics (Czech),564842,Hlinná,Litoměřice,43.600168384,False
+hitachi,Hitachi Home Electronics (Czech),564893,Hrobce,Litoměřice,45.568263653,False
+hitachi,Hitachi Home Electronics (Czech),564923,Chodouny,Litoměřice,49.272518854,False
+hitachi,Hitachi Home Electronics (Czech),564931,Chodovlice,Litoměřice,30.785631652,False
+hitachi,Hitachi Home Electronics (Czech),564940,Chotěšov,Litoměřice,36.624490514,False
+hitachi,Hitachi Home Electronics (Czech),564958,Chotiměř,Litoměřice,34.569440968,False
+hitachi,Hitachi Home Electronics (Czech),565016,Keblice,Litoměřice,38.861463998,False
+hitachi,Hitachi Home Electronics (Czech),565024,Klapý,Litoměřice,30.354893880,False
+hitachi,Hitachi Home Electronics (Czech),565032,Kleneč,Litoměřice,47.889660429,False
+hitachi,Hitachi Home Electronics (Czech),565075,Křesín,Litoměřice,29.373217295,False
+hitachi,Hitachi Home Electronics (Czech),565083,Křešice,Litoměřice,48.134451450,False
+hitachi,Hitachi Home Electronics (Czech),565113,Lhotka nad Labem,Litoměřice,35.880020753,False
+hitachi,Hitachi Home Electronics (Czech),565156,Libochovany,Litoměřice,38.897444065,False
+hitachi,Hitachi Home Electronics (Czech),565164,Libochovice,Litoměřice,32.992232494,False
+hitachi,Hitachi Home Electronics (Czech),565172,Libotenice,Litoměřice,46.998462707,False
+hitachi,Hitachi Home Electronics (Czech),565229,Lovosice,Litoměřice,37.400587888,False
+hitachi,Hitachi Home Electronics (Czech),565237,Lukavec,Litoměřice,38.174314832,False
+hitachi,Hitachi Home Electronics (Czech),565245,Malé Žernoseky,Litoměřice,37.012448714,False
+hitachi,Hitachi Home Electronics (Czech),565253,Martiněves,Litoměřice,42.019706172,False
+hitachi,Hitachi Home Electronics (Czech),565296,Mlékojedy,Litoměřice,40.762865813,False
+hitachi,Hitachi Home Electronics (Czech),565318,Mšené-lázně,Litoměřice,36.951784956,False
+hitachi,Hitachi Home Electronics (Czech),565342,Nové Dvory,Litoměřice,43.680643605,False
+hitachi,Hitachi Home Electronics (Czech),565393,Ploskovice,Litoměřice,48.347317700,False
+hitachi,Hitachi Home Electronics (Czech),565415,Podsedice,Litoměřice,27.299685133,False
+hitachi,Hitachi Home Electronics (Czech),565458,Prackovice nad Labem,Litoměřice,37.138022860,False
+hitachi,Hitachi Home Electronics (Czech),565474,Přestavlky,Litoměřice,45.003903766,False
+hitachi,Hitachi Home Electronics (Czech),565491,Račiněves,Litoměřice,45.452843313,False
+hitachi,Hitachi Home Electronics (Czech),565521,Radovesice,Litoměřice,35.679134207,False
+hitachi,Hitachi Home Electronics (Czech),565547,Rochov,Litoměřice,38.994357480,False
+hitachi,Hitachi Home Electronics (Czech),565555,Roudnice nad Labem,Litoměřice,48.006587529,False
+hitachi,Hitachi Home Electronics (Czech),565598,Siřejovice,Litoměřice,36.478983493,False
+hitachi,Hitachi Home Electronics (Czech),565601,Slatina,Litoměřice,33.597290686,False
+hitachi,Hitachi Home Electronics (Czech),565679,Straškov-Vodochody,Litoměřice,47.872763880,False
+hitachi,Hitachi Home Electronics (Czech),565695,Sulejovice,Litoměřice,35.053236280,False
+hitachi,Hitachi Home Electronics (Czech),565717,Terezín,Litoměřice,43.876956605,False
+hitachi,Hitachi Home Electronics (Czech),565741,Travčice,Litoměřice,45.999503345,False
+hitachi,Hitachi Home Electronics (Czech),565768,Třebenice,Litoměřice,29.511851703,False
+hitachi,Hitachi Home Electronics (Czech),565776,Třebívlice,Litoměřice,24.523816977,False
+hitachi,Hitachi Home Electronics (Czech),565806,Úpohlavy,Litoměřice,33.776222683,False
+hitachi,Hitachi Home Electronics (Czech),565831,Vědomice,Litoměřice,49.462681169,False
+hitachi,Hitachi Home Electronics (Czech),565849,Velemín,Litoměřice,31.933207570,False
+hitachi,Hitachi Home Electronics (Czech),565857,Velké Žernoseky,Litoměřice,38.529891905,False
+hitachi,Hitachi Home Electronics (Czech),565865,Vchynice,Litoměřice,34.083067715,False
+hitachi,Hitachi Home Electronics (Czech),565873,Vlastislav,Litoměřice,29.431024476,False
+hitachi,Hitachi Home Electronics (Czech),565881,Vražkov,Litoměřice,49.225538883,False
+hitachi,Hitachi Home Electronics (Czech),565903,Vrbičany,Litoměřice,37.543229560,False
+hitachi,Hitachi Home Electronics (Czech),565938,Žabovřesky nad Ohří,Litoměřice,37.088722322,False
+hitachi,Hitachi Home Electronics (Czech),565946,Žalhostice,Litoměřice,39.320475651,False
+hitachi,Hitachi Home Electronics (Czech),565954,Židovice,Litoměřice,46.510967070,False
+hitachi,Hitachi Home Electronics (Czech),565962,Žitenice,Litoměřice,45.567392452,False
+hitachi,Hitachi Home Electronics (Czech),565971,Louny,Louny,17.074072867,False
+hitachi,Hitachi Home Electronics (Czech),565997,Bitozeves,Louny,4.718193507,False
+hitachi,Hitachi Home Electronics (Czech),566004,Blatno,Louny,35.796740803,False
+hitachi,Hitachi Home Electronics (Czech),566012,Blažim,Louny,4.211214777,False
+hitachi,Hitachi Home Electronics (Czech),566021,Blšany,Louny,20.442301253,False
+hitachi,Hitachi Home Electronics (Czech),566063,Břvany,Louny,10.810374305,False
+hitachi,Hitachi Home Electronics (Czech),566128,Deštnice,Louny,19.492682310,False
+hitachi,Hitachi Home Electronics (Czech),566152,Domoušice,Louny,20.936128679,False
+hitachi,Hitachi Home Electronics (Czech),566187,Holedeč,Louny,13.476709193,False
+hitachi,Hitachi Home Electronics (Czech),566195,Hříškov,Louny,24.618446001,False
+hitachi,Hitachi Home Electronics (Czech),566217,Hřivice,Louny,16.686011551,False
+hitachi,Hitachi Home Electronics (Czech),566233,Chlumčany,Louny,20.979890982,False
+hitachi,Hitachi Home Electronics (Czech),566241,Chožov,Louny,21.009742952,False
+hitachi,Hitachi Home Electronics (Czech),566284,Koštice,Louny,26.500693498,False
+hitachi,Hitachi Home Electronics (Czech),566306,Krásný Dvůr,Louny,22.413031711,False
+hitachi,Hitachi Home Electronics (Czech),566314,Kryry,Louny,27.875538355,False
+hitachi,Hitachi Home Electronics (Czech),566322,Lenešice,Louny,13.088869649,False
+hitachi,Hitachi Home Electronics (Czech),566349,Libčeves,Louny,19.765239297,False
+hitachi,Hitachi Home Electronics (Czech),566357,Liběšice,Louny,14.077928369,False
+hitachi,Hitachi Home Electronics (Czech),566381,Libořice,Louny,16.790574882,False
+hitachi,Hitachi Home Electronics (Czech),566403,Lipno,Louny,13.296523148,False
+hitachi,Hitachi Home Electronics (Czech),566411,Lišany,Louny,7.786242493,False
+hitachi,Hitachi Home Electronics (Czech),566438,Lubenec,Louny,34.694192367,False
+hitachi,Hitachi Home Electronics (Czech),566454,Měcholupy,Louny,18.732318880,False
+hitachi,Hitachi Home Electronics (Czech),566501,Nepomyšl,Louny,27.657545033,False
+hitachi,Hitachi Home Electronics (Czech),566519,Nové Sedlo,Louny,10.678651019,False
+hitachi,Hitachi Home Electronics (Czech),566527,Očihov,Louny,23.940945505,False
+hitachi,Hitachi Home Electronics (Czech),566535,Panenský Týnec,Louny,26.480128083,False
+hitachi,Hitachi Home Electronics (Czech),566551,Peruc,Louny,28.573835812,False
+hitachi,Hitachi Home Electronics (Czech),566560,Petrohrad,Louny,30.912661921,False
+hitachi,Hitachi Home Electronics (Czech),566578,Pnětluky,Louny,19.209508190,False
+hitachi,Hitachi Home Electronics (Czech),566586,Počedělice,Louny,23.627577995,False
+hitachi,Hitachi Home Electronics (Czech),566608,Podbořanský Rohozec,Louny,30.441944579,False
+hitachi,Hitachi Home Electronics (Czech),566616,Podbořany,Louny,19.807448275,False
+hitachi,Hitachi Home Electronics (Czech),566624,Postoloprty,Louny,10.451944606,False
+hitachi,Hitachi Home Electronics (Czech),566659,Raná,Louny,15.042183064,False
+hitachi,Hitachi Home Electronics (Czech),566667,Ročov,Louny,21.512547004,False
+hitachi,Hitachi Home Electronics (Czech),566713,Slavětín,Louny,24.510409726,False
+hitachi,Hitachi Home Electronics (Czech),566721,Smolnice,Louny,22.077892624,False
+hitachi,Hitachi Home Electronics (Czech),566829,Toužetín,Louny,24.458027696,False
+hitachi,Hitachi Home Electronics (Czech),566853,Tuchořice,Louny,16.607921412,False
+hitachi,Hitachi Home Electronics (Czech),566870,Velemyšleves,Louny,0.000000000,True
+hitachi,Hitachi Home Electronics (Czech),566896,Veltěže,Louny,23.005869915,False
+hitachi,Hitachi Home Electronics (Czech),566918,Vinařice,Louny,23.181997207,False
+hitachi,Hitachi Home Electronics (Czech),566926,Vrbno nad Lesy,Louny,25.948378629,False
+hitachi,Hitachi Home Electronics (Czech),566934,Vroutek,Louny,29.286224027,False
+hitachi,Hitachi Home Electronics (Czech),566951,Výškov,Louny,7.342762962,False
+hitachi,Hitachi Home Electronics (Czech),566977,Zbrašín,Louny,18.378343296,False
+hitachi,Hitachi Home Electronics (Czech),566985,Žatec,Louny,9.346881248,False
+hitachi,Hitachi Home Electronics (Czech),567019,Žiželice,Louny,5.136711270,False
+hitachi,Hitachi Home Electronics (Czech),567027,Most,Most,13.058001313,False
+hitachi,Hitachi Home Electronics (Czech),567043,Bečov,Most,11.078688607,False
+hitachi,Hitachi Home Electronics (Czech),567051,Bělušice,Most,14.637633411,False
+hitachi,Hitachi Home Electronics (Czech),567060,Braňany,Most,18.417899698,False
+hitachi,Hitachi Home Electronics (Czech),567078,Brandov,Most,27.762605983,False
+hitachi,Hitachi Home Electronics (Czech),567108,Český Jiřetín,Most,31.373237181,False
+hitachi,Hitachi Home Electronics (Czech),567141,Havraň,Most,4.315506682,False
+hitachi,Hitachi Home Electronics (Czech),567167,Hora Svaté Kateřiny,Most,24.089731173,False
+hitachi,Hitachi Home Electronics (Czech),567175,Horní Jiřetín,Most,18.230687666,False
+hitachi,Hitachi Home Electronics (Czech),567191,Klíny,Most,26.695610286,False
+hitachi,Hitachi Home Electronics (Czech),567221,Korozluky,Most,13.872511996,False
+hitachi,Hitachi Home Electronics (Czech),567248,Lišnice,Most,6.953072828,False
+hitachi,Hitachi Home Electronics (Czech),567256,Litvínov,Most,20.848846431,False
+hitachi,Hitachi Home Electronics (Czech),567264,Lom,Most,24.930227716,False
+hitachi,Hitachi Home Electronics (Czech),567272,Louka u Litvínova,Most,21.336975682,False
+hitachi,Hitachi Home Electronics (Czech),567281,Lužice,Most,16.473044451,False
+hitachi,Hitachi Home Electronics (Czech),567299,Malé Březno,Most,8.803797017,False
+hitachi,Hitachi Home Electronics (Czech),567302,Mariánské Radčice,Most,20.720142568,False
+hitachi,Hitachi Home Electronics (Czech),567311,Meziboří,Most,25.744992030,False
+hitachi,Hitachi Home Electronics (Czech),567329,Nová Ves v Horách,Most,22.584627443,False
+hitachi,Hitachi Home Electronics (Czech),567337,Obrnice,Most,15.372435500,False
+hitachi,Hitachi Home Electronics (Czech),567345,Patokryje,Most,15.076298820,False
+hitachi,Hitachi Home Electronics (Czech),567353,Polerady,Most,7.682730441,False
+hitachi,Hitachi Home Electronics (Czech),567361,Skršín,Most,15.466357092,False
+hitachi,Hitachi Home Electronics (Czech),567426,Želenice,Most,18.111118133,False
+hitachi,Hitachi Home Electronics (Czech),567442,Teplice,Teplice,32.409876345,False
+hitachi,Hitachi Home Electronics (Czech),567451,Bílina,Teplice,21.811002237,False
+hitachi,Hitachi Home Electronics (Czech),567469,Bořislav,Teplice,32.819848268,False
+hitachi,Hitachi Home Electronics (Czech),567477,Bystřany,Teplice,32.642664407,False
+hitachi,Hitachi Home Electronics (Czech),567485,Bžany,Teplice,29.944083055,False
+hitachi,Hitachi Home Electronics (Czech),567507,Dubí,Teplice,36.291312659,False
+hitachi,Hitachi Home Electronics (Czech),567515,Duchcov,Teplice,25.210970294,False
+hitachi,Hitachi Home Electronics (Czech),567523,Háj u Duchcova,Teplice,28.367164219,False
+hitachi,Hitachi Home Electronics (Czech),567531,Hostomice,Teplice,26.980281622,False
+hitachi,Hitachi Home Electronics (Czech),567558,Hrob,Teplice,30.785726177,False
+hitachi,Hitachi Home Electronics (Czech),567566,Hrobčice,Teplice,22.108185337,False
+hitachi,Hitachi Home Electronics (Czech),567582,Jeníkov,Teplice,28.982996511,False
+hitachi,Hitachi Home Electronics (Czech),567604,Kladruby,Teplice,29.926844002,False
+hitachi,Hitachi Home Electronics (Czech),567612,Kostomlaty pod Milešovkou,Teplice,27.763963141,False
+hitachi,Hitachi Home Electronics (Czech),567621,Košťany,Teplice,34.899374030,False
+hitachi,Hitachi Home Electronics (Czech),567639,Krupka,Teplice,39.651947372,False
+hitachi,Hitachi Home Electronics (Czech),567647,Lahošť,Teplice,28.269930370,False
+hitachi,Hitachi Home Electronics (Czech),567655,Ledvice,Teplice,24.933979358,False
+hitachi,Hitachi Home Electronics (Czech),567698,Měrunice,Teplice,19.334812201,False
+hitachi,Hitachi Home Electronics (Czech),567701,Mikulov,Teplice,34.853929441,False
+hitachi,Hitachi Home Electronics (Czech),567710,Modlany,Teplice,35.366256991,False
+hitachi,Hitachi Home Electronics (Czech),567728,Moldava,Teplice,34.072248029,False
+hitachi,Hitachi Home Electronics (Czech),567752,Novosedlice,Teplice,33.819918981,False
+hitachi,Hitachi Home Electronics (Czech),567761,Ohníč,Teplice,28.620862165,False
+hitachi,Hitachi Home Electronics (Czech),567779,Osek,Teplice,27.926242304,False
+hitachi,Hitachi Home Electronics (Czech),567787,Proboštov,Teplice,35.411437836,False
+hitachi,Hitachi Home Electronics (Czech),567809,Rtyně nad Bílinou,Teplice,33.277460668,False
+hitachi,Hitachi Home Electronics (Czech),567833,Srbice,Teplice,35.504073184,False
+hitachi,Hitachi Home Electronics (Czech),567841,Světec,Teplice,26.039907032,False
+hitachi,Hitachi Home Electronics (Czech),567850,Újezdeček,Teplice,31.460355555,False
+hitachi,Hitachi Home Electronics (Czech),567868,Zabrušany,Teplice,27.960836313,False
+hitachi,Hitachi Home Electronics (Czech),567876,Žalany,Teplice,31.060308250,False
+hitachi,Hitachi Home Electronics (Czech),567884,Žim,Teplice,34.694752582,False
+hitachi,Hitachi Home Electronics (Czech),567931,Dolní Zálezly,Ústí nad Labem,40.402525417,False
+hitachi,Hitachi Home Electronics (Czech),567957,Habrovany,Ústí nad Labem,36.743052214,False
+hitachi,Hitachi Home Electronics (Czech),568007,Chabařovice,Ústí nad Labem,39.210286193,False
+hitachi,Hitachi Home Electronics (Czech),568015,Chlumec,Ústí nad Labem,42.359651166,False
+hitachi,Hitachi Home Electronics (Czech),568023,Chuderov,Ústí nad Labem,48.501455837,False
+hitachi,Hitachi Home Electronics (Czech),568104,Malečov,Ústí nad Labem,46.728154275,False
+hitachi,Hitachi Home Electronics (Czech),568147,Petrovice,Ústí nad Labem,49.407006303,False
+hitachi,Hitachi Home Electronics (Czech),568201,Řehlovice,Ústí nad Labem,36.841091799,False
+hitachi,Hitachi Home Electronics (Czech),568287,Tašov,Ústí nad Labem,46.624899448,False
+hitachi,Hitachi Home Electronics (Czech),568295,Telnice,Ústí nad Labem,45.240291583,False
+hitachi,Hitachi Home Electronics (Czech),568350,Velké Březno,Ústí nad Labem,49.752530373,False
+nexen,Nexen Tire,505528,Jenčice,Litoměřice,29.478656026,False
+nexen,Nexen Tire,530506,Miřejovice,Litoměřice,39.137736681,False
+nexen,Nexen Tire,530557,Kozly,Louny,14.483893451,False
+nexen,Nexen Tire,530565,Želkovice,Louny,19.911103509,False
+nexen,Nexen Tire,530581,Čeradice,Louny,13.182947838,False
+nexen,Nexen Tire,530590,Libočany,Louny,10.164226855,False
+nexen,Nexen Tire,530603,Zálužice,Louny,5.967210014,False
+nexen,Nexen Tire,530620,Přestanov,Ústí nad Labem,40.125275972,False
+nexen,Nexen Tire,542407,Trnovany,Litoměřice,43.172738468,False
+nexen,Nexen Tire,542423,Černouček,Litoměřice,48.482947998,False
+nexen,Nexen Tire,542440,Oleško,Litoměřice,42.202413992,False
+nexen,Nexen Tire,542491,Malíč,Litoměřice,37.224920606,False
+nexen,Nexen Tire,542521,Michalovice,Litoměřice,37.009098673,False
+nexen,Nexen Tire,542539,Píšťany,Litoměřice,35.106328895,False
+nexen,Nexen Tire,542547,Blšany u Loun,Louny,16.654833675,False
+nexen,Nexen Tire,542555,Opočno,Louny,10.459949713,False
+nexen,Nexen Tire,542571,Cítoliby,Louny,13.687046780,False
+nexen,Nexen Tire,542580,Obora,Louny,17.486379305,False
+nexen,Nexen Tire,542628,Černčice,Louny,15.398065881,False
+nexen,Nexen Tire,542636,Nová Ves,Louny,17.863465893,False
+nexen,Nexen Tire,543012,Žerotín,Louny,22.335753269,False
+nexen,Nexen Tire,543128,Staňkovice,Louny,3.713966627,False
+nexen,Nexen Tire,546011,Jimlín,Louny,10.904096184,False
+nexen,Nexen Tire,546062,Pesvice,Chomutov,14.226112129,False
+nexen,Nexen Tire,546071,Račetice,Chomutov,20.351064162,False
+nexen,Nexen Tire,546160,Nezabylice,Chomutov,10.670489508,False
+nexen,Nexen Tire,546178,Úherce,Louny,24.151163682,False
+nexen,Nexen Tire,546186,Ryjice,Ústí nad Labem,48.177304728,False
+nexen,Nexen Tire,546429,Chraberce,Louny,14.757755178,False
+nexen,Nexen Tire,546437,Volevčice,Most,7.404958429,False
+nexen,Nexen Tire,546518,Loučná pod Klínovcem,Chomutov,44.344208520,False
+nexen,Nexen Tire,546691,Lkáň,Litoměřice,25.387314924,False
+nexen,Nexen Tire,546721,Sedlec,Litoměřice,29.029166921,False
+nexen,Nexen Tire,546755,Brzánky,Litoměřice,49.446263817,False
+nexen,Nexen Tire,546763,Horní Řepčice,Litoměřice,48.705135381,False
+nexen,Nexen Tire,546771,Kamýk,Litoměřice,38.135465871,False
+nexen,Nexen Tire,546780,Býčkovice,Litoměřice,46.128004202,False
+nexen,Nexen Tire,546810,Chudoslavice,Litoměřice,45.555392848,False
+nexen,Nexen Tire,546828,Staňkovice,Litoměřice,45.232550059,False
+nexen,Nexen Tire,546852,Černěves,Litoměřice,45.090249219,False
+nexen,Nexen Tire,546861,Dobroměřice,Louny,11.636113840,False
+nexen,Nexen Tire,546879,Líšťany,Louny,13.846585570,False
+nexen,Nexen Tire,546887,Vršovice,Louny,15.355330684,False
+nexen,Nexen Tire,546895,Brodec,Louny,15.730672666,False
+nexen,Nexen Tire,546909,Lukov,Teplice,24.015881543,False
+nexen,Nexen Tire,546925,Stebno,Ústí nad Labem,39.055036860,False
+nexen,Nexen Tire,553646,Dolánky nad Ohří,Litoměřice,39.893289666,False
+nexen,Nexen Tire,553697,Trmice,Ústí nad Labem,39.024436939,False
+nexen,Nexen Tire,554804,Ústí nad Labem,Ústí nad Labem,42.738423590,False
+nexen,Nexen Tire,555223,Velké Chvojno,Ústí nad Labem,48.897267845,False
+nexen,Nexen Tire,562971,Chomutov,Chomutov,18.200100391,False
+nexen,Nexen Tire,562980,Bílence,Chomutov,8.683985025,False
+nexen,Nexen Tire,562998,Blatno,Chomutov,25.303850108,False
+nexen,Nexen Tire,563005,Boleboř,Chomutov,24.799267512,False
+nexen,Nexen Tire,563013,Březno,Chomutov,15.047090681,False
+nexen,Nexen Tire,563021,Černovice,Chomutov,20.492538331,False
+nexen,Nexen Tire,563048,Domašín,Chomutov,32.599335169,False
+nexen,Nexen Tire,563056,Droužkovice,Chomutov,14.670357751,False
+nexen,Nexen Tire,563064,Hora Svatého Šebestiána,Chomutov,31.638936779,False
+nexen,Nexen Tire,563072,Hrušovany,Chomutov,8.147522405,False
+nexen,Nexen Tire,563081,Chbany,Chomutov,16.975121407,False
+nexen,Nexen Tire,563099,Jirkov,Chomutov,19.724673097,False
+nexen,Nexen Tire,563102,Kadaň,Chomutov,24.158801421,False
+nexen,Nexen Tire,563111,Kalek,Chomutov,30.915798753,False
+nexen,Nexen Tire,563129,Klášterec nad Ohří,Chomutov,30.746615156,False
+nexen,Nexen Tire,563137,Kovářská,Chomutov,40.150672916,False
+nexen,Nexen Tire,563161,Křimov,Chomutov,25.440112829,False
+nexen,Nexen Tire,563188,Libědice,Chomutov,17.952533661,False
+nexen,Nexen Tire,563200,Málkov,Chomutov,23.193460814,False
+nexen,Nexen Tire,563218,Mašťov,Chomutov,28.663558519,False
+nexen,Nexen Tire,563226,Měděnec,Chomutov,36.641193852,False
+nexen,Nexen Tire,563242,Místo,Chomutov,26.045917506,False
+nexen,Nexen Tire,563269,Okounov,Chomutov,34.557953889,False
+nexen,Nexen Tire,563277,Otvice,Chomutov,16.390276119,False
+nexen,Nexen Tire,563285,Perštejn,Chomutov,38.361155436,False
+nexen,Nexen Tire,563293,Pětipsy,Chomutov,20.752317276,False
+nexen,Nexen Tire,563315,Kryštofovy Hamry,Chomutov,37.754250944,False
+nexen,Nexen Tire,563323,Radonice,Chomutov,27.652636766,False
+nexen,Nexen Tire,563331,Rokle,Chomutov,22.692864286,False
+nexen,Nexen Tire,563340,Spořice,Chomutov,19.066074724,False
+nexen,Nexen Tire,563358,Strupčice,Chomutov,11.454837181,False
+nexen,Nexen Tire,563382,Údlice,Chomutov,13.178163262,False
+nexen,Nexen Tire,563404,Vejprty,Chomutov,43.613746999,False
+nexen,Nexen Tire,563412,Veliká Ves,Chomutov,21.770118707,False
+nexen,Nexen Tire,563439,Vilémov,Chomutov,23.365451196,False
+nexen,Nexen Tire,563463,Vrskmaň,Chomutov,16.160967612,False
+nexen,Nexen Tire,563471,Všehrdy,Chomutov,12.065157213,False
+nexen,Nexen Tire,563480,Všestudy,Chomutov,11.852978114,False
+nexen,Nexen Tire,563498,Výsluní,Chomutov,30.615426877,False
+nexen,Nexen Tire,563501,Vysoká Pec,Chomutov,20.816473247,False
+nexen,Nexen Tire,564567,Litoměřice,Litoměřice,39.948435421,False
+nexen,Nexen Tire,564591,Bohušovice nad Ohří,Litoměřice,39.529864553,False
+nexen,Nexen Tire,564613,Brňany,Litoměřice,37.840595016,False
+nexen,Nexen Tire,564621,Brozany nad Ohří,Litoměřice,36.774842088,False
+nexen,Nexen Tire,564648,Bříza,Litoměřice,41.088645314,False
+nexen,Nexen Tire,564656,Budyně nad Ohří,Litoměřice,36.310126288,False
+nexen,Nexen Tire,564672,Ctiněves,Litoměřice,48.346761605,False
+nexen,Nexen Tire,564699,Černiv,Litoměřice,31.509287053,False
+nexen,Nexen Tire,564711,Čížkovice,Litoměřice,31.265911919,False
+nexen,Nexen Tire,564729,Děčany,Litoměřice,21.969967679,False
+nexen,Nexen Tire,564737,Dlažkovice,Litoměřice,26.063781058,False
+nexen,Nexen Tire,564745,Dobříň,Litoměřice,48.409190818,False
+nexen,Nexen Tire,564753,Doksany,Litoměřice,39.412363630,False
+nexen,Nexen Tire,564818,Dušníky,Litoměřice,40.827944641,False
+nexen,Nexen Tire,564834,Evaň,Litoměřice,27.393899568,False
+nexen,Nexen Tire,564842,Hlinná,Litoměřice,41.373160528,False
+nexen,Nexen Tire,564893,Hrobce,Litoměřice,42.092911034,False
+nexen,Nexen Tire,564923,Chodouny,Litoměřice,45.885475301,False
+nexen,Nexen Tire,564931,Chodovlice,Litoměřice,27.552925684,False
+nexen,Nexen Tire,564940,Chotěšov,Litoměřice,33.118222407,False
+nexen,Nexen Tire,564958,Chotiměř,Litoměřice,32.502191563,False
+nexen,Nexen Tire,565016,Keblice,Litoměřice,35.710088195,False
+nexen,Nexen Tire,565024,Klapý,Litoměřice,26.811399504,False
+nexen,Nexen Tire,565032,Kleneč,Litoměřice,43.923953808,False
+nexen,Nexen Tire,565067,Krabčice,Litoměřice,47.579730744,False
+nexen,Nexen Tire,565075,Křesín,Litoměřice,25.454941602,False
+nexen,Nexen Tire,565083,Křešice,Litoměřice,45.191831092,False
+nexen,Nexen Tire,565091,Kyškovice,Litoměřice,47.204653576,False
+nexen,Nexen Tire,565113,Lhotka nad Labem,Litoměřice,33.477156293,False
+nexen,Nexen Tire,565156,Libochovany,Litoměřice,36.806081853,False
+nexen,Nexen Tire,565164,Libochovice,Litoměřice,29.149361558,False
+nexen,Nexen Tire,565172,Libotenice,Litoměřice,43.652419209,False
+nexen,Nexen Tire,565229,Lovosice,Litoměřice,34.621901635,False
+nexen,Nexen Tire,565237,Lukavec,Litoměřice,35.191791327,False
+nexen,Nexen Tire,565245,Malé Žernoseky,Litoměřice,34.637508948,False
+nexen,Nexen Tire,565253,Martiněves,Litoměřice,37.831971041,False
+nexen,Nexen Tire,565296,Mlékojedy,Litoměřice,37.969613713,False
+nexen,Nexen Tire,565300,Mnetěš,Litoměřice,46.026680529,False
+nexen,Nexen Tire,565318,Mšené-lázně,Litoměřice,32.744580890,False
+nexen,Nexen Tire,565342,Nové Dvory,Litoměřice,40.068840773,False
+nexen,Nexen Tire,565393,Ploskovice,Litoměřice,45.797328485,False
+nexen,Nexen Tire,565415,Podsedice,Litoměřice,24.548859396,False
+nexen,Nexen Tire,565431,Polepy,Litoměřice,47.927594480,False
+nexen,Nexen Tire,565458,Prackovice nad Labem,Litoměřice,35.154559266,False
+nexen,Nexen Tire,565474,Přestavlky,Litoměřice,41.076449822,False
+nexen,Nexen Tire,565491,Račiněves,Litoměřice,41.382337370,False
+nexen,Nexen Tire,565521,Radovesice,Litoměřice,31.867238002,False
+nexen,Nexen Tire,565547,Rochov,Litoměřice,35.616260340,False
+nexen,Nexen Tire,565555,Roudnice nad Labem,Litoměřice,44.216183135,False
+nexen,Nexen Tire,565598,Siřejovice,Litoměřice,33.342431695,False
+nexen,Nexen Tire,565601,Slatina,Litoměřice,30.011800504,False
+nexen,Nexen Tire,565679,Straškov-Vodochody,Litoměřice,43.672665171,False
+nexen,Nexen Tire,565695,Sulejovice,Litoměřice,32.212203170,False
+nexen,Nexen Tire,565717,Terezín,Litoměřice,40.912216944,False
+nexen,Nexen Tire,565741,Travčice,Litoměřice,42.887477925,False
+nexen,Nexen Tire,565768,Třebenice,Litoměřice,26.974388749,False
+nexen,Nexen Tire,565776,Třebívlice,Litoměřice,21.875723246,False
+nexen,Nexen Tire,565792,Třebušín,Litoměřice,48.541556788,False
+nexen,Nexen Tire,565806,Úpohlavy,Litoměřice,30.512537154,False
+nexen,Nexen Tire,565831,Vědomice,Litoměřice,45.788523653,False
+nexen,Nexen Tire,565849,Velemín,Litoměřice,29.947653669,False
+nexen,Nexen Tire,565857,Velké Žernoseky,Litoměřice,36.119167599,False
+nexen,Nexen Tire,565865,Vchynice,Litoměřice,31.482870659,False
+nexen,Nexen Tire,565873,Vlastislav,Litoměřice,26.943384115,False
+nexen,Nexen Tire,565881,Vražkov,Litoměřice,45.166186438,False
+nexen,Nexen Tire,565890,Vrbice,Litoměřice,48.442603476,False
+nexen,Nexen Tire,565903,Vrbičany,Litoměřice,34.232407594,False
+nexen,Nexen Tire,565911,Vrutice,Litoměřice,49.553403391,False
+nexen,Nexen Tire,565938,Žabovřesky nad Ohří,Litoměřice,33.339281779,False
+nexen,Nexen Tire,565946,Žalhostice,Litoměřice,36.657711253,False
+nexen,Nexen Tire,565954,Židovice,Litoměřice,42.902361186,False
+nexen,Nexen Tire,565962,Žitenice,Litoměřice,43.134124328,False
+nexen,Nexen Tire,565971,Louny,Louny,12.615782597,False
+nexen,Nexen Tire,565997,Bitozeves,Louny,0.000000000,True
+nexen,Nexen Tire,566004,Blatno,Louny,35.431089779,False
+nexen,Nexen Tire,566012,Blažim,Louny,3.169989619,False
+nexen,Nexen Tire,566021,Blšany,Louny,19.401400589,False
+nexen,Nexen Tire,566063,Břvany,Louny,7.431562379,False
+nexen,Nexen Tire,566128,Deštnice,Louny,16.832084693,False
+nexen,Nexen Tire,566152,Domoušice,Louny,16.815319230,False
+nexen,Nexen Tire,566187,Holedeč,Louny,11.607893590,False
+nexen,Nexen Tire,566195,Hříškov,Louny,19.900627732,False
+nexen,Nexen Tire,566217,Hřivice,Louny,12.304426335,False
+nexen,Nexen Tire,566233,Chlumčany,Louny,16.390580742,False
+nexen,Nexen Tire,566241,Chožov,Louny,17.384454653,False
+nexen,Nexen Tire,566284,Koštice,Louny,22.816196739,False
+nexen,Nexen Tire,566306,Krásný Dvůr,Louny,23.816919372,False
+nexen,Nexen Tire,566314,Kryry,Louny,27.073259629,False
+nexen,Nexen Tire,566322,Lenešice,Louny,9.002248804,False
+nexen,Nexen Tire,566349,Libčeves,Louny,17.008204994,False
+nexen,Nexen Tire,566357,Liběšice,Louny,11.210797458,False
+nexen,Nexen Tire,566381,Libořice,Louny,15.756776189,False
+nexen,Nexen Tire,566403,Lipno,Louny,9.011949065,False
+nexen,Nexen Tire,566411,Lišany,Louny,3.523590345,False
+nexen,Nexen Tire,566438,Lubenec,Louny,34.975268856,False
+nexen,Nexen Tire,566454,Měcholupy,Louny,16.775745177,False
+nexen,Nexen Tire,566501,Nepomyšl,Louny,28.855127025,False
+nexen,Nexen Tire,566519,Nové Sedlo,Louny,12.785181896,False
+nexen,Nexen Tire,566527,Očihov,Louny,23.401071912,False
+nexen,Nexen Tire,566535,Panenský Týnec,Louny,21.793775526,False
+nexen,Nexen Tire,566551,Peruc,Louny,24.208612294,False
+nexen,Nexen Tire,566560,Petrohrad,Louny,29.948612810,False
+nexen,Nexen Tire,566578,Pnětluky,Louny,15.168450663,False
+nexen,Nexen Tire,566586,Počedělice,Louny,19.637213190,False
+nexen,Nexen Tire,566608,Podbořanský Rohozec,Louny,31.943889086,False
+nexen,Nexen Tire,566616,Podbořany,Louny,20.326092857,False
+nexen,Nexen Tire,566624,Postoloprty,Louny,5.733923680,False
+nexen,Nexen Tire,566659,Raná,Louny,11.600256568,False
+nexen,Nexen Tire,566667,Ročov,Louny,16.972802962,False
+nexen,Nexen Tire,566713,Slavětín,Louny,20.166586968,False
+nexen,Nexen Tire,566721,Smolnice,Louny,17.387525419,False
+nexen,Nexen Tire,566829,Toužetín,Louny,19.824038378,False
+nexen,Nexen Tire,566853,Tuchořice,Louny,13.148265186,False
+nexen,Nexen Tire,566870,Velemyšleves,Louny,4.718193507,False
+nexen,Nexen Tire,566896,Veltěže,Louny,18.538637469,False
+nexen,Nexen Tire,566918,Vinařice,Louny,18.507129246,False
+nexen,Nexen Tire,566926,Vrbno nad Lesy,Louny,21.357189208,False
+nexen,Nexen Tire,566934,Vroutek,Louny,29.599275672,False
+nexen,Nexen Tire,566951,Výškov,Louny,4.718223756,False
+nexen,Nexen Tire,566977,Zbrašín,Louny,13.735629977,False
+nexen,Nexen Tire,566985,Žatec,Louny,9.015557560,False
+nexen,Nexen Tire,567019,Žiželice,Louny,7.774520338,False
+nexen,Nexen Tire,567027,Most,Most,15.157048685,False
+nexen,Nexen Tire,567043,Bečov,Most,9.746425837,False
+nexen,Nexen Tire,567051,Bělušice,Most,12.253263983,False
+nexen,Nexen Tire,567060,Braňany,Most,19.007016107,False
+nexen,Nexen Tire,567078,Brandov,Most,31.921042948,False
+nexen,Nexen Tire,567108,Český Jiřetín,Most,34.003269447,False
+nexen,Nexen Tire,567141,Havraň,Most,6.793252840,False
+nexen,Nexen Tire,567167,Hora Svaté Kateřiny,Most,28.175639398,False
+nexen,Nexen Tire,567175,Horní Jiřetín,Most,21.565212120,False
+nexen,Nexen Tire,567191,Klíny,Most,29.662900904,False
+nexen,Nexen Tire,567221,Korozluky,Most,13.280346677,False
+nexen,Nexen Tire,567248,Lišnice,Most,8.150079534,False
+nexen,Nexen Tire,567256,Litvínov,Most,23.392561565,False
+nexen,Nexen Tire,567264,Lom,Most,26.898122052,False
+nexen,Nexen Tire,567272,Louka u Litvínova,Most,23.300052162,False
+nexen,Nexen Tire,567281,Lužice,Most,15.646716299,False
+nexen,Nexen Tire,567299,Malé Březno,Most,12.008291791,False
+nexen,Nexen Tire,567302,Mariánské Radčice,Most,22.107082131,False
+nexen,Nexen Tire,567311,Meziboří,Most,28.260668828,False
+nexen,Nexen Tire,567329,Nová Ves v Horách,Most,26.223894578,False
+nexen,Nexen Tire,567337,Obrnice,Most,15.633862229,False
+nexen,Nexen Tire,567345,Patokryje,Most,14.935040096,False
+nexen,Nexen Tire,567353,Polerady,Most,7.217514101,False
+nexen,Nexen Tire,567361,Skršín,Most,13.953972191,False
+nexen,Nexen Tire,567426,Želenice,Most,18.066278848,False
+nexen,Nexen Tire,567442,Teplice,Teplice,32.550854304,False
+nexen,Nexen Tire,567451,Bílina,Teplice,21.878649166,False
+nexen,Nexen Tire,567469,Bořislav,Teplice,31.461848485,False
+nexen,Nexen Tire,567477,Bystřany,Teplice,32.239400449,False
+nexen,Nexen Tire,567485,Bžany,Teplice,29.199931460,False
+nexen,Nexen Tire,567507,Dubí,Teplice,37.114921323,False
+nexen,Nexen Tire,567515,Duchcov,Teplice,26.001208489,False
+nexen,Nexen Tire,567523,Háj u Duchcova,Teplice,29.703072389,False
+nexen,Nexen Tire,567531,Hostomice,Teplice,26.819949000,False
+nexen,Nexen Tire,567558,Hrob,Teplice,32.079663708,False
+nexen,Nexen Tire,567566,Hrobčice,Teplice,20.849492256,False
+nexen,Nexen Tire,567582,Jeníkov,Teplice,29.846500604,False
+nexen,Nexen Tire,567604,Kladruby,Teplice,29.761629062,False
+nexen,Nexen Tire,567612,Kostomlaty pod Milešovkou,Teplice,26.551694825,False
+nexen,Nexen Tire,567621,Košťany,Teplice,36.088245327,False
+nexen,Nexen Tire,567639,Krupka,Teplice,39.887832997,False
+nexen,Nexen Tire,567647,Lahošť,Teplice,28.823337967,False
+nexen,Nexen Tire,567655,Ledvice,Teplice,25.249864929,False
+nexen,Nexen Tire,567698,Měrunice,Teplice,17.504013595,False
+nexen,Nexen Tire,567701,Mikulov,Teplice,36.321533328,False
+nexen,Nexen Tire,567710,Modlany,Teplice,34.946263555,False
+nexen,Nexen Tire,567728,Moldava,Teplice,35.920478086,False
+nexen,Nexen Tire,567752,Novosedlice,Teplice,34.185763493,False
+nexen,Nexen Tire,567761,Ohníč,Teplice,28.259508215,False
+nexen,Nexen Tire,567779,Osek,Teplice,29.723411224,False
+nexen,Nexen Tire,567787,Proboštov,Teplice,35.758882902,False
+nexen,Nexen Tire,567809,Rtyně nad Bílinou,Teplice,32.448165032,False
+nexen,Nexen Tire,567833,Srbice,Teplice,35.332942638,False
+nexen,Nexen Tire,567841,Světec,Teplice,25.542238911,False
+nexen,Nexen Tire,567850,Újezdeček,Teplice,32.042800659,False
+nexen,Nexen Tire,567868,Zabrušany,Teplice,28.161474098,False
+nexen,Nexen Tire,567876,Žalany,Teplice,29.868450291,False
+nexen,Nexen Tire,567884,Žim,Teplice,33.186239214,False
+nexen,Nexen Tire,567931,Dolní Zálezly,Ústí nad Labem,38.667676764,False
+nexen,Nexen Tire,567957,Habrovany,Ústí nad Labem,35.348636326,False
+nexen,Nexen Tire,567973,Homole u Panny,Ústí nad Labem,48.906201138,False
+nexen,Nexen Tire,568007,Chabařovice,Ústí nad Labem,38.721924825,False
+nexen,Nexen Tire,568015,Chlumec,Ústí nad Labem,42.096984361,False
+nexen,Nexen Tire,568023,Chuderov,Ústí nad Labem,47.540709642,False
+nexen,Nexen Tire,568104,Malečov,Ústí nad Labem,44.835263750,False
+nexen,Nexen Tire,568147,Petrovice,Ústí nad Labem,49.530644192,False
+nexen,Nexen Tire,568201,Řehlovice,Ústí nad Labem,35.622974691,False
+nexen,Nexen Tire,568287,Tašov,Ústí nad Labem,44.633491786,False
+nexen,Nexen Tire,568295,Telnice,Ústí nad Labem,45.108248642,False
+nexen,Nexen Tire,568350,Velké Březno,Ústí nad Labem,48.146415894,False
+nemak,Nemak Europe,505528,Jenčice,Litoměřice,29.627187786,False
+nemak,Nemak Europe,530506,Miřejovice,Litoměřice,38.360830021,False
+nemak,Nemak Europe,530557,Kozly,Louny,13.824239603,False
+nemak,Nemak Europe,530565,Želkovice,Louny,20.076571316,False
+nemak,Nemak Europe,530581,Čeradice,Louny,16.723586479,False
+nemak,Nemak Europe,530590,Libočany,Louny,13.179630659,False
+nemak,Nemak Europe,530603,Zálužice,Louny,12.440120994,False
+nemak,Nemak Europe,530620,Přestanov,Ústí nad Labem,36.069654373,False
+nemak,Nemak Europe,542407,Trnovany,Litoměřice,42.969521157,False
+nemak,Nemak Europe,542440,Oleško,Litoměřice,43.018630838,False
+nemak,Nemak Europe,542491,Malíč,Litoměřice,36.569788484,False
+nemak,Nemak Europe,542521,Michalovice,Litoměřice,36.494861059,False
+nemak,Nemak Europe,542539,Píšťany,Litoměřice,34.760310773,False
+nemak,Nemak Europe,542547,Blšany u Loun,Louny,20.965251140,False
+nemak,Nemak Europe,542555,Opočno,Louny,16.836667250,False
+nemak,Nemak Europe,542571,Cítoliby,Louny,18.769591311,False
+nemak,Nemak Europe,542580,Obora,Louny,21.063371506,False
+nemak,Nemak Europe,542628,Černčice,Louny,19.406803808,False
+nemak,Nemak Europe,542636,Nová Ves,Louny,23.659369863,False
+nemak,Nemak Europe,543012,Žerotín,Louny,27.909610682,False
+nemak,Nemak Europe,543128,Staňkovice,Louny,9.137308835,False
+nemak,Nemak Europe,546011,Jimlín,Louny,16.713582039,False
+nemak,Nemak Europe,546062,Pesvice,Chomutov,8.728298512,False
+nemak,Nemak Europe,546071,Račetice,Chomutov,22.029951275,False
+nemak,Nemak Europe,546160,Nezabylice,Chomutov,7.892841579,False
+nemak,Nemak Europe,546178,Úherce,Louny,28.993201024,False
+nemak,Nemak Europe,546186,Ryjice,Ústí nad Labem,45.406159782,False
+nemak,Nemak Europe,546429,Chraberce,Louny,16.933122111,False
+nemak,Nemak Europe,546437,Volevčice,Most,7.080344954,False
+nemak,Nemak Europe,546518,Loučná pod Klínovcem,Chomutov,42.042133279,False
+nemak,Nemak Europe,546691,Lkáň,Litoměřice,26.548793366,False
+nemak,Nemak Europe,546721,Sedlec,Litoměřice,30.161865253,False
+nemak,Nemak Europe,546763,Horní Řepčice,Litoměřice,48.588734780,False
+nemak,Nemak Europe,546771,Kamýk,Litoměřice,37.113504509,False
+nemak,Nemak Europe,546780,Býčkovice,Litoměřice,45.847446479,False
+nemak,Nemak Europe,546810,Chudoslavice,Litoměřice,44.782708368,False
+nemak,Nemak Europe,546828,Staňkovice,Litoměřice,44.234919949,False
+nemak,Nemak Europe,546852,Černěves,Litoměřice,46.523817091,False
+nemak,Nemak Europe,546861,Dobroměřice,Louny,15.151454754,False
+nemak,Nemak Europe,546879,Líšťany,Louny,19.519581361,False
+nemak,Nemak Europe,546887,Vršovice,Louny,18.747417788,False
+nemak,Nemak Europe,546895,Brodec,Louny,21.536073267,False
+nemak,Nemak Europe,546909,Lukov,Teplice,22.305074234,False
+nemak,Nemak Europe,546925,Stebno,Ústí nad Labem,36.874061389,False
+nemak,Nemak Europe,553646,Dolánky nad Ohří,Litoměřice,40.871857828,False
+nemak,Nemak Europe,553697,Trmice,Ústí nad Labem,36.263602848,False
+nemak,Nemak Europe,554804,Ústí nad Labem,Ústí nad Labem,40.014617640,False
+nemak,Nemak Europe,555223,Velké Chvojno,Ústí nad Labem,45.498603278,False
+nemak,Nemak Europe,562971,Chomutov,Chomutov,13.574003620,False
+nemak,Nemak Europe,562980,Bílence,Chomutov,5.088047979,False
+nemak,Nemak Europe,562998,Blatno,Chomutov,19.763086031,False
+nemak,Nemak Europe,563005,Boleboř,Chomutov,18.521048453,False
+nemak,Nemak Europe,563013,Březno,Chomutov,13.980986867,False
+nemak,Nemak Europe,563021,Černovice,Chomutov,16.816657604,False
+nemak,Nemak Europe,563048,Domašín,Chomutov,29.912274540,False
+nemak,Nemak Europe,563056,Droužkovice,Chomutov,11.655669462,False
+nemak,Nemak Europe,563064,Hora Svatého Šebestiána,Chomutov,26.785591461,False
+nemak,Nemak Europe,563072,Hrušovany,Chomutov,7.514108415,False
+nemak,Nemak Europe,563081,Chbany,Chomutov,17.769312202,False
+nemak,Nemak Europe,563099,Jirkov,Chomutov,13.838452492,False
+nemak,Nemak Europe,563102,Kadaň,Chomutov,22.678610256,False
+nemak,Nemak Europe,563111,Kalek,Chomutov,24.976603916,False
+nemak,Nemak Europe,563129,Klášterec nad Ohří,Chomutov,28.817964254,False
+nemak,Nemak Europe,563137,Kovářská,Chomutov,37.385547390,False
+nemak,Nemak Europe,563161,Křimov,Chomutov,20.820272182,False
+nemak,Nemak Europe,563188,Libědice,Chomutov,19.755214111,False
+nemak,Nemak Europe,563200,Málkov,Chomutov,19.858458420,False
+nemak,Nemak Europe,563218,Mašťov,Chomutov,30.499972781,False
+nemak,Nemak Europe,563226,Měděnec,Chomutov,34.142270351,False
+nemak,Nemak Europe,563242,Místo,Chomutov,22.697061051,False
+nemak,Nemak Europe,563269,Okounov,Chomutov,33.302114731,False
+nemak,Nemak Europe,563277,Otvice,Chomutov,10.884246614,False
+nemak,Nemak Europe,563285,Perštejn,Chomutov,36.434891213,False
+nemak,Nemak Europe,563293,Pětipsy,Chomutov,21.721690446,False
+nemak,Nemak Europe,563315,Kryštofovy Hamry,Chomutov,34.213875425,False
+nemak,Nemak Europe,563323,Radonice,Chomutov,28.526428882,False
+nemak,Nemak Europe,563331,Rokle,Chomutov,22.240060391,False
+nemak,Nemak Europe,563340,Spořice,Chomutov,16.013476774,False
+nemak,Nemak Europe,563358,Strupčice,Chomutov,5.255538445,False
+nemak,Nemak Europe,563382,Údlice,Chomutov,8.889506047,False
+nemak,Nemak Europe,563404,Vejprty,Chomutov,40.366890595,False
+nemak,Nemak Europe,563412,Veliká Ves,Chomutov,23.932388395,False
+nemak,Nemak Europe,563439,Vilémov,Chomutov,24.080484641,False
+nemak,Nemak Europe,563463,Vrskmaň,Chomutov,9.777224744,False
+nemak,Nemak Europe,563471,Všehrdy,Chomutov,9.631606628,False
+nemak,Nemak Europe,563480,Všestudy,Chomutov,6.461584052,False
+nemak,Nemak Europe,563498,Výsluní,Chomutov,26.861233408,False
+nemak,Nemak Europe,563501,Vysoká Pec,Chomutov,14.307902122,False
+nemak,Nemak Europe,564567,Litoměřice,Litoměřice,39.614250332,False
+nemak,Nemak Europe,564591,Bohušovice nad Ohří,Litoměřice,40.156089372,False
+nemak,Nemak Europe,564613,Brňany,Litoměřice,38.646005804,False
+nemak,Nemak Europe,564621,Brozany nad Ohří,Litoměřice,38.191028798,False
+nemak,Nemak Europe,564648,Bříza,Litoměřice,44.176058527,False
+nemak,Nemak Europe,564656,Budyně nad Ohří,Litoměřice,38.526944007,False
+nemak,Nemak Europe,564699,Černiv,Litoměřice,32.751455344,False
+nemak,Nemak Europe,564711,Čížkovice,Litoměřice,31.737951019,False
+nemak,Nemak Europe,564729,Děčany,Litoměřice,22.990703465,False
+nemak,Nemak Europe,564737,Dlažkovice,Litoměřice,26.744610985,False
+nemak,Nemak Europe,564753,Doksany,Litoměřice,40.650093879,False
+nemak,Nemak Europe,564818,Dušníky,Litoměřice,42.777443979,False
+nemak,Nemak Europe,564834,Evaň,Litoměřice,30.217071217,False
+nemak,Nemak Europe,564842,Hlinná,Litoměřice,40.305369722,False
+nemak,Nemak Europe,564893,Hrobce,Litoměřice,43.363439109,False
+nemak,Nemak Europe,564923,Chodouny,Litoměřice,46.946727664,False
+nemak,Nemak Europe,564931,Chodovlice,Litoměřice,28.461513105,False
+nemak,Nemak Europe,564940,Chotěšov,Litoměřice,34.529254659,False
+nemak,Nemak Europe,564958,Chotiměř,Litoměřice,31.230239714,False
+nemak,Nemak Europe,565016,Keblice,Litoměřice,36.362477969,False
+nemak,Nemak Europe,565024,Klapý,Litoměřice,28.383961795,False
+nemak,Nemak Europe,565032,Kleneč,Litoměřice,46.315552197,False
+nemak,Nemak Europe,565067,Krabčice,Litoměřice,49.789418692,False
+nemak,Nemak Europe,565075,Křesín,Litoměřice,27.914468472,False
+nemak,Nemak Europe,565083,Křešice,Litoměřice,45.374685729,False
+nemak,Nemak Europe,565091,Kyškovice,Litoměřice,48.734270221,False
+nemak,Nemak Europe,565113,Lhotka nad Labem,Litoměřice,32.764256917,False
+nemak,Nemak Europe,565156,Libochovany,Litoměřice,35.540849922,False
+nemak,Nemak Europe,565164,Libochovice,Litoměřice,31.370872638,False
+nemak,Nemak Europe,565172,Libotenice,Litoměřice,44.641258025,False
+nemak,Nemak Europe,565229,Lovosice,Litoměřice,34.571158618,False
+nemak,Nemak Europe,565237,Lukavec,Litoměřice,35.519465507,False
+nemak,Nemak Europe,565245,Malé Žernoseky,Litoměřice,33.866366503,False
+nemak,Nemak Europe,565253,Martiněves,Litoměřice,40.857088894,False
+nemak,Nemak Europe,565296,Mlékojedy,Litoměřice,37.918591642,False
+nemak,Nemak Europe,565300,Mnetěš,Litoměřice,48.932498988,False
+nemak,Nemak Europe,565318,Mšené-lázně,Litoměřice,35.870117463,False
+nemak,Nemak Europe,565342,Nové Dvory,Litoměřice,41.650692147,False
+nemak,Nemak Europe,565393,Ploskovice,Litoměřice,45.260995439,False
+nemak,Nemak Europe,565415,Podsedice,Litoměřice,24.573821259,False
+nemak,Nemak Europe,565431,Polepy,Litoměřice,48.330387386,False
+nemak,Nemak Europe,565458,Prackovice nad Labem,Litoměřice,33.724456049,False
+nemak,Nemak Europe,565474,Přestavlky,Litoměřice,43.390603466,False
+nemak,Nemak Europe,565491,Račiněves,Litoměřice,44.061020794,False
+nemak,Nemak Europe,565521,Radovesice,Litoměřice,33.981935540,False
+nemak,Nemak Europe,565547,Rochov,Litoměřice,36.730870826,False
+nemak,Nemak Europe,565555,Roudnice nad Labem,Litoměřice,46.179078391,False
+nemak,Nemak Europe,565598,Siřejovice,Litoměřice,33.987709127,False
+nemak,Nemak Europe,565601,Slatina,Litoměřice,31.631446115,False
+nemak,Nemak Europe,565679,Straškov-Vodochody,Litoměřice,46.693380960,False
+nemak,Nemak Europe,565695,Sulejovice,Litoměřice,32.300567115,False
+nemak,Nemak Europe,565717,Terezín,Litoměřice,41.162323850,False
+nemak,Nemak Europe,565741,Travčice,Litoměřice,43.409795632,False
+nemak,Nemak Europe,565768,Třebenice,Litoměřice,26.572020497,False
+nemak,Nemak Europe,565776,Třebívlice,Litoměřice,21.764980519,False
+nemak,Nemak Europe,565792,Třebušín,Litoměřice,47.545488960,False
+nemak,Nemak Europe,565806,Úpohlavy,Litoměřice,31.444442166,False
+nemak,Nemak Europe,565831,Vědomice,Litoměřice,47.473947979,False
+nemak,Nemak Europe,565849,Velemín,Litoměřice,28.565571792,False
+nemak,Nemak Europe,565857,Velké Žernoseky,Litoměřice,35.398161244,False
+nemak,Nemak Europe,565865,Vchynice,Litoměřice,31.137554954,False
+nemak,Nemak Europe,565873,Vlastislav,Litoměřice,26.452792382,False
+nemak,Nemak Europe,565881,Vražkov,Litoměřice,47.792106861,False
+nemak,Nemak Europe,565890,Vrbice,Litoměřice,49.501081290,False
+nemak,Nemak Europe,565903,Vrbičany,Litoměřice,35.220493961,False
+nemak,Nemak Europe,565938,Žabovřesky nad Ohří,Litoměřice,35.291741237,False
+nemak,Nemak Europe,565946,Žalhostice,Litoměřice,36.378319893,False
+nemak,Nemak Europe,565954,Židovice,Litoměřice,44.457959155,False
+nemak,Nemak Europe,565962,Žitenice,Litoměřice,42.407652728,False
+nemak,Nemak Europe,565971,Louny,Louny,16.951969879,False
+nemak,Nemak Europe,565997,Bitozeves,Louny,6.793252840,False
+nemak,Nemak Europe,566004,Blatno,Louny,40.111876216,False
+nemak,Nemak Europe,566012,Blažim,Louny,4.025694126,False
+nemak,Nemak Europe,566021,Blšany,Louny,24.681535786,False
+nemak,Nemak Europe,566063,Břvany,Louny,9.631931256,False
+nemak,Nemak Europe,566128,Deštnice,Louny,23.236404792,False
+nemak,Nemak Europe,566152,Domoušice,Louny,23.580280847,False
+nemak,Nemak Europe,566187,Holedeč,Louny,17.470687645,False
+nemak,Nemak Europe,566195,Hříškov,Louny,25.490456936,False
+nemak,Nemak Europe,566217,Hřivice,Louny,18.976284749,False
+nemak,Nemak Europe,566233,Chlumčany,Louny,21.091704131,False
+nemak,Nemak Europe,566241,Chožov,Louny,19.358757122,False
+nemak,Nemak Europe,566284,Koštice,Louny,24.775028508,False
+nemak,Nemak Europe,566306,Krásný Dvůr,Louny,26.529462096,False
+nemak,Nemak Europe,566314,Kryry,Louny,32.161704321,False
+nemak,Nemak Europe,566322,Lenešice,Louny,12.533472033,False
+nemak,Nemak Europe,566349,Libčeves,Louny,17.241169673,False
+nemak,Nemak Europe,566357,Liběšice,Louny,17.676285291,False
+nemak,Nemak Europe,566381,Libořice,Louny,21.014676637,False
+nemak,Nemak Europe,566403,Lipno,Louny,15.761500274,False
+nemak,Nemak Europe,566411,Lišany,Louny,10.316801540,False
+nemak,Nemak Europe,566438,Lubenec,Louny,38.981427373,False
+nemak,Nemak Europe,566454,Měcholupy,Louny,22.746670642,False
+nemak,Nemak Europe,566501,Nepomyšl,Louny,31.800832078,False
+nemak,Nemak Europe,566519,Nové Sedlo,Louny,14.746401642,False
+nemak,Nemak Europe,566527,Očihov,Louny,28.243656793,False
+nemak,Nemak Europe,566535,Panenský Týnec,Louny,26.932357882,False
+nemak,Nemak Europe,566551,Peruc,Louny,27.920971104,False
+nemak,Nemak Europe,566560,Petrohrad,Louny,35.184747836,False
+nemak,Nemak Europe,566578,Pnětluky,Louny,21.952250166,False
+nemak,Nemak Europe,566586,Počedělice,Louny,22.399205259,False
+nemak,Nemak Europe,566608,Podbořanský Rohozec,Louny,34.485445849,False
+nemak,Nemak Europe,566616,Podbořany,Louny,24.096657491,False
+nemak,Nemak Europe,566624,Postoloprty,Louny,11.788103267,False
+nemak,Nemak Europe,566659,Raná,Louny,13.476435773,False
+nemak,Nemak Europe,566667,Ročov,Louny,23.435563412,False
+nemak,Nemak Europe,566713,Slavětín,Louny,23.890154228,False
+nemak,Nemak Europe,566721,Smolnice,Louny,22.635985429,False
+nemak,Nemak Europe,566829,Toužetín,Louny,24.663143745,False
+nemak,Nemak Europe,566853,Tuchořice,Louny,19.867939135,False
+nemak,Nemak Europe,566870,Velemyšleves,Louny,4.315506682,False
+nemak,Nemak Europe,566896,Veltěže,Louny,22.707402319,False
+nemak,Nemak Europe,566918,Vinařice,Louny,24.610276759,False
+nemak,Nemak Europe,566926,Vrbno nad Lesy,Louny,25.958207559,False
+nemak,Nemak Europe,566934,Vroutek,Louny,33.576547298,False
+nemak,Nemak Europe,566951,Výškov,Louny,6.280204335,False
+nemak,Nemak Europe,566977,Zbrašín,Louny,20.021535483,False
+nemak,Nemak Europe,566985,Žatec,Louny,13.604834088,False
+nemak,Nemak Europe,567019,Žiželice,Louny,9.287431667,False
+nemak,Nemak Europe,567027,Most,Most,8.840460850,False
+nemak,Nemak Europe,567043,Bečov,Most,8.000306116,False
+nemak,Nemak Europe,567051,Bělušice,Most,12.055570488,False
+nemak,Nemak Europe,567060,Braňany,Most,14.150484681,False
+nemak,Nemak Europe,567078,Brandov,Most,25.345433854,False
+nemak,Nemak Europe,567108,Český Jiřetín,Most,27.450766583,False
+nemak,Nemak Europe,567141,Havraň,Most,0.000000000,True
+nemak,Nemak Europe,567167,Hora Svaté Kateřiny,Most,21.562422634,False
+nemak,Nemak Europe,567175,Horní Jiřetín,Most,14.774747780,False
+nemak,Nemak Europe,567191,Klíny,Most,22.962787592,False
+nemak,Nemak Europe,567221,Korozluky,Most,10.103445819,False
+nemak,Nemak Europe,567248,Lišnice,Most,2.841766941,False
+nemak,Nemak Europe,567256,Litvínov,Most,16.854769017,False
+nemak,Nemak Europe,567264,Lom,Most,20.735817050,False
+nemak,Nemak Europe,567272,Louka u Litvínova,Most,17.130056347,False
+nemak,Nemak Europe,567281,Lužice,Most,12.723839092,False
+nemak,Nemak Europe,567299,Malé Březno,Most,5.216440894,False
+nemak,Nemak Europe,567302,Mariánské Radčice,Most,16.414933947,False
+nemak,Nemak Europe,567311,Meziboří,Most,21.753861152,False
+nemak,Nemak Europe,567329,Nová Ves v Horách,Most,19.442570226,False
+nemak,Nemak Europe,567337,Obrnice,Most,11.210257886,False
+nemak,Nemak Europe,567345,Patokryje,Most,11.057906731,False
+nemak,Nemak Europe,567353,Polerady,Most,4.572980592,False
+nemak,Nemak Europe,567361,Skršín,Most,12.165999312,False
+nemak,Nemak Europe,567426,Želenice,Most,13.999090303,False
+nemak,Nemak Europe,567442,Teplice,Teplice,28.168131096,False
+nemak,Nemak Europe,567451,Bílina,Teplice,17.628858902,False
+nemak,Nemak Europe,567469,Bořislav,Teplice,29.085854922,False
+nemak,Nemak Europe,567477,Bystřany,Teplice,28.530506661,False
+nemak,Nemak Europe,567485,Bžany,Teplice,25.961029305,False
+nemak,Nemak Europe,567507,Dubí,Teplice,31.976585441,False
+nemak,Nemak Europe,567515,Duchcov,Teplice,20.902772710,False
+nemak,Nemak Europe,567523,Háj u Duchcova,Teplice,24.067340096,False
+nemak,Nemak Europe,567531,Hostomice,Teplice,22.825473199,False
+nemak,Nemak Europe,567558,Hrob,Teplice,26.484399324,False
+nemak,Nemak Europe,567566,Hrobčice,Teplice,18.447870950,False
+nemak,Nemak Europe,567582,Jeníkov,Teplice,24.669083547,False
+nemak,Nemak Europe,567604,Kladruby,Teplice,25.759793515,False
+nemak,Nemak Europe,567612,Kostomlaty pod Milešovkou,Teplice,24.001990245,False
+nemak,Nemak Europe,567621,Košťany,Teplice,30.592786069,False
+nemak,Nemak Europe,567639,Krupka,Teplice,35.383090088,False
+nemak,Nemak Europe,567647,Lahošť,Teplice,23.977190304,False
+nemak,Nemak Europe,567655,Ledvice,Teplice,20.682439692,False
+nemak,Nemak Europe,567698,Měrunice,Teplice,16.092453649,False
+nemak,Nemak Europe,567701,Mikulov,Teplice,30.575600756,False
+nemak,Nemak Europe,567710,Modlany,Teplice,31.248988699,False
+nemak,Nemak Europe,567728,Moldava,Teplice,29.865091554,False
+nemak,Nemak Europe,567752,Novosedlice,Teplice,29.540800950,False
+nemak,Nemak Europe,567761,Ohníč,Teplice,24.514921767,False
+nemak,Nemak Europe,567779,Osek,Teplice,23.696924314,False
+nemak,Nemak Europe,567787,Proboštov,Teplice,31.132574201,False
+nemak,Nemak Europe,567809,Rtyně nad Bílinou,Teplice,29.307350445,False
+nemak,Nemak Europe,567833,Srbice,Teplice,31.320379164,False
+nemak,Nemak Europe,567841,Světec,Teplice,21.995051349,False
+nemak,Nemak Europe,567850,Újezdeček,Teplice,27.160835341,False
+nemak,Nemak Europe,567868,Zabrušany,Teplice,23.719915911,False
+nemak,Nemak Europe,567876,Žalany,Teplice,27.259184753,False
+nemak,Nemak Europe,567884,Žim,Teplice,31.024431976,False
+nemak,Nemak Europe,567931,Dolní Zálezly,Ústí nad Labem,36.820291546,False
+nemak,Nemak Europe,567957,Habrovany,Ústí nad Labem,33.001527384,False
+nemak,Nemak Europe,567973,Homole u Panny,Ústí nad Labem,47.350821451,False
+nemak,Nemak Europe,568007,Chabařovice,Ústí nad Labem,35.101347969,False
+nemak,Nemak Europe,568015,Chlumec,Ústí nad Labem,38.182793303,False
+nemak,Nemak Europe,568023,Chuderov,Ústí nad Labem,44.527036218,False
+nemak,Nemak Europe,568058,Libouchec,Ústí nad Labem,46.943834224,False
+nemak,Nemak Europe,568091,Malé Březno,Ústí nad Labem,49.190241115,False
+nemak,Nemak Europe,568104,Malečov,Ústí nad Labem,43.206814747,False
+nemak,Nemak Europe,568147,Petrovice,Ústí nad Labem,45.145359530,False
+nemak,Nemak Europe,568155,Povrly,Ústí nad Labem,48.204323844,False
+nemak,Nemak Europe,568201,Řehlovice,Ústí nad Labem,33.015276450,False
+nemak,Nemak Europe,568287,Tašov,Ústí nad Labem,43.163177381,False
+nemak,Nemak Europe,568295,Telnice,Ústí nad Labem,41.029244468,False
+nemak,Nemak Europe,568309,Tisá,Ústí nad Labem,49.609464509,False
+nemak,Nemak Europe,568350,Velké Březno,Ústí nad Labem,46.061863948,False
+blackdecker,Black & Decker (Czech),505528,Jenčice,Litoměřice,16.682237343,False
+blackdecker,Black & Decker (Czech),530395,Janská,Děčín,33.087211125,False
+blackdecker,Black & Decker (Czech),530417,Doubice,Děčín,42.190336653,False
+blackdecker,Black & Decker (Czech),530506,Miřejovice,Litoměřice,11.612161224,False
+blackdecker,Black & Decker (Czech),530557,Kozly,Louny,24.847380811,False
+blackdecker,Black & Decker (Czech),530565,Želkovice,Louny,21.473444768,False
+blackdecker,Black & Decker (Czech),530590,Libočany,Louny,48.769539199,False
+blackdecker,Black & Decker (Czech),530603,Zálužice,Louny,44.014232079,False
+blackdecker,Black & Decker (Czech),530620,Přestanov,Ústí nad Labem,8.365266359,False
+blackdecker,Black & Decker (Czech),542407,Trnovany,Litoměřice,16.472287839,False
+blackdecker,Black & Decker (Czech),542423,Černouček,Litoměřice,37.854015208,False
+blackdecker,Black & Decker (Czech),542440,Oleško,Litoměřice,21.897921784,False
+blackdecker,Black & Decker (Czech),542482,Záluží,Litoměřice,30.474375542,False
+blackdecker,Black & Decker (Czech),542491,Malíč,Litoměřice,11.966447303,False
+blackdecker,Black & Decker (Czech),542521,Michalovice,Litoměřice,12.714678234,False
+blackdecker,Black & Decker (Czech),542539,Píšťany,Litoměřice,13.527521380,False
+blackdecker,Black & Decker (Czech),542547,Blšany u Loun,Louny,33.762457357,False
+blackdecker,Black & Decker (Czech),542555,Opočno,Louny,40.891390569,False
+blackdecker,Black & Decker (Czech),542571,Cítoliby,Louny,36.275142228,False
+blackdecker,Black & Decker (Czech),542580,Obora,Louny,31.242700134,False
+blackdecker,Black & Decker (Czech),542628,Černčice,Louny,32.756253558,False
+blackdecker,Black & Decker (Czech),542636,Nová Ves,Louny,40.563606547,False
+blackdecker,Black & Decker (Czech),543012,Žerotín,Louny,41.117808673,False
+blackdecker,Black & Decker (Czech),543128,Staňkovice,Louny,42.738068288,False
+blackdecker,Black & Decker (Czech),544647,Bynovec,Děčín,28.405445858,False
+blackdecker,Black & Decker (Czech),544680,Janov,Děčín,31.439850241,False
+blackdecker,Black & Decker (Czech),544701,Labská Stráň,Děčín,28.764825090,False
+blackdecker,Black & Decker (Czech),545538,Starý Šachov,Děčín,27.360056618,False
+blackdecker,Black & Decker (Czech),545678,Markvartice,Děčín,29.695822531,False
+blackdecker,Black & Decker (Czech),545708,Lobendava,Děčín,48.815831212,False
+blackdecker,Black & Decker (Czech),545783,Dobrná,Děčín,25.910127307,False
+blackdecker,Black & Decker (Czech),545791,Merboltice,Děčín,25.476904545,False
+blackdecker,Black & Decker (Czech),545856,Dolní Habartice,Děčín,26.876461154,False
+blackdecker,Black & Decker (Czech),545899,Františkov nad Ploučnicí,Děčín,25.359620274,False
+blackdecker,Black & Decker (Czech),545929,Horní Habartice,Děčín,28.081136049,False
+blackdecker,Black & Decker (Czech),546011,Jimlín,Louny,38.484638117,False
+blackdecker,Black & Decker (Czech),546062,Pesvice,Chomutov,41.135744249,False
+blackdecker,Black & Decker (Czech),546160,Nezabylice,Chomutov,43.679563225,False
+blackdecker,Black & Decker (Czech),546178,Úherce,Louny,37.695841819,False
+blackdecker,Black & Decker (Czech),546186,Ryjice,Ústí nad Labem,9.173101221,False
+blackdecker,Black & Decker (Czech),546330,Kunratice,Děčín,36.805583208,False
+blackdecker,Black & Decker (Czech),546348,Srbská Kamenice,Děčín,31.912870266,False
+blackdecker,Black & Decker (Czech),546429,Chraberce,Louny,28.265280332,False
+blackdecker,Black & Decker (Czech),546437,Volevčice,Most,31.623670210,False
+blackdecker,Black & Decker (Czech),546453,Kámen,Děčín,26.668929969,False
+blackdecker,Black & Decker (Czech),546496,Ludvíkovice,Děčín,25.756221706,False
+blackdecker,Black & Decker (Czech),546691,Lkáň,Litoměřice,21.647796240,False
+blackdecker,Black & Decker (Czech),546721,Sedlec,Litoměřice,20.907609251,False
+blackdecker,Black & Decker (Czech),546755,Brzánky,Litoměřice,29.254875155,False
+blackdecker,Black & Decker (Czech),546763,Horní Řepčice,Litoměřice,20.316728609,False
+blackdecker,Black & Decker (Czech),546771,Kamýk,Litoměřice,10.034229496,False
+blackdecker,Black & Decker (Czech),546780,Býčkovice,Litoměřice,17.702258184,False
+blackdecker,Black & Decker (Czech),546810,Chudoslavice,Litoměřice,14.607333168,False
+blackdecker,Black & Decker (Czech),546828,Staňkovice,Litoměřice,13.173621130,False
+blackdecker,Black & Decker (Czech),546852,Černěves,Litoměřice,27.043869968,False
+blackdecker,Black & Decker (Czech),546861,Dobroměřice,Louny,32.108175602,False
+blackdecker,Black & Decker (Czech),546879,Líšťany,Louny,38.639080778,False
+blackdecker,Black & Decker (Czech),546887,Vršovice,Louny,30.954887330,False
+blackdecker,Black & Decker (Czech),546895,Brodec,Louny,39.836274970,False
+blackdecker,Black & Decker (Czech),546909,Lukov,Teplice,15.349534668,False
+blackdecker,Black & Decker (Czech),546925,Stebno,Ústí nad Labem,3.477735822,False
+blackdecker,Black & Decker (Czech),553646,Dolánky nad Ohří,Litoměřice,21.836849410,False
+blackdecker,Black & Decker (Czech),553697,Trmice,Ústí nad Labem,0.000000000,True
+blackdecker,Black & Decker (Czech),554804,Ústí nad Labem,Ústí nad Labem,3.751506587,False
+blackdecker,Black & Decker (Czech),555193,Těchlovice,Děčín,16.578678913,False
+blackdecker,Black & Decker (Czech),555223,Velké Chvojno,Ústí nad Labem,10.557074584,False
+blackdecker,Black & Decker (Czech),562335,Děčín,Děčín,21.241113316,False
+blackdecker,Black & Decker (Czech),562343,Arnoltice,Děčín,28.561712597,False
+blackdecker,Black & Decker (Czech),562351,Benešov nad Ploučnicí,Děčín,24.672671931,False
+blackdecker,Black & Decker (Czech),562394,Česká Kamenice,Děčín,35.722734207,False
+blackdecker,Black & Decker (Czech),562408,Dobkovice,Děčín,15.049805570,False
+blackdecker,Black & Decker (Czech),562432,Dolní Podluží,Děčín,49.849760878,False
+blackdecker,Black & Decker (Czech),562441,Dolní Poustevna,Děčín,44.775656849,False
+blackdecker,Black & Decker (Czech),562483,Heřmanov,Děčín,21.426740851,False
+blackdecker,Black & Decker (Czech),562505,Horní Podluží,Děčín,47.844837465,False
+blackdecker,Black & Decker (Czech),562513,Hřensko,Děčín,32.920559794,False
+blackdecker,Black & Decker (Czech),562521,Huntířov,Děčín,28.503309249,False
+blackdecker,Black & Decker (Czech),562530,Chřibská,Děčín,42.156683124,False
+blackdecker,Black & Decker (Czech),562556,Jetřichovice,Děčín,37.283124685,False
+blackdecker,Black & Decker (Czech),562564,Jílové,Děčín,16.813565949,False
+blackdecker,Black & Decker (Czech),562572,Jiřetín pod Jedlovou,Děčín,47.058493994,False
+blackdecker,Black & Decker (Czech),562611,Krásná Lípa,Děčín,45.990073742,False
+blackdecker,Black & Decker (Czech),562645,Kytlice,Děčín,42.551994682,False
+blackdecker,Black & Decker (Czech),562661,Lipová,Děčín,49.717207891,False
+blackdecker,Black & Decker (Czech),562700,Malá Veleň,Děčín,22.588260964,False
+blackdecker,Black & Decker (Czech),562718,Malšovice,Děčín,14.976696329,False
+blackdecker,Black & Decker (Czech),562751,Mikulášovice,Děčín,44.290632760,False
+blackdecker,Black & Decker (Czech),562793,Rybniště,Děčín,45.303133546,False
+blackdecker,Black & Decker (Czech),562823,Staré Křečany,Děčín,48.185102671,False
+blackdecker,Black & Decker (Czech),562874,Valkeřice,Děčín,23.886460674,False
+blackdecker,Black & Decker (Czech),562891,Velká Bukovina,Děčín,29.586908686,False
+blackdecker,Black & Decker (Czech),562912,Velký Šenov,Děčín,47.856419393,False
+blackdecker,Black & Decker (Czech),562921,Verneřice,Děčín,20.330942523,False
+blackdecker,Black & Decker (Czech),562939,Veselé,Děčín,31.677603101,False
+blackdecker,Black & Decker (Czech),562947,Vilémov,Děčín,45.615306885,False
+blackdecker,Black & Decker (Czech),562971,Chomutov,Chomutov,45.839204145,False
+blackdecker,Black & Decker (Czech),562980,Bílence,Chomutov,41.026665055,False
+blackdecker,Black & Decker (Czech),562998,Blatno,Chomutov,47.243566146,False
+blackdecker,Black & Decker (Czech),563005,Boleboř,Chomutov,42.686985598,False
+blackdecker,Black & Decker (Czech),563013,Březno,Chomutov,49.919012455,False
+blackdecker,Black & Decker (Czech),563021,Černovice,Chomutov,49.951996588,False
+blackdecker,Black & Decker (Czech),563056,Droužkovice,Chomutov,46.620435443,False
+blackdecker,Black & Decker (Czech),563072,Hrušovany,Chomutov,43.775209514,False
+blackdecker,Black & Decker (Czech),563099,Jirkov,Chomutov,42.465601184,False
+blackdecker,Black & Decker (Czech),563111,Kalek,Chomutov,48.586123723,False
+blackdecker,Black & Decker (Czech),563277,Otvice,Chomutov,42.204668461,False
+blackdecker,Black & Decker (Czech),563358,Strupčice,Chomutov,38.156013447,False
+blackdecker,Black & Decker (Czech),563382,Údlice,Chomutov,43.207417528,False
+blackdecker,Black & Decker (Czech),563463,Vrskmaň,Chomutov,38.660106409,False
+blackdecker,Black & Decker (Czech),563471,Všehrdy,Chomutov,45.333925031,False
+blackdecker,Black & Decker (Czech),563480,Všestudy,Chomutov,40.238113436,False
+blackdecker,Black & Decker (Czech),563501,Vysoká Pec,Chomutov,39.220237772,False
+blackdecker,Black & Decker (Czech),564567,Litoměřice,Litoměřice,14.368273723,False
+blackdecker,Black & Decker (Czech),564575,Bechlín,Litoměřice,33.901832882,False
+blackdecker,Black & Decker (Czech),564591,Bohušovice nad Ohří,Litoměřice,19.691062274,False
+blackdecker,Black & Decker (Czech),564613,Brňany,Litoměřice,20.151398385,False
+blackdecker,Black & Decker (Czech),564621,Brozany nad Ohří,Litoměřice,23.222403647,False
+blackdecker,Black & Decker (Czech),564648,Bříza,Litoměřice,34.860643944,False
+blackdecker,Black & Decker (Czech),564656,Budyně nad Ohří,Litoměřice,27.526434331,False
+blackdecker,Black & Decker (Czech),564672,Ctiněves,Litoměřice,36.303289417,False
+blackdecker,Black & Decker (Czech),564699,Černiv,Litoměřice,21.363913280,False
+blackdecker,Black & Decker (Czech),564711,Čížkovice,Litoměřice,17.745241773,False
+blackdecker,Black & Decker (Czech),564729,Děčany,Litoměřice,22.354686133,False
+blackdecker,Black & Decker (Czech),564737,Dlažkovice,Litoměřice,19.730525198,False
+blackdecker,Black & Decker (Czech),564745,Dobříň,Litoměřice,30.820844013,False
+blackdecker,Black & Decker (Czech),564753,Doksany,Litoměřice,23.131420713,False
+blackdecker,Black & Decker (Czech),564770,Drahobuz,Litoměřice,25.171643437,False
+blackdecker,Black & Decker (Czech),564818,Dušníky,Litoměřice,27.875150591,False
+blackdecker,Black & Decker (Czech),564834,Evaň,Litoměřice,28.486825143,False
+blackdecker,Black & Decker (Czech),564842,Hlinná,Litoměřice,10.681526559,False
+blackdecker,Black & Decker (Czech),564851,Horní Beřkovice,Litoměřice,39.629889989,False
+blackdecker,Black & Decker (Czech),564877,Hoštka,Litoměřice,28.775754366,False
+blackdecker,Black & Decker (Czech),564893,Hrobce,Litoměřice,24.494573594,False
+blackdecker,Black & Decker (Czech),564923,Chodouny,Litoměřice,25.298709055,False
+blackdecker,Black & Decker (Czech),564931,Chodovlice,Litoměřice,20.190204909,False
+blackdecker,Black & Decker (Czech),564940,Chotěšov,Litoměřice,22.364232220,False
+blackdecker,Black & Decker (Czech),564958,Chotiměř,Litoměřice,9.843294627,False
+blackdecker,Black & Decker (Czech),564966,Chotiněves,Litoměřice,22.499527311,False
+blackdecker,Black & Decker (Czech),565016,Keblice,Litoměřice,18.815851540,False
+blackdecker,Black & Decker (Czech),565024,Klapý,Litoměřice,22.983994248,False
+blackdecker,Black & Decker (Czech),565032,Kleneč,Litoměřice,32.157791546,False
+blackdecker,Black & Decker (Czech),565059,Kostomlaty pod Řípem,Litoměřice,37.597759434,False
+blackdecker,Black & Decker (Czech),565067,Krabčice,Litoměřice,33.249897961,False
+blackdecker,Black & Decker (Czech),565075,Křesín,Litoměřice,26.736375463,False
+blackdecker,Black & Decker (Czech),565083,Křešice,Litoměřice,19.781450385,False
+blackdecker,Black & Decker (Czech),565091,Kyškovice,Litoměřice,28.880909613,False
+blackdecker,Black & Decker (Czech),565105,Levín,Litoměřice,20.789069610,False
+blackdecker,Black & Decker (Czech),565113,Lhotka nad Labem,Litoměřice,11.916617325,False
+blackdecker,Black & Decker (Czech),565121,Liběšice,Litoměřice,20.256727422,False
+blackdecker,Black & Decker (Czech),565148,Libkovice pod Řípem,Litoměřice,36.569810226,False
+blackdecker,Black & Decker (Czech),565156,Libochovany,Litoměřice,8.635637238,False
+blackdecker,Black & Decker (Czech),565164,Libochovice,Litoměřice,25.862112168,False
+blackdecker,Black & Decker (Czech),565172,Libotenice,Litoměřice,23.628712342,False
+blackdecker,Black & Decker (Czech),565211,Lovečkovice,Litoměřice,18.477078264,False
+blackdecker,Black & Decker (Czech),565229,Lovosice,Litoměřice,15.041347641,False
+blackdecker,Black & Decker (Czech),565237,Lukavec,Litoměřice,17.027753540,False
+blackdecker,Black & Decker (Czech),565245,Malé Žernoseky,Litoměřice,11.417375551,False
+blackdecker,Black & Decker (Czech),565253,Martiněves,Litoměřice,32.830071321,False
+blackdecker,Black & Decker (Czech),565296,Mlékojedy,Litoměřice,15.424535896,False
+blackdecker,Black & Decker (Czech),565300,Mnetěš,Litoměřice,36.620619630,False
+blackdecker,Black & Decker (Czech),565318,Mšené-lázně,Litoměřice,31.332528311,False
+blackdecker,Black & Decker (Czech),565342,Nové Dvory,Litoměřice,25.382161133,False
+blackdecker,Black & Decker (Czech),565393,Ploskovice,Litoměřice,16.065984691,False
+blackdecker,Black & Decker (Czech),565415,Podsedice,Litoměřice,18.314443999,False
+blackdecker,Black & Decker (Czech),565431,Polepy,Litoměřice,22.723841071,False
+blackdecker,Black & Decker (Czech),565458,Prackovice nad Labem,Litoměřice,8.083637916,False
+blackdecker,Black & Decker (Czech),565474,Přestavlky,Litoměřice,30.159385227,False
+blackdecker,Black & Decker (Czech),565482,Račice,Litoměřice,31.450442184,False
+blackdecker,Black & Decker (Czech),565491,Račiněves,Litoměřice,32.512966387,False
+blackdecker,Black & Decker (Czech),565521,Radovesice,Litoměřice,25.739335087,False
+blackdecker,Black & Decker (Czech),565547,Rochov,Litoměřice,21.271952845,False
+blackdecker,Black & Decker (Czech),565555,Roudnice nad Labem,Litoměřice,29.720007562,False
+blackdecker,Black & Decker (Czech),565598,Siřejovice,Litoměřice,18.519046696,False
+blackdecker,Black & Decker (Czech),565601,Slatina,Litoměřice,23.090808369,False
+blackdecker,Black & Decker (Czech),565610,Snědovice,Litoměřice,32.120365971,False
+blackdecker,Black & Decker (Czech),565679,Straškov-Vodochody,Litoměřice,35.911961776,False
+blackdecker,Black & Decker (Czech),565695,Sulejovice,Litoměřice,15.868859019,False
+blackdecker,Black & Decker (Czech),565709,Štětí,Litoměřice,34.905732593,False
+blackdecker,Black & Decker (Czech),565717,Terezín,Litoměřice,18.063987495,False
+blackdecker,Black & Decker (Czech),565741,Travčice,Litoměřice,20.520481986,False
+blackdecker,Black & Decker (Czech),565768,Třebenice,Litoměřice,15.748766449,False
+blackdecker,Black & Decker (Czech),565776,Třebívlice,Litoměřice,19.612958823,False
+blackdecker,Black & Decker (Czech),565792,Třebušín,Litoměřice,15.526501443,False
+blackdecker,Black & Decker (Czech),565806,Úpohlavy,Litoměřice,19.905631104,False
+blackdecker,Black & Decker (Czech),565814,Úštěk,Litoměřice,25.895919098,False
+blackdecker,Black & Decker (Czech),565831,Vědomice,Litoměřice,28.956820421,False
+blackdecker,Black & Decker (Czech),565849,Velemín,Litoměřice,11.001888847,False
+blackdecker,Black & Decker (Czech),565857,Velké Žernoseky,Litoměřice,11.559977617,False
+blackdecker,Black & Decker (Czech),565865,Vchynice,Litoměřice,14.068897681,False
+blackdecker,Black & Decker (Czech),565873,Vlastislav,Litoměřice,15.501128640,False
+blackdecker,Black & Decker (Czech),565881,Vražkov,Litoměřice,34.333124216,False
+blackdecker,Black & Decker (Czech),565890,Vrbice,Litoměřice,26.866608157,False
+blackdecker,Black & Decker (Czech),565903,Vrbičany,Litoměřice,20.349840234,False
+blackdecker,Black & Decker (Czech),565911,Vrutice,Litoměřice,25.900378695,False
+blackdecker,Black & Decker (Czech),565938,Žabovřesky nad Ohří,Litoměřice,25.209004774,False
+blackdecker,Black & Decker (Czech),565946,Žalhostice,Litoměřice,13.951908210,False
+blackdecker,Black & Decker (Czech),565954,Židovice,Litoměřice,26.577044637,False
+blackdecker,Black & Decker (Czech),565962,Žitenice,Litoměřice,13.462013046,False
+blackdecker,Black & Decker (Czech),565971,Louny,Louny,33.898385873,False
+blackdecker,Black & Decker (Czech),565997,Bitozeves,Louny,39.024436939,False
+blackdecker,Black & Decker (Czech),566012,Blažim,Louny,36.637005339,False
+blackdecker,Black & Decker (Czech),566063,Břvany,Louny,32.360150356,False
+blackdecker,Black & Decker (Czech),566152,Domoušice,Louny,48.024636940,False
+blackdecker,Black & Decker (Czech),566187,Holedeč,Louny,49.890560911,False
+blackdecker,Black & Decker (Czech),566195,Hříškov,Louny,40.206954628,False
+blackdecker,Black & Decker (Czech),566217,Hřivice,Louny,43.872635828,False
+blackdecker,Black & Decker (Czech),566233,Chlumčany,Louny,35.185177167,False
+blackdecker,Black & Decker (Czech),566241,Chožov,Louny,26.724937081,False
+blackdecker,Black & Decker (Czech),566284,Koštice,Louny,25.060717582,False
+blackdecker,Black & Decker (Czech),566322,Lenešice,Louny,32.987925086,False
+blackdecker,Black & Decker (Czech),566349,Libčeves,Louny,23.620399316,False
+blackdecker,Black & Decker (Czech),566357,Liběšice,Louny,48.277560870,False
+blackdecker,Black & Decker (Czech),566403,Lipno,Louny,42.951959782,False
+blackdecker,Black & Decker (Czech),566411,Lišany,Louny,40.812052544,False
+blackdecker,Black & Decker (Czech),566535,Panenský Týnec,Louny,38.456103842,False
+blackdecker,Black & Decker (Czech),566551,Peruc,Louny,32.122155415,False
+blackdecker,Black & Decker (Czech),566578,Pnětluky,Louny,47.466611479,False
+blackdecker,Black & Decker (Czech),566586,Počedělice,Louny,28.333410609,False
+blackdecker,Black & Decker (Czech),566624,Postoloprty,Louny,38.337462871,False
+blackdecker,Black & Decker (Czech),566659,Raná,Louny,29.414874001,False
+blackdecker,Black & Decker (Czech),566667,Ročov,Louny,44.522612255,False
+blackdecker,Black & Decker (Czech),566713,Slavětín,Louny,31.731862610,False
+blackdecker,Black & Decker (Czech),566721,Smolnice,Louny,37.663272898,False
+blackdecker,Black & Decker (Czech),566829,Toužetín,Louny,36.391899975,False
+blackdecker,Black & Decker (Czech),566853,Tuchořice,Louny,48.392140559,False
+blackdecker,Black & Decker (Czech),566870,Velemyšleves,Louny,40.146912454,False
+blackdecker,Black & Decker (Czech),566896,Veltěže,Louny,33.353566027,False
+blackdecker,Black & Decker (Czech),566900,Růžová,Děčín,31.384422881,False
+blackdecker,Black & Decker (Czech),566918,Vinařice,Louny,42.686162072,False
+blackdecker,Black & Decker (Czech),566926,Vrbno nad Lesy,Louny,35.652152149,False
+blackdecker,Black & Decker (Czech),566951,Výškov,Louny,34.308741469,False
+blackdecker,Black & Decker (Czech),566977,Zbrašín,Louny,41.701670306,False
+blackdecker,Black & Decker (Czech),566985,Žatec,Louny,48.039667740,False
+blackdecker,Black & Decker (Czech),567019,Žiželice,Louny,45.277493277,False
+blackdecker,Black & Decker (Czech),567027,Most,Most,30.304382099,False
+blackdecker,Black & Decker (Czech),567043,Bečov,Most,29.374759443,False
+blackdecker,Black & Decker (Czech),567051,Bělušice,Most,27.085831812,False
+blackdecker,Black & Decker (Czech),567060,Braňany,Most,23.166222096,False
+blackdecker,Black & Decker (Czech),567078,Brandov,Most,43.215875508,False
+blackdecker,Black & Decker (Czech),567108,Český Jiřetín,Most,29.864276481,False
+blackdecker,Black & Decker (Czech),567141,Havraň,Most,36.263602848,False
+blackdecker,Black & Decker (Czech),567167,Hora Svaté Kateřiny,Most,40.872046019,False
+blackdecker,Black & Decker (Czech),567175,Horní Jiřetín,Most,33.864593925,False
+blackdecker,Black & Decker (Czech),567191,Klíny,Most,31.787034082,False
+blackdecker,Black & Decker (Czech),567221,Korozluky,Most,26.274402862,False
+blackdecker,Black & Decker (Czech),567248,Lišnice,Most,33.422093407,False
+blackdecker,Black & Decker (Czech),567256,Litvínov,Most,29.151680989,False
+blackdecker,Black & Decker (Czech),567264,Lom,Most,25.137138183,False
+blackdecker,Black & Decker (Czech),567272,Louka u Litvínova,Most,26.096758074,False
+blackdecker,Black & Decker (Czech),567281,Lužice,Most,23.680405643,False
+blackdecker,Black & Decker (Czech),567299,Malé Březno,Most,35.059364482,False
+blackdecker,Black & Decker (Czech),567302,Mariánské Radčice,Most,23.921453975,False
+blackdecker,Black & Decker (Czech),567311,Meziboří,Most,28.482593948,False
+blackdecker,Black & Decker (Czech),567329,Nová Ves v Horách,Most,36.372574635,False
+blackdecker,Black & Decker (Czech),567337,Obrnice,Most,25.266052666,False
+blackdecker,Black & Decker (Czech),567345,Patokryje,Most,25.217021675,False
+blackdecker,Black & Decker (Czech),567353,Polerady,Most,32.528768012,False
+blackdecker,Black & Decker (Czech),567361,Skršín,Most,25.072083953,False
+blackdecker,Black & Decker (Czech),567426,Želenice,Most,22.440542931,False
+blackdecker,Black & Decker (Czech),567442,Teplice,Teplice,11.996634362,False
+blackdecker,Black & Decker (Czech),567451,Bílina,Teplice,19.298741523,False
+blackdecker,Black & Decker (Czech),567469,Bořislav,Teplice,7.684841959,False
+blackdecker,Black & Decker (Czech),567477,Bystřany,Teplice,9.050016376,False
+blackdecker,Black & Decker (Czech),567485,Bžany,Teplice,10.419454849,False
+blackdecker,Black & Decker (Czech),567507,Dubí,Teplice,15.992960937,False
+blackdecker,Black & Decker (Czech),567515,Duchcov,Teplice,19.059328563,False
+blackdecker,Black & Decker (Czech),567523,Háj u Duchcova,Teplice,20.591893285,False
+blackdecker,Black & Decker (Czech),567531,Hostomice,Teplice,14.382753472,False
+blackdecker,Black & Decker (Czech),567558,Hrob,Teplice,19.830078150,False
+blackdecker,Black & Decker (Czech),567566,Hrobčice,Teplice,18.183439577,False
+blackdecker,Black & Decker (Czech),567582,Jeníkov,Teplice,17.617696119,False
+blackdecker,Black & Decker (Czech),567604,Kladruby,Teplice,12.037019693,False
+blackdecker,Black & Decker (Czech),567612,Kostomlaty pod Milešovkou,Teplice,12.474797118,False
+blackdecker,Black & Decker (Czech),567621,Košťany,Teplice,18.815044216,False
+blackdecker,Black & Decker (Czech),567639,Krupka,Teplice,11.476220399,False
+blackdecker,Black & Decker (Czech),567647,Lahošť,Teplice,16.295583847,False
+blackdecker,Black & Decker (Czech),567655,Ledvice,Teplice,17.441877719,False
+blackdecker,Black & Decker (Czech),567698,Měrunice,Teplice,21.663686758,False
+blackdecker,Black & Decker (Czech),567701,Mikulov,Teplice,21.004398499,False
+blackdecker,Black & Decker (Czech),567710,Modlany,Teplice,7.168987832,False
+blackdecker,Black & Decker (Czech),567728,Moldava,Teplice,23.957203994,False
+blackdecker,Black & Decker (Czech),567752,Novosedlice,Teplice,12.888459873,False
+blackdecker,Black & Decker (Czech),567761,Ohníč,Teplice,12.444309894,False
+blackdecker,Black & Decker (Czech),567779,Osek,Teplice,23.573433822,False
+blackdecker,Black & Decker (Czech),567787,Proboštov,Teplice,12.399023782,False
+blackdecker,Black & Decker (Czech),567809,Rtyně nad Bílinou,Teplice,7.115421434,False
+blackdecker,Black & Decker (Czech),567833,Srbice,Teplice,8.690982872,False
+blackdecker,Black & Decker (Czech),567841,Světec,Teplice,14.482604245,False
+blackdecker,Black & Decker (Czech),567850,Újezdeček,Teplice,15.043575860,False
+blackdecker,Black & Decker (Czech),567868,Zabrušany,Teplice,14.888657473,False
+blackdecker,Black & Decker (Czech),567876,Žalany,Teplice,9.156307164,False
+blackdecker,Black & Decker (Czech),567884,Žim,Teplice,6.460699488,False
+blackdecker,Black & Decker (Czech),567931,Dolní Zálezly,Ústí nad Labem,5.388036352,False
+blackdecker,Black & Decker (Czech),567957,Habrovany,Ústí nad Labem,4.204516528,False
+blackdecker,Black & Decker (Czech),567973,Homole u Panny,Ústí nad Labem,13.191833290,False
+blackdecker,Black & Decker (Czech),568007,Chabařovice,Ústí nad Labem,5.392945416,False
+blackdecker,Black & Decker (Czech),568015,Chlumec,Ústí nad Labem,7.984194960,False
+blackdecker,Black & Decker (Czech),568023,Chuderov,Ústí nad Labem,8.585013174,False
+blackdecker,Black & Decker (Czech),568058,Libouchec,Ústí nad Labem,13.028233931,False
+blackdecker,Black & Decker (Czech),568091,Malé Březno,Ústí nad Labem,13.833730157,False
+blackdecker,Black & Decker (Czech),568104,Malečov,Ústí nad Labem,9.609333741,False
+blackdecker,Black & Decker (Czech),568147,Petrovice,Ústí nad Labem,15.365894879,False
+blackdecker,Black & Decker (Czech),568155,Povrly,Ústí nad Labem,11.956052489,False
+blackdecker,Black & Decker (Czech),568201,Řehlovice,Ústí nad Labem,3.451934910,False
+blackdecker,Black & Decker (Czech),568287,Tašov,Ústí nad Labem,10.267899410,False
+blackdecker,Black & Decker (Czech),568295,Telnice,Ústí nad Labem,10.562000619,False
+blackdecker,Black & Decker (Czech),568309,Tisá,Ústí nad Labem,17.086102076,False
+blackdecker,Black & Decker (Czech),568350,Velké Březno,Ústí nad Labem,10.494242645,False
+blackdecker,Black & Decker (Czech),568384,Zubrnice,Ústí nad Labem,15.717998583,False
+eaton,Eaton Industries,505528,Jenčice,Litoměřice,42.298536029,False
+eaton,Eaton Industries,530557,Kozly,Louny,26.762434665,False
+eaton,Eaton Industries,530565,Želkovice,Louny,33.055944395,False
+eaton,Eaton Industries,530581,Čeradice,Louny,18.642780543,False
+eaton,Eaton Industries,530590,Libočany,Louny,16.057367317,False
+eaton,Eaton Industries,530603,Zálužice,Louny,21.461797241,False
+eaton,Eaton Industries,530620,Přestanov,Ústí nad Labem,43.474141278,False
+eaton,Eaton Industries,542491,Malíč,Litoměřice,48.481217723,False
+eaton,Eaton Industries,542521,Michalovice,Litoměřice,48.524886775,False
+eaton,Eaton Industries,542539,Píšťany,Litoměřice,46.965831216,False
+eaton,Eaton Industries,542547,Blšany u Loun,Louny,34.298934961,False
+eaton,Eaton Industries,542555,Opočno,Louny,28.494223265,False
+eaton,Eaton Industries,542571,Cítoliby,Louny,31.725904739,False
+eaton,Eaton Industries,542580,Obora,Louny,34.577957855,False
+eaton,Eaton Industries,542628,Černčice,Louny,32.816813252,False
+eaton,Eaton Industries,542636,Nová Ves,Louny,36.058552715,False
+eaton,Eaton Industries,543012,Žerotín,Louny,40.534527228,False
+eaton,Eaton Industries,543128,Staňkovice,Louny,17.878821327,False
+eaton,Eaton Industries,546011,Jimlín,Louny,29.103411236,False
+eaton,Eaton Industries,546062,Pesvice,Chomutov,5.157705681,False
+eaton,Eaton Industries,546071,Račetice,Chomutov,18.358830268,False
+eaton,Eaton Industries,546160,Nezabylice,Chomutov,7.839564227,False
+eaton,Eaton Industries,546178,Úherce,Louny,42.149636464,False
+eaton,Eaton Industries,546429,Chraberce,Louny,30.495875424,False
+eaton,Eaton Industries,546437,Volevčice,Most,20.613149747,False
+eaton,Eaton Industries,546518,Loučná pod Klínovcem,Chomutov,29.395601131,False
+eaton,Eaton Industries,546691,Lkáň,Litoměřice,39.774228597,False
+eaton,Eaton Industries,546721,Sedlec,Litoměřice,43.319447105,False
+eaton,Eaton Industries,546771,Kamýk,Litoměřice,48.683543193,False
+eaton,Eaton Industries,546861,Dobroměřice,Louny,28.620298117,False
+eaton,Eaton Industries,546879,Líšťany,Louny,32.042726656,False
+eaton,Eaton Industries,546887,Vršovice,Louny,32.273877045,False
+eaton,Eaton Industries,546895,Brodec,Louny,33.928163578,False
+eaton,Eaton Industries,546909,Lukov,Teplice,33.905322240,False
+eaton,Eaton Industries,546925,Stebno,Ústí nad Labem,47.195510590,False
+eaton,Eaton Industries,553697,Trmice,Ústí nad Labem,45.839204145,False
+eaton,Eaton Industries,554804,Ústí nad Labem,Ústí nad Labem,49.479730834,False
+eaton,Eaton Industries,562971,Chomutov,Chomutov,0.000000000,True
+eaton,Eaton Industries,562980,Bílence,Chomutov,9.536261119,False
+eaton,Eaton Industries,562998,Blatno,Chomutov,7.712031824,False
+eaton,Eaton Industries,563005,Boleboř,Chomutov,9.737987676,False
+eaton,Eaton Industries,563013,Březno,Chomutov,8.919644201,False
+eaton,Eaton Industries,563021,Černovice,Chomutov,4.124513541,False
+eaton,Eaton Industries,563048,Domašín,Chomutov,17.240976176,False
+eaton,Eaton Industries,563056,Droužkovice,Chomutov,4.977484180,False
+eaton,Eaton Industries,563064,Hora Svatého Šebestiána,Chomutov,13.449412918,False
+eaton,Eaton Industries,563072,Hrušovany,Chomutov,10.982559658,False
+eaton,Eaton Industries,563081,Chbany,Chomutov,13.999119198,False
+eaton,Eaton Industries,563099,Jirkov,Chomutov,4.883141926,False
+eaton,Eaton Industries,563102,Kadaň,Chomutov,12.618239337,False
+eaton,Eaton Industries,563111,Kalek,Chomutov,13.774965512,False
+eaton,Eaton Industries,563129,Klášterec nad Ohří,Chomutov,17.168861758,False
+eaton,Eaton Industries,563137,Kovářská,Chomutov,24.419275175,False
+eaton,Eaton Industries,563161,Křimov,Chomutov,7.306006898,False
+eaton,Eaton Industries,563188,Libědice,Chomutov,17.110959452,False
+eaton,Eaton Industries,563200,Málkov,Chomutov,7.157822930,False
+eaton,Eaton Industries,563218,Mašťov,Chomutov,25.309068433,False
+eaton,Eaton Industries,563226,Měděnec,Chomutov,21.506055519,False
+eaton,Eaton Industries,563242,Místo,Chomutov,9.706259467,False
+eaton,Eaton Industries,563269,Okounov,Chomutov,22.281387630,False
+eaton,Eaton Industries,563277,Otvice,Chomutov,3.636739281,False
+eaton,Eaton Industries,563285,Perštejn,Chomutov,24.350707733,False
+eaton,Eaton Industries,563293,Pětipsy,Chomutov,16.729073239,False
+eaton,Eaton Industries,563315,Kryštofovy Hamry,Chomutov,20.783019824,False
+eaton,Eaton Industries,563323,Radonice,Chomutov,21.760885347,False
+eaton,Eaton Industries,563331,Rokle,Chomutov,14.261565915,False
+eaton,Eaton Industries,563340,Spořice,Chomutov,4.968637741,False
+eaton,Eaton Industries,563358,Strupčice,Chomutov,8.840663018,False
+eaton,Eaton Industries,563382,Údlice,Chomutov,5.023654115,False
+eaton,Eaton Industries,563404,Vejprty,Chomutov,27.029964897,False
+eaton,Eaton Industries,563412,Veliká Ves,Chomutov,20.699654806,False
+eaton,Eaton Industries,563439,Vilémov,Chomutov,17.913807289,False
+eaton,Eaton Industries,563463,Vrskmaň,Chomutov,7.216013818,False
+eaton,Eaton Industries,563471,Všehrdy,Chomutov,7.149068632,False
+eaton,Eaton Industries,563480,Všestudy,Chomutov,7.137472459,False
+eaton,Eaton Industries,563498,Výsluní,Chomutov,13.410699482,False
+eaton,Eaton Industries,563501,Vysoká Pec,Chomutov,8.799081992,False
+eaton,Eaton Industries,564699,Černiv,Litoměřice,45.918790011,False
+eaton,Eaton Industries,564711,Čížkovice,Litoměřice,44.548989309,False
+eaton,Eaton Industries,564729,Děčany,Litoměřice,36.232143971,False
+eaton,Eaton Industries,564737,Dlažkovice,Litoměřice,39.767042178,False
+eaton,Eaton Industries,564834,Evaň,Litoměřice,43.781591730,False
+eaton,Eaton Industries,564931,Chodovlice,Litoměřice,41.551998076,False
+eaton,Eaton Industries,564940,Chotěšov,Litoměřice,47.743917827,False
+eaton,Eaton Industries,564958,Chotiměř,Litoměřice,42.765529751,False
+eaton,Eaton Industries,565016,Keblice,Litoměřice,49.193181680,False
+eaton,Eaton Industries,565024,Klapý,Litoměřice,41.722625907,False
+eaton,Eaton Industries,565075,Křesín,Litoměřice,41.450039418,False
+eaton,Eaton Industries,565113,Lhotka nad Labem,Litoměřice,44.735973360,False
+eaton,Eaton Industries,565156,Libochovany,Litoměřice,46.926383549,False
+eaton,Eaton Industries,565164,Libochovice,Litoměřice,44.850760639,False
+eaton,Eaton Industries,565229,Lovosice,Litoměřice,46.995365549,False
+eaton,Eaton Industries,565237,Lukavec,Litoměřice,48.172715933,False
+eaton,Eaton Industries,565245,Malé Žernoseky,Litoměřice,45.755787775,False
+eaton,Eaton Industries,565318,Mšené-lázně,Litoměřice,49.443109815,False
+eaton,Eaton Industries,565415,Podsedice,Litoměřice,37.320242179,False
+eaton,Eaton Industries,565458,Prackovice nad Labem,Litoměřice,45.010308085,False
+eaton,Eaton Industries,565521,Radovesice,Litoměřice,47.423521622,False
+eaton,Eaton Industries,565547,Rochov,Litoměřice,49.793955720,False
+eaton,Eaton Industries,565598,Siřejovice,Litoměřice,46.852651603,False
+eaton,Eaton Industries,565601,Slatina,Litoměřice,44.950395977,False
+eaton,Eaton Industries,565695,Sulejovice,Litoměřice,44.869611040,False
+eaton,Eaton Industries,565768,Třebenice,Litoměřice,38.984443195,False
+eaton,Eaton Industries,565776,Třebívlice,Litoměřice,34.539487092,False
+eaton,Eaton Industries,565806,Úpohlavy,Litoměřice,44.494863267,False
+eaton,Eaton Industries,565849,Velemín,Litoměřice,40.112378431,False
+eaton,Eaton Industries,565857,Velké Žernoseky,Litoměřice,47.285490360,False
+eaton,Eaton Industries,565865,Vchynice,Litoměřice,43.441511558,False
+eaton,Eaton Industries,565873,Vlastislav,Litoměřice,38.809156474,False
+eaton,Eaton Industries,565903,Vrbičany,Litoměřice,48.242444020,False
+eaton,Eaton Industries,565938,Žabovřesky nad Ohří,Litoměřice,48.682677673,False
+eaton,Eaton Industries,565946,Žalhostice,Litoměřice,48.595488613,False
+eaton,Eaton Industries,565971,Louny,Louny,30.230485722,False
+eaton,Eaton Industries,565997,Bitozeves,Louny,18.200100391,False
+eaton,Eaton Industries,566004,Blatno,Louny,40.128269101,False
+eaton,Eaton Industries,566012,Blažim,Louny,16.862945738,False
+eaton,Eaton Industries,566021,Blšany,Louny,28.048353838,False
+eaton,Eaton Industries,566063,Břvany,Louny,23.168443993,False
+eaton,Eaton Industries,566128,Deštnice,Louny,30.088194666,False
+eaton,Eaton Industries,566152,Domoušice,Louny,33.623490073,False
+eaton,Eaton Industries,566187,Holedeč,Louny,23.745369623,False
+eaton,Eaton Industries,566195,Hříškov,Louny,38.098618057,False
+eaton,Eaton Industries,566217,Hřivice,Louny,29.801128398,False
+eaton,Eaton Industries,566233,Chlumčany,Louny,34.270588260,False
+eaton,Eaton Industries,566241,Chožov,Louny,32.884191185,False
+eaton,Eaton Industries,566284,Koštice,Louny,38.248275073,False
+eaton,Eaton Industries,566306,Krásný Dvůr,Louny,23.830627490,False
+eaton,Eaton Industries,566314,Kryry,Louny,33.989650420,False
+eaton,Eaton Industries,566322,Lenešice,Louny,25.947343733,False
+eaton,Eaton Industries,566349,Libčeves,Louny,30.363430400,False
+eaton,Eaton Industries,566357,Liběšice,Louny,25.559051628,False
+eaton,Eaton Industries,566381,Libořice,Louny,25.049275148,False
+eaton,Eaton Industries,566403,Lipno,Louny,26.390386737,False
+eaton,Eaton Industries,566411,Lišany,Louny,21.078810709,False
+eaton,Eaton Industries,566438,Lubenec,Louny,37.443267488,False
+eaton,Eaton Industries,566454,Měcholupy,Louny,28.264621762,False
+eaton,Eaton Industries,566501,Nepomyšl,Louny,28.703897360,False
+eaton,Eaton Industries,566519,Nové Sedlo,Louny,14.859787076,False
+eaton,Eaton Industries,566527,Očihov,Louny,29.959466432,False
+eaton,Eaton Industries,566535,Panenský Týnec,Louny,39.903229289,False
+eaton,Eaton Industries,566551,Peruc,Louny,41.444315584,False
+eaton,Eaton Industries,566560,Petrohrad,Louny,37.097535779,False
+eaton,Eaton Industries,566578,Pnětluky,Louny,31.836808816,False
+eaton,Eaton Industries,566586,Počedělice,Louny,35.972098328,False
+eaton,Eaton Industries,566608,Podbořanský Rohozec,Louny,30.197852480,False
+eaton,Eaton Industries,566616,Podbořany,Louny,24.151813838,False
+eaton,Eaton Industries,566624,Postoloprty,Louny,23.933270651,False
+eaton,Eaton Industries,566659,Raná,Louny,27.043740803,False
+eaton,Eaton Industries,566667,Ročov,Louny,34.766545337,False
+eaton,Eaton Industries,566713,Slavětín,Louny,37.395603757,False
+eaton,Eaton Industries,566721,Smolnice,Louny,35.513044527,False
+eaton,Eaton Industries,566829,Toužetín,Louny,37.800004415,False
+eaton,Eaton Industries,566853,Tuchořice,Louny,28.599109599,False
+eaton,Eaton Industries,566870,Velemyšleves,Louny,13.482064823,False
+eaton,Eaton Industries,566896,Veltěže,Louny,36.100297587,False
+eaton,Eaton Industries,566918,Vinařice,Louny,36.611011325,False
+eaton,Eaton Industries,566926,Vrbno nad Lesy,Louny,39.215853893,False
+eaton,Eaton Industries,566934,Vroutek,Louny,32.525207809,False
+eaton,Eaton Industries,566951,Výškov,Louny,19.711815099,False
+eaton,Eaton Industries,566977,Zbrašín,Louny,31.778609547,False
+eaton,Eaton Industries,566985,Žatec,Louny,18.772076234,False
+eaton,Eaton Industries,567019,Žiželice,Louny,13.256086070,False
+eaton,Eaton Industries,567027,Most,Most,15.603439896,False
+eaton,Eaton Industries,567043,Bečov,Most,21.092481688,False
+eaton,Eaton Industries,567051,Bělušice,Most,25.296489122,False
+eaton,Eaton Industries,567060,Braňany,Most,22.734860543,False
+eaton,Eaton Industries,567078,Brandov,Most,17.417510603,False
+eaton,Eaton Industries,567108,Český Jiřetín,Most,27.044732034,False
+eaton,Eaton Industries,567141,Havraň,Most,13.574003620,False
+eaton,Eaton Industries,567167,Hora Svaté Kateřiny,Most,14.565879731,False
+eaton,Eaton Industries,567175,Horní Jiřetín,Most,13.963498330,False
+eaton,Eaton Industries,567191,Klíny,Most,21.785190983,False
+eaton,Eaton Industries,567221,Korozluky,Most,21.917192701,False
+eaton,Eaton Industries,567248,Lišnice,Most,15.501099141,False
+eaton,Eaton Industries,567256,Litvínov,Most,18.808031866,False
+eaton,Eaton Industries,567264,Lom,Most,23.863145952,False
+eaton,Eaton Industries,567272,Louka u Litvínova,Most,21.097160881,False
+eaton,Eaton Industries,567281,Lužice,Most,24.260328881,False
+eaton,Eaton Industries,567299,Malé Březno,Most,11.419810067,False
+eaton,Eaton Industries,567302,Mariánské Radčice,Most,22.355331760,False
+eaton,Eaton Industries,567311,Meziboří,Most,22.674757388,False
+eaton,Eaton Industries,567329,Nová Ves v Horách,Most,15.618448975,False
+eaton,Eaton Industries,567337,Obrnice,Most,21.321411028,False
+eaton,Eaton Industries,567345,Patokryje,Most,21.931366277,False
+eaton,Eaton Industries,567353,Polerady,Most,17.955566346,False
+eaton,Eaton Industries,567361,Skršín,Most,24.661571845,False
+eaton,Eaton Industries,567426,Želenice,Most,23.946277634,False
+eaton,Eaton Industries,567442,Teplice,Teplice,35.514847044,False
+eaton,Eaton Industries,567451,Bílina,Teplice,26.591012723,False
+eaton,Eaton Industries,567469,Bořislav,Teplice,39.548392817,False
+eaton,Eaton Industries,567477,Bystřany,Teplice,37.113516913,False
+eaton,Eaton Industries,567485,Bžany,Teplice,35.500932573,False
+eaton,Eaton Industries,567507,Dubí,Teplice,37.154238308,False
+eaton,Eaton Industries,567515,Duchcov,Teplice,27.547896047,False
+eaton,Eaton Industries,567523,Háj u Duchcova,Teplice,28.658193034,False
+eaton,Eaton Industries,567531,Hostomice,Teplice,31.481590332,False
+eaton,Eaton Industries,567558,Hrob,Teplice,30.870374481,False
+eaton,Eaton Industries,567566,Hrobčice,Teplice,29.721516982,False
+eaton,Eaton Industries,567582,Jeníkov,Teplice,30.542536680,False
+eaton,Eaton Industries,567604,Kladruby,Teplice,34.081434878,False
+eaton,Eaton Industries,567612,Kostomlaty pod Milešovkou,Teplice,34.607074704,False
+eaton,Eaton Industries,567621,Košťany,Teplice,34.834001393,False
+eaton,Eaton Industries,567639,Krupka,Teplice,41.879278564,False
+eaton,Eaton Industries,567647,Lahošť,Teplice,30.774005857,False
+eaton,Eaton Industries,567655,Ledvice,Teplice,28.555063447,False
+eaton,Eaton Industries,567698,Měrunice,Teplice,28.418377289,False
+eaton,Eaton Industries,567701,Mikulov,Teplice,33.956557193,False
+eaton,Eaton Industries,567710,Modlany,Teplice,39.642998699,False
+eaton,Eaton Industries,567728,Moldava,Teplice,32.069029819,False
+eaton,Eaton Industries,567752,Novosedlice,Teplice,36.185642390,False
+eaton,Eaton Industries,567761,Ohníč,Teplice,33.406765671,False
+eaton,Eaton Industries,567779,Osek,Teplice,26.877525631,False
+eaton,Eaton Industries,567787,Proboštov,Teplice,37.677699406,False
+eaton,Eaton Industries,567809,Rtyně nad Bílinou,Teplice,38.732826097,False
+eaton,Eaton Industries,567833,Srbice,Teplice,39.134327537,False
+eaton,Eaton Industries,567841,Světec,Teplice,31.468283561,False
+eaton,Eaton Industries,567850,Újezdeček,Teplice,33.487118627,False
+eaton,Eaton Industries,567868,Zabrušany,Teplice,31.430009310,False
+eaton,Eaton Industries,567876,Žalany,Teplice,37.550993091,False
+eaton,Eaton Industries,567884,Žim,Teplice,41.634884304,False
+eaton,Eaton Industries,567931,Dolní Zálezly,Ústí nad Labem,47.542425827,False
+eaton,Eaton Industries,567957,Habrovany,Ústí nad Labem,43.288003362,False
+eaton,Eaton Industries,568007,Chabařovice,Ústí nad Labem,43.377973853,False
+eaton,Eaton Industries,568015,Chlumec,Ústí nad Labem,45.741737918,False
+eaton,Eaton Industries,568201,Řehlovice,Ústí nad Labem,42.963939752,False
+eaton,Eaton Industries,568295,Telnice,Ústí nad Labem,48.110105032,False

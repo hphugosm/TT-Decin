@@ -1,0 +1,107 @@
+[
+  {
+    "id": "ips",
+    "year": 2006,
+    "place": "Staňkovice",
+    "company": "IPS Alpha Technology Europe",
+    "jobs": 2100,
+    "upTo": false,
+    "coords": [
+      13.576049722222223,
+      50.37027388888889
+    ],
+    "address": "Jižní 400 · areál později využívaný Grammer CZ",
+    "source": "https://www.forumusteckykraj.cz/podnikatelske/wp-content/uploads/Brozura-Ustecky-kraj-Investori-2018-CZ-FINAL.pdf",
+    "locationSource": "https://www.industrialzonetriangle.com/cz/grammer-cz-s-r-o",
+    "municipalityId": "543128",
+    "inMunicipality": true
+  },
+  {
+    "id": "hitachi",
+    "year": 2006,
+    "place": "Velemyšleves",
+    "company": "Hitachi Home Electronics (Czech)",
+    "jobs": 2000,
+    "upTo": true,
+    "coords": [
+      13.57744876,
+      50.37592333
+    ],
+    "address": "Průmyslová 60 · historický areál Hitachi",
+    "source": "https://czechinvest.gov.cz/cz/Homepage/Novinky/Cervenec-2006/Dalsi-investor-miri-do-Zatce",
+    "locationSource": "https://regiony.kurzy.cz/velemysleves/prumyslova/60/",
+    "addressSource": "https://archiv.kr-ustecky.cz/assets/File.ashx?id_dokumenty=1642937&id_org=450018",
+    "municipalityId": "566870",
+    "inMunicipality": true
+  },
+  {
+    "id": "nexen",
+    "year": 2014,
+    "place": "Bitozeves",
+    "company": "Nexen Tire",
+    "jobs": 1384,
+    "upTo": false,
+    "coords": [
+      13.588591666666668,
+      50.375933333333336
+    ],
+    "address": "Průmyslová 1000 · Triangle",
+    "source": "https://vlada.gov.cz/scripts/detail.php?id=130841&tmplid=50",
+    "locationSource": "https://www.industrialzonetriangle.com/cz/nexen-tire-europe-s-r-o",
+    "municipalityId": "565997",
+    "inMunicipality": true
+  },
+  {
+    "id": "nemak",
+    "year": 2002,
+    "place": "Havraň",
+    "company": "Nemak Europe",
+    "jobs": 1361,
+    "upTo": false,
+    "coords": [
+      13.5827242,
+      50.4241178
+    ],
+    "address": "Havraň 137 · průmyslová zóna Joseph",
+    "source": "https://www.mpo.gov.cz/assets/dokumenty/26569/26589/295366/priloha001.pdf",
+    "locationSource": "https://mapy.com/bg/?id=735042&source=firm",
+    "addressSource": "https://ippc.mzp.cz/ippc/ippc.nsf/xsp/.ibmmodres/domino/OpenAttachment/ippc/ippc.nsf/42E5804C06373975C1258B88004080E2/Files/kuuk_zprava_plneni_podminek_ip_nemak_2023.pdf",
+    "municipalityId": "567141",
+    "inMunicipality": true
+  },
+  {
+    "id": "blackdecker",
+    "year": 2003,
+    "place": "Trmice",
+    "company": "Black & Decker (Czech)",
+    "jobs": 1300,
+    "upTo": false,
+    "coords": [
+      13.990528,
+      50.638955
+    ],
+    "address": "Trmice 873",
+    "source": "https://www.mpo.gov.cz/assets/dokumenty/26569/26589/295366/priloha001.pdf",
+    "locationSource": "https://storage.googleapis.com/businessinfo_cz/files/akce/usti-konference-harmonogram-vyroba-150218.pdf",
+    "municipalityId": "553697",
+    "inMunicipality": true
+  },
+  {
+    "id": "eaton",
+    "year": 2003,
+    "place": "Chomutov",
+    "company": "Eaton Industries",
+    "jobs": 1182,
+    "upTo": false,
+    "coords": [
+      13.36805347,
+      50.45468148
+    ],
+    "address": "Karlovarská 5578 · Nové Spořice, Chomutov II",
+    "source": "https://www.mpo.gov.cz/assets/dokumenty/26569/26589/295366/priloha001.pdf",
+    "locationSource": "https://regiony.kurzy.cz/katastr/o26129345/stats/",
+    "addressSource": "https://smlouvy.gov.cz/smlouva/1724890",
+    "municipalityId": "562971",
+    "inMunicipality": true
+  }
+]
