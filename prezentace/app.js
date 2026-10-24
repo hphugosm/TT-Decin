@@ -8,7 +8,7 @@ const slideTitles = [
   'Krize na Ukrajině.',
   'Jak číst migraci: přistěhovalí, vystěhovalí a migrační saldo.',
   'Interaktivní mapa migrace obcí Ústeckého kraje.',
-  'Více práce. Více lidí? Hypotéza o průmyslových investicích a migraci.'
+  'Hypotéza: poptávka firem po zaměstnancích, přistěhování lidí a poptávka po bytech.'
 ];
 const slideCount = slideTitles.length;
 const migrationExample = { incoming: 10, outgoing: 7 };
