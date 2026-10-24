@@ -7,8 +7,8 @@
   <meta name="description" content="Příběh dat obcí Ústeckého kraje. Živá prezentace a vedená prohlídka daty.">
   <title>Stěhování obcí Ústeckého kraje</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23173da5'/%3E%3Ccircle cx='10' cy='21' r='3' fill='white'/%3E%3Ccircle cx='22' cy='11' r='3' fill='white'/%3E%3Cpath d='M12 19L20 13' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=employee-demand-12">
-  <script src="app.js?v=employee-demand-12" defer></script>
+  <link rel="stylesheet" href="styles.css?v=reality-charts-13">
+  <script src="app.js?v=reality-charts-13" defer></script>
 </head>
 <body data-view="home" data-step="0">
   <main id="main">
@@ -137,7 +137,32 @@
         </div>
       </section>
 
-      <footer class="presentation-footer"><div class="slide-navigation"><div id="slide-dots" class="slide-dots" aria-label="Vybrat snímek"><button aria-label="Snímek 1" data-slide="0"></button><button aria-label="Snímek 2" data-slide="1"></button><button aria-label="Snímek 3" data-slide="2"></button><button aria-label="Snímek 4" data-slide="3"></button><button aria-label="Snímek 5 – mapa" data-slide="4"></button><button aria-label="Snímek 6 – hypotéza" data-slide="5"></button></div><span id="slide-counter">01 <span>/ 06</span></span><button id="previous" class="nav-button" aria-label="Předchozí snímek">←</button><button id="next" class="nav-button primary" aria-label="Další snímek">→</button><button id="fullscreen" class="fullscreen-button" aria-label="Celá obrazovka" title="Celá obrazovka (F)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></div></footer>
+      <section id="reality-slide" class="slide timeline-slide reality-slide" aria-labelledby="reality-title" hidden>
+        <h1 id="reality-title" class="timeline-title" tabindex="-1"><em>Realita.</em></h1>
+        <div class="reality-layout">
+          <p class="reality-finding">Jasný společný růst po záměrech <strong>nevidíme.</strong></p>
+          <div class="reality-toolbar">
+            <div class="reality-reading"><strong id="reality-units">Odchylka od kraje · procentní body</strong><span>0 = vývoj odpovídající kraji <i class="reality-event-key" aria-hidden="true"></i> Rok záměru</span></div>
+            <div class="reality-controls"><div class="reality-toggle" role="group" aria-label="Jednotky grafů"><button data-reality-metric="pp" aria-pressed="true" disabled>Procentní body</button><button data-reality-metric="persons" aria-pressed="false" disabled>Osoby</button></div><button id="reality-method-open" class="reality-method-button" aria-label="Jak číst grafy a zdroj dat" title="Jak číst grafy a zdroj dat">ⓘ</button></div>
+          </div>
+          <p id="reality-status" class="reality-status" role="status">Načítám šest datových řad…</p>
+          <div id="reality-grid" class="reality-grid" aria-label="Šest firem a migrace v jejich okolí"></div>
+          <div id="reality-tooltip" class="reality-tooltip" role="tooltip" hidden></div>
+        </div>
+        <dialog id="reality-method" class="reality-method" aria-labelledby="reality-method-title">
+          <button class="reality-close" aria-label="Zavřít vysvětlení">×</button>
+          <h2 id="reality-method-title">Jak číst realitu</h2>
+          <p>Každý bod je jeden rok. Červený bod označuje <strong>rok investičního záměru</strong>, nikoli nutně zahájení náboru nebo provozu. Počet míst je plán; velikost bodu ho nevyjadřuje.</p>
+          <p>Sledujeme hostitelskou obec a obce do 50 km vzdušnou čarou mezi jejich geometrickými středy, pouze v Ústeckém kraji. Okruhy se překrývají a jejich složení se mezi roky nemění. Hostitelská obec je započtena jednou.</p>
+          <p><strong>Nad nulou</strong> je míra migrace vyšší než krajská, <strong>pod nulou</strong> nižší. Od míry v okruhu odečítáme krajskou míru daného roku. Populace je stav k 31. 12.</p>
+          <p>V osobách zobrazujeme rozdíl mezi skutečným saldem a saldem očekávaným při krajské míře. Proto může být výsledek desetinný. Saldo znamená přistěhovalí minus vystěhovalí.</p>
+          <p>Závěr popisuje vizuální porovnání těchto šesti řad. Nejde o statistický test nulové korelace ani důkaz příčinného vlivu firmy. Odečtení krajské míry odstraňuje společnou roční krajskou úroveň.</p>
+          <p class="reality-source">Zdroj: dodané roční součty 2000–2025 a tabulka záměrů. Původní migrace a hranice: <a href="https://drive.google.com/drive/folders/1EDqS16kYh4MeiR3dnLPU2_HgnCitau1h" target="_blank" rel="noopener">DCUK 1 ↗</a>.</p>
+          <p class="reality-source">Detail bodu: najeďte, klikněte nebo použijte Tab a ↑ ↓. Šipky ← → stále mění snímky.</p>
+        </dialog>
+      </section>
+
+      <footer class="presentation-footer"><div class="slide-navigation"><div id="slide-dots" class="slide-dots" aria-label="Vybrat snímek"><button aria-label="Snímek 1" data-slide="0"></button><button aria-label="Snímek 2" data-slide="1"></button><button aria-label="Snímek 3" data-slide="2"></button><button aria-label="Snímek 4" data-slide="3"></button><button aria-label="Snímek 5 – mapa" data-slide="4"></button><button aria-label="Snímek 6 – hypotéza" data-slide="5"></button><button aria-label="Snímek 7 – realita" data-slide="6"></button></div><span id="slide-counter">01 <span>/ 07</span></span><button id="previous" class="nav-button" aria-label="Předchozí snímek">←</button><button id="next" class="nav-button primary" aria-label="Další snímek">→</button><button id="fullscreen" class="fullscreen-button" aria-label="Celá obrazovka" title="Celá obrazovka (F)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></div></footer>
     </section>
 
     <section id="guide" class="view guide-view" aria-labelledby="guide-title" hidden><span class="eyebrow">02 / Vedená prohlídka daty</span><div class="guide-content"><span class="pill">Připravujeme</span><h1 id="guide-title" tabindex="-1">Příběh dat.<br><em>Vaším tempem.</em></h1><p>Tady vznikne vedená prohlídka.<br>Její obsah doplníme v dalším kroku.</p><a href="#prezentace/1" class="button-link">Zatím si projít prezentaci <span aria-hidden="true">→</span></a></div><a href="#" class="text-button guide-back">↖ Zpět na rozcestník</a></section>

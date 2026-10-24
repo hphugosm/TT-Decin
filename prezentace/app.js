@@ -8,7 +8,8 @@ const slideTitles = [
   'Krize na Ukrajině.',
   'Jak číst migraci: přistěhovalí, vystěhovalí a migrační saldo.',
   'Interaktivní mapa migrace obcí Ústeckého kraje.',
-  'Hypotéza: poptávka firem po zaměstnancích, přistěhování lidí a poptávka po bytech.'
+  'Hypotéza: poptávka firem po zaměstnancích, přistěhování lidí a poptávka po bytech.',
+  'Realita: šest záměrů firem a skutečná migrace v jejich okolí.'
 ];
 const slideCount = slideTitles.length;
 const migrationExample = { incoming: 10, outgoing: 7 };
@@ -166,6 +167,34 @@ function playHypothesisAnimation() {
   frame(start);
 }
 
+// Load the observed series once; preserve the shared unit selector between visits.
+let realityController = null;
+let realityLoading = null;
+function showReality() {
+  if (realityController) { realityController.show(); return; }
+  if (!realityLoading) {
+    const status = $('#reality-status');
+    status.hidden = false;
+    status.textContent = 'Načítám šest datových řad…';
+    realityLoading = import('./reality-charts.mjs?v=reality-charts-13')
+      .then(module => module.createRealityCharts($('#reality-slide')))
+      .then(controller => { realityController = controller; return controller; })
+      .catch(error => {
+        console.error(error);
+        realityLoading = null;
+        status.textContent = 'Grafy se nepodařilo načíst. ';
+        const retry = document.createElement('button');
+        retry.textContent = 'Zkusit znovu';
+        retry.addEventListener('click', showReality);
+        status.append(retry);
+        return null;
+      });
+  }
+  realityLoading.then(controller => {
+    if (controller && currentView === 'presentation' && currentSlide === 6) controller.show();
+  });
+}
+
 function renderRoute({ focus = false } = {}) {
   const hash = window.location.hash;
   const presentationMatch = /^#prezentace\/(\d+)$/.exec(hash);
@@ -181,6 +210,10 @@ function renderRoute({ focus = false } = {}) {
   $('#deck-brand').hidden = mapActive;
   $('#map-slide').hidden = !mapActive;
   $('#hypothesis-slide').hidden = currentView !== 'presentation' || currentSlide !== 5;
+  const realityActive = currentView === 'presentation' && currentSlide === 6;
+  $('#reality-slide').hidden = !realityActive;
+  if (realityActive) showReality();
+  else realityController?.hide();
   if (currentView !== 'presentation' || currentSlide !== 5) stopHypothesisAnimation();
   if (mapActive) showMap();
   else if (previousView === 'presentation' && previousSlide === 4) pauseMapPlayback();
@@ -206,7 +239,7 @@ function renderRoute({ focus = false } = {}) {
     });
     // Keep the shared graph mounted between slides 2 and 3.
     if (previousView !== currentView || currentSlide === 0 || previousSlide === 0 || currentSlide >= 3 || previousSlide >= 3) {
-      animate(currentSlide === 0 ? $('#slide-one') : currentSlide === 3 ? $('#terms-slide') : currentSlide === 4 ? $('#map-slide') : currentSlide === 5 ? $('#hypothesis-slide') : $('#timeline-slide'), 'entering');
+      animate(currentSlide === 0 ? $('#slide-one') : currentSlide === 3 ? $('#terms-slide') : currentSlide === 4 ? $('#map-slide') : currentSlide === 5 ? $('#hypothesis-slide') : currentSlide === 6 ? $('#reality-slide') : $('#timeline-slide'), 'entering');
       if (currentSlide === 0) {
         document.querySelectorAll('.unit-row').forEach(item => animate(item, 'unit-enter'));
       }
@@ -229,7 +262,7 @@ function renderRoute({ focus = false } = {}) {
     if (previousView !== currentView) animate(views[currentView], 'entering');
   }
   if (focus) {
-    const heading = currentView === 'home' ? $('#home-title') : currentView === 'guide' ? $('#guide-title') : currentSlide === 0 ? $('#deck-brand') : currentSlide === 3 ? $('#terms-title') : currentSlide === 4 ? $('#map-slide') : currentSlide === 5 ? $('#hypothesis-title') : $('#timeline-title');
+    const heading = currentView === 'home' ? $('#home-title') : currentView === 'guide' ? $('#guide-title') : currentSlide === 0 ? $('#deck-brand') : currentSlide === 3 ? $('#terms-title') : currentSlide === 4 ? $('#map-slide') : currentSlide === 5 ? $('#hypothesis-title') : currentSlide === 6 ? $('#reality-title') : $('#timeline-title');
     heading.focus({ preventScroll: true });
     if (previousView !== currentView || window.innerWidth <= 600) window.scrollTo({ top: 0, behavior: 'instant' });
   }

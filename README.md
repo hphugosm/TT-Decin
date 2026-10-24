@@ -8,7 +8,7 @@ Interaktivní mapa migrace v obcích Ústeckého kraje, bodové grafy a import C
 
 **Prezentace – Stěhování obcí Ústeckého kraje:** https://hphugosm.github.io/TT-Decin/prezentace/
 
-Původní adresa https://hphugosm.github.io/TT-Decin/ přesměruje na mapu se zachováním parametrů a fragmentu URL. Prezentace má vlastní rozcestník a šest snímků. Ovládání: ← →, Esc zpět na rozcestník, F celá obrazovka. Vedená prohlídka je zatím připravený úvod.
+Původní adresa https://hphugosm.github.io/TT-Decin/ přesměruje na mapu se zachováním parametrů a fragmentu URL. Prezentace má vlastní rozcestník a sedm snímků. Ovládání: ← →, Esc zpět na rozcestník, F celá obrazovka. Vedená prohlídka je zatím připravený úvod.
 
 **Vizuální styl pro prezentace:** [Brand Bible – barvy, písmo a pravidla použití](BRAND_BIBLE.md)
 
@@ -49,3 +49,5 @@ node --test tests/radar-*.test.mjs
 Pátý snímek obsahuje živou mapu z `mapa/` v jednom zachovaném iframe. Šipky ← → přepínají snímky i po kliknutí do mapy; v textových polích, posuvnících a otevřených dialozích zůstává jejich běžné ovládání. Rok lze měnit časovou osou mapy. Výběr obce, rok i nastavení se při návratu zachovají; přehrávání mapy se při odchodu pozastaví. Časovač a navigace prezentace zůstávají viditelné.
 
 Šestý snímek „Hypotéza“ představuje šest poptávek firem po zaměstnancích. Tři animované kroky vysvětlují předpoklad: firma hledá zaměstnance → lidé se stěhují do obce → roste poptávka po bytech. Červený bod značí vznik poptávky po zaměstnancích a animovaná křivka očekávaný růst migračního salda. Jde o ilustrační schéma bez naměřených hodnot, nikoli o výsledek analýzy. Animace se při návratu opakuje a respektuje omezený pohyb.
+
+Sedmý snímek „Realita“ zobrazuje šest samostatných bodových grafů za roky 2000–2025. Červený bod označuje rok investičního záměru, nikoli doložený začátek náboru. Společný přepínač mění odchylku od krajské míry v procentních bodech / osobách; všech šest grafů má stejné měřítko a detail každého roku. Vstupní součty jsou v `prezentace/data/company-migration.json`, výpočty v `prezentace/reality-engine.mjs`. Okruhy do 50 km se překrývají a nesčítají se mezi firmami. Závěr je vizuální, ne statistický test nulové korelace. Kontrola výpočtů: `node --test prezentace/reality-engine.test.mjs`.
