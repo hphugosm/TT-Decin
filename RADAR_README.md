@@ -75,3 +75,7 @@ Detail mapy uvádí skutečný počet obyvatel k 1. 1. a 31. 12. zvoleného roku
 ## Barvy a řady migračního salda
 
 Přistěhování používá modrou a vystěhování oranžovou v mapě, legendě, kartách i grafech. U salda mapa kombinuje oranžovou pro záporné a modrou pro kladné hodnoty. U záporných změn či odchylek jednotlivých kanálů se zachovává jejich odstín; znaménko ukazuje číselná legenda. Časový graf salda obsahuje tři samostatné bodové řady: modré příchody, oranžové odchody a fialové saldo. Šedá krajská reference patří saldu. Všechny řady sdílejí jednotku, shrinkage, okno a režim změny; osa zahrnuje jejich celý rozsah. Chybějící údaj zůstává bez bodu a řady nemají spojnice.
+
+## Rozložení pro prezentaci
+
+Na notebooku a velkém displeji je mapa vlevo a ovládání, informace a graf v pravém sloupci. Časová osa je pod mapou. Mapa vyplňuje dostupnou výšku a informace ji nezakrývají. Na úzké obrazovce se obsah skládá pod sebe, metriky a hledání jsou před mapou.

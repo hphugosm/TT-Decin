@@ -6,7 +6,8 @@ const make=(tag,attrs={})=>{const el=document.createElementNS(NS,tag);for(const 
 /** Persistent SVG choropleth. Values and camera state are independent of geometry. */
 export function createMunicipalityMap(svgElement,geometry,{onSelect=()=>{},onHover=()=>{},onExplain=()=>{}}={}){
   const width=1000,height=390,padding=16,paths=new Map(),bounds=new Map(),listeners=[];
-  const viewport=()=>svgElement.clientWidth>0&&svgElement.clientWidth<600?{x:270,width:460}:{x:0,width};
+  let contentWidth=width;
+  const viewport=()=>({x:(width-contentWidth)/2,width:contentWidth});
   const resize=()=>{const v=viewport();svgElement.setAttribute('viewBox',`${v.x} 0 ${v.width} ${height}`);};
   const patternId=`radar-missing-${++sequence}`;
   const defs=make('defs'),pattern=make('pattern',{id:patternId,width:6,height:6,patternUnits:'userSpaceOnUse'});
@@ -21,6 +22,7 @@ export function createMunicipalityMap(svgElement,geometry,{onSelect=()=>{},onHov
   for(const [x,y] of coords){minX=Math.min(minX,x*cos);maxX=Math.max(maxX,x*cos);minY=Math.min(minY,y);maxY=Math.max(maxY,y);}
   const scale=Math.min((width-2*padding)/(maxX-minX||1),(height-2*padding)/(maxY-minY||1));
   const offsetX=(width-(maxX-minX)*scale)/2,offsetY=(height-(maxY-minY)*scale)/2;
+  contentWidth=(maxX-minX)*scale+2*padding;
   const point=([x,y])=>[offsetX+(x*cos-minX)*scale,offsetY+(maxY-y)*scale];
   let state={values:new Map(),domain:{min:0,max:1,signed:false},neutral:0,contrast:1,year:'',unitLabel:'',selectedCode:null,hoverCode:null};
   let camera={z:1,x:0,y:0},animation=0,drag=null,didDrag=false,destroyed=false;

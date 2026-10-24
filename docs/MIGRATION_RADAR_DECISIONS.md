@@ -57,3 +57,7 @@ Vyhledávání je přes celou šířku pod třemi kartami a nad mapou. Návrhy o
 ## Odstranění druhého grafu — 24. 10. 2026
 
 Na výslovné přání uživatele byl graf Přistěhování × vystěhování včetně přepínací záložky a vykreslování odstraněn. Aktuální rozhraní obsahuje pouze časový bodový graf; při saldu nadále zobrazuje příchody, odchody a saldo ve třech barvách. Toto rozhodnutí nahrazuje předchozí schválení funkce G.
+
+## Prezentační rozložení podle náčrtu — 24. 10. 2026
+
+Na široké obrazovce je mapa dominantně vlevo (přibližně 62 % šířky), časová osa pod ní. Vpravo jsou metriky, široké hledání, informace o obci a časový graf. Detail již mapu nezakrývá. SVG viewport vychází ze skutečných hranic kraje, bez původního širokého prázdného okraje. Výška využívá obrazovku; na mobilu jsou prvky pod sebou s hledáním před mapou.
