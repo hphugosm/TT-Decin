@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-10-24T08:58:32.460428+00:00",
+  "files": {
+    "locked_configs.json": "9d8a3b132d67f8a8d8cc31d0bafc510a09054eb40188ee00c7b65db594e600ba",
+    "candidate_forecasts_2022_region.csv": "8fcc337797be8ae86125d14af53e118f8db03b3a0ac59982edfb32a09ee5aba8",
+    "sensitivity_forecasts_region.csv": "986545701a68e2e34187e80396de7696880ce616c13c6d1416e3770847b08bf0",
+    "backtest_region.csv": "a4c44440c2259b192eb47dd5eafd8f29bfae5f0ccaa13b3eb4625430570924ee"
+  }
+}

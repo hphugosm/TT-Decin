@@ -1,0 +1,15 @@
+model,metric,fit_status,n
+B1,incoming,success,12
+B1,outgoing,success,12
+B2,incoming,success,12
+B2,outgoing,success,12
+M1,incoming,success,12
+M1,outgoing,success,12
+M2,incoming,success,12
+M2,outgoing,success,12
+M3,incoming,success,12
+M3,outgoing,success,12
+M4,incoming,success,12
+M4,outgoing,success,12
+M5,incoming,success,12
+M5,outgoing,success,12
