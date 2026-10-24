@@ -8,7 +8,7 @@ Interaktivní mapa migrace v obcích Ústeckého kraje, bodové grafy a import C
 
 **Prezentace – Stěhování obcí Ústeckého kraje:** https://hphugosm.github.io/TT-Decin/prezentace/
 
-Původní adresa https://hphugosm.github.io/TT-Decin/ přesměruje na mapu se zachováním parametrů a fragmentu URL. Prezentace má vlastní rozcestník a jedenáct snímků. Ovládání: ← →, Esc zpět na rozcestník, F celá obrazovka. Vedená prohlídka je zatím připravený úvod.
+Původní adresa https://hphugosm.github.io/TT-Decin/ přesměruje na mapu se zachováním parametrů a fragmentu URL. Prezentace má vlastní rozcestník a jedenáct snímků. Ovládání: ← →, Esc zpět na rozcestník, F celá obrazovka. Druhá volba „Prohlídka dat“ otevírá funkční rozcestník s odkazy na GitHub, mapu migrace, mapu klastrů a živou prezentaci.
 
 **Vizuální styl pro prezentace:** [Brand Bible – barvy, písmo a pravidla použití](BRAND_BIBLE.md)
 

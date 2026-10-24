@@ -7,8 +7,8 @@
   <meta name="description" content="Příběh dat obcí Ústeckého kraje. Živá prezentace a vedená prohlídka daty.">
   <title>Stěhování obcí Ústeckého kraje</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23173da5'/%3E%3Ccircle cx='10' cy='21' r='3' fill='white'/%3E%3Ccircle cx='22' cy='11' r='3' fill='white'/%3E%3Cpath d='M12 19L20 13' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=map-units-23">
-  <script src="app.js?v=map-units-23" defer></script>
+  <link rel="stylesheet" href="styles.css?v=data-portal-24">
+  <script src="app.js?v=data-portal-24" defer></script>
 </head>
 <body data-view="home" data-step="0">
   <main id="main">
@@ -21,7 +21,7 @@
       <div class="route-heading"><span class="eyebrow">Vyberte si svůj pohled</span><span></span></div>
       <nav class="routes" aria-label="Způsob prohlížení">
         <a href="#prezentace/1" class="route-card route-live"><span class="route-top"><span class="route-number">01 / společně</span><span class="route-icon" aria-hidden="true">↗</span></span><span class="route-title">Živá prezentace</span><span class="route-bottom"><span>Příběh krok za krokem</span><span class="key-hint"><kbd>←</kbd><kbd>→</kbd></span></span></a>
-        <a href="#prohlidka" class="route-card route-guide"><span class="route-top"><span class="route-number">02 / vlastním tempem</span><span class="route-icon" aria-hidden="true">↗</span></span><span class="route-title">Vedená prohlídka daty</span><span class="route-bottom"><span>Prostor pro další objevování</span><span class="pill">Připravujeme</span></span></a>
+        <a href="#prohlidka" class="route-card route-guide"><span class="route-top"><span class="route-number">02 / vlastním tempem</span><span class="route-icon" aria-hidden="true">↗</span></span><span class="route-title">Prohlídka dat</span><span class="route-bottom"><span>Mapy, prezentace a zdrojová data</span><span aria-hidden="true">→</span></span></a>
       </nav>
       <footer class="home-footer"><span>TT · Děčín</span><span></span></footer>
     </section>
@@ -195,7 +195,31 @@
       <footer class="presentation-footer"><div class="slide-navigation"><div id="slide-dots" class="slide-dots" aria-label="Vybrat snímek"><button aria-label="Snímek 1" data-slide="0"></button><button aria-label="Snímek 2" data-slide="1"></button><button aria-label="Snímek 3" data-slide="2"></button><button aria-label="Snímek 4" data-slide="3"></button><button aria-label="Snímek 5 – mapa – počty" data-slide="4"></button><button aria-label="Snímek 6 – mapa – podíl obyvatel" data-slide="5"></button><button aria-label="Snímek 7 – klastry" data-slide="6"></button><button aria-label="Snímek 8 – hypotéza" data-slide="7"></button><button aria-label="Snímek 9 – realita" data-slide="8"></button><button aria-label="Snímek 10 – mapa" data-slide="9"></button><button aria-label="Snímek 11 – závěr" data-slide="10"></button></div><span id="slide-counter">01 <span>/ 11</span></span><button id="previous" class="nav-button" aria-label="Předchozí snímek">←</button><button id="next" class="nav-button primary" aria-label="Další snímek">→</button><button id="fullscreen" class="fullscreen-button" aria-label="Celá obrazovka" title="Celá obrazovka (F)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></div></footer>
     </section>
 
-    <section id="guide" class="view guide-view" aria-labelledby="guide-title" hidden><span class="eyebrow">02 / Vedená prohlídka daty</span><div class="guide-content"><span class="pill">Připravujeme</span><h1 id="guide-title" tabindex="-1">Příběh dat.<br><em>Vaším tempem.</em></h1><p>Tady vznikne vedená prohlídka.<br>Její obsah doplníme v dalším kroku.</p><a href="#prezentace/1" class="button-link">Zatím si projít prezentaci <span aria-hidden="true">→</span></a></div><a href="#" class="text-button guide-back">↖ Zpět na rozcestník</a></section>
+    <section id="guide" class="view guide-view" aria-labelledby="guide-title" hidden>
+      <div class="guide-content">
+        <h1 id="guide-title" tabindex="-1">Prohlídka <em>dat.</em></h1>
+        <p class="guide-intro">Vyberte si, co chcete prozkoumat.</p>
+        <nav class="data-links" aria-label="Odkazy na projekt a datové aplikace">
+          <a class="data-link" href="https://github.com/hphugosm/TT-Decin" target="_blank" rel="noopener">
+            <span class="data-link-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m11 9-7 7 7 7m10-14 7 7-7 7m-3-18-4 22"/></svg></span>
+            <span class="data-link-copy"><strong>GitHub</strong><span>Zdrojový kód a data projektu</span></span><span class="data-link-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="data-link" href="../mapa/" target="_blank" rel="noopener">
+            <span class="data-link-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m4 8 8-4 8 4 8-4v20l-8 4-8-4-8 4V8Zm8-4v20m8-16v20"/></svg></span>
+            <span class="data-link-copy"><strong>Mapa migrace</strong><span>Obce, počty lidí a podíly obyvatel</span></span><span class="data-link-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="data-link" href="../klastry/" target="_blank" rel="noopener">
+            <span class="data-link-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9 8 7 8-7M8 23l8-7 8 7"/><circle cx="8" cy="9" r="4"/><circle cx="24" cy="9" r="4"/><circle cx="16" cy="16" r="3"/><circle cx="8" cy="23" r="4"/><circle cx="24" cy="23" r="4"/></svg></span>
+            <span class="data-link-copy"><strong>Mapa klastrů</strong><span>Skupiny obcí s podobným vývojem</span></span><span class="data-link-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="data-link" href="#prezentace/1">
+            <span class="data-link-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="24" height="18" rx="2"/><path d="m13 9 7 4-7 4V9Zm3 13v6m-6 0h12"/></svg></span>
+            <span class="data-link-copy"><strong>Živá prezentace</strong><span>Příběh výzkumu krok za krokem</span></span><span class="data-link-arrow" aria-hidden="true">→</span>
+          </a>
+        </nav>
+      </div>
+      <a href="#" class="text-button guide-back">↖ Zpět na rozcestník</a>
+    </section>
   </main>
 
   <button id="presentation-timer" class="presentation-timer" aria-label="Spustit časovač prezentace" title="Spustit časovač"><span class="timer-indicator" aria-hidden="true">▶</span><span id="timer-value" role="timer" aria-live="off">00:00</span><span id="timer-label" class="sr-only">Připraveno</span></button>

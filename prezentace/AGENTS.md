@@ -19,3 +19,5 @@
 - Mezi mapovými jednotkami (5 ↔ 6) a relativní mapou a klastry (6 ↔ 7) se stránky neposouvají do stran: dočasná SVG vrstva zachová obrysy všech obcí a plynule přebarví jejich výplně, s jemným dorovnáním kamery. Ostatní panely se postupně prolnou. Živé iframe zůstávají na místě; přerušení animace obnoví jejich viditelnost.
 
 - Poslední, jedenáctý snímek „Závěr našeho výzkumu“ obsahuje hlavní větu „Budoucnost nelze předvídat dokonale. Její odchylky ale můžeme měřit.“ a tři bloky: Kraj — Stabilnější trend; Obec — Větší vliv náhody; Krize — Zlom historického trendu. Původní mapa zůstává na desátém snímku.
+
+- Druhá volba hlavního rozcestníku se jmenuje „Prohlídka dat“. Na `#prohlidka` jsou čtyři funkční odkazy: GitHub `hphugosm/TT-Decin`, `../mapa/`, `../klastry/` a `#prezentace/1`. Nezobrazuj zde „Připravujeme“ ani označení „Vedená prohlídka“.

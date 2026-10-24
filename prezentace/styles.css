@@ -165,3 +165,20 @@ body[data-step="2"] .event-band{opacity:1;transform:scaleX(1)}body[data-step="2"
 @media(max-height:760px) and (min-width:951px){.conclusion-layout{padding-top:55px;gap:32px}.conclusion-reason{padding-top:20px}.conclusion-icon{top:20px}.conclusion-reason p{margin-top:12px}}
 @media(max-width:600px){.conclusion-layout{padding:32px 0;gap:30px}.conclusion-finding{font-size:28px;letter-spacing:-.6px}.conclusion-finding br{display:none}.conclusion-reasons{grid-template-columns:1fr;gap:28px}.conclusion-reason{padding-left:80px}.conclusion-icon{position:absolute;left:0;top:26px}.conclusion-reason h2{font-size:25px}.conclusion-reason h2 br,.conclusion-reason p br{display:none}.conclusion-reason p{font-size:16px;margin-top:12px}}
 @media(prefers-reduced-motion:reduce){.conclusion-slide.entering .conclusion-finding,.conclusion-slide.entering .conclusion-reason,.conclusion-slide.entering .conclusion-sparkline{animation:none}}
+
+/* Data browsing hub: four working destinations, available without presenting. */
+.guide-content{width:100%;max-width:1120px;padding:40px 0}
+.guide-content>.guide-intro{margin:22px 0 38px}
+.data-links{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.data-link{display:flex;align-items:center;gap:22px;min-height:140px;padding:28px;background:#fff;border:1px solid var(--line);border-radius:12px;transition:transform .25s var(--ease),border-color .25s,box-shadow .25s}
+.data-link:hover{transform:translateY(-3px);border-color:#173DA55A;box-shadow:0 8px 22px #1D294008}
+.data-link:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+.data-link-icon{display:grid;place-items:center;flex-shrink:0;width:54px;height:54px;color:var(--blue);background:#173DA50A;border-radius:11px}
+.data-link-icon svg{width:32px;height:32px}
+.data-link-copy{display:flex;flex-direction:column;gap:9px}
+.data-link-copy strong{font-size:24px;font-weight:600;letter-spacing:-.5px}
+.data-link-copy>span{font-size:14px;color:var(--muted);line-height:1.5}
+.data-link-arrow{font-size:25px;color:var(--blue);margin-left:auto;align-self:flex-start}
+@media(max-width:950px){.data-link{padding:22px;gap:16px}.data-link-copy strong{font-size:21px}.data-link-icon{width:46px;height:46px}.data-link-copy>span{font-size:13px}}
+@media(max-width:600px){.guide-content{padding:28px 0}.guide-content>.guide-intro{margin:18px 0 25px}.data-links{grid-template-columns:1fr;gap:13px}.data-link{min-height:112px;padding:20px}.data-link-copy strong{font-size:22px}.data-link-arrow{font-size:22px}}
+@media(prefers-reduced-motion:reduce){.data-link{transition:none}.data-link:hover{transform:none}}

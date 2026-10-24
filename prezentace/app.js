@@ -554,7 +554,7 @@ function renderRoute({ focus = false } = {}) {
   } else {
     stopMigrationExample();
     document.body.dataset.step = '0';
-    document.title = currentView === 'guide' ? `Vedená prohlídka · ${presentationTitle}` : presentationTitle;
+    document.title = currentView === 'guide' ? `Prohlídka dat · ${presentationTitle}` : presentationTitle;
     $('#slide-announcement').textContent = '';
     if (previousView !== currentView) animate(views[currentView], 'entering');
   }
