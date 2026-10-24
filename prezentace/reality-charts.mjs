@@ -128,7 +128,7 @@ export async function createRealityCharts(section) {
     jobs.className = 'reality-jobs';
     jobs.textContent = `Plán ${company.plan_je_maximum ? 'až ' : ''}${number(company.plan_mist)} míst`;
     const meta = document.createElement('p');
-    meta.textContent = `${company.obec} · ${company.pocet_obci} obcí do 50 km`;
+    meta.textContent = `${company.obec} a obce v okolí 50 km`;
     caption.append(heading, jobs, meta);
     const plot = document.createElement('div');
     plot.className = 'reality-plot';

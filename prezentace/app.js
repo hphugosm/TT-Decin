@@ -179,7 +179,7 @@ function prepareReality() {
     const status = $('#reality-status');
     status.hidden = false;
     status.textContent = 'Načítám šest datových řad…';
-    realityLoading = import('./reality-charts.mjs?v=reality-window-14')
+    realityLoading = import('./reality-charts.mjs?v=reality-labels-16')
       .then(module => module.createRealityCharts($('#reality-slide')))
       .then(controller => { realityController = controller; return controller; })
       .catch(error => {
