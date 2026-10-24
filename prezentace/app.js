@@ -2,11 +2,6 @@
 const $ = (selector) => document.querySelector(selector);
 const views = { home: $('#home'), presentation: $('#presentation'), guide: $('#guide') };
 const presentationTitle = 'Stěhování obcí Ústeckého kraje';
-const notes = [
-  'V datech je 354 jedinečných kódů obcí, shodných s 354 obcemi mapového podkladu. Počet je ověřený v datovém panelu. Po počtu obcí se objeví jedna velká jednička. Vedle ní postupně nabíhají popisky ukazatel, hodnota, obec a rok. Ukazatele doprovázejí jednoduché obrysové ikony.',
-  'Nejprve se objeví délky jednotlivých řad. Potom se přes všechny řádky zvýrazní červený průnik 2018–2024. Průnik představuje sedm ročních pozorování; legenda zůstává pod grafem.',
-  'Graf, jeho měřítko i červený průnik zůstávají na místě. Přes roky 2022–2024 přibude jemná jednolitá šedá plocha bez šrafování. Sedmička se změní na čtyřku. Zůstávají roky 2018–2021 před tímto zlomem.'
-];
 let currentView = 'home';
 let currentSlide = 0;
 // Pokrytí přepsané z dodaného grafu. Jde o dostupnost, nikoli hodnoty ukazatelů.
@@ -86,7 +81,6 @@ function renderRoute({ focus = false } = {}) {
       if (i === currentSlide) button.setAttribute('aria-current', 'step');
       else button.removeAttribute('aria-current');
     });
-    $('#animation-note').textContent = notes[currentSlide];
     // Keep the shared graph mounted between slides 2 and 3.
     if (previousView !== currentView || currentSlide === 0 || previousSlide === 0) {
       animate(currentSlide === 0 ? $('#slide-one') : $('#timeline-slide'), 'entering');
@@ -121,11 +115,7 @@ function goToSlide(index) {
 }
 $('#previous').addEventListener('click', () => goToSlide(currentSlide - 1));
 $('#next').addEventListener('click', () => goToSlide(currentSlide + 1));
-$('#home-button').addEventListener('click', () => { window.location.hash = ''; });
 document.querySelectorAll('[data-slide]').forEach(button => button.addEventListener('click', () => goToSlide(Number(button.dataset.slide))));
-$('#notes-button').addEventListener('click', () => $('#notes-dialog').showModal());
-$('#close-notes').addEventListener('click', () => $('#notes-dialog').close());
-$('#notes-dialog').addEventListener('click', event => { if (event.target === $('#notes-dialog')) { const bounds = event.target.getBoundingClientRect(); if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) event.target.close(); } });
 
 async function toggleFullscreen() {
   try {
@@ -137,14 +127,13 @@ $('#fullscreen').addEventListener('click', toggleFullscreen);
 if (!document.documentElement.requestFullscreen) $('#fullscreen').hidden = true;
 document.addEventListener('fullscreenchange', () => { const active = Boolean(document.fullscreenElement); $('#fullscreen').setAttribute('aria-label', active ? 'Opustit celou obrazovku' : 'Celá obrazovka'); });
 document.addEventListener('keydown', event => {
-  if (event.altKey || event.ctrlKey || event.metaKey || event.repeat || $('#notes-dialog').open || event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
+  if (event.altKey || event.ctrlKey || event.metaKey || event.repeat || event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
   if (currentView === 'presentation') {
     if (['ArrowRight', 'PageDown'].includes(event.key) || (event.key === ' ' && !event.target.closest('button, a'))) { event.preventDefault(); goToSlide(currentSlide + 1); }
     else if (['ArrowLeft', 'PageUp'].includes(event.key)) { event.preventDefault(); goToSlide(currentSlide - 1); }
     else if (event.key === 'Home') { event.preventDefault(); goToSlide(0); }
     else if (event.key === 'End') { event.preventDefault(); goToSlide(2); }
     else if (event.key.toLowerCase() === 'f') { event.preventDefault(); toggleFullscreen(); }
-    else if (event.key.toLowerCase() === 'n') { event.preventDefault(); $('#notes-dialog').showModal(); }
     else if (event.key === 'Escape' && !document.fullscreenElement) window.location.hash = '';
   } else if (currentView === 'guide' && event.key === 'Escape') window.location.hash = '';
 });
