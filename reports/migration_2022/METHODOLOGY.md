@@ -90,7 +90,11 @@ MV stav nelze odečíst od ročního toku. ČSÚ má pro zahrnutí DO podmínku 
 
 ## Reprodukce a ochrana mapy
 
-Výsledková větev je `analysis/migration-2022`. Do main se nemerguje a stávající mapa se nepřepojuje. Trénování proběhlo lokálně. Na GitHubu jsou výsledky, malé konfigurace, metodika, zdrojové hashe a logy. Modelové checkpointy, venv, syrové roční archivy a trénovací kód se nepublikují.
+Analýza vznikla ve větvi `analysis/migration-2022` a její zveřejněné výstupy byly 24. 10. 2026 sloučeny do `main`. Zprávy a grafy jsou v `reports/migration_2022/`, výsledkové tabulky v `results/migration_2022/` a konfigurace, zdrojové hashe a auditní logy v `logs/migration_2022/`. Mapa nadále používá své vlastní vstupy; propojení částí repozitáře popisuje [hlavní README](../../README.md).
+
+**Rozsah reprodukovatelnosti:** trénování proběhlo v původním místním projektu. Publikovaný repozitář obsahuje výstupy a auditní podklady; trénovací kód, modelové checkpointy, `venv` a syrové roční archivy součástí nejsou. Jejich hashe umožňují identifikovat použité verze, ale nenahrazují chybějící soubory. Pro úplný přepočet je potřeba původní místní projekt a jeho vstupy. Spuštění statického serveru podle hlavního README pouze zpřístupní aplikace a přiložené soubory.
+
+Následující příkazy jsou záznamem původního místního běhu. Cesty a skripty v nich odkazují na toto prostředí; nejde o příkazy spustitelné ze samotného klonu publikovaného repozitáře.
 
 Místní kořen: `/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/`. Prostředí `venv` vychází z dodaného Pythonu 3.12; konkrétní nainstalované verze zaznamenává manifest. Každý skript pracuje s cestami odvozenými od vlastního umístění. Pořadí hlavního výpočtu:
 
