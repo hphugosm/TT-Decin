@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:8777/dist/migration-radar/index.html",
+  "checks": [
+    "Default K=500",
+    "Initial chart matches independent formula",
+    "Slider synchronizes number input",
+    "Slider updates time chart",
+    "Right panel matches shrinkage",
+    "Map label matches shrinkage",
+    "Original cards unchanged",
+    "Year and selected municipality preserved",
+    "Calculation detail contains K and weights",
+    "Regional population contribution uses adjusted local events",
+    "Scatter incoming shares K",
+    "Scatter outgoing shares K",
+    "Numeric input synchronizes slider",
+    "K=0 restores original scatter coordinates",
+    "K=0 restores original time series",
+    "Reset restores K=500",
+    "Slider available on mobile",
+    "Mobile settings has no horizontal overflow",
+    "No runtime errors"
+  ],
+  "errors": []
+}

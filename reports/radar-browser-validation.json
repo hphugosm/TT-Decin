@@ -1,0 +1,195 @@
+{
+  "passed": true,
+  "testedURL": "http://127.0.0.1:8777/dist/migration-radar/index.html",
+  "checks": [
+    "Real bundled dataset and 300+ municipalities loaded",
+    "Default balance/rate, playback stopped",
+    "All real geometry codes have persistent SVG nodes",
+    "Diacritic-insensitive search preserves year and speed",
+    "Year change preserves selected camera",
+    "Year update retains exact polygon DOM identities",
+    "Time series contains no connecting paths, polylines or filled areas",
+    "Laptop has no horizontal overflow",
+    "Laptop shows chart panel below timeline in first screen",
+    "Mobile 390px has no horizontal overflow",
+    "Mobile scatter graph does not overflow",
+    "Real Jenčice has a nonzero contribution below 0.01%",
+    "Tiny regional percentage remains nonzero in time-chart tooltip",
+    "Tiny regional percentage remains nonzero in right statistics",
+    "Tiny regional percentage remains nonzero in map accessible label",
+    "Actual production CSV aliases detect population and supplied balance",
+    "Full actual wide CSV passes import validation without renaming columns",
+    "Actual CSV installs all 9204 records and 354 municipality codes",
+    "Synthetic control starts at latest complete year",
+    "Hover over unselected polygon keeps regional detail",
+    "Municipality polygons have no native hover tooltip titles",
+    "Actual polygon click selects A preserving year and speed",
+    "Polygon click animates camera through intermediate positions",
+    "Click synchronizes selected municipality in header, lower graph and right statistics",
+    "Hover across another polygon preserves clicked detail and graph",
+    "Incoming / municipality population is 10%: 10 = 10",
+    "Settings unit selector selects rate",
+    "Incoming / regional population is 1%: 1 = 1",
+    "Settings unit selector selects contribution",
+    "Incoming deviation from regional 2.8% is 7.2 percentage points: 7.2 = 7.2",
+    "Settings unit selector selects deviation",
+    "Balance / municipality population is 6%: 6 = 6",
+    "Balance / regional population is 0.6%: 0.6 = 0.6",
+    "Balance deviation from regional -0.3% is 6.3 percentage points: 6.3 = 6.3",
+    "Synthetic diacritic-insensitive search resolves B",
+    "Fixture B time points equal -1,+1,-1 without connectors",
+    "Fixed fixture balance domain is ±20 across all years",
+    "Neutral ±1.5 changes B to neutral color",
+    "Neutral coloring preserves measured time coordinates",
+    "B 2021 scatter X: 3 = 3",
+    "B 2021 scatter Y: 2 = 2",
+    "Scatter click selects B preserving year/speed",
+    "B year-on-year balance rate change is +2: 2 = 2",
+    "First year has no invented year-on-year point",
+    "Year-on-year local tooltip uses transformed regional reference +1.9",
+    "Entering difference initializes nearest earlier A",
+    "A=B yields valid zero",
+    "B reverse fixture equal balance is zero: 0 = 0",
+    "Reverse B2020 minus A2022 is -14: -14 = -14",
+    "Three-year balance exposure rate 8.5: 8.5 = 8.5",
+    "Incomplete first windows are missing, not shortened",
+    "Smoothed scatter X: 15 = 15",
+    "Smoothed scatter Y: 6.5 = 6.5",
+    "Deviation scatter X: 11 = 11",
+    "Deviation scatter Y: 3.3 = 3.3",
+    "Explanation exposes population exposure sum",
+    "Reset restores analytical settings while preserving selection and year",
+    "Switching share to balance automatically restores a valid rate unit",
+    "Unit fallback notice is meaningful",
+    "Playback starts before import",
+    "Actual local CSV passes mapping validation",
+    "Import resets selection/history/speed/playback/tab and uses latest complete year",
+    "Old playback timer cannot advance imported data",
+    "Imported municipality name drives diacritic-insensitive search and detail",
+    "Map and time tooltip share imported municipality name",
+    "Missing outgoing excludes only missing balance time point",
+    "Missing outgoing excludes B scatter, no invented zero",
+    "Missing map value is hatched",
+    "Valid incoming remains available independently",
+    "Invalid CSV exposes concrete validation errors",
+    "Invalid CSV cannot be installed",
+    "Invalid import preserves previous dataset",
+    "Dropped no-population CSV imports and defaults to absolute",
+    "Missing population fallback explains absolute units",
+    "No population gives no scatter coordinates",
+    "Default missing balance gives no time point",
+    "Incoming-only absolute aggregate remains usable",
+    "No browser runtime errors",
+    "No failed network requests",
+    "No external network requests"
+  ],
+  "performance": [
+    {
+      "dataset": "real",
+      "rows": 9204,
+      "codes": 354,
+      "years": [
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "samples": [
+        {
+          "loadMs": 133.39999997615814,
+          "lastRenderMs": 9.899999976158142
+        },
+        {
+          "loadMs": 133.39999997615814,
+          "lastRenderMs": 10
+        },
+        {
+          "loadMs": 133.39999997615814,
+          "lastRenderMs": 9.600000023841858
+        },
+        {
+          "loadMs": 133.39999997615814,
+          "lastRenderMs": 10
+        },
+        {
+          "loadMs": 133.39999997615814,
+          "lastRenderMs": 10.699999988079071
+        },
+        {
+          "loadMs": 133.39999997615814,
+          "lastRenderMs": 9.699999988079071
+        },
+        {
+          "loadMs": 133.39999997615814,
+          "lastRenderMs": 9.699999988079071
+        },
+        {
+          "loadMs": 133.39999997615814,
+          "lastRenderMs": 10.099999964237213
+        }
+      ]
+    },
+    {
+      "dataset": "real-scatter-cold",
+      "loadMs": 133.39999997615814,
+      "lastRenderMs": 64.80000001192093
+    },
+    {
+      "dataset": "real-scatter-cached-desktop",
+      "loadMs": 133.39999997615814,
+      "lastRenderMs": 35.30000001192093
+    },
+    {
+      "dataset": "real-scatter-window3",
+      "loadMs": 133.39999997615814,
+      "lastRenderMs": 102.39999997615814
+    },
+    {
+      "dataset": "actual-csv-import",
+      "loadMs": 133.39999997615814,
+      "lastRenderMs": 42.59999996423721
+    }
+  ],
+  "layouts": [
+    {
+      "type": "laptop",
+      "viewport": 1366,
+      "scroll": 1366,
+      "cards": 135,
+      "map": 515.046875,
+      "timeline": 620.046875,
+      "chart": 620.046875
+    },
+    {
+      "type": "mobile",
+      "viewport": 390,
+      "scroll": 390
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "external": [],
+  "fixture": "Explicit synthetic A/B test only; real sources unmodified"
+}
