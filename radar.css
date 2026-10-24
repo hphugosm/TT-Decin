@@ -144,18 +144,16 @@ body.panel-fullscreen-open{overflow:hidden}
 .map-watermark .map-territory,.map-watermark .map-year{font-size:clamp(28px,3.4vw,48px);line-height:1.05;letter-spacing:-1.5px}
 @media(max-width:600px){.map-watermark .map-territory,.map-watermark .map-year{font-size:24px;letter-spacing:-.7px}}
 
-/* Historical annotations sit below the map, separate from migration colours. */
-.map-events{align-self:flex-end;width:min(100%,560px);flex-shrink:0;margin-top:10px;padding:11px 14px;border:1.5px solid #d33438;border-radius:10px;background:#fff8f7;color:#8e2529;max-height:180px;overflow:auto}
-.map-event{display:grid;grid-template-columns:105px minmax(0,1fr);gap:14px;align-items:start}
+/* Translucent annotations overlay the map without taking away map height. */
+.map-events{position:absolute;right:16px;bottom:64px;z-index:3;width:min(420px,58%);margin:0;padding:11px 14px;border:1.5px solid rgb(211 52 56 / 78%);border-radius:10px;background:rgb(255 248 247 / 72%);color:#8e2529;max-height:min(45%,250px);overflow:auto;overscroll-behavior:contain}
+.map-event{display:grid;grid-template-columns:80px minmax(0,1fr);gap:12px;align-items:start}
 .map-event+.map-event{border-top:1px solid #efcecc;margin-top:9px;padding-top:9px}
 .event-meta{display:flex;flex-direction:column;gap:3px;font-size:12px;line-height:1.4;font-weight:650}
 .event-meta time{font-size:20px;line-height:1.1;font-variant-numeric:tabular-nums}
 .event-description h3{font-size:13px;line-height:1.35;margin:0 0 3px}
 .event-description p{font-size:12px;line-height:1.4;margin:0;color:#6e3e40}
 .map-event-outlines{pointer-events:none}
-@media(max-width:999px){.map-events{order:5;margin-bottom:10px}}
-@media(max-width:600px){.map-events{width:100%;max-height:none;padding:10px 12px}.map-event{grid-template-columns:85px minmax(0,1fr);gap:10px}}
-.map-column.panel-expanded>.map-events{order:initial;max-height:30dvh}
+@media(max-width:600px){.map-events{right:12px;bottom:108px;width:calc(100% - 24px);max-height:calc(100% - 200px);padding:10px 12px}.map-event{grid-template-columns:75px minmax(0,1fr);gap:10px}}
 
 .chart-event-marker,.chart-year-tick{cursor:pointer}
 .chart-event-marker:hover .chart-event-line,.chart-event-marker:focus-visible .chart-event-line{stroke-width:2.5;opacity:1}
