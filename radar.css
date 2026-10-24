@@ -136,3 +136,7 @@ body.panel-fullscreen-open{overflow:hidden}
 .map-territory{font-size:clamp(28px,3.4vw,48px);line-height:1.05;letter-spacing:-1.5px;overflow-wrap:anywhere}
 .map-watermark .map-year{font-size:clamp(46px,5vw,72px);letter-spacing:-3px;color:inherit}
 @media(max-width:600px){.map-territory{font-size:24px;letter-spacing:-.7px}.map-watermark .map-year{font-size:44px}}
+
+/* SVG focus must follow the municipality shape, never its rectangular bounds. */
+#map,#map:focus,#map:focus-visible,#map .municipality,#map .municipality:focus,#map .municipality:focus-visible{outline:none}
+#map .municipality:focus-visible{stroke:#173da5;stroke-width:2.5;stroke-linejoin:round}

@@ -1,5 +1,5 @@
 import {createDataset,rawAnnual,populationSummary,baseValue,derivedValue,colorDomain,colorFor,metricLabel,unitLabel} from './radar-engine.mjs';
-import {createMunicipalityMap} from './radar-map.mjs';
+import {createMunicipalityMap} from './radar-map.mjs?v=map-focus-1';
 import {renderTimeChart} from './radar-charts.mjs?v=overview-3';
 import {mountImportDialog} from './radar-import-ui.mjs';
 const $=id=>document.getElementById(id), fmt=(v,n=(v&&Math.abs(v)<1?Math.min(6,2-Math.floor(Math.log10(Math.abs(v)))):2))=>Number.isFinite(v)?v.toLocaleString('cs-CZ',{maximumFractionDigits:n}):'—';
