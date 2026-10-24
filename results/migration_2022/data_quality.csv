@@ -1,0 +1,27 @@
+scope,code,year,check,status,observed,expected,detail
+municipality_panel,ALL,2000,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2001,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2002,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2003,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2004,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2005,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2006,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2007,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2008,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2009,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2010,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2011,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2012,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2013,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2014,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2015,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2016,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2017,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2018,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2019,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2020,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2021,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2022,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2023,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2024,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.
+municipality_panel,ALL,2025,unique_complete_counts_and_population,pass,354,354,Original raw annual counts; no shrinkage. Population Jan 1.

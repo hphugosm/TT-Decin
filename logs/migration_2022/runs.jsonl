@@ -1,0 +1,1 @@
+{"run_id": "migration_2022_20261024", "timestamp": "2026-10-24T10:43:07.006821+02:00", "milestone": "municipal_input_audit", "status": "complete", "base_commit": "fe39743f00f11284d4625c4837d400c1ff0ad226", "seed": 20221024, "train_cutoff": 2021, "input_sha256": "c7c5e16e53dabc0fda865f3df1f512baf5562007b8c4db73540f8619f6c2c6db"}
