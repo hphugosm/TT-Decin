@@ -96,3 +96,12 @@ body.panel-fullscreen-open{overflow:hidden}
 @media(max-width:600px){.side-column .overview-panel .metric-card strong{font-size:18px}.side-column .overview-panel .count-unit{display:block}.side-column .overview-panel .card-label{font-size:10px}.overview-panel .cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
 
 .side-column .overview-panel .metric-card{grid-column:auto;grid-row:auto}
+
+/* Give territory, year and population the full summary header. */
+.side-column .overview-panel .overview-heading{display:flex;flex-direction:column;gap:10px;padding-right:38px}
+.side-column .overview-panel .overview-heading h1{order:-1;font-size:clamp(30px,3vw,46px);line-height:1.12;letter-spacing:-1px;margin:0;overflow-wrap:anywhere}
+.side-column .overview-panel #detail-label{font-size:clamp(28px,2.8vw,40px);line-height:1.1;font-weight:650;letter-spacing:-.7px;color:#65738a}
+.side-column .overview-panel .population-primary{font-size:clamp(27px,2.6vw,38px);line-height:1.2;letter-spacing:-.6px}
+.side-column #map-detail.overview-panel{gap:18px;padding:20px}
+#map-detail.panel-expanded .overview-heading h1{font-size:clamp(36px,5vw,72px)}
+#map-detail.panel-expanded #detail-label,#map-detail.panel-expanded .population-primary{font-size:clamp(30px,4vw,56px)}
