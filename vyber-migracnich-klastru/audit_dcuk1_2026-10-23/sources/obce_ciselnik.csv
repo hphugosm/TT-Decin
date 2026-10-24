@@ -1,0 +1,355 @@
+kod_obce,nazev_obce,kod_orp,nazev_orp,kod_okresu,nazev_okresu,kod_kraje,nazev_kraje
+505528,Jenčice,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+530395,Janská,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+530417,Doubice,736,Rumburk,3502,Děčín,CZ042,Ústecký kraj
+530506,Miřejovice,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+530557,Kozly,850,Louny,3507,Louny,CZ042,Ústecký kraj
+530565,Želkovice,850,Louny,3507,Louny,CZ042,Ústecký kraj
+530581,Čeradice,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+530590,Libočany,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+530603,Zálužice,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+530620,Přestanov,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+542407,Trnovany,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+542423,Černouček,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+542440,Oleško,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+542482,Záluží,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+542491,Malíč,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+542521,Michalovice,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+542539,Píšťany,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+542547,Blšany u Loun,850,Louny,3507,Louny,CZ042,Ústecký kraj
+542555,Opočno,850,Louny,3507,Louny,CZ042,Ústecký kraj
+542571,Cítoliby,850,Louny,3507,Louny,CZ042,Ústecký kraj
+542580,Obora,850,Louny,3507,Louny,CZ042,Ústecký kraj
+542628,Černčice,850,Louny,3507,Louny,CZ042,Ústecký kraj
+542636,Nová Ves,850,Louny,3507,Louny,CZ042,Ústecký kraj
+543012,Žerotín,850,Louny,3507,Louny,CZ042,Ústecký kraj
+543128,Staňkovice,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+544647,Bynovec,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+544680,Janov,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+544701,Labská Stráň,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+545538,Starý Šachov,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+545678,Markvartice,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+545708,Lobendava,736,Rumburk,3502,Děčín,CZ042,Ústecký kraj
+545783,Dobrná,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+545791,Merboltice,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+545856,Dolní Habartice,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+545899,Františkov nad Ploučnicí,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+545929,Horní Habartice,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+546011,Jimlín,850,Louny,3507,Louny,CZ042,Ústecký kraj
+546062,Pesvice,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+546071,Račetice,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+546160,Nezabylice,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+546178,Úherce,850,Louny,3507,Louny,CZ042,Ústecký kraj
+546186,Ryjice,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+546330,Kunratice,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+546348,Srbská Kamenice,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+546429,Chraberce,850,Louny,3507,Louny,CZ042,Ústecký kraj
+546437,Volevčice,892,Most,3508,Most,CZ042,Ústecký kraj
+546453,Kámen,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+546496,Ludvíkovice,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+546518,Loučná pod Klínovcem,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+546691,Lkáň,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+546721,Sedlec,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+546755,Brzánky,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+546763,Horní Řepčice,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+546771,Kamýk,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+546780,Býčkovice,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+546810,Chudoslavice,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+546828,Staňkovice,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+546852,Černěves,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+546861,Dobroměřice,850,Louny,3507,Louny,CZ042,Ústecký kraj
+546879,Líšťany,850,Louny,3507,Louny,CZ042,Ústecký kraj
+546887,Vršovice,850,Louny,3507,Louny,CZ042,Ústecký kraj
+546895,Brodec,850,Louny,3507,Louny,CZ042,Ústecký kraj
+546909,Lukov,906,Bílina,3509,Teplice,CZ042,Ústecký kraj
+546925,Stebno,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+553646,Dolánky nad Ohří,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+553697,Trmice,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+554804,Ústí nad Labem,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+555193,Těchlovice,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+555223,Velké Chvojno,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+562335,Děčín,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+562343,Arnoltice,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+562351,Benešov nad Ploučnicí,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+562394,Česká Kamenice,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+562408,Dobkovice,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+562432,Dolní Podluží,744,Varnsdorf,3502,Děčín,CZ042,Ústecký kraj
+562441,Dolní Poustevna,736,Rumburk,3502,Děčín,CZ042,Ústecký kraj
+562483,Heřmanov,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+562505,Horní Podluží,744,Varnsdorf,3502,Děčín,CZ042,Ústecký kraj
+562513,Hřensko,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+562521,Huntířov,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+562530,Chřibská,744,Varnsdorf,3502,Děčín,CZ042,Ústecký kraj
+562556,Jetřichovice,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+562564,Jílové,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+562572,Jiřetín pod Jedlovou,744,Varnsdorf,3502,Děčín,CZ042,Ústecký kraj
+562581,Jiříkov,736,Rumburk,3502,Děčín,CZ042,Ústecký kraj
+562611,Krásná Lípa,736,Rumburk,3502,Děčín,CZ042,Ústecký kraj
+562645,Kytlice,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+562661,Lipová,736,Rumburk,3502,Děčín,CZ042,Ústecký kraj
+562700,Malá Veleň,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+562718,Malšovice,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+562751,Mikulášovice,736,Rumburk,3502,Děčín,CZ042,Ústecký kraj
+562777,Rumburk,736,Rumburk,3502,Děčín,CZ042,Ústecký kraj
+562793,Rybniště,744,Varnsdorf,3502,Děčín,CZ042,Ústecký kraj
+562823,Staré Křečany,736,Rumburk,3502,Děčín,CZ042,Ústecký kraj
+562858,Šluknov,736,Rumburk,3502,Děčín,CZ042,Ústecký kraj
+562874,Valkeřice,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+562882,Varnsdorf,744,Varnsdorf,3502,Děčín,CZ042,Ústecký kraj
+562891,Velká Bukovina,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+562912,Velký Šenov,736,Rumburk,3502,Děčín,CZ042,Ústecký kraj
+562921,Verneřice,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+562939,Veselé,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+562947,Vilémov,736,Rumburk,3502,Děčín,CZ042,Ústecký kraj
+562971,Chomutov,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+562980,Bílence,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+562998,Blatno,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563005,Boleboř,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563013,Březno,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563021,Černovice,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563048,Domašín,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+563056,Droužkovice,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563064,Hora Svatého Šebestiána,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563072,Hrušovany,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563081,Chbany,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+563099,Jirkov,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563102,Kadaň,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+563111,Kalek,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563129,Klášterec nad Ohří,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+563137,Kovářská,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+563161,Křimov,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563188,Libědice,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+563200,Málkov,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563218,Mašťov,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+563226,Měděnec,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+563242,Místo,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563269,Okounov,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+563277,Otvice,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563285,Perštejn,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+563293,Pětipsy,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+563315,Kryštofovy Hamry,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+563323,Radonice,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+563331,Rokle,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+563340,Spořice,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563358,Strupčice,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563382,Údlice,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563404,Vejprty,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+563412,Veliká Ves,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+563439,Vilémov,761,Kadaň,3503,Chomutov,CZ042,Ústecký kraj
+563463,Vrskmaň,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563471,Všehrdy,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563480,Všestudy,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563498,Výsluní,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+563501,Vysoká Pec,752,Chomutov,3503,Chomutov,CZ042,Ústecký kraj
+564567,Litoměřice,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+564575,Bechlín,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+564591,Bohušovice nad Ohří,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+564613,Brňany,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+564621,Brozany nad Ohří,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+564648,Bříza,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+564656,Budyně nad Ohří,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+564672,Ctiněves,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+564699,Černiv,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+564711,Čížkovice,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+564729,Děčany,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+564737,Dlažkovice,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+564745,Dobříň,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+564753,Doksany,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+564770,Drahobuz,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+564818,Dušníky,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+564834,Evaň,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+564842,Hlinná,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+564851,Horní Beřkovice,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+564877,Hoštka,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+564893,Hrobce,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+564923,Chodouny,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+564931,Chodovlice,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+564940,Chotěšov,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+564958,Chotiměř,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+564966,Chotiněves,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565016,Keblice,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565024,Klapý,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565032,Kleneč,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565059,Kostomlaty pod Řípem,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565067,Krabčice,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565075,Křesín,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565083,Křešice,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565091,Kyškovice,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565105,Levín,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565113,Lhotka nad Labem,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565121,Liběšice,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565148,Libkovice pod Řípem,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565156,Libochovany,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565164,Libochovice,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565172,Libotenice,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565211,Lovečkovice,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565229,Lovosice,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565237,Lukavec,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565245,Malé Žernoseky,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565253,Martiněves,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565296,Mlékojedy,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565300,Mnetěš,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565318,Mšené-lázně,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565342,Nové Dvory,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565393,Ploskovice,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565415,Podsedice,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565431,Polepy,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565458,Prackovice nad Labem,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565474,Přestavlky,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565482,Račice,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565491,Račiněves,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565521,Radovesice,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565547,Rochov,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565555,Roudnice nad Labem,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565598,Siřejovice,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565601,Slatina,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565610,Snědovice,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565679,Straškov-Vodochody,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565695,Sulejovice,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565709,Štětí,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565717,Terezín,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565741,Travčice,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565768,Třebenice,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565776,Třebívlice,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565792,Třebušín,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565806,Úpohlavy,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565814,Úštěk,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565831,Vědomice,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565849,Velemín,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565857,Velké Žernoseky,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565865,Vchynice,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565873,Vlastislav,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565881,Vražkov,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565890,Vrbice,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565903,Vrbičany,833,Lovosice,3506,Litoměřice,CZ042,Ústecký kraj
+565911,Vrutice,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565938,Žabovřesky nad Ohří,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565946,Žalhostice,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565954,Židovice,841,Roudnice nad Labem,3506,Litoměřice,CZ042,Ústecký kraj
+565962,Žitenice,825,Litoměřice,3506,Litoměřice,CZ042,Ústecký kraj
+565971,Louny,850,Louny,3507,Louny,CZ042,Ústecký kraj
+565997,Bitozeves,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+566004,Blatno,868,Podbořany,3507,Louny,CZ042,Ústecký kraj
+566012,Blažim,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+566021,Blšany,868,Podbořany,3507,Louny,CZ042,Ústecký kraj
+566063,Břvany,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566128,Deštnice,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+566152,Domoušice,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566187,Holedeč,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+566195,Hříškov,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566217,Hřivice,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566233,Chlumčany,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566241,Chožov,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566284,Koštice,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566306,Krásný Dvůr,868,Podbořany,3507,Louny,CZ042,Ústecký kraj
+566314,Kryry,868,Podbořany,3507,Louny,CZ042,Ústecký kraj
+566322,Lenešice,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566349,Libčeves,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566357,Liběšice,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+566381,Libořice,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+566403,Lipno,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+566411,Lišany,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+566438,Lubenec,868,Podbořany,3507,Louny,CZ042,Ústecký kraj
+566454,Měcholupy,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+566501,Nepomyšl,868,Podbořany,3507,Louny,CZ042,Ústecký kraj
+566519,Nové Sedlo,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+566527,Očihov,868,Podbořany,3507,Louny,CZ042,Ústecký kraj
+566535,Panenský Týnec,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566551,Peruc,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566560,Petrohrad,868,Podbořany,3507,Louny,CZ042,Ústecký kraj
+566578,Pnětluky,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566586,Počedělice,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566608,Podbořanský Rohozec,868,Podbořany,3507,Louny,CZ042,Ústecký kraj
+566616,Podbořany,868,Podbořany,3507,Louny,CZ042,Ústecký kraj
+566624,Postoloprty,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566659,Raná,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566667,Ročov,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566713,Slavětín,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566721,Smolnice,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566829,Toužetín,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566853,Tuchořice,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+566870,Velemyšleves,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+566896,Veltěže,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566900,Růžová,728,Děčín,3502,Děčín,CZ042,Ústecký kraj
+566918,Vinařice,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566926,Vrbno nad Lesy,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566934,Vroutek,868,Podbořany,3507,Louny,CZ042,Ústecký kraj
+566951,Výškov,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566977,Zbrašín,850,Louny,3507,Louny,CZ042,Ústecký kraj
+566985,Žatec,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+567019,Žiželice,876,Žatec,3507,Louny,CZ042,Ústecký kraj
+567027,Most,892,Most,3508,Most,CZ042,Ústecký kraj
+567043,Bečov,892,Most,3508,Most,CZ042,Ústecký kraj
+567051,Bělušice,892,Most,3508,Most,CZ042,Ústecký kraj
+567060,Braňany,892,Most,3508,Most,CZ042,Ústecký kraj
+567078,Brandov,884,Litvínov,3508,Most,CZ042,Ústecký kraj
+567108,Český Jiřetín,884,Litvínov,3508,Most,CZ042,Ústecký kraj
+567141,Havraň,892,Most,3508,Most,CZ042,Ústecký kraj
+567167,Hora Svaté Kateřiny,884,Litvínov,3508,Most,CZ042,Ústecký kraj
+567175,Horní Jiřetín,884,Litvínov,3508,Most,CZ042,Ústecký kraj
+567191,Klíny,884,Litvínov,3508,Most,CZ042,Ústecký kraj
+567221,Korozluky,892,Most,3508,Most,CZ042,Ústecký kraj
+567248,Lišnice,892,Most,3508,Most,CZ042,Ústecký kraj
+567256,Litvínov,884,Litvínov,3508,Most,CZ042,Ústecký kraj
+567264,Lom,884,Litvínov,3508,Most,CZ042,Ústecký kraj
+567272,Louka u Litvínova,884,Litvínov,3508,Most,CZ042,Ústecký kraj
+567281,Lužice,892,Most,3508,Most,CZ042,Ústecký kraj
+567299,Malé Březno,892,Most,3508,Most,CZ042,Ústecký kraj
+567302,Mariánské Radčice,884,Litvínov,3508,Most,CZ042,Ústecký kraj
+567311,Meziboří,884,Litvínov,3508,Most,CZ042,Ústecký kraj
+567329,Nová Ves v Horách,884,Litvínov,3508,Most,CZ042,Ústecký kraj
+567337,Obrnice,892,Most,3508,Most,CZ042,Ústecký kraj
+567345,Patokryje,892,Most,3508,Most,CZ042,Ústecký kraj
+567353,Polerady,892,Most,3508,Most,CZ042,Ústecký kraj
+567361,Skršín,892,Most,3508,Most,CZ042,Ústecký kraj
+567426,Želenice,892,Most,3508,Most,CZ042,Ústecký kraj
+567442,Teplice,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567451,Bílina,906,Bílina,3509,Teplice,CZ042,Ústecký kraj
+567469,Bořislav,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567477,Bystřany,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567485,Bžany,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567507,Dubí,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567515,Duchcov,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567523,Háj u Duchcova,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567531,Hostomice,906,Bílina,3509,Teplice,CZ042,Ústecký kraj
+567558,Hrob,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567566,Hrobčice,906,Bílina,3509,Teplice,CZ042,Ústecký kraj
+567582,Jeníkov,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567604,Kladruby,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567612,Kostomlaty pod Milešovkou,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567621,Košťany,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567639,Krupka,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567647,Lahošť,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567655,Ledvice,906,Bílina,3509,Teplice,CZ042,Ústecký kraj
+567698,Měrunice,906,Bílina,3509,Teplice,CZ042,Ústecký kraj
+567701,Mikulov,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567710,Modlany,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567728,Moldava,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567752,Novosedlice,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567761,Ohníč,906,Bílina,3509,Teplice,CZ042,Ústecký kraj
+567779,Osek,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567787,Proboštov,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567809,Rtyně nad Bílinou,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567833,Srbice,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567841,Světec,906,Bílina,3509,Teplice,CZ042,Ústecký kraj
+567850,Újezdeček,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567868,Zabrušany,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567876,Žalany,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567884,Žim,914,Teplice,3509,Teplice,CZ042,Ústecký kraj
+567931,Dolní Zálezly,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+567957,Habrovany,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+567973,Homole u Panny,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+568007,Chabařovice,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+568015,Chlumec,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+568023,Chuderov,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+568058,Libouchec,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+568091,Malé Březno,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+568104,Malečov,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+568147,Petrovice,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+568155,Povrly,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+568201,Řehlovice,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+568287,Tašov,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+568295,Telnice,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+568309,Tisá,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+568350,Velké Březno,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj
+568384,Zubrnice,922,Ústí nad Labem,3510,Ústí nad Labem,CZ042,Ústecký kraj

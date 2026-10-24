@@ -1,0 +1,38 @@
+{
+  "municipalities": 354,
+  "years": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "inputs_sha256": {
+    "audit_dcuk1_2026-10-23/sources/migrace_vek_obce_rok.csv": "ae549ff8faa6c80a3d042cc46ab1cc08e9e2e4e30c05a981254490a7849104f5",
+    "audit_dcuk1_2026-10-23/sources/uloha1_obce_rok_final.csv": "0fc937d4e4019cfeb652072d7f68a8c4d8ebc3e4a73a0afdaff999c96e7c37b3",
+    "audit_dcuk1_2026-10-23/sources/obce_ustecky_kraj.geojson": "6b8c4c17fd80c840f72a54987cb3001fd4eed19b60f267ae88514346f2b3e067",
+    "audit_dcuk1_2026-10-23/sources/obce_ciselnik.csv": "c62864e574ce8faf0fb59d21316e8048aaed8bdd259f0eaed2c77212989dc150",
+    "ustek_analytics/data/geometry.json": "a27bcef43a0ce8def8644f0658482389a140ce4a0405511cfefa186ef33a88a0"
+  }
+}

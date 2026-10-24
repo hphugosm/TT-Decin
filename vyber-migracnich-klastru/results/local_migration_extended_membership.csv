@@ -1,0 +1,709 @@
+﻿mode,id,name,group_id
+immigration,505528,Jenčice,UNASSIGNED
+immigration,530395,Janská,XIMM-001
+immigration,530417,Doubice,UNASSIGNED
+immigration,530506,Miřejovice,XIMM-002
+immigration,530557,Kozly,XIMM-003
+immigration,530565,Želkovice,XIMM-004
+immigration,530581,Čeradice,XIMM-005
+immigration,530590,Libočany,XIMM-005
+immigration,530603,Zálužice,XIMM-006
+immigration,530620,Přestanov,UNASSIGNED
+immigration,542407,Trnovany,XIMM-007
+immigration,542423,Černouček,UNASSIGNED
+immigration,542440,Oleško,UNASSIGNED
+immigration,542482,Záluží,XIMM-008
+immigration,542491,Malíč,UNASSIGNED
+immigration,542521,Michalovice,UNASSIGNED
+immigration,542539,Píšťany,XIMM-009
+immigration,542547,Blšany u Loun,XIMM-010
+immigration,542555,Opočno,XIMM-011
+immigration,542571,Cítoliby,UNASSIGNED
+immigration,542580,Obora,XIMM-012
+immigration,542628,Černčice,XIMM-010
+immigration,542636,Nová Ves,XIMM-013
+immigration,543012,Žerotín,UNASSIGNED
+immigration,543128,Staňkovice,XIMM-006
+immigration,544647,Bynovec,XIMM-014
+immigration,544680,Janov,UNASSIGNED
+immigration,544701,Labská Stráň,UNASSIGNED
+immigration,545538,Starý Šachov,UNASSIGNED
+immigration,545678,Markvartice,UNASSIGNED
+immigration,545708,Lobendava,UNASSIGNED
+immigration,545783,Dobrná,XIMM-015
+immigration,545791,Merboltice,XIMM-016
+immigration,545856,Dolní Habartice,UNASSIGNED
+immigration,545899,Františkov nad Ploučnicí,UNASSIGNED
+immigration,545929,Horní Habartice,XIMM-015
+immigration,546011,Jimlín,UNASSIGNED
+immigration,546062,Pesvice,UNASSIGNED
+immigration,546071,Račetice,UNASSIGNED
+immigration,546160,Nezabylice,XIMM-017
+immigration,546178,Úherce,UNASSIGNED
+immigration,546186,Ryjice,UNASSIGNED
+immigration,546330,Kunratice,UNASSIGNED
+immigration,546348,Srbská Kamenice,XIMM-018
+immigration,546429,Chraberce,XIMM-019
+immigration,546437,Volevčice,UNASSIGNED
+immigration,546453,Kámen,XIMM-020
+immigration,546496,Ludvíkovice,XIMM-021
+immigration,546518,Loučná pod Klínovcem,XIMM-022
+immigration,546691,Lkáň,XIMM-023
+immigration,546721,Sedlec,XIMM-024
+immigration,546755,Brzánky,UNASSIGNED
+immigration,546763,Horní Řepčice,XIMM-025
+immigration,546771,Kamýk,XIMM-002
+immigration,546780,Býčkovice,XIMM-026
+immigration,546810,Chudoslavice,UNASSIGNED
+immigration,546828,Staňkovice,UNASSIGNED
+immigration,546852,Černěves,UNASSIGNED
+immigration,546861,Dobroměřice,XIMM-027
+immigration,546879,Líšťany,UNASSIGNED
+immigration,546887,Vršovice,XIMM-012
+immigration,546895,Brodec,XIMM-028
+immigration,546909,Lukov,UNASSIGNED
+immigration,546925,Stebno,UNASSIGNED
+immigration,553646,Dolánky nad Ohří,XIMM-029
+immigration,553697,Trmice,XIMM-030
+immigration,554804,Ústí nad Labem,XIMM-030
+immigration,555193,Těchlovice,XIMM-031
+immigration,555223,Velké Chvojno,UNASSIGNED
+immigration,562335,Děčín,XIMM-021
+immigration,562343,Arnoltice,XIMM-014
+immigration,562351,Benešov nad Ploučnicí,XIMM-032
+immigration,562394,Česká Kamenice,UNASSIGNED
+immigration,562408,Dobkovice,XIMM-021
+immigration,562432,Dolní Podluží,UNASSIGNED
+immigration,562441,Dolní Poustevna,XIMM-033
+immigration,562483,Heřmanov,UNASSIGNED
+immigration,562505,Horní Podluží,XIMM-034
+immigration,562513,Hřensko,UNASSIGNED
+immigration,562521,Huntířov,XIMM-020
+immigration,562530,Chřibská,UNASSIGNED
+immigration,562556,Jetřichovice,XIMM-001
+immigration,562564,Jílové,UNASSIGNED
+immigration,562572,Jiřetín pod Jedlovou,UNASSIGNED
+immigration,562581,Jiříkov,XIMM-035
+immigration,562611,Krásná Lípa,UNASSIGNED
+immigration,562645,Kytlice,UNASSIGNED
+immigration,562661,Lipová,XIMM-033
+immigration,562700,Malá Veleň,XIMM-032
+immigration,562718,Malšovice,XIMM-036
+immigration,562751,Mikulášovice,UNASSIGNED
+immigration,562777,Rumburk,XIMM-035
+immigration,562793,Rybniště,XIMM-034
+immigration,562823,Staré Křečany,UNASSIGNED
+immigration,562858,Šluknov,XIMM-037
+immigration,562874,Valkeřice,XIMM-016
+immigration,562882,Varnsdorf,UNASSIGNED
+immigration,562891,Velká Bukovina,UNASSIGNED
+immigration,562912,Velký Šenov,XIMM-037
+immigration,562921,Verneřice,XIMM-038
+immigration,562939,Veselé,UNASSIGNED
+immigration,562947,Vilémov,UNASSIGNED
+immigration,562971,Chomutov,XIMM-039
+immigration,562980,Bílence,UNASSIGNED
+immigration,562998,Blatno,XIMM-040
+immigration,563005,Boleboř,XIMM-040
+immigration,563013,Březno,UNASSIGNED
+immigration,563021,Černovice,UNASSIGNED
+immigration,563048,Domašín,UNASSIGNED
+immigration,563056,Droužkovice,UNASSIGNED
+immigration,563064,Hora Svatého Šebestiána,UNASSIGNED
+immigration,563072,Hrušovany,UNASSIGNED
+immigration,563081,Chbany,UNASSIGNED
+immigration,563099,Jirkov,XIMM-039
+immigration,563102,Kadaň,XIMM-041
+immigration,563111,Kalek,UNASSIGNED
+immigration,563129,Klášterec nad Ohří,XIMM-041
+immigration,563137,Kovářská,XIMM-022
+immigration,563161,Křimov,XIMM-042
+immigration,563188,Libědice,XIMM-043
+immigration,563200,Málkov,XIMM-042
+immigration,563218,Mašťov,UNASSIGNED
+immigration,563226,Měděnec,XIMM-041
+immigration,563242,Místo,XIMM-044
+immigration,563269,Okounov,UNASSIGNED
+immigration,563277,Otvice,XIMM-045
+immigration,563285,Perštejn,UNASSIGNED
+immigration,563293,Pětipsy,XIMM-043
+immigration,563315,Kryštofovy Hamry,UNASSIGNED
+immigration,563323,Radonice,UNASSIGNED
+immigration,563331,Rokle,UNASSIGNED
+immigration,563340,Spořice,XIMM-039
+immigration,563358,Strupčice,UNASSIGNED
+immigration,563382,Údlice,XIMM-046
+immigration,563404,Vejprty,UNASSIGNED
+immigration,563412,Veliká Ves,UNASSIGNED
+immigration,563439,Vilémov,UNASSIGNED
+immigration,563463,Vrskmaň,XIMM-045
+immigration,563471,Všehrdy,XIMM-017
+immigration,563480,Všestudy,XIMM-046
+immigration,563498,Výsluní,XIMM-044
+immigration,563501,Vysoká Pec,UNASSIGNED
+immigration,564567,Litoměřice,XIMM-047
+immigration,564575,Bechlín,XIMM-048
+immigration,564591,Bohušovice nad Ohří,XIMM-049
+immigration,564613,Brňany,UNASSIGNED
+immigration,564621,Brozany nad Ohří,XIMM-050
+immigration,564648,Bříza,UNASSIGNED
+immigration,564656,Budyně nad Ohří,XIMM-051
+immigration,564672,Ctiněves,UNASSIGNED
+immigration,564699,Černiv,XIMM-052
+immigration,564711,Čížkovice,XIMM-053
+immigration,564729,Děčany,XIMM-054
+immigration,564737,Dlažkovice,UNASSIGNED
+immigration,564745,Dobříň,XIMM-008
+immigration,564753,Doksany,XIMM-050
+immigration,564770,Drahobuz,UNASSIGNED
+immigration,564818,Dušníky,XIMM-051
+immigration,564834,Evaň,UNASSIGNED
+immigration,564842,Hlinná,UNASSIGNED
+immigration,564851,Horní Beřkovice,UNASSIGNED
+immigration,564877,Hoštka,XIMM-055
+immigration,564893,Hrobce,XIMM-029
+immigration,564923,Chodouny,UNASSIGNED
+immigration,564931,Chodovlice,UNASSIGNED
+immigration,564940,Chotěšov,XIMM-052
+immigration,564958,Chotiměř,UNASSIGNED
+immigration,564966,Chotiněves,XIMM-025
+immigration,565016,Keblice,XIMM-056
+immigration,565024,Klapý,XIMM-057
+immigration,565032,Kleneč,XIMM-058
+immigration,565059,Kostomlaty pod Řípem,XIMM-059
+immigration,565067,Krabčice,XIMM-059
+immigration,565075,Křesín,XIMM-060
+immigration,565083,Křešice,XIMM-047
+immigration,565091,Kyškovice,UNASSIGNED
+immigration,565105,Levín,UNASSIGNED
+immigration,565113,Lhotka nad Labem,UNASSIGNED
+immigration,565121,Liběšice,XIMM-025
+immigration,565148,Libkovice pod Řípem,XIMM-059
+immigration,565156,Libochovany,XIMM-030
+immigration,565164,Libochovice,XIMM-057
+immigration,565172,Libotenice,XIMM-049
+immigration,565211,Lovečkovice,XIMM-038
+immigration,565229,Lovosice,XIMM-061
+immigration,565237,Lukavec,XIMM-062
+immigration,565245,Malé Žernoseky,UNASSIGNED
+immigration,565253,Martiněves,XIMM-063
+immigration,565296,Mlékojedy,UNASSIGNED
+immigration,565300,Mnetěš,UNASSIGNED
+immigration,565318,Mšené-lázně,XIMM-060
+immigration,565342,Nové Dvory,UNASSIGNED
+immigration,565393,Ploskovice,XIMM-026
+immigration,565415,Podsedice,XIMM-023
+immigration,565431,Polepy,XIMM-047
+immigration,565458,Prackovice nad Labem,XIMM-064
+immigration,565474,Přestavlky,XIMM-063
+immigration,565482,Račice,XIMM-048
+immigration,565491,Račiněves,XIMM-065
+immigration,565521,Radovesice,UNASSIGNED
+immigration,565547,Rochov,UNASSIGNED
+immigration,565555,Roudnice nad Labem,XIMM-066
+immigration,565598,Siřejovice,XIMM-062
+immigration,565601,Slatina,XIMM-024
+immigration,565610,Snědovice,UNASSIGNED
+immigration,565679,Straškov-Vodochody,XIMM-065
+immigration,565695,Sulejovice,XIMM-061
+immigration,565709,Štětí,XIMM-055
+immigration,565717,Terezín,XIMM-061
+immigration,565741,Travčice,XIMM-049
+immigration,565768,Třebenice,UNASSIGNED
+immigration,565776,Třebívlice,UNASSIGNED
+immigration,565792,Třebušín,XIMM-038
+immigration,565806,Úpohlavy,XIMM-053
+immigration,565814,Úštěk,UNASSIGNED
+immigration,565831,Vědomice,XIMM-066
+immigration,565849,Velemín,XIMM-064
+immigration,565857,Velké Žernoseky,XIMM-002
+immigration,565865,Vchynice,UNASSIGNED
+immigration,565873,Vlastislav,UNASSIGNED
+immigration,565881,Vražkov,XIMM-058
+immigration,565890,Vrbice,XIMM-067
+immigration,565903,Vrbičany,XIMM-056
+immigration,565911,Vrutice,XIMM-067
+immigration,565938,Žabovřesky nad Ohří,XIMM-051
+immigration,565946,Žalhostice,XIMM-009
+immigration,565954,Židovice,XIMM-066
+immigration,565962,Žitenice,XIMM-007
+immigration,565971,Louny,XIMM-068
+immigration,565997,Bitozeves,XIMM-069
+immigration,566004,Blatno,UNASSIGNED
+immigration,566012,Blažim,UNASSIGNED
+immigration,566021,Blšany,XIMM-070
+immigration,566063,Břvany,XIMM-071
+immigration,566128,Deštnice,UNASSIGNED
+immigration,566152,Domoušice,UNASSIGNED
+immigration,566187,Holedeč,UNASSIGNED
+immigration,566195,Hříškov,XIMM-072
+immigration,566217,Hřivice,XIMM-073
+immigration,566233,Chlumčany,XIMM-068
+immigration,566241,Chožov,XIMM-019
+immigration,566284,Koštice,XIMM-054
+immigration,566306,Krásný Dvůr,XIMM-074
+immigration,566314,Kryry,UNASSIGNED
+immigration,566322,Lenešice,XIMM-027
+immigration,566349,Libčeves,XIMM-004
+immigration,566357,Liběšice,XIMM-075
+immigration,566381,Libořice,UNASSIGNED
+immigration,566403,Lipno,XIMM-011
+immigration,566411,Lišany,UNASSIGNED
+immigration,566438,Lubenec,UNASSIGNED
+immigration,566454,Měcholupy,UNASSIGNED
+immigration,566501,Nepomyšl,UNASSIGNED
+immigration,566519,Nové Sedlo,UNASSIGNED
+immigration,566527,Očihov,XIMM-070
+immigration,566535,Panenský Týnec,UNASSIGNED
+immigration,566551,Peruc,XIMM-060
+immigration,566560,Petrohrad,XIMM-074
+immigration,566578,Pnětluky,XIMM-076
+immigration,566586,Počedělice,UNASSIGNED
+immigration,566608,Podbořanský Rohozec,UNASSIGNED
+immigration,566616,Podbořany,XIMM-074
+immigration,566624,Postoloprty,XIMM-069
+immigration,566659,Raná,XIMM-071
+immigration,566667,Ročov,XIMM-028
+immigration,566713,Slavětín,UNASSIGNED
+immigration,566721,Smolnice,XIMM-013
+immigration,566829,Toužetín,UNASSIGNED
+immigration,566853,Tuchořice,XIMM-076
+immigration,566870,Velemyšleves,UNASSIGNED
+immigration,566896,Veltěže,UNASSIGNED
+immigration,566900,Růžová,XIMM-018
+immigration,566918,Vinařice,XIMM-072
+immigration,566926,Vrbno nad Lesy,UNASSIGNED
+immigration,566934,Vroutek,XIMM-074
+immigration,566951,Výškov,UNASSIGNED
+immigration,566977,Zbrašín,XIMM-073
+immigration,566985,Žatec,XIMM-075
+immigration,567019,Žiželice,UNASSIGNED
+immigration,567027,Most,XIMM-077
+immigration,567043,Bečov,UNASSIGNED
+immigration,567051,Bělušice,XIMM-003
+immigration,567060,Braňany,UNASSIGNED
+immigration,567078,Brandov,UNASSIGNED
+immigration,567108,Český Jiřetín,UNASSIGNED
+immigration,567141,Havraň,UNASSIGNED
+immigration,567167,Hora Svaté Kateřiny,XIMM-078
+immigration,567175,Horní Jiřetín,UNASSIGNED
+immigration,567191,Klíny,XIMM-079
+immigration,567221,Korozluky,UNASSIGNED
+immigration,567248,Lišnice,UNASSIGNED
+immigration,567256,Litvínov,XIMM-079
+immigration,567264,Lom,XIMM-080
+immigration,567272,Louka u Litvínova,XIMM-080
+immigration,567281,Lužice,UNASSIGNED
+immigration,567299,Malé Březno,UNASSIGNED
+immigration,567302,Mariánské Radčice,UNASSIGNED
+immigration,567311,Meziboří,UNASSIGNED
+immigration,567329,Nová Ves v Horách,XIMM-078
+immigration,567337,Obrnice,XIMM-077
+immigration,567345,Patokryje,UNASSIGNED
+immigration,567353,Polerady,UNASSIGNED
+immigration,567361,Skršín,UNASSIGNED
+immigration,567426,Želenice,XIMM-081
+immigration,567442,Teplice,XIMM-082
+immigration,567451,Bílina,XIMM-077
+immigration,567469,Bořislav,UNASSIGNED
+immigration,567477,Bystřany,UNASSIGNED
+immigration,567485,Bžany,UNASSIGNED
+immigration,567507,Dubí,XIMM-083
+immigration,567515,Duchcov,UNASSIGNED
+immigration,567523,Háj u Duchcova,UNASSIGNED
+immigration,567531,Hostomice,UNASSIGNED
+immigration,567558,Hrob,XIMM-077
+immigration,567566,Hrobčice,XIMM-081
+immigration,567582,Jeníkov,XIMM-082
+immigration,567604,Kladruby,XIMM-084
+immigration,567612,Kostomlaty pod Milešovkou,UNASSIGNED
+immigration,567621,Košťany,XIMM-082
+immigration,567639,Krupka,XIMM-083
+immigration,567647,Lahošť,UNASSIGNED
+immigration,567655,Ledvice,UNASSIGNED
+immigration,567698,Měrunice,UNASSIGNED
+immigration,567701,Mikulov,XIMM-077
+immigration,567710,Modlany,UNASSIGNED
+immigration,567728,Moldava,UNASSIGNED
+immigration,567752,Novosedlice,UNASSIGNED
+immigration,567761,Ohníč,UNASSIGNED
+immigration,567779,Osek,XIMM-077
+immigration,567787,Proboštov,UNASSIGNED
+immigration,567809,Rtyně nad Bílinou,UNASSIGNED
+immigration,567833,Srbice,UNASSIGNED
+immigration,567841,Světec,UNASSIGNED
+immigration,567850,Újezdeček,UNASSIGNED
+immigration,567868,Zabrušany,XIMM-084
+immigration,567876,Žalany,UNASSIGNED
+immigration,567884,Žim,UNASSIGNED
+immigration,567931,Dolní Zálezly,UNASSIGNED
+immigration,567957,Habrovany,UNASSIGNED
+immigration,567973,Homole u Panny,XIMM-085
+immigration,568007,Chabařovice,XIMM-086
+immigration,568015,Chlumec,UNASSIGNED
+immigration,568023,Chuderov,UNASSIGNED
+immigration,568058,Libouchec,XIMM-036
+immigration,568091,Malé Březno,UNASSIGNED
+immigration,568104,Malečov,UNASSIGNED
+immigration,568147,Petrovice,UNASSIGNED
+immigration,568155,Povrly,XIMM-031
+immigration,568201,Řehlovice,XIMM-086
+immigration,568287,Tašov,UNASSIGNED
+immigration,568295,Telnice,UNASSIGNED
+immigration,568309,Tisá,UNASSIGNED
+immigration,568350,Velké Březno,XIMM-085
+immigration,568384,Zubrnice,UNASSIGNED
+emigration,505528,Jenčice,UNASSIGNED
+emigration,530395,Janská,UNASSIGNED
+emigration,530417,Doubice,UNASSIGNED
+emigration,530506,Miřejovice,UNASSIGNED
+emigration,530557,Kozly,XEMI-001
+emigration,530565,Želkovice,UNASSIGNED
+emigration,530581,Čeradice,XEMI-002
+emigration,530590,Libočany,UNASSIGNED
+emigration,530603,Zálužice,UNASSIGNED
+emigration,530620,Přestanov,UNASSIGNED
+emigration,542407,Trnovany,UNASSIGNED
+emigration,542423,Černouček,UNASSIGNED
+emigration,542440,Oleško,XEMI-003
+emigration,542482,Záluží,XEMI-004
+emigration,542491,Malíč,UNASSIGNED
+emigration,542521,Michalovice,UNASSIGNED
+emigration,542539,Píšťany,XEMI-005
+emigration,542547,Blšany u Loun,UNASSIGNED
+emigration,542555,Opočno,UNASSIGNED
+emigration,542571,Cítoliby,UNASSIGNED
+emigration,542580,Obora,UNASSIGNED
+emigration,542628,Černčice,UNASSIGNED
+emigration,542636,Nová Ves,UNASSIGNED
+emigration,543012,Žerotín,UNASSIGNED
+emigration,543128,Staňkovice,XEMI-006
+emigration,544647,Bynovec,UNASSIGNED
+emigration,544680,Janov,UNASSIGNED
+emigration,544701,Labská Stráň,XEMI-007
+emigration,545538,Starý Šachov,UNASSIGNED
+emigration,545678,Markvartice,UNASSIGNED
+emigration,545708,Lobendava,UNASSIGNED
+emigration,545783,Dobrná,XEMI-008
+emigration,545791,Merboltice,UNASSIGNED
+emigration,545856,Dolní Habartice,XEMI-008
+emigration,545899,Františkov nad Ploučnicí,UNASSIGNED
+emigration,545929,Horní Habartice,UNASSIGNED
+emigration,546011,Jimlín,XEMI-009
+emigration,546062,Pesvice,UNASSIGNED
+emigration,546071,Račetice,XEMI-010
+emigration,546160,Nezabylice,UNASSIGNED
+emigration,546178,Úherce,UNASSIGNED
+emigration,546186,Ryjice,UNASSIGNED
+emigration,546330,Kunratice,UNASSIGNED
+emigration,546348,Srbská Kamenice,UNASSIGNED
+emigration,546429,Chraberce,UNASSIGNED
+emigration,546437,Volevčice,XEMI-011
+emigration,546453,Kámen,UNASSIGNED
+emigration,546496,Ludvíkovice,UNASSIGNED
+emigration,546518,Loučná pod Klínovcem,UNASSIGNED
+emigration,546691,Lkáň,XEMI-012
+emigration,546721,Sedlec,UNASSIGNED
+emigration,546755,Brzánky,UNASSIGNED
+emigration,546763,Horní Řepčice,UNASSIGNED
+emigration,546771,Kamýk,UNASSIGNED
+emigration,546780,Býčkovice,UNASSIGNED
+emigration,546810,Chudoslavice,XEMI-013
+emigration,546828,Staňkovice,UNASSIGNED
+emigration,546852,Černěves,XEMI-014
+emigration,546861,Dobroměřice,UNASSIGNED
+emigration,546879,Líšťany,UNASSIGNED
+emigration,546887,Vršovice,UNASSIGNED
+emigration,546895,Brodec,XEMI-015
+emigration,546909,Lukov,XEMI-016
+emigration,546925,Stebno,XEMI-017
+emigration,553646,Dolánky nad Ohří,UNASSIGNED
+emigration,553697,Trmice,UNASSIGNED
+emigration,554804,Ústí nad Labem,XEMI-018
+emigration,555193,Těchlovice,UNASSIGNED
+emigration,555223,Velké Chvojno,UNASSIGNED
+emigration,562335,Děčín,XEMI-019
+emigration,562343,Arnoltice,UNASSIGNED
+emigration,562351,Benešov nad Ploučnicí,XEMI-020
+emigration,562394,Česká Kamenice,UNASSIGNED
+emigration,562408,Dobkovice,XEMI-021
+emigration,562432,Dolní Podluží,XEMI-022
+emigration,562441,Dolní Poustevna,UNASSIGNED
+emigration,562483,Heřmanov,XEMI-019
+emigration,562505,Horní Podluží,UNASSIGNED
+emigration,562513,Hřensko,XEMI-007
+emigration,562521,Huntířov,XEMI-023
+emigration,562530,Chřibská,XEMI-024
+emigration,562556,Jetřichovice,XEMI-025
+emigration,562564,Jílové,XEMI-021
+emigration,562572,Jiřetín pod Jedlovou,XEMI-022
+emigration,562581,Jiříkov,UNASSIGNED
+emigration,562611,Krásná Lípa,XEMI-026
+emigration,562645,Kytlice,XEMI-024
+emigration,562661,Lipová,UNASSIGNED
+emigration,562700,Malá Veleň,XEMI-020
+emigration,562718,Malšovice,XEMI-021
+emigration,562751,Mikulášovice,UNASSIGNED
+emigration,562777,Rumburk,XEMI-026
+emigration,562793,Rybniště,UNASSIGNED
+emigration,562823,Staré Křečany,UNASSIGNED
+emigration,562858,Šluknov,XEMI-026
+emigration,562874,Valkeřice,XEMI-027
+emigration,562882,Varnsdorf,UNASSIGNED
+emigration,562891,Velká Bukovina,UNASSIGNED
+emigration,562912,Velký Šenov,XEMI-026
+emigration,562921,Verneřice,XEMI-027
+emigration,562939,Veselé,XEMI-023
+emigration,562947,Vilémov,UNASSIGNED
+emigration,562971,Chomutov,XEMI-028
+emigration,562980,Bílence,XEMI-029
+emigration,562998,Blatno,UNASSIGNED
+emigration,563005,Boleboř,UNASSIGNED
+emigration,563013,Březno,XEMI-030
+emigration,563021,Černovice,XEMI-031
+emigration,563048,Domašín,UNASSIGNED
+emigration,563056,Droužkovice,XEMI-030
+emigration,563064,Hora Svatého Šebestiána,XEMI-031
+emigration,563072,Hrušovany,XEMI-029
+emigration,563081,Chbany,XEMI-032
+emigration,563099,Jirkov,XEMI-028
+emigration,563102,Kadaň,UNASSIGNED
+emigration,563111,Kalek,UNASSIGNED
+emigration,563129,Klášterec nad Ohří,XEMI-033
+emigration,563137,Kovářská,XEMI-034
+emigration,563161,Křimov,XEMI-031
+emigration,563188,Libědice,UNASSIGNED
+emigration,563200,Málkov,XEMI-035
+emigration,563218,Mašťov,UNASSIGNED
+emigration,563226,Měděnec,UNASSIGNED
+emigration,563242,Místo,UNASSIGNED
+emigration,563269,Okounov,UNASSIGNED
+emigration,563277,Otvice,XEMI-028
+emigration,563285,Perštejn,XEMI-033
+emigration,563293,Pětipsy,XEMI-010
+emigration,563315,Kryštofovy Hamry,UNASSIGNED
+emigration,563323,Radonice,UNASSIGNED
+emigration,563331,Rokle,UNASSIGNED
+emigration,563340,Spořice,XEMI-035
+emigration,563358,Strupčice,XEMI-036
+emigration,563382,Údlice,UNASSIGNED
+emigration,563404,Vejprty,XEMI-034
+emigration,563412,Veliká Ves,UNASSIGNED
+emigration,563439,Vilémov,XEMI-032
+emigration,563463,Vrskmaň,XEMI-037
+emigration,563471,Všehrdy,UNASSIGNED
+emigration,563480,Všestudy,UNASSIGNED
+emigration,563498,Výsluní,XEMI-035
+emigration,563501,Vysoká Pec,UNASSIGNED
+emigration,564567,Litoměřice,XEMI-038
+emigration,564575,Bechlín,UNASSIGNED
+emigration,564591,Bohušovice nad Ohří,UNASSIGNED
+emigration,564613,Brňany,UNASSIGNED
+emigration,564621,Brozany nad Ohří,XEMI-039
+emigration,564648,Bříza,XEMI-040
+emigration,564656,Budyně nad Ohří,UNASSIGNED
+emigration,564672,Ctiněves,XEMI-041
+emigration,564699,Černiv,XEMI-042
+emigration,564711,Čížkovice,UNASSIGNED
+emigration,564729,Děčany,XEMI-012
+emigration,564737,Dlažkovice,UNASSIGNED
+emigration,564745,Dobříň,XEMI-004
+emigration,564753,Doksany,UNASSIGNED
+emigration,564770,Drahobuz,XEMI-043
+emigration,564818,Dušníky,UNASSIGNED
+emigration,564834,Evaň,UNASSIGNED
+emigration,564842,Hlinná,UNASSIGNED
+emigration,564851,Horní Beřkovice,UNASSIGNED
+emigration,564877,Hoštka,XEMI-044
+emigration,564893,Hrobce,XEMI-003
+emigration,564923,Chodouny,UNASSIGNED
+emigration,564931,Chodovlice,UNASSIGNED
+emigration,564940,Chotěšov,XEMI-042
+emigration,564958,Chotiměř,UNASSIGNED
+emigration,564966,Chotiněves,UNASSIGNED
+emigration,565016,Keblice,UNASSIGNED
+emigration,565024,Klapý,XEMI-045
+emigration,565032,Kleneč,UNASSIGNED
+emigration,565059,Kostomlaty pod Řípem,XEMI-041
+emigration,565067,Krabčice,XEMI-046
+emigration,565075,Křesín,UNASSIGNED
+emigration,565083,Křešice,XEMI-047
+emigration,565091,Kyškovice,UNASSIGNED
+emigration,565105,Levín,UNASSIGNED
+emigration,565113,Lhotka nad Labem,XEMI-005
+emigration,565121,Liběšice,XEMI-048
+emigration,565148,Libkovice pod Řípem,UNASSIGNED
+emigration,565156,Libochovany,XEMI-049
+emigration,565164,Libochovice,UNASSIGNED
+emigration,565172,Libotenice,UNASSIGNED
+emigration,565211,Lovečkovice,XEMI-050
+emigration,565229,Lovosice,XEMI-005
+emigration,565237,Lukavec,UNASSIGNED
+emigration,565245,Malé Žernoseky,UNASSIGNED
+emigration,565253,Martiněves,XEMI-040
+emigration,565296,Mlékojedy,UNASSIGNED
+emigration,565300,Mnetěš,UNASSIGNED
+emigration,565318,Mšené-lázně,UNASSIGNED
+emigration,565342,Nové Dvory,XEMI-014
+emigration,565393,Ploskovice,UNASSIGNED
+emigration,565415,Podsedice,UNASSIGNED
+emigration,565431,Polepy,XEMI-043
+emigration,565458,Prackovice nad Labem,XEMI-018
+emigration,565474,Přestavlky,UNASSIGNED
+emigration,565482,Račice,UNASSIGNED
+emigration,565491,Račiněves,UNASSIGNED
+emigration,565521,Radovesice,XEMI-042
+emigration,565547,Rochov,XEMI-039
+emigration,565555,Roudnice nad Labem,XEMI-046
+emigration,565598,Siřejovice,XEMI-005
+emigration,565601,Slatina,UNASSIGNED
+emigration,565610,Snědovice,XEMI-044
+emigration,565679,Straškov-Vodochody,UNASSIGNED
+emigration,565695,Sulejovice,UNASSIGNED
+emigration,565709,Štětí,UNASSIGNED
+emigration,565717,Terezín,XEMI-038
+emigration,565741,Travčice,XEMI-047
+emigration,565768,Třebenice,XEMI-016
+emigration,565776,Třebívlice,UNASSIGNED
+emigration,565792,Třebušín,XEMI-048
+emigration,565806,Úpohlavy,UNASSIGNED
+emigration,565814,Úštěk,UNASSIGNED
+emigration,565831,Vědomice,UNASSIGNED
+emigration,565849,Velemín,UNASSIGNED
+emigration,565857,Velké Žernoseky,XEMI-049
+emigration,565865,Vchynice,UNASSIGNED
+emigration,565873,Vlastislav,UNASSIGNED
+emigration,565881,Vražkov,UNASSIGNED
+emigration,565890,Vrbice,XEMI-051
+emigration,565903,Vrbičany,UNASSIGNED
+emigration,565911,Vrutice,XEMI-051
+emigration,565938,Žabovřesky nad Ohří,UNASSIGNED
+emigration,565946,Žalhostice,UNASSIGNED
+emigration,565954,Židovice,XEMI-014
+emigration,565962,Žitenice,XEMI-013
+emigration,565971,Louny,XEMI-015
+emigration,565997,Bitozeves,XEMI-006
+emigration,566004,Blatno,XEMI-052
+emigration,566012,Blažim,UNASSIGNED
+emigration,566021,Blšany,UNASSIGNED
+emigration,566063,Břvany,XEMI-011
+emigration,566128,Deštnice,UNASSIGNED
+emigration,566152,Domoušice,XEMI-053
+emigration,566187,Holedeč,UNASSIGNED
+emigration,566195,Hříškov,XEMI-054
+emigration,566217,Hřivice,XEMI-053
+emigration,566233,Chlumčany,UNASSIGNED
+emigration,566241,Chožov,UNASSIGNED
+emigration,566284,Koštice,XEMI-045
+emigration,566306,Krásný Dvůr,XEMI-055
+emigration,566314,Kryry,UNASSIGNED
+emigration,566322,Lenešice,UNASSIGNED
+emigration,566349,Libčeves,XEMI-001
+emigration,566357,Liběšice,XEMI-056
+emigration,566381,Libořice,UNASSIGNED
+emigration,566403,Lipno,XEMI-053
+emigration,566411,Lišany,UNASSIGNED
+emigration,566438,Lubenec,UNASSIGNED
+emigration,566454,Měcholupy,UNASSIGNED
+emigration,566501,Nepomyšl,XEMI-055
+emigration,566519,Nové Sedlo,UNASSIGNED
+emigration,566527,Očihov,UNASSIGNED
+emigration,566535,Panenský Týnec,XEMI-057
+emigration,566551,Peruc,XEMI-058
+emigration,566560,Petrohrad,UNASSIGNED
+emigration,566578,Pnětluky,UNASSIGNED
+emigration,566586,Počedělice,XEMI-058
+emigration,566608,Podbořanský Rohozec,UNASSIGNED
+emigration,566616,Podbořany,XEMI-002
+emigration,566624,Postoloprty,XEMI-009
+emigration,566659,Raná,UNASSIGNED
+emigration,566667,Ročov,UNASSIGNED
+emigration,566713,Slavětín,UNASSIGNED
+emigration,566721,Smolnice,XEMI-059
+emigration,566829,Toužetín,XEMI-059
+emigration,566853,Tuchořice,XEMI-056
+emigration,566870,Velemyšleves,XEMI-036
+emigration,566896,Veltěže,UNASSIGNED
+emigration,566900,Růžová,XEMI-025
+emigration,566918,Vinařice,XEMI-054
+emigration,566926,Vrbno nad Lesy,XEMI-057
+emigration,566934,Vroutek,XEMI-052
+emigration,566951,Výškov,UNASSIGNED
+emigration,566977,Zbrašín,UNASSIGNED
+emigration,566985,Žatec,UNASSIGNED
+emigration,567019,Žiželice,UNASSIGNED
+emigration,567027,Most,XEMI-037
+emigration,567043,Bečov,UNASSIGNED
+emigration,567051,Bělušice,UNASSIGNED
+emigration,567060,Braňany,UNASSIGNED
+emigration,567078,Brandov,UNASSIGNED
+emigration,567108,Český Jiřetín,UNASSIGNED
+emigration,567141,Havraň,UNASSIGNED
+emigration,567167,Hora Svaté Kateřiny,XEMI-060
+emigration,567175,Horní Jiřetín,UNASSIGNED
+emigration,567191,Klíny,UNASSIGNED
+emigration,567221,Korozluky,XEMI-061
+emigration,567248,Lišnice,UNASSIGNED
+emigration,567256,Litvínov,XEMI-062
+emigration,567264,Lom,XEMI-063
+emigration,567272,Louka u Litvínova,XEMI-062
+emigration,567281,Lužice,UNASSIGNED
+emigration,567299,Malé Březno,UNASSIGNED
+emigration,567302,Mariánské Radčice,XEMI-064
+emigration,567311,Meziboří,UNASSIGNED
+emigration,567329,Nová Ves v Horách,XEMI-060
+emigration,567337,Obrnice,UNASSIGNED
+emigration,567345,Patokryje,UNASSIGNED
+emigration,567353,Polerady,UNASSIGNED
+emigration,567361,Skršín,XEMI-061
+emigration,567426,Želenice,UNASSIGNED
+emigration,567442,Teplice,XEMI-065
+emigration,567451,Bílina,XEMI-064
+emigration,567469,Bořislav,UNASSIGNED
+emigration,567477,Bystřany,XEMI-065
+emigration,567485,Bžany,UNASSIGNED
+emigration,567507,Dubí,XEMI-066
+emigration,567515,Duchcov,XEMI-064
+emigration,567523,Háj u Duchcova,UNASSIGNED
+emigration,567531,Hostomice,XEMI-067
+emigration,567558,Hrob,XEMI-068
+emigration,567566,Hrobčice,XEMI-001
+emigration,567582,Jeníkov,XEMI-069
+emigration,567604,Kladruby,UNASSIGNED
+emigration,567612,Kostomlaty pod Milešovkou,UNASSIGNED
+emigration,567621,Košťany,UNASSIGNED
+emigration,567639,Krupka,XEMI-066
+emigration,567647,Lahošť,XEMI-069
+emigration,567655,Ledvice,XEMI-064
+emigration,567698,Měrunice,UNASSIGNED
+emigration,567701,Mikulov,XEMI-068
+emigration,567710,Modlany,XEMI-070
+emigration,567728,Moldava,UNASSIGNED
+emigration,567752,Novosedlice,XEMI-071
+emigration,567761,Ohníč,UNASSIGNED
+emigration,567779,Osek,XEMI-063
+emigration,567787,Proboštov,XEMI-071
+emigration,567809,Rtyně nad Bílinou,XEMI-070
+emigration,567833,Srbice,XEMI-065
+emigration,567841,Světec,XEMI-067
+emigration,567850,Újezdeček,UNASSIGNED
+emigration,567868,Zabrušany,UNASSIGNED
+emigration,567876,Žalany,UNASSIGNED
+emigration,567884,Žim,UNASSIGNED
+emigration,567931,Dolní Zálezly,UNASSIGNED
+emigration,567957,Habrovany,UNASSIGNED
+emigration,567973,Homole u Panny,UNASSIGNED
+emigration,568007,Chabařovice,UNASSIGNED
+emigration,568015,Chlumec,UNASSIGNED
+emigration,568023,Chuderov,UNASSIGNED
+emigration,568058,Libouchec,UNASSIGNED
+emigration,568091,Malé Březno,UNASSIGNED
+emigration,568104,Malečov,UNASSIGNED
+emigration,568147,Petrovice,UNASSIGNED
+emigration,568155,Povrly,UNASSIGNED
+emigration,568201,Řehlovice,XEMI-017
+emigration,568287,Tašov,UNASSIGNED
+emigration,568295,Telnice,UNASSIGNED
+emigration,568309,Tisá,UNASSIGNED
+emigration,568350,Velké Březno,UNASSIGNED
+emigration,568384,Zubrnice,XEMI-050
