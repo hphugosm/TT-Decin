@@ -17,11 +17,11 @@ Kliknutí na obec vybere její skupinu a přiblíží celé její území; neza�
 
 Kliknutí na člena v přehledu nebo legendě zvýrazní jeho body; další kliknutí zvýraznění zruší. Mapa nabízí posun, přiblížení a oddálení. Mapa i graf se dají rozbalit přes celé okno; Esc vrátí původní rozložení. Časová osa, šipky, přehrávání nebo kliknutí do grafu mění rok. **Rok nemění členství ani barvy skupin**, které vycházejí z celého období.
 
-Nastavení přepíná profil podobnosti, minimální velikost skupiny, filtr stabilnějších nálezů a ukazatel grafu. Výchozí je původní profil `balanced`, přistěhování, skupiny od dvou obcí, bez filtru stability a podíl obyvatel. Detail skupiny obsahuje dvojice, stabilitu a export všech členů a jejich ročních hodnot do CSV (UTF-8, středník).
+Nastavení přepíná profil podobnosti, minimální velikost skupiny, filtr stabilnějších nálezů a ukazatel grafu. Výchozí je rozšířený profil `extended`: nejméně 60% shoda směru změn každé dvojice a obě korelace nejméně 0,15. Zobrazuje přistěhování, skupiny od dvou obcí, bez filtru stability a podíl obyvatel. V tomto profilu mají skupiny až šest obcí pro přistěhování a čtyři pro vystěhování. Detail skupiny obsahuje dvojice, stabilitu a export všech členů a jejich ročních hodnot do CSV (UTF-8, středník).
 
 ## Profily a počty
 
-Počty jsou pro všechny skupiny profilu před filtry. P = přistěhování, V = vystěhování. Korelační práh platí současně pro Pearsonovu i Spearmanovu korelaci každé dvojice.
+Počty jsou pro všechny skupiny profilu před filtry. P = přistěhování, V = vystěhování. Procento označuje minimální shodu směru meziročních změn každé dvojice obcí ve společných informativních přechodech; není to přesnost modelu ani pravděpodobnost správnosti skupiny. Korelační práh platí současně pro Pearsonovu i Spearmanovu korelaci každé dvojice. Seznam v nastavení postupuje od nejpřísnějších 70 % přes 65 % ke dvěma variantám 60 % s rozdílnými korelačními prahy. Přepnutí vybírá již uložené výsledky a data nepřepočítává; profily nemusí být vzájemně vnořené.
 
 | Profil | Shoda směrů / korelace | Skupiny P / V | Zařazené obce P / V | Nezařazené P / V | Stabilnější skupiny P / V |
 | --- | --- | --- | --- | --- | --- |
