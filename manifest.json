@@ -4,7 +4,8 @@
   "municipalities": 354,
   "javascriptSyntaxChecked": true,
   "files": {
-    "RADAR_README.md": "b7fa8748bf029e283f49cc6851bcf58ea757682902140bbdaea8a7d7955f2cab",
+    "BRAND_BIBLE.md": "c4af26b89681aed9676ccccd9be2cfa6c9f506bcf005f9f2fbbf061afecc2a14",
+    "RADAR_README.md": "6f34b972e38301433957ff62232851a77d2328172663d9627f89a66d523e9ad3",
     "data/radar-data.json": "c7c5e16e53dabc0fda865f3df1f512baf5562007b8c4db73540f8619f6c2c6db",
     "data/radar-geography.json": "2c217c520cb07799630ff4698cb0b2943d4a76962cf4c06b5ab9ff6e7a7d32b9",
     "data/radar-provenance.md": "62f250ed31b9f1aa91aa4bd7b5b9ac6e3a800b7a12c97bde4fcaf06278ed0efb",

@@ -1,5 +1,7 @@
 # Migrační radar Ústeckého kraje
 
+[Brand Bible – barvy, typografie a vizuální styl pro prezentace](BRAND_BIBLE.md)
+
 Lokální průzkum skutečné obecní migrace s importem CSV, mapou a dvěma bodovými grafy. Aplikace běží bez CDN, mapových dlaždic a instalace npm balíčků. Původní časový atlas zůstává na `temporal-clusters.html`.
 
 ## Spuštění a produkční sestavení

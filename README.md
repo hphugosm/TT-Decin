@@ -4,6 +4,8 @@ Interaktivní mapa migrace v obcích Ústeckého kraje, bodové grafy a import C
 
 **Živá aplikace:** https://hphugosm.github.io/TT-Decin/
 
+**Vizuální styl pro prezentace:** [Brand Bible – barvy, písmo a pravidla použití](BRAND_BIBLE.md)
+
 ## Spuštění
 
 Repozitář obsahuje samostatnou statickou aplikaci; není potřeba instalovat balíčky ani spouštět build.
