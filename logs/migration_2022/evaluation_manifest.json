@@ -1,0 +1,24 @@
+{
+  "evaluated_at": "2026-10-24T09:10:36.207589+00:00",
+  "forecast_frozen_at": "2026-10-24T09:08:19.642619+00:00",
+  "forecast_freeze_sha256": "0ccfb9d6356cffd8e47b897512bccb7f85195b1ebfec3a2cef77f35efc26d172",
+  "freeze_all_inputs_outputs_verified": true,
+  "source_json_publish_checkout_audits_hash_confirmed": "c7c5e16e53dabc0fda865f3df1f512baf5562007b8c4db73540f8619f6c2c6db",
+  "municipal_final_net_sum": 16061.0,
+  "regional_final_net": 16061.0,
+  "net_discrepancy_municipal_minus_region": 0.0,
+  "net_reconciliation_status": "municipal_vs_region_net_reconciled",
+  "no_rescaling_applied": true,
+  "proxy_paired": 273,
+  "proxy_missing": 81,
+  "uncertainty": "min/max of7 historical joint annual residual scenarios, not calibrated95%; ORP scenarios summed before bounds",
+  "script_sha256": "01dc64872826de19cb22f4398ea64373db30627e96913335f17bfc00163f6975",
+  "outputs": {
+    "predictions_2022_region.csv": "2abc35173b340bae9b2767c2ed54c15f98819806d4ee297b3eb00f0312d52ea7",
+    "predictions_2022_municipalities.csv": "37efdd8f5e3817695c47b5abcde99944e976e1b0608635d41c7b16a8b42b19b7",
+    "evaluation_2022_ORP.csv": "c89537136a3e6c5f75a78bd4cea9c9e8db81865bb5e5f55d70c1028b054f1d5c",
+    "orp_joint_scenarios_2022.csv": "778b96bc88767ff81cf22f0fb6ebe3dbe9ec201a801418140efe9808b9e483d6",
+    "proxy_statistics.csv": "19f756002e01e5706a462498d721803262625d062d0bc17f715c080fca5f8a26",
+    "municipal_proxy_comparison.csv": "2c35e7ff6ea0cd067480c7e14c56e5763870a676555de8cad14b421f0724329b"
+  }
+}

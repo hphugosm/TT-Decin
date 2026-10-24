@@ -7,3 +7,4 @@
 - 2026-10-24T10:58:52.179642+02:00: **referencni_a_krajsky_benchmark** — Dokončeny dvě reference a pět trénovaných rodin. Krajské konfigurace zmrazeny po vývoji 2010–2014, historické hodnocení 2015–2021 a citlivosti dokončeny. Obecní testy navazují.
 - 2026-10-24T11:09:49.546118+02:00: **obecni_benchmark_a_selektor** — Všech 354 obcí, sedm trénovaných rodin a dvě reference. Výběr pro testy 2015–2021 vždy používá jen dřívější chyby.
 - 2026-10-24T11:09:49.546848+02:00: **zmrazene_predikce_2022** — Bodové predikce, společné roční scénáře a konfigurace opatřeny SHA-256 před výsledkovým porovnáním 2022.
+- 2026-10-24T11:10:36.880572+02:00: **externi_srovnani** — Zmrazené predikce spojeny s konečnými údaji, předběžnými daty bez DO a odděleně s MV evidenčním stavem. Chybějící obce MV nejsou nahrazeny nulou.
