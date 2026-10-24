@@ -61,3 +61,7 @@ Na výslovné přání uživatele byl graf Přistěhování × vystěhování v�
 ## Prezentační rozložení podle náčrtu — 24. 10. 2026
 
 Na široké obrazovce je mapa dominantně vlevo (přibližně 62 % šířky), časová osa pod ní. Vpravo jsou metriky, široké hledání, informace o obci a časový graf. Detail již mapu nezakrývá. SVG viewport vychází ze skutečných hranic kraje, bez původního širokého prázdného okraje. Výška využívá obrazovku; na mobilu jsou prvky pod sebou s hledáním před mapou.
+
+## Název jako hledání — 24. 10. 2026
+
+Velký název území je nyní přímo vyhledávací pole s černou lupou. Výchozí text Ústecký kraj lze přepsat; návrhy fungují podle začátku názvu bez diakritiky. Výběr nastaví název, detail, graf a plynulý zoom. Nápis Pohyb obyvatelstva a duplicitní hledání v pravém sloupci byly odstraněny. Escape obnoví aktuální název.

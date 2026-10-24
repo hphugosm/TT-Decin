@@ -79,3 +79,5 @@ Přistěhování používá modrou a vystěhování oranžovou v mapě, legendě
 ## Rozložení pro prezentaci
 
 Na notebooku a velkém displeji je mapa vlevo a ovládání, informace a graf v pravém sloupci. Časová osa je pod mapou. Mapa vyplňuje dostupnou výšku a informace ji nezakrývají. Na úzké obrazovce se obsah skládá pod sebe, metriky a hledání jsou před mapou.
+
+Vyhledávání je přímo ve velkém názvu území vedle černé lupy. Výchozí text Ústecký kraj lze přepsat; při zaměření se označí celý. Návrhy se řídí začátkem názvu bez diakritiky. Enter nebo kliknutí vybere obec a přiblíží mapu; Escape obnoví aktuální název. Samostatné pole v pravém sloupci již není.
