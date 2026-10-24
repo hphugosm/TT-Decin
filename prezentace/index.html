@@ -7,8 +7,8 @@
   <meta name="description" content="Příběh dat obcí Ústeckého kraje. Živá prezentace a vedená prohlídka daty.">
   <title>Stěhování obcí Ústeckého kraje</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23173da5'/%3E%3Ccircle cx='10' cy='21' r='3' fill='white'/%3E%3Ccircle cx='22' cy='11' r='3' fill='white'/%3E%3Cpath d='M12 19L20 13' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=reality-charts-13">
-  <script src="app.js?v=reality-charts-13" defer></script>
+  <link rel="stylesheet" href="styles.css?v=reality-window-14">
+  <script src="app.js?v=reality-window-14" defer></script>
 </head>
 <body data-view="home" data-step="0">
   <main id="main">
@@ -142,7 +142,7 @@
         <div class="reality-layout">
           <p class="reality-finding">Jasný společný růst po záměrech <strong>nevidíme.</strong></p>
           <div class="reality-toolbar">
-            <div class="reality-reading"><strong id="reality-units">Odchylka od kraje · procentní body</strong><span>0 = vývoj odpovídající kraji <i class="reality-event-key" aria-hidden="true"></i> Rok záměru</span></div>
+            <div class="reality-reading"><strong id="reality-units">Odchylka od kraje · procentní body</strong><span>0 = vývoj odpovídající kraji · 3 roky před / 5 let po <i class="reality-event-key" aria-hidden="true"></i> Rok záměru</span></div>
             <div class="reality-controls"><div class="reality-toggle" role="group" aria-label="Jednotky grafů"><button data-reality-metric="pp" aria-pressed="true" disabled>Procentní body</button><button data-reality-metric="persons" aria-pressed="false" disabled>Osoby</button></div><button id="reality-method-open" class="reality-method-button" aria-label="Jak číst grafy a zdroj dat" title="Jak číst grafy a zdroj dat">ⓘ</button></div>
           </div>
           <p id="reality-status" class="reality-status" role="status">Načítám šest datových řad…</p>
@@ -153,6 +153,7 @@
           <button class="reality-close" aria-label="Zavřít vysvětlení">×</button>
           <h2 id="reality-method-title">Jak číst realitu</h2>
           <p>Každý bod je jeden rok. Červený bod označuje <strong>rok investičního záměru</strong>, nikoli nutně zahájení náboru nebo provozu. Počet míst je plán; velikost bodu ho nevyjadřuje.</p>
+          <p>Grafy ukazují nejvýše tři roky před rokem záměru a pět let po něm. Červené body leží na stejném místě časové osy. U Nemaku chybí rok 1999, proto zobrazujeme jen dva dostupné roky před záměrem; chybějící hodnotu nedoplňujeme.</p>
           <p>Sledujeme hostitelskou obec a obce do 50 km vzdušnou čarou mezi jejich geometrickými středy, pouze v Ústeckém kraji. Okruhy se překrývají a jejich složení se mezi roky nemění. Hostitelská obec je započtena jednou.</p>
           <p><strong>Nad nulou</strong> je míra migrace vyšší než krajská, <strong>pod nulou</strong> nižší. Od míry v okruhu odečítáme krajskou míru daného roku. Populace je stav k 31. 12.</p>
           <p>V osobách zobrazujeme rozdíl mezi skutečným saldem a saldem očekávaným při krajské míře. Proto může být výsledek desetinný. Saldo znamená přistěhovalí minus vystěhovalí.</p>

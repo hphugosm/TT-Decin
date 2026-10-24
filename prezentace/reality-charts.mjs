@@ -1,4 +1,4 @@
-import { migrationSeries, sharedScale } from './reality-engine.mjs';
+import { migrationSeries, eventWindow, sharedScale } from './reality-engine.mjs?v=reality-window-14';
 
 const ns = 'http://www.w3.org/2000/svg';
 const number = (value, digits = 0, signed = false) => new Intl.NumberFormat('cs-CZ', {
@@ -14,7 +14,7 @@ const svgNode = (tag, attributes, text) => {
 export async function createRealityCharts(section) {
   const response = await fetch(new URL('./data/company-migration.json', import.meta.url));
   if (!response.ok) throw new Error('Data grafů se nepodařilo načíst.');
-  const series = migrationSeries(await response.json());
+  const series = eventWindow(migrationSeries(await response.json()));
   const grid = section.querySelector('#reality-grid');
   const tooltip = section.querySelector('#reality-tooltip');
   const units = section.querySelector('#reality-units');
@@ -67,15 +67,15 @@ export async function createRealityCharts(section) {
     const width = plot.clientWidth, height = plot.clientHeight;
     if (width < 1 || height < 1) return;
     const margin = { left: metric === 'pp' ? 43 : 53, right: 14, top: 12, bottom: 24 };
-    const x = year => margin.left + (year - 2000) / 25 * (width - margin.left - margin.right);
+    const x = year => margin.left + (year - company.windowStart) / (company.windowEnd - company.windowStart) * (width - margin.left - margin.right);
     const y = value => margin.top + (scale.max - value) / (scale.max - scale.min) * (height - margin.top - margin.bottom);
-    const svg = svgNode('svg', { viewBox: `0 0 ${width} ${height}`, role: 'group', 'aria-label': `${company.firma}: migrace 2000 až 2025, ${metric === 'pp' ? 'odchylka v procentních bodech' : 'odchylka v osobách'}` });
+    const svg = svgNode('svg', { viewBox: `0 0 ${width} ${height}`, role: 'group', 'aria-label': `${company.firma}: migrace ${company.points[0].year} až ${company.points.at(-1).year}, ${metric === 'pp' ? 'odchylka v procentních bodech' : 'odchylka v osobách'}` });
     const axes = svgNode('g', { 'aria-hidden': 'true', class: 'reality-axes' });
     scale.ticks.forEach(value => {
-      axes.append(svgNode('line', { x1: x(2000), x2: x(2025), y1: y(value), y2: y(value), class: value === 0 ? 'reality-zero' : 'reality-gridline' }));
+      axes.append(svgNode('line', { x1: x(company.windowStart), x2: x(company.windowEnd), y1: y(value), y2: y(value), class: value === 0 ? 'reality-zero' : 'reality-gridline' }));
       axes.append(svgNode('text', { x: margin.left - 9, y: y(value) + 3.5, 'text-anchor': 'end' }, number(value, metric === 'pp' ? 1 : 0, true)));
     });
-    [2000, 2005, 2010, 2015, 2020, 2025].forEach(year => {
+    Array.from({ length: 9 }, (_, index) => company.windowStart + index).forEach(year => {
       axes.append(svgNode('text', { x: x(year), y: height - 5, 'text-anchor': 'middle' }, year));
     });
     svg.append(axes);
@@ -97,7 +97,7 @@ export async function createRealityCharts(section) {
         } else if (event.key === 'ArrowUp' || event.key === 'ArrowDown') {
           // Up/down explore years; left/right always navigate the presentation.
           event.preventDefault(); event.stopPropagation();
-          const nextYear = Math.max(2000, Math.min(2025, point.year + (event.key === 'ArrowUp' ? 1 : -1)));
+          const nextYear = Math.max(company.points[0].year, Math.min(company.points.at(-1).year, point.year + (event.key === 'ArrowUp' ? 1 : -1)));
           dismiss();
           svg.querySelectorAll('.reality-point').forEach(node => node.setAttribute('tabindex', '-1'));
           const next = svg.querySelector(`[data-year="${nextYear}"]`);
@@ -106,9 +106,6 @@ export async function createRealityCharts(section) {
       });
       svg.append(group);
     });
-    const event = company.points.find(point => point.event);
-    const pointY = y(event[metric]);
-    svg.append(svgNode('text', { x: x(event.year) + 10, y: pointY < 30 ? pointY + 20 : pointY - 12, class: 'reality-event-label', 'aria-hidden': 'true' }, `Záměr ${event.year}`));
     plot.replaceChildren(svg);
   }
 

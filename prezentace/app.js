@@ -170,13 +170,13 @@ function playHypothesisAnimation() {
 // Load the observed series once; preserve the shared unit selector between visits.
 let realityController = null;
 let realityLoading = null;
-function showReality() {
-  if (realityController) { realityController.show(); return; }
+function prepareReality() {
+  if (realityController) return Promise.resolve(realityController);
   if (!realityLoading) {
     const status = $('#reality-status');
     status.hidden = false;
     status.textContent = 'Načítám šest datových řad…';
-    realityLoading = import('./reality-charts.mjs?v=reality-charts-13')
+    realityLoading = import('./reality-charts.mjs?v=reality-window-14')
       .then(module => module.createRealityCharts($('#reality-slide')))
       .then(controller => { realityController = controller; return controller; })
       .catch(error => {
@@ -190,10 +190,83 @@ function showReality() {
         return null;
       });
   }
-  realityLoading.then(controller => {
+  return realityLoading;
+}
+function showReality() {
+  prepareReality().then(controller => {
     if (controller && currentView === 'presentation' && currentSlide === 6) controller.show();
   });
 }
+
+// Snapshot only the outgoing slide into inert tiles. The persistent wordmark,
+// timer and navigation stay mounted and usable throughout the transition.
+let hypothesisBreakup = null;
+function cancelHypothesisBreakup() {
+  if (!hypothesisBreakup) return;
+  const previous = hypothesisBreakup;
+  hypothesisBreakup = null;
+  previous.animations.forEach(animation => animation.cancel());
+  previous.layer.remove();
+  $('#reality-slide').classList.remove('reality-arriving');
+}
+function captureHypothesisBreakup() {
+  const source = $('#hypothesis-slide');
+  const rect = source.getBoundingClientRect();
+  const layer = document.createElement('div');
+  layer.className = 'hypothesis-breakup-layer';
+  layer.setAttribute('aria-hidden', 'true');
+  layer.inert = true;
+  layer.style.bottom = `${Math.max(0, window.innerHeight - $('.presentation-footer').getBoundingClientRect().top)}px`;
+  const pieces = [];
+  const columns = 5, rows = 4;
+  for (let row = 0; row < rows; row++) {
+    for (let column = 0; column < columns; column++) {
+      const width = rect.width / columns, height = rect.height / rows;
+      const tile = document.createElement('div');
+      tile.className = 'hypothesis-fragment';
+      Object.assign(tile.style, { left: `${rect.left + column * width}px`, top: `${rect.top + row * height}px`, width: `${width + .5}px`, height: `${height + .5}px` });
+      const copy = source.cloneNode(true);
+      copy.removeAttribute('id');
+      copy.removeAttribute('aria-labelledby');
+      copy.classList.remove('entering', 'changing');
+      copy.querySelectorAll('[id]').forEach(element => element.removeAttribute('id'));
+      // Avoid duplicated SVG paint-server IDs in the transient snapshots.
+      copy.querySelector('.hypothesis-area').setAttribute('fill', '#173DA512');
+      copy.querySelector('defs').remove();
+      Object.assign(copy.style, { position: 'absolute', left: `${-column * width}px`, top: `${-row * height}px`, width: `${rect.width}px`, height: `${rect.height}px`, flex: 'none', margin: '0' });
+      tile.append(copy); layer.append(tile);
+      pieces.push({ tile, row, column });
+    }
+  }
+  $('#presentation').append(layer);
+  return { layer, pieces, animations: [] };
+}
+function playHypothesisBreakup(transition) {
+  hypothesisBreakup = transition;
+  const incoming = $('#reality-slide');
+  incoming.classList.remove('entering');
+  incoming.classList.add('reality-arriving');
+  transition.pieces.forEach(({ tile, row, column }) => {
+    const drift = (column - 2) * 24 + (row % 2 ? 16 : -16);
+    const rotation = (column % 2 ? 1 : -1) * (6 + row * 3);
+    transition.animations.push(tile.animate([
+      { transform: 'translate3d(0,0,0) rotate(0deg)', opacity: 1 },
+      { transform: `translate3d(${drift * .2}px,28px,0) rotate(${rotation * .2}deg)`, opacity: .95, offset: .25 },
+      { transform: `translate3d(${drift}px,${Math.max(400, window.innerHeight * .75)}px,0) rotate(${rotation}deg)`, opacity: 0 }
+    ], { duration: 760, delay: (3 - row) * 36 + column * 20, easing: 'cubic-bezier(.45,0,.8,.45)', fill: 'both' }));
+  });
+  transition.animations.push(incoming.animate([
+    { opacity: 0, transform: 'translateY(36px)' },
+    { opacity: 1, transform: 'translateY(0)' }
+  ], { duration: 650, delay: 380, easing: 'cubic-bezier(.22,1,.36,1)', fill: 'both' }));
+  Promise.allSettled(transition.animations.map(animation => animation.finished)).then(() => {
+    if (hypothesisBreakup === transition) cancelHypothesisBreakup();
+  });
+}
+window.addEventListener('resize', cancelHypothesisBreakup);
+window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', event => {
+  if (event.matches) cancelHypothesisBreakup();
+});
 
 function renderRoute({ focus = false } = {}) {
   const hash = window.location.hash;
@@ -201,6 +274,9 @@ function renderRoute({ focus = false } = {}) {
   const validPresentation = presentationMatch && Number(presentationMatch[1]) >= 1 && Number(presentationMatch[1]) <= slideCount;
   const previousView = currentView;
   const previousSlide = currentSlide;
+  cancelHypothesisBreakup();
+  const breakup = previousView === 'presentation' && previousSlide === 5 && validPresentation && Number(presentationMatch[1]) === 7 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    ? captureHypothesisBreakup() : null;
   currentView = validPresentation ? 'presentation' : hash === '#prohlidka' ? 'guide' : 'home';
   currentSlide = validPresentation ? Number(presentationMatch[1]) - 1 : 0;
   Object.entries(views).forEach(([key, element]) => { element.hidden = key !== currentView; });
@@ -214,6 +290,7 @@ function renderRoute({ focus = false } = {}) {
   $('#reality-slide').hidden = !realityActive;
   if (realityActive) showReality();
   else realityController?.hide();
+  if (currentView === 'presentation' && currentSlide === 5) prepareReality();
   if (currentView !== 'presentation' || currentSlide !== 5) stopHypothesisAnimation();
   if (mapActive) showMap();
   else if (previousView === 'presentation' && previousSlide === 4) pauseMapPlayback();
@@ -254,6 +331,7 @@ function renderRoute({ focus = false } = {}) {
     positionDeckBrand(previousView === 'presentation' && (previousSlide === 0) !== (currentSlide === 0));
     document.title = `${currentSlide + 1} / ${slideCount} · ${slideTitles[currentSlide]} · ${presentationTitle}`;
     $('#slide-announcement').textContent = `Snímek ${currentSlide + 1} ze ${slideCount}. ${slideTitles[currentSlide]}`;
+    if (breakup) playHypothesisBreakup(breakup);
   } else {
     stopMigrationExample();
     document.body.dataset.step = '0';

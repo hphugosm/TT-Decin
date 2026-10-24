@@ -16,6 +16,17 @@ export function migrationSeries(source) {
   });
 }
 
+// Keep the source intact. Show at most three years before and five after the
+// documented intention, without inventing the missing 1999 value for Nemak.
+export function eventWindow(series) {
+  return series.map(company => ({
+    ...company,
+    windowStart: company.rok_zameru - 3,
+    windowEnd: company.rok_zameru + 5,
+    points: company.points.filter(point => point.year >= company.rok_zameru - 3 && point.year <= company.rok_zameru + 5)
+  }));
+}
+
 export function sharedScale(series, metric) {
   if (!['pp', 'persons'].includes(metric)) throw new Error('Neznámý ukazatel.');
   const values = series.flatMap(company => company.points.map(point => point[metric]));
