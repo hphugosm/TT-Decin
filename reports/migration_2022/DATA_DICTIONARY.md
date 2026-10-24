@@ -44,3 +44,7 @@ CSV používají UTF-8, čárku, desetinnou tečku a záhlaví na prvním řádk
 `mv_stock` je evidenční **stav**, ne roční tok a ne výlučně ukrajinské občanství. `snapshot_publication_date` označuje publikované datum 31. 12. 2022, nikoli doložený konec dne. `coverage_status=absent_in_source_not_zero` znamená chybějící záznam. Souhrn městských částí je již proveden podle obecního kódu. Stav neodečítejte od I/E a korelace neinterpretujte kauzálně.
 
 `quality_flags`, `benchmark_kind`, `benchmark_status`, `uncertainty_status` a `range_kind` musí zůstat viditelné nebo dostupné v každém navazujícím zobrazení. Počet spárovaných obcí a definici velikosti vzorku nezakrývejte.
+
+## Územní příznaky v diagnostice
+
+`territorial_flag_years` a `territorial_effective_flag_years` uvádějí počet roků trénovací historie s příslušným zdrojovým příznakem územní změny nebo její účinnosti k 1. 1. Nulový počet znamená, že panel příznak neobsahuje; není důkazem úplné historické územní neměnnosti. `explanation_cs` je popis historických charakteristik a chyb, nikoli kauzální vysvětlení.

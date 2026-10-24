@@ -1,0 +1,40 @@
+✔ channel completeness is independent in every year of a trailing window (3.361459ms)
+✔ changing municipality coverage cannot masquerade as a complete regional reference (0.504542ms)
+✔ differences with overlapping windows subtract window rates, retaining exact exposures (2.262ms)
+✔ multiple category dimensions select totals without repeated population (3.858292ms)
+✔ missing tokens remain null; true zero survives and malformed signed numbers reject (1.579667ms)
+✔ delimiter inference ignores quoted punctuation and logical-record newlines (0.210416ms)
+✔ 2020 municipal and weighted regional rates (3.334416ms)
+✔ yearly differences subtract complete rates and deviations (0.46425ms)
+✔ arbitrary differences, equal and reverse years (0.350917ms)
+✔ strict trailing exposure windows and scatter (1.988833ms)
+✔ missing outgoing preserves incoming but invalidates balance and scatter (0.291709ms)
+✔ missing or zero population leaves counts valid and blocks reference (0.387375ms)
+✔ calendar gaps are not skipped and partial sums explicit (0.389458ms)
+✔ share denominator, contribution and regional identities (0.220584ms)
+✔ fixed domains, scatter axes and neutral coloring do not modify values (3.133375ms)
+✔ invalid values and duplicate keys are rejected or unavailable (0.718875ms)
+✔ percent units distinguish percentage-point changes and denominators (0.351667ms)
+✔ BOM, quoted delimiter, decimal comma and independent channels (3.622583ms)
+✔ malformed CSV rejected (0.406958ms)
+✔ invalid values, codes, duplicate and saldo (0.464ms)
+✔ category total is suggested and filtered, never summed (0.565958ms)
+✔ windows-1250 manual decoding preserves Czech name (0.569458ms)
+✔ zero remains zero and missing population remains null (0.178042ms)
+✔ headerless numeric records are detected with manual override available (0.127292ms)
+✔ actual municipality panel schema maps original counts and start-of-year population (0.2065ms)
+✔ population endpoints are observed, not migration-only estimates or next-year rebases (3.793417ms)
+✔ CSV explicitly maps population start and end independently of rate denominator (1.657ms)
+✔ K=500 hand calculation, K=0 exact original, and large K approaches region (2.578875ms)
+✔ shrinkage preserves I minus E and scatter identity, including negative balance (0.746125ms)
+✔ multi-year shrinkage is annual then population weighted; comparisons subtract final values (0.427417ms)
+✔ missing data is never replaced by shrinkage prior and independent channels remain usable (0.4295ms)
+✔ raw counts and shares remain observed; domain cache distinguishes constants (7.068583ms)
+ℹ tests 32
+ℹ suites 0
+ℹ pass 32
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 160.5095

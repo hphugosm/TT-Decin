@@ -1,0 +1,923 @@
+{
+  "status": "pass",
+  "created_at": "2026-10-24T09:11:06.699713+00:00",
+  "checks": [
+    {
+      "check": "freeze_evaluation_not_read",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_input:/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/region_models/backtest_region.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_input:/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/municipal_models/backtest_municipal.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_input:/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/region_models/candidate_forecasts_2022_region.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_input:/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/municipal_models/candidate_forecasts_2022_municipal.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_output:prospective_range_coverage_summary.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_output:model_comparison.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_output:selector_backtest_with_balance.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_output:uncertainty_scenarios_2022.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_output:selector_backtest.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_output:selected_predictions_2022.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_output:prospective_range_coverage.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_output:selector_rules.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_output:run_selector.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "audited_train_hash",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "training_354_codes_2000_2021",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "region_candidate_count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "region_unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "region_common_coverage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "region_all_years_all_models",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "region_honest_cutoffs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "region_finite_nonnegative",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "region_finite_nonnegative",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "region_genuine_families",
+      "pass": true,
+      "detail": {
+        "genuinely_successful_families": [
+          "M1",
+          "M2",
+          "M3",
+          "M4",
+          "M5"
+        ],
+        "fallback_rows": 0
+      }
+    },
+    {
+      "check": "region_actual_equals_audited_source",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "municipality_candidate_count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "municipality_unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "municipality_common_coverage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "municipality_all_years_all_models",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "municipality_honest_cutoffs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "municipality_finite_nonnegative",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "municipality_finite_nonnegative",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "municipality_genuine_families",
+      "pass": true,
+      "detail": {
+        "genuinely_successful_families": [
+          "M1",
+          "M2",
+          "M3",
+          "M4",
+          "M5",
+          "M6",
+          "M7"
+        ],
+        "fallback_rows": 2
+      }
+    },
+    {
+      "check": "municipality_actual_equals_audited_source",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "covid_sensitivity_hash",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "covid_sensitivity_calendar_and_population",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "covid_sensitivity_fixed2019_exposure",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "covid_no_synthetic_refit",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "selected_exact_candidate_prediction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:region:3069:2015:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:region:3069:2015:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:505528:2015:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:505528:2015:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:562343:2015:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:562343:2015:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:563498:2015:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:563498:2015:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:565768:2015:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:565768:2015:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:567043:2015:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:567043:2015:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:568295:2015:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:568295:2015:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:region:3069:2018:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:region:3069:2018:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:505528:2018:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:505528:2018:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:562343:2018:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:562343:2018:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:563498:2018:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:563498:2018:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:565768:2018:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:565768:2018:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:567043:2018:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:567043:2018:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:568295:2018:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:568295:2018:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:region:3069:2021:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:region:3069:2021:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:505528:2021:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:505528:2021:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:562343:2021:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:562343:2021:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:563498:2021:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:563498:2021:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:565768:2021:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:565768:2021:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:567043:2021:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:567043:2021:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:568295:2021:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:568295:2021:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:region:3069:2022:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:region:3069:2022:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:505528:2022:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:505528:2022:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:562343:2022:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:562343:2022:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:563498:2022:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:563498:2022:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:565768:2022:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:565768:2022:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:567043:2022:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:567043:2022:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:568295:2022:incoming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prefix_score:municipality:568295:2022:outgoing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "future_outcome_perturbation_no_past_selection_effect",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "final_balance_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "scenario_balance_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "seven_complete_joint_scenario_vectors",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "evaluation_bound_to_freeze",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "evaluation_hash:predictions_2022_region.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "evaluation_hash:predictions_2022_municipalities.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "evaluation_hash:evaluation_2022_ORP.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "evaluation_hash:orp_joint_scenarios_2022.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "evaluation_hash:proxy_statistics.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "evaluation_hash:municipal_proxy_comparison.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "municipal_final_truth_source_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "municipal_final_deviation_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "evaluation_preserves_frozen_municipal_prediction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "crosswalk_complete",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "orp_frozen_point_sum",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "orp_joint_scenario_aggregation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "orp_bounds_after_aggregation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "missing_MV_81_retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:radar.css",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:prepare_radar.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:index.html",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:radar-charts.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:radar-events.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:radar-engine.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:radar-import.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:README.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:radar-map.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:.nojekyll",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:.gitignore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:manifest.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:radar.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:radar-import-ui.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:RADAR_README.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:tests/radar-import.test.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:tests/radar-edge-cases.test.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:tests/radar-engine.test.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:tests/radar-population.test.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:tests/radar-shrinkage.test.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:docs/MIGRATION_RADAR_BACKLOG.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:docs/MIGRATION_RADAR_DECISIONS.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:data/radar-provenance.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:data/radar-geography.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:data/radar-data.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:reports/radar-verification.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:reports/radar-scatter.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:reports/radar-mobile.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:reports/radar-mobile-scatter.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:reports/radar-laptop.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:reports/radar-selected-percent.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:reports/radar-browser-validation.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:reports/radar-shrinkage-settings.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:reports/radar-shrinkage-map.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_file_unchanged:reports/radar-shrinkage-validation.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/selected_sensitivity_2022_municipal.csv",
+      "pass": true,
+      "detail": "652b36c4227fff69ed747d0aa863eb3c925e673c05581e4611d9a97e9103e65a"
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/prospective_range_coverage_summary.csv",
+      "pass": true,
+      "detail": "4a7c77c680725057262a8404a8d852496c5b76a306d299dcaaef8289530d75c8"
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/model_comparison.csv",
+      "pass": true,
+      "detail": "9eb7b7578b12d7e1f289fdfb89b8beee36c13fe46f6f92a8636b5b257af24f6e"
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/region_history_2000_2021.csv",
+      "pass": true,
+      "detail": "6aba316ab6ce8315ddd67de630f61c76fbe93ca75ff4a709b3047e25e698f79b"
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/selector_backtest_with_balance.csv",
+      "pass": true,
+      "detail": "5496139286c32bc54b2e428083fde200d68818872f25491c59030a7136d1841f"
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/uncertainty_scenarios_2022.csv",
+      "pass": true,
+      "detail": "afbb8b7f384f59e57a193cf50a4ee3cc0453bfc285436068b411f81c5dfd09ca"
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/candidate_predictions_2022_municipalities.csv",
+      "pass": true,
+      "detail": "0c4e58ba9a2f4cfee03027c9c68adf0a93c4a769ab6ee7c2b68ca7cf24d0e0d0"
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/regional_fit_status.csv",
+      "pass": true,
+      "detail": "2324637f8af8084dd363e9f5ab5d1e653cb36651bac60e50ab136ea47f0aa914"
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/selected_sensitivity_covid_2022_municipal.csv",
+      "pass": true,
+      "detail": "951795e6a212eac6c6b20aecc11d5f3502007e8a1c291dc245a9f6eb169e2e50"
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/regional_data_quality.csv",
+      "pass": true,
+      "detail": "d69ebf17e625cc5cab50c287f120660feed606c9b65b1c0fd3b2ecf670e57877"
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/selector_backtest.csv",
+      "pass": true,
+      "detail": "97db3d2b032b6fdf221b0d8c7dad0ca0e09bf649b2717dea5052c7b83024a386"
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/frozen_predictions_2022.csv",
+      "pass": true,
+      "detail": "e96c5ebea3541a5050b66a76fe7daec2dc8a8ee89969b631b6993f61d74be54c"
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/backtest_predictions.csv",
+      "pass": true,
+      "detail": "029d63c18aa6af1a1a5e428bcd4f688e2ad622b0d71467a0fc67c032f11a1fba"
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/sensitivity_forecasts_region.csv",
+      "pass": true,
+      "detail": "986545701a68e2e34187e80396de7696880ce616c13c6d1416e3770847b08bf0"
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/regional_development_scores.csv",
+      "pass": true,
+      "detail": "6e78d227d352ccb96f3ecf870b58b2f176d781caca78fabe99e84248f1f4f05d"
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/prospective_range_coverage.csv",
+      "pass": true,
+      "detail": "1d9e70f6c0ad9a3de1119223b86c0c4d5e6a3462b5f532a11c628d5c5fac1236"
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/data_quality.csv",
+      "pass": true,
+      "detail": "c9b5823befd637ae75cf27391829676bd41e9c3141f3d7cac3bb8c61dbe7cb5a"
+    },
+    {
+      "check": "published_globalfreeze:results/migration_2022/candidate_predictions_2022_region.csv",
+      "pass": true,
+      "detail": "8fcc337797be8ae86125d14af53e118f8db03b3a0ac59982edfb32a09ee5aba8"
+    },
+    {
+      "check": "frozen_model_or_verifier_source:verify_results.py",
+      "pass": true,
+      "detail": "d8c28c54e8ca56280a773a73509eb5bea35e0dce94a5e2c3f95754e1d9e47bcd"
+    },
+    {
+      "check": "frozen_model_or_verifier_source:selector/run_selector.py",
+      "pass": true,
+      "detail": "2e2bd64d8f4ce7fce0c5640e3a79f2fe60af2f2ccfacb96ae77d25cbb90d23a1"
+    },
+    {
+      "check": "frozen_model_or_verifier_source:municipal_models/run.py",
+      "pass": true,
+      "detail": "ff3928dd460ce079452abd95a97dbdc0684f7f07bcfaab922ecff15ee5992f44"
+    },
+    {
+      "check": "frozen_model_or_verifier_source:municipal_models/sensitivity_covid.py",
+      "pass": true,
+      "detail": "9cc9ccdcb9144bb9b116ce87d09dc0f14d1ae8445854d7484eff319b670549c1"
+    },
+    {
+      "check": "frozen_model_or_verifier_source:municipal_models/sensitivity.py",
+      "pass": true,
+      "detail": "945282bde889ec24afb37c02af81b36cfadb20e442fac3d7b6ea9809c496467b"
+    },
+    {
+      "check": "frozen_model_or_verifier_source:region_models/run_region.py",
+      "pass": true,
+      "detail": "ca9ce14df224c36c455553989402a099077ba8a8779e6a08b139609d40c05cf3"
+    }
+  ],
+  "family_counts": {
+    "region": {
+      "genuinely_successful_families": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "fallback_rows": 0
+    },
+    "municipality": {
+      "genuinely_successful_families": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6",
+        "M7"
+      ],
+      "fallback_rows": 2
+    }
+  },
+  "limitations": [
+    "Structural/source validation does not prove causal interpretation or counterfactual truth.",
+    "Only seven independent annual residual vectors; ranges are uncalibrated.",
+    "Covid sensitivity retains family/configuration selected with data through2021; it is not a forecast selected in2019.",
+    "Future perturbation samples region; independent prefix score reconstruction samples both scopes."
+  ],
+  "global_freeze_sha256": "c9cfb578446679a3e3582021e43c1a67ad667118df480640b53126da8db91d0e",
+  "supplemental_globalfreeze_check": "Independent ad hoc hash validation; verifier source kept unchanged from pre-evaluation freeze."
+}

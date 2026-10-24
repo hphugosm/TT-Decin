@@ -8,3 +8,6 @@
 - 2026-10-24T11:09:49.546118+02:00: **obecni_benchmark_a_selektor** — Všech 354 obcí, sedm trénovaných rodin a dvě reference. Výběr pro testy 2015–2021 vždy používá jen dřívější chyby.
 - 2026-10-24T11:09:49.546848+02:00: **zmrazene_predikce_2022** — Bodové predikce, společné roční scénáře a konfigurace opatřeny SHA-256 před výsledkovým porovnáním 2022.
 - 2026-10-24T11:10:36.880572+02:00: **externi_srovnani** — Zmrazené predikce spojeny s konečnými údaji, předběžnými daty bez DO a odděleně s MV evidenčním stavem. Chybějící obce MV nejsou nahrazeny nulou.
+
+- 2026-10-24T11:16:51.878067+02:00: Doplnění citlivosti: původní poznámka `not run` v [municipal_sensitivity_manifest.json](municipal_sensitivity_manifest.json) popisuje stav prvního běhu. Následující běh doložený [municipal_sensitivity_covid_manifest.json](municipal_sensitivity_covid_manifest.json) již zahrnuje všech 708 obecních předpovědí s koncem historie 2019 a horizontem tří let. Původní manifest je zachován.
+- 2026-10-24T11:16:52.130118+02:00: **finalni_interpretace** — Výsledky, metodika, grafy a případové rozbory dokončeny. Prošlo 173 analytických kontrol a 32 regresních testů mapy, původní soubory ověřeny beze změny. Pět předchozích publikačních commitů bylo úspěšně pushnuto; finální commit a ověření vzdálené větve navazují.

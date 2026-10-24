@@ -95,12 +95,26 @@ Výsledková větev je `analysis/migration-2022`. Do main se nemerguje a stávaj
 Místní kořen: `/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local/`. Prostředí `venv` vychází z dodaného Pythonu 3.12; konkrétní nainstalované verze zaznamenává manifest. Každý skript pracuje s cestami odvozenými od vlastního umístění. Pořadí hlavního výpočtu:
 
 ```sh
-cd '/Users/hugo/Documents/ChatGPT/Děčín Heckathon'
-migration_2022_local/venv/bin/python migration_2022_local/audit_inputs.py
-migration_2022_local/venv/bin/python migration_2022_local/region_data/acquire_region.py
-migration_2022_local/venv/bin/python migration_2022_local/region_models/run_region.py
-migration_2022_local/venv/bin/python migration_2022_local/municipal_models/run.py
-migration_2022_local/venv/bin/python migration_2022_local/selector/run_selector.py
+cd '/Users/hugo/Documents/ChatGPT/Děčín Heckathon/migration_2022_local'
+venv/bin/python audit_inputs.py
+venv/bin/python region_data/acquire_region.py
+venv/bin/python publication.py audit
+venv/bin/python region_models/run_region.py
+venv/bin/python publication.py region
+venv/bin/python municipal_models/run.py
+venv/bin/python selector/run_selector.py
+venv/bin/python municipal_models/sensitivity.py selector/selected_predictions_2022.csv
+venv/bin/python municipal_models/sensitivity_covid.py selector/selected_predictions_2022.csv
+venv/bin/python publication.py frozen
+# Nyní jsou scénáře a jejich hashe zmrazeny; teprve potom porovnání 2022.
+venv/bin/python evaluation/prepare_inputs.py
+venv/bin/python evaluation/integrate_evaluation.py
+venv/bin/python publication.py evaluation
+venv/bin/python verify_results.py
+MPLCONFIGDIR=mpl-cache venv/bin/python report/build_report.py
+# Z existujícího checkoutu ověřit mapu a uchovat výstup.
+(cd ../migration_2022_checkout && node --test tests/radar-*.test.mjs) > map_tests.tap
+venv/bin/python publication.py final
 ```
 
-Následuje ověření hashů a evaluační skript; přesné doplňující příkazy uvádí finální manifest. Veřejný repozitář sám o sobě není plně reprodukovatelný bez uvedeného místního kódu. SHA-256 skriptů zaznamenává použitou verzi, nenahrazuje její dostupnost. Spuštění auditního skriptu při reprodukci přepíše analytické auditní logy, proto reprodukci provádějte v nové kopii pracovního adresáře.
+Manifest zaznamenává stejné příkazy i hashe lokálních skriptů. Provedená validace obsahuje 149 kontrol skriptu a dalších 24 nezávislých kontrol finálního zmrazení; doplňkový audit je v validačním JSON označen samostatně. Veřejný repozitář sám o sobě není plně reprodukovatelný bez uvedeného místního kódu. SHA-256 skriptů zaznamenává použitou verzi, nenahrazuje její dostupnost. Spuštění auditního skriptu při reprodukci přepíše analytické auditní logy, proto reprodukci provádějte v nové kopii pracovního adresáře.
