@@ -156,3 +156,14 @@ body.panel-fullscreen-open{overflow:hidden}
 @media(max-width:999px){.map-events{order:5;margin-bottom:10px}}
 @media(max-width:600px){.map-events{width:100%;max-height:none;padding:10px 12px}.map-event{grid-template-columns:85px minmax(0,1fr);gap:10px}}
 .map-column.panel-expanded>.map-events{order:initial;max-height:30dvh}
+
+.chart-event-marker,.chart-year-tick{cursor:pointer}
+.chart-event-marker:hover .chart-event-line,.chart-event-marker:focus-visible .chart-event-line{stroke-width:2.5;opacity:1}
+.chart-event-marker:focus-visible,.chart-year-tick:focus-visible{outline:none}
+.chart-event-marker:focus-visible circle{stroke:#8e2529;stroke-width:2}
+.chart-year-tick:focus-visible text{text-decoration:underline}
+.chart-key.event-key{color:#a32930}
+.chart-key.event-key i{width:13px;height:0;border-top:2px solid #d33438;border-radius:0}
+.chart-event-notice{margin:0 12px 9px;padding:7px 9px;border-left:3px solid #d33438;background:#fff8f7;color:#8e2529;font-size:11px;line-height:1.4;flex-shrink:0}
+.chart-event-notice strong{font-weight:650;margin-right:5px}
+.chart-panel.panel-expanded .chart-event-notice{margin:0 20px 14px;font-size:13px}

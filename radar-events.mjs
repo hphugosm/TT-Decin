@@ -44,3 +44,7 @@ export function eventHighlights(year) {
     codes: [...new Set(active.filter(event => event.scope === 'municipality').map(event => event.code))]
   };
 }
+
+export function eventsForTerritory(year, code = null) {
+  return eventsForYear(year).filter(event => code == null || event.scope === 'region' || event.code === String(code));
+}
