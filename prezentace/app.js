@@ -5,7 +5,7 @@ const presentationTitle = 'Stěhování obcí Ústeckého kraje';
 const notes = [
   'V datech je 354 jedinečných kódů obcí, shodných s 354 obcemi mapového podkladu. Počet je ověřený v datovém panelu. Po počtu obcí postupně nabíhají čtyři jedničky: jeden ukazatel, jedna hodnota, jedna obec, jeden rok. Ukazatele doprovázejí jednoduché obrysové ikony.',
   'Nejprve se objeví délky jednotlivých řad. Potom se přes všechny řádky zvýrazní červený průnik 2018–2024. Průnik představuje sedm ročních pozorování; legenda zůstává pod grafem.',
-  'Graf, jeho měřítko i červený průnik zůstávají na místě. Přes roky 2022–2024 přibude vínově šrafovaný pás. Sedmička se změní na čtyřku. Zůstávají roky 2018–2021 před tímto zlomem.'
+  'Graf, jeho měřítko i červený průnik zůstávají na místě. Přes roky 2022–2024 přibude jemná jednolitá šedá plocha bez šrafování. Sedmička se změní na čtyřku. Zůstávají roky 2018–2021 před tímto zlomem.'
 ];
 let currentView = 'home';
 let currentSlide = 0;
@@ -54,7 +54,7 @@ function renderRoute({ focus = false } = {}) {
     $('#slide-one').hidden = currentSlide !== 0;
     $('#timeline-slide').hidden = currentSlide === 0;
     const event = currentSlide === 2;
-    $('#timeline-title').innerHTML = event ? 'Pak přišel <em>rok 2022.</em>' : 'Málo dat. <em>Krátký průnik.</em>';
+    $('#timeline-title').innerHTML = event ? 'Pak přišel rok 2022. <em>Krize na Ukrajině.</em>' : 'Málo dat. <em>Krátký průnik.</em>';
     $('#timeline-description').innerHTML = event ? 'Příchod lidí z Ukrajiny<br>mění kontext posledních tří let.' : 'Každá datová sada sahá jinam.<br>Všechny se potkají jen tady.';
     $('#year-count').textContent = event ? '4' : '7';
     $('#year-label').innerHTML = event ? 'roky před zlomem<span>2018–2021</span>' : 'společných let<span>2018–2024</span>';
@@ -80,7 +80,7 @@ function renderRoute({ focus = false } = {}) {
     // Commit initial geometry before revealing the event strip on direct entry.
     void $('#timeline-slide').offsetWidth;
     document.body.dataset.step = String(currentSlide);
-    const titles = ['354 obcí: jedna hodnota jednoho ukazatele pro jednu obec za jeden rok', 'Společný průnik 2018–2024: sedm let.', 'Roky 2022–2024 mění kontext. Před zlomem zbývají čtyři roky.'];
+    const titles = ['354 obcí: jedna hodnota jednoho ukazatele pro jednu obec za jeden rok', 'Společný průnik 2018–2024: sedm let.', 'Pak přišel rok 2022. Krize na Ukrajině.'];
     document.title = `${currentSlide + 1} / 3 · ${titles[currentSlide]} · ${presentationTitle}`;
     $('#slide-announcement').textContent = `Snímek ${currentSlide + 1} ze 3. ${titles[currentSlide]}`;
   } else {
