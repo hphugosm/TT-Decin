@@ -288,11 +288,93 @@ window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',
 // embedded app and lose the selected municipality, year and camera position.
 let mapTransition = null;
 const mapNeighborSlides = { 3: '#terms-slide', 4: '#map-slide', 5: '#clusters-slide', 6: '#hypothesis-slide', 7: '#reality-slide', 8: '#map-slide' };
+// Paint the same municipality outlines while their colors and camera interpolate.
+// Only this temporary SVG is copied; both interactive iframes stay mounted.
+function mapPaintSnapshot(index) {
+  const frame = embeddedSlides.get(index)?.frame;
+  const svg = frame?.contentDocument?.querySelector('#map');
+  const shapes = svg?.querySelector('.municipality-shapes, .cluster-map-shapes');
+  const paths = shapes && [...shapes.querySelectorAll('path[data-code]')];
+  if (!paths?.length) return null;
+  const bounds = shapes.getBBox();
+  const matrix = shapes.getScreenCTM();
+  const rect = svg.getBoundingClientRect();
+  if (!matrix || !bounds.width || !bounds.height || !rect.width || !rect.height) return null;
+  const frameRect = frame.getBoundingClientRect();
+  const screen = new DOMMatrix([matrix.a, matrix.b, matrix.c, matrix.d, matrix.e + frameRect.left, matrix.f + frameRect.top]);
+  const fills = new Map(paths.map(path => {
+    const fill = frame.contentWindow.getComputedStyle(path).fill;
+    return [path.dataset.code, fill.startsWith('url(') ? '#E3E7ED' : fill];
+  }));
+  return { svg, bounds, matrix: screen, paths, fills, rect: {
+    top: rect.top + frameRect.top, left: rect.left + frameRect.left,
+    right: rect.right + frameRect.left, bottom: rect.bottom + frameRect.top
+  }};
+}
+function playMapRecolor(transition) {
+  const { outgoing, incoming } = transition;
+  incoming.classList.add('map-morph-waiting');
+  // Allow the destination's ResizeObserver to fit its visible map first.
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    if (mapTransition !== transition) return;
+    const source = transition.mapPaint;
+    const target = mapPaintSnapshot(transition.to);
+    const duration = 1400;
+    const ease = 'cubic-bezier(.22,1,.36,1)';
+    if (source && target) {
+      const ns = 'http://www.w3.org/2000/svg';
+      const overlay = document.createElementNS(ns, 'svg');
+      overlay.classList.add('map-recolor-overlay');
+      overlay.setAttribute('viewBox', `0 0 ${innerWidth} ${innerHeight}`);
+      overlay.setAttribute('aria-hidden', 'true');
+      const group = document.createElementNS(ns, 'g');
+      // Both maps project identical geographic boundaries with an affine scale.
+      const a = source.bounds, b = target.bounds;
+      const targetMatrix = target.matrix.translate(b.x, b.y)
+        .scale(b.width / a.width, b.height / a.height).translate(-a.x, -a.y);
+      for (const path of source.paths) {
+        const shape = document.createElementNS(ns, 'path');
+        shape.setAttribute('d', path.getAttribute('d'));
+        shape.setAttribute('fill-rule', 'evenodd');
+        shape.setAttribute('stroke', '#C5CFDA');
+        shape.setAttribute('stroke-width', '.55');
+        shape.setAttribute('vector-effect', 'non-scaling-stroke');
+        const color = source.fills.get(path.dataset.code);
+        shape.setAttribute('fill', color);
+        group.append(shape);
+        transition.animations.push(shape.animate([
+          { fill: color }, { fill: target.fills.get(path.dataset.code) || color }
+        ], { duration: 1100, delay: 100, easing: ease, fill: 'both' }));
+      }
+      overlay.append(group);
+      document.body.append(overlay);
+      transition.overlay = overlay;
+      transition.mapVisibility = [source.svg, target.svg].map(svg => ({ svg, value: svg.style.visibility }));
+      transition.mapVisibility.forEach(({ svg }) => { svg.style.visibility = 'hidden'; });
+      const clip = rect => `inset(${rect.top}px ${innerWidth - rect.right}px ${innerHeight - rect.bottom}px ${rect.left}px)`;
+      transition.animations.push(group.animate([
+        { transform: source.matrix.toString() }, { transform: targetMatrix.toString() }
+      ], { duration, easing: ease, fill: 'both' }));
+      transition.animations.push(overlay.animate([
+        { clipPath: clip(source.rect) }, { clipPath: clip(target.rect) }
+      ], { duration, easing: ease, fill: 'both' }));
+    }
+    incoming.classList.remove('map-morph-waiting');
+    // The surrounding interface dissolves without moving either page sideways.
+    transition.animations.push(outgoing.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 350, easing: 'ease-out', fill: 'both' }));
+    transition.animations.push(incoming.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 650, delay: 250, easing: ease, fill: 'both' }));
+    Promise.allSettled(transition.animations.map(animation => animation.finished)).then(() => {
+      if (mapTransition === transition) finishMapTransition(true);
+    });
+  }));
+}
 function finishMapTransition(startContent = false) {
   if (!mapTransition) return;
   const transition = mapTransition;
   mapTransition = null;
   transition.animations.forEach(animation => animation.cancel());
+  transition.mapVisibility?.forEach(({ svg, value }) => { svg.style.visibility = value; });
+  transition.overlay?.remove();
   const { outgoing, incoming } = transition;
   outgoing.classList.remove('map-transition-outgoing');
   outgoing.style.cssText = transition.outgoingStyle;
@@ -300,7 +382,7 @@ function finishMapTransition(startContent = false) {
   if (transition.outgoingAria === null) outgoing.removeAttribute('aria-hidden');
   else outgoing.setAttribute('aria-hidden', transition.outgoingAria);
   outgoing.hidden = currentView !== 'presentation' || currentSlide !== transition.from;
-  incoming.classList.remove('map-transition-incoming', 'map-transition-pending');
+  incoming.classList.remove('map-transition-incoming', 'map-transition-pending', 'map-morph-waiting');
   incoming.inert = transition.incomingInert;
   document.body.classList.remove('map-transition-running');
   $('#deck-brand').hidden = currentView === 'presentation' && isEmbeddedSlide(currentSlide);
@@ -316,6 +398,8 @@ function captureMapTransition(from, to) {
   const computed = getComputedStyle(outgoing);
   const transition = {
     from, to, outgoing, incoming, animations: [],
+    recolor: (from === 4 && to === 5) || (from === 5 && to === 4),
+    mapPaint: ((from === 4 && to === 5) || (from === 5 && to === 4)) ? mapPaintSnapshot(from) : null,
     outgoingStyle: outgoing.style.cssText,
     outgoingInert: outgoing.inert,
     outgoingAria: outgoing.getAttribute('aria-hidden'),
@@ -350,6 +434,10 @@ function playMapTransition(transition) {
   }
   const brand = $('#deck-brand');
   brand.hidden = isEmbeddedSlide(from) && isEmbeddedSlide(to);
+  if (transition.recolor) {
+    playMapRecolor(transition);
+    return;
+  }
   transition.animations.push(outgoing.animate(enteringMap ? [
     { opacity: 1, transform: 'translateX(0) scale(1)' },
     { opacity: 0, transform: `translateX(${-direction * 64}px) scale(.97)` }

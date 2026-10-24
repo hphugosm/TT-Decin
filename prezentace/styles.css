@@ -143,3 +143,8 @@ body[data-step="2"] .event-band{opacity:1;transform:scaleX(1)}body[data-step="2"
 .map-transition-running .presentation-footer{position:relative;z-index:8;background:var(--paper)}
 .hypothesis-slide.map-transition-pending .hypothesis-line{stroke-dasharray:1;stroke-dashoffset:1}
 .hypothesis-slide.map-transition-pending .hypothesis-area,.hypothesis-slide.map-transition-pending .hypothesis-growth-label,.hypothesis-slide.map-transition-pending .hypothesis-event-halo,.hypothesis-slide.map-transition-pending .hypothesis-traveler,.hypothesis-slide.map-transition-pending .hypothesis-link{opacity:0}
+
+/* A fixed geographic bridge repaints municipalities between radar and clusters. */
+.map-morph-waiting{opacity:0}
+.map-recolor-overlay{position:fixed;inset:0;width:100%;height:100%;z-index:6;pointer-events:none;overflow:hidden}
+.map-recolor-overlay>g{transform-origin:0 0}
