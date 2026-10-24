@@ -94,12 +94,12 @@ export function colorDomain(d,settings={}){
   for(const code of d.codes)for(const year of d.calendarYears){const v=derivedValue(d,code,year,s).value;if(valid(v))max=Math.max(max,Math.abs(v));}
   const domain={min:signed?-(max||1):0,max:max||1,signed};d.cache.set(key,domain);return domain;
 }
-export function colorFor(value,domain,neutral=0,contrast=1){
+export function colorFor(value,domain,neutral=0,contrast=1,metric='balance'){
   if(!valid(value))return '#d8dce5';
   const threshold=Math.max(0,Number(neutral)||0);if(Math.abs(value)<=threshold)return '#f2f1ed';
   const extent=Math.max(Math.abs(domain.min),Math.abs(domain.max),threshold+Number.EPSILON);
   const t=Math.pow(Math.min(1,Math.max(0,(Math.abs(value)-threshold)/(extent-threshold))),1/Math.max(.1,Number(contrast)||1));
-  const end=domain.signed&&value<0?[222,117,36]:[23,61,165],start=[242,241,237];
+  const end=metric==='incoming'?(value<0?[110,151,218]:[23,61,165]):metric==='outgoing'?(value<0?[239,178,122]:[222,117,36]):domain.signed&&value<0?[222,117,36]:[23,61,165],start=[242,241,237];
   return `rgb(${start.map((v,i)=>Math.round(v+(end[i]-v)*t)).join(', ')})`;
 }
 export function scatterPoint(d,code,year,settings={}){

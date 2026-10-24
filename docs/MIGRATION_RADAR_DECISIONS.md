@@ -45,3 +45,7 @@ Uživatel výslovně potvrdil původní vzorec `r* = w r + (1−w) R`, `w = P/(P
 ## Detail populace — 24. 10. 2026
 
 Na přání uživatele detail nahrazuje kód obce a nápovědu opakovaného kliknutí skutečnými stavy k 1. 1. a 31. 12. vybraného roku a rozdílem. Zdrojový panel obsahuje oba stavy pro 9 204 řádků. Počty se neshrinkují a konečný stav se neodvozuje pouze z migrace. Import podporuje oba volitelné sloupce; chybějící stav se neodhaduje.
+
+## Barvy migračních kanálů — 24. 10. 2026
+
+Uživatel sjednotil příchody na modrou a odchody na oranžovou v mapě a grafech. Saldo mapy zachovává divergující oranžovo-modrou stupnici. V časovém grafu salda požaduje souběžné řady příchodů a odchodů; saldo je fialové, krajská reference salda šedá. Nejde o samostatný rozkladový panel D: jde o tři bodové řady ve stávajícím grafu. Všechny používají shodný výpočet a zůstávají bez spojnic.

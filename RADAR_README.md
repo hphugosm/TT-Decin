@@ -71,3 +71,7 @@ Viz [rozhodnutí z 24. 10. 2026](docs/MIGRATION_RADAR_DECISIONS.md) a [backlog o
 ## Obyvatelé v detailu obce
 
 Detail mapy uvádí skutečný počet obyvatel k 1. 1. a 31. 12. zvoleného roku a jejich rozdíl. Ve výchozím panelu jde o sloupce `populace_1_1` a `populace_31_12` ČSÚ, exportované jako `populationStart` a `populationEnd`. Rozdíl není pouze migrační saldo: zahrnuje přirozenou měnu a případné územní úpravy. Shrinkage tyto počty nemění. U CSV jsou oba stavy volitelné samostatné sloupce; bez doloženého koncového stavu se zobrazí „Údaj chybí“. Konec roku se neodhaduje z migrace ani ze začátku následujícího roku.
+
+## Barvy a řady migračního salda
+
+Přistěhování používá modrou a vystěhování oranžovou v mapě, legendě, kartách i grafech. U salda mapa kombinuje oranžovou pro záporné a modrou pro kladné hodnoty. U záporných změn či odchylek jednotlivých kanálů se zachovává jejich odstín; znaménko ukazuje číselná legenda. Časový graf salda obsahuje tři samostatné bodové řady: modré příchody, oranžové odchody a fialové saldo. Šedá krajská reference patří saldu. Všechny řady sdílejí jednotku, shrinkage, okno a režim změny; osa zahrnuje jejich celý rozsah. Chybějící údaj zůstává bez bodu a řady nemají spojnice.
